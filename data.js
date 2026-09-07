@@ -22,7 +22,7 @@ const SPOTS = [
   { id: "crown-heights",        name: "Crown Heights (Kingston Ave & Eastern Pkwy)", lat: 40.6690, lng: -73.9422, kind: "neighborhood" },
   { id: "bed-stuy",             name: "Bed-Stuy",                                  lat: 40.6872, lng: -73.9418, kind: "neighborhood" },
   { id: "flatbush",             name: "Flatbush",                                  lat: 40.6415, lng: -73.9594, kind: "neighborhood" },
-  { id: "lower-east-side",      name: "Lower East Side",                           lat: 40.7168, lng: -73.9861, kind: "neighborhood" },
+  { id: "lower-east-side",      name: "Lower East Side",                           lat: 40.7205, lng: -73.9890, kind: "neighborhood" },
   { id: "financial-district",   name: "Financial District",                        lat: 40.7075, lng: -74.0113, kind: "neighborhood" },
   { id: "chinatown",            name: "Chinatown",                                 lat: 40.7158, lng: -73.9970, kind: "neighborhood" },
   { id: "tribeca",              name: "Tribeca",                                   lat: 40.7163, lng: -74.0086, kind: "neighborhood" },
