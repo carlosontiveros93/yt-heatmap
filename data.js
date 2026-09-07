@@ -1,7 +1,7 @@
 // Data model:
-//   SPOTS    — one entry per physical place. `kind` is landmark | park | neighborhood
-//              (later decides dot vs. filled area). `boundary` is reserved for a
-//              polygon and is null until one is drawn.
+//   SPOTS    — one entry per physical place. `kind` is landmark | park | neighborhood.
+//              Spots with a polygon in boundaries.js (keyed by id) render as filled
+//              areas; the rest render as dots.
 //   SOURCES  — one entry per video the mentions came from.
 //   MENTIONS — one entry per time a speaker recommends a spot. `type` is
 //              "visitor" (recommended for first-time visitors) or "favorite"
@@ -10,44 +10,44 @@
 
 const SPOTS = [
   // neighborhoods
-  { id: "midtown",              name: "Midtown",                                   lat: 40.7549, lng: -73.9840, kind: "neighborhood", boundary: null },
-  { id: "midtown-34th-to-park", name: "Midtown (34th St to the park, 9th to Lex)", lat: 40.7529, lng: -73.9827, kind: "neighborhood", boundary: null },
-  { id: "alphabet-city",        name: "Alphabet City (East Village)",              lat: 40.7248, lng: -73.9793, kind: "neighborhood", boundary: null },
-  { id: "bushwick",             name: "Bushwick — under the Broadway el",          lat: 40.6934, lng: -73.9272, kind: "neighborhood", boundary: null },
-  { id: "blissville",           name: "Blissville (Queens)",                       lat: 40.7373, lng: -73.9319, kind: "neighborhood", boundary: null },
-  { id: "coney-island",         name: "Coney Island",                              lat: 40.5749, lng: -73.9786, kind: "neighborhood", boundary: null },
-  { id: "crown-heights",        name: "Crown Heights (Kingston Ave & Eastern Pkwy)", lat: 40.6690, lng: -73.9422, kind: "neighborhood", boundary: null },
-  { id: "bed-stuy",             name: "Bed-Stuy",                                  lat: 40.6872, lng: -73.9418, kind: "neighborhood", boundary: null },
-  { id: "flatbush",             name: "Flatbush",                                  lat: 40.6415, lng: -73.9594, kind: "neighborhood", boundary: null },
-  { id: "lower-east-side",      name: "Lower East Side",                           lat: 40.7168, lng: -73.9861, kind: "neighborhood", boundary: null },
-  { id: "financial-district",   name: "Financial District",                        lat: 40.7075, lng: -74.0113, kind: "neighborhood", boundary: null },
-  { id: "chinatown",            name: "Chinatown",                                 lat: 40.7158, lng: -73.9970, kind: "neighborhood", boundary: null },
-  { id: "tribeca",              name: "Tribeca",                                   lat: 40.7163, lng: -74.0086, kind: "neighborhood", boundary: null },
-  { id: "soho",                 name: "Soho",                                      lat: 40.7233, lng: -74.0030, kind: "neighborhood", boundary: null },
-  { id: "flushing",             name: "Flushing",                                  lat: 40.7596, lng: -73.8301, kind: "neighborhood", boundary: null },
-  { id: "jackson-heights",      name: "Jackson Heights",                           lat: 40.7557, lng: -73.8831, kind: "neighborhood", boundary: null },
-  { id: "corona",               name: "Corona",                                    lat: 40.7450, lng: -73.8643, kind: "neighborhood", boundary: null },
+  { id: "midtown",              name: "Midtown",                                   lat: 40.7549, lng: -73.9840, kind: "neighborhood" },
+  { id: "midtown-34th-to-park", name: "Midtown (34th St to the park, 9th to Lex)", lat: 40.7529, lng: -73.9827, kind: "neighborhood" },
+  { id: "alphabet-city",        name: "Alphabet City (East Village)",              lat: 40.7248, lng: -73.9793, kind: "neighborhood" },
+  { id: "bushwick",             name: "Bushwick — under the Broadway el",          lat: 40.6934, lng: -73.9272, kind: "neighborhood" },
+  { id: "blissville",           name: "Blissville (Queens)",                       lat: 40.7373, lng: -73.9319, kind: "neighborhood" },
+  { id: "coney-island",         name: "Coney Island",                              lat: 40.5749, lng: -73.9786, kind: "neighborhood" },
+  { id: "crown-heights",        name: "Crown Heights (Kingston Ave & Eastern Pkwy)", lat: 40.6690, lng: -73.9422, kind: "neighborhood" },
+  { id: "bed-stuy",             name: "Bed-Stuy",                                  lat: 40.6872, lng: -73.9418, kind: "neighborhood" },
+  { id: "flatbush",             name: "Flatbush",                                  lat: 40.6415, lng: -73.9594, kind: "neighborhood" },
+  { id: "lower-east-side",      name: "Lower East Side",                           lat: 40.7168, lng: -73.9861, kind: "neighborhood" },
+  { id: "financial-district",   name: "Financial District",                        lat: 40.7075, lng: -74.0113, kind: "neighborhood" },
+  { id: "chinatown",            name: "Chinatown",                                 lat: 40.7158, lng: -73.9970, kind: "neighborhood" },
+  { id: "tribeca",              name: "Tribeca",                                   lat: 40.7163, lng: -74.0086, kind: "neighborhood" },
+  { id: "soho",                 name: "Soho",                                      lat: 40.7233, lng: -74.0030, kind: "neighborhood" },
+  { id: "flushing",             name: "Flushing",                                  lat: 40.7596, lng: -73.8301, kind: "neighborhood" },
+  { id: "jackson-heights",      name: "Jackson Heights",                           lat: 40.7557, lng: -73.8831, kind: "neighborhood" },
+  { id: "corona",               name: "Corona",                                    lat: 40.7450, lng: -73.8643, kind: "neighborhood" },
 
   // parks
-  { id: "tompkins-square-park",   name: "East Village / Tompkins Square Park", lat: 40.7265, lng: -73.9818, kind: "park", boundary: null },
-  { id: "domino-park",            name: "Domino Park (Williamsburg)",          lat: 40.7146, lng: -73.9672, kind: "park", boundary: null },
-  { id: "high-line",              name: "The High Line",                       lat: 40.7480, lng: -74.0048, kind: "park", boundary: null },
-  { id: "washington-square-park", name: "Washington Square Park",              lat: 40.7308, lng: -73.9973, kind: "park", boundary: null },
-  { id: "central-park",           name: "Central Park",                        lat: 40.7712, lng: -73.9742, kind: "park", boundary: null },
+  { id: "tompkins-square-park",   name: "East Village / Tompkins Square Park", lat: 40.7265, lng: -73.9818, kind: "park" },
+  { id: "domino-park",            name: "Domino Park (Williamsburg)",          lat: 40.7146, lng: -73.9672, kind: "park" },
+  { id: "high-line",              name: "The High Line",                       lat: 40.7480, lng: -74.0048, kind: "park" },
+  { id: "washington-square-park", name: "Washington Square Park",              lat: 40.7308, lng: -73.9973, kind: "park" },
+  { id: "central-park",           name: "Central Park",                        lat: 40.7712, lng: -73.9742, kind: "park" },
 
   // landmarks
-  { id: "times-square",                   name: "Times Square",                                lat: 40.7580, lng: -73.9855, kind: "landmark", boundary: null },
-  { id: "fifth-ave-42nd-to-central-park", name: "Fifth Avenue (42nd St to Central Park)",      lat: 40.7575, lng: -73.9780, kind: "landmark", boundary: null },
-  { id: "fifth-ave-47th-to-57th",         name: "Fifth Ave, 47th to 57th St",                  lat: 40.7601, lng: -73.9750, kind: "landmark", boundary: null },
-  { id: "diamond-district-47th",          name: "47th St btwn 5th & 6th (Diamond District)",   lat: 40.7573, lng: -73.9794, kind: "landmark", boundary: null },
-  { id: "14th-st-1st-ave",                name: "14th St & 1st Ave / Ave A corners",           lat: 40.7317, lng: -73.9829, kind: "landmark", boundary: null },
-  { id: "bethesda-fountain",              name: "Central Park — Bethesda Fountain",            lat: 40.7659, lng: -73.9711, kind: "landmark", boundary: null },
-  { id: "central-park-rock",              name: "Central Park — the rock (near Heckscher)",    lat: 40.7690, lng: -73.9780, kind: "landmark", boundary: null },
-  { id: "sheep-meadow",                   name: "Central Park — Sheep Meadow",                 lat: 40.7719, lng: -73.9754, kind: "landmark", boundary: null },
-  { id: "sailboat-pond",                  name: "Central Park — sailboat pond",                lat: 40.7743, lng: -73.9668, kind: "landmark", boundary: null },
-  { id: "east-river-waterfront",          name: "East River waterfront",                       lat: 40.7290, lng: -73.9720, kind: "landmark", boundary: null },
-  { id: "west-side-highway",              name: "West Side Highway / Hudson waterfront",       lat: 40.7460, lng: -74.0086, kind: "landmark", boundary: null },
-  { id: "nyc-subway-elevated",            name: "NYC Subway (J/M/F elevated lines)",           lat: 40.7132, lng: -73.9576, kind: "landmark", boundary: null },
+  { id: "times-square",                   name: "Times Square",                                lat: 40.7580, lng: -73.9855, kind: "landmark" },
+  { id: "fifth-ave-42nd-to-central-park", name: "Fifth Avenue (42nd St to Central Park)",      lat: 40.7575, lng: -73.9780, kind: "landmark" },
+  { id: "fifth-ave-47th-to-57th",         name: "Fifth Ave, 47th to 57th St",                  lat: 40.7601, lng: -73.9750, kind: "landmark" },
+  { id: "diamond-district-47th",          name: "47th St btwn 5th & 6th (Diamond District)",   lat: 40.7573, lng: -73.9794, kind: "landmark" },
+  { id: "14th-st-1st-ave",                name: "14th St & 1st Ave / Ave A corners",           lat: 40.7317, lng: -73.9829, kind: "landmark" },
+  { id: "bethesda-fountain",              name: "Central Park — Bethesda Fountain",            lat: 40.7659, lng: -73.9711, kind: "landmark" },
+  { id: "central-park-rock",              name: "Central Park — the rock (near Heckscher)",    lat: 40.7690, lng: -73.9780, kind: "landmark" },
+  { id: "sheep-meadow",                   name: "Central Park — Sheep Meadow",                 lat: 40.7719, lng: -73.9754, kind: "landmark" },
+  { id: "sailboat-pond",                  name: "Central Park — sailboat pond",                lat: 40.7743, lng: -73.9668, kind: "landmark" },
+  { id: "east-river-waterfront",          name: "East River waterfront",                       lat: 40.7290, lng: -73.9720, kind: "landmark" },
+  { id: "west-side-highway",              name: "West Side Highway / Hudson waterfront",       lat: 40.7460, lng: -74.0086, kind: "landmark" },
+  { id: "nyc-subway-elevated",            name: "NYC Subway (J/M/F elevated lines)",           lat: 40.7132, lng: -73.9576, kind: "landmark" },
 ];
 
 const SOURCES = [
