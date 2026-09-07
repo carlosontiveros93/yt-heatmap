@@ -6,12 +6,19 @@ they actually shoot. Two layers of evidence from Paulie B's YouTube channel:
 - ["I asked photographers in NYC: Where should visitors go for street
   photography?"](https://www.youtube.com/watch?v=X0CbbpuR9vs) — ~10 photographers
   recommend spots for visitors and name their own favorites.
-- 16 episodes of the *Walkie Talkie* series — a day shooting with one
+- 36 episodes of the *Walkie Talkie* series — a day shooting with one
   photographer, usually on their home turf. Each mention records whether they
   shot there in the episode (`basis: "shot-here"`) or named it as a regular
   spot (`basis: "haunt"`). Only episodes with clear location signal were used;
   borough-level statements and biography ("I grew up in the Bronx") were not
   counted.
+
+Shapes follow one rule: **small and accurate beats large and lumped**. Where an
+official boundary is far bigger than what a photographer meant, a hand-drawn core
+replaces it, and overlapping spots (East Village, Tompkins Square Park, Alphabet
+City) are kept separate rather than merged. A place gets its own shape once a
+photographer names it specifically; one-person lists of many neighborhoods wait
+for a second mention.
 
 - `index.html` — the map page (Leaflet + leaflet.heat from CDN, OpenStreetMap tiles)
 - `data.js` — three tables: `SPOTS` (one per physical place: id, name, lat/lng,

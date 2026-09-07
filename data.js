@@ -66,6 +66,20 @@ const SPOTS = [
   { id: "grand-concourse",       name: "Grand Concourse (Bronx)",                   lat: 40.8700, lng: -73.8885, kind: "corridor" },
   { id: "roosevelt-ave-7-train", name: "Roosevelt Ave under the 7 train",           lat: 40.7500, lng: -73.8640, kind: "corridor" },
   { id: "eastern-parkway",       name: "Eastern Parkway (West Indian Day Carnival)", lat: 40.6700, lng: -73.9500, kind: "corridor" },
+
+  // added from Walkie Talkie batch 2
+  { id: "east-village",          name: "East Village",                              lat: 40.7275, lng: -73.9860, kind: "neighborhood" },
+  { id: "brighton-beach",        name: "Brighton Beach",                            lat: 40.5776, lng: -73.9613, kind: "neighborhood" },
+  { id: "howard-beach",          name: "Howard Beach (Queens)",                     lat: 40.6571, lng: -73.8362, kind: "neighborhood" },
+  { id: "bryant-park",           name: "Bryant Park / 42nd & 6th",                  lat: 40.7536, lng: -73.9832, kind: "park" },
+  { id: "east-river-park",       name: "East River Park",                           lat: 40.7180, lng: -73.9745, kind: "park" },
+  { id: "maria-hernandez-park",  name: "Maria Hernandez Park (Bushwick)",           lat: 40.7027, lng: -73.9236, kind: "park" },
+  { id: "grand-central",         name: "Grand Central Terminal",                    lat: 40.7527, lng: -73.9772, kind: "landmark" },
+  { id: "brooklyn-bridge",       name: "Brooklyn Bridge",                           lat: 40.7061, lng: -73.9969, kind: "landmark" },
+  { id: "foley-square",          name: "Foley Square / Civic Center",               lat: 40.7145, lng: -74.0030, kind: "landmark" },
+  { id: "williamsburg-bridge",   name: "Williamsburg Bridge",                       lat: 40.7132, lng: -73.9720, kind: "landmark" },
+  { id: "madison-avenue",        name: "Madison Avenue (42nd to 72nd)",             lat: 40.7621, lng: -73.9720, kind: "corridor" },
+  { id: "mulberry-street",       name: "Mulberry St / Little Italy (San Gennaro)",  lat: 40.7196, lng: -73.9963, kind: "corridor" },
 ];
 
 const SOURCES = [
@@ -92,6 +106,26 @@ const SOURCES = [
   { id: "wt-martha-cooper", title: "A Legend Returns. Martha Cooper Revisits NYC\u2019s Alphabet City (Walkie Talkie episode 48)", channel: "Paulie B", url: "https://www.youtube.com/watch?v=6z739MqlvHU" },
   { id: "wt-willie-velazquez", title: "Street Photography in Queens, NY | Walkie Talkie with Willie Velazquez", channel: "Paulie B", url: "https://www.youtube.com/watch?v=tPj3nl9EAc8" },
   { id: "wt-alex-brown", title: "Taking and Talking Street Photos in Soho & Williamsburg // Walkie Talkie with Alex Brown", channel: "Paulie B", url: "https://www.youtube.com/watch?v=eaw820DKBN0" },
+  { id: "wt-troy-williams", title: "A Day with NYC Photographer Troy Williams (Walkie Talkie Episode 87)", channel: "Paulie B", url: "https://www.youtube.com/watch?v=OSDCHi6h-7s" },
+  { id: "wt-conrad-ziolkowski", title: "A Madman's Pursuit -- a day with NYC Photographer Conrad Ziolkowski", channel: "Paulie B", url: "https://www.youtube.com/watch?v=jRtZhll2Few" },
+  { id: "wt-jas-leon", title: "a day with NYC photographer, Jas Leon -- Walkie Talkie NYC episode 45", channel: "Paulie B", url: "https://www.youtube.com/watch?v=3vNOgHvXz_g" },
+  { id: "wt-boris-apple", title: "Boris Apple / Walkie Talkie Ep. 35 / Black & White Film Photography", channel: "Paulie B", url: "https://www.youtube.com/watch?v=_nF-8nlLgTo" },
+  { id: "wt-new-york-nico", title: "a day with New York Nico (Walkie Talkie episode 47) -- Video street photography?", channel: "Paulie B", url: "https://www.youtube.com/watch?v=ckOa9C2zGoA" },
+  { id: "wt-dustin-roderick", title: "from Large Format Photos to 35mm Street Photography -- Walkie Talkie with Dustin Roderick (ep 41)", channel: "Paulie B", url: "https://www.youtube.com/watch?v=Zk1ZFkbmCuI" },
+  { id: "wt-trevor-wisecup", title: "a day with nyc Photographer Trevor Wisecup (Walkie Talkie ep. 27)", channel: "Paulie B", url: "https://www.youtube.com/watch?v=HjuP527Xt2Q" },
+  { id: "wt-lanna-apisukh", title: "A day with pro photographer Lanna Apisukh (Walkie Talkie episode 62)", channel: "Paulie B", url: "https://www.youtube.com/watch?v=eV_JY8JmHik" },
+  { id: "wt-izael-rivera-flores", title: "a day with Puerto Rican Photographer Izael Rivera Flores -- Walkie Talkie episode 19", channel: "Paulie B", url: "https://www.youtube.com/watch?v=CbxDq5txzo8" },
+  { id: "wt-melissa-oshaughnessy", title: "a day with NYC photographer Melissa O'Shaughnessy -- Walkie Talkie ep. 24", channel: "Paulie B", url: "https://www.youtube.com/watch?v=9yOLOI2Y2LU" },
+  { id: "wt-jorge-garcia", title: "Starting NYCSPC -- Walkie Talkie with Jorge Garcia (ep. 30) -- Founder of NYCSPC & ContactPhoto", channel: "Paulie B", url: "https://www.youtube.com/watch?v=_B37JNYImks" },
+  { id: "wt-john-wha", title: "Knowledge & Curiosity in Photography // Walkie Talkie with John Wha // NYC Street Photography Series", channel: "Paulie B", url: "https://www.youtube.com/watch?v=o-K4BwmVVNo" },
+  { id: "wt-conor-cunningham", title: "Contax G2 street photos in NYC // Walkie Talkie with Conor James Cunningham", channel: "Paulie B", url: "https://www.youtube.com/watch?v=uctqo-JrRes" },
+  { id: "wt-chris-voss", title: "NYC Street Photography at Night // Walkie Talkie with Chris Voss", channel: "Paulie B", url: "https://www.youtube.com/watch?v=cOTo3nMQtKg" },
+  { id: "wt-joe-greer", title: "a day with photographer Joe Greer -- Walkie Talkie episode 10", channel: "Paulie B", url: "https://www.youtube.com/watch?v=8bvL2lZKgOA" },
+  { id: "wt-andre-d-wagner", title: "a day with Andre D. Wagner -- NYC Street Photography -- Walkie Talkie ep. 16", channel: "Paulie B", url: "https://www.youtube.com/watch?v=i1szgcB9Ono" },
+  { id: "wt-sabrina-santiago", title: "a day with photographer Sabrina Santiago (Walkie Talkie episode 46)", channel: "Paulie B", url: "https://www.youtube.com/watch?v=6QfLCGvF0aw" },
+  { id: "wt-daniel-arnold", title: "A day with photographer Daniel Arnold (Walkie Talkie episode 39)", channel: "Paulie B", url: "https://www.youtube.com/watch?v=7LwnTdrX9Vg" },
+  { id: "wt-tyler-woodford", title: "shoot what you love to shoot -- Walkie Talkie with Tyler Woodford (ep 42)", channel: "Paulie B", url: "https://www.youtube.com/watch?v=WG2cKx-htP4" },
+  { id: "wt-stephanie-keith", title: "A Day with NYC Photojournalist Stephanie Keith | Walkie Talkie", channel: "Paulie B", url: "https://www.youtube.com/watch?v=YQtUQ7KYv64" },
 ];
 
 const SRC = "paulie-b-where-to-shoot";
@@ -216,4 +250,73 @@ const MENTIONS = [
   { spotId: "soho", sourceId: "wt-alex-brown", speaker: "Alex Brown", type: "walkie-talkie", basis: "shot-here", timestamp: 23, quote: "“Beautiful Soho, we're right now on Broadway.” The Prince/Spring corner is “where I spend most of my time in Soho.”" },
   { spotId: "midtown", sourceId: "wt-alex-brown", speaker: "Alex Brown", type: "walkie-talkie", basis: "haunt", timestamp: 83, quote: "“Midtown during the week is usually good.”" },
   { spotId: "williamsburg", sourceId: "wt-alex-brown", speaker: "Alex Brown", type: "walkie-talkie", basis: "shot-here", timestamp: 749, quote: "“I definitely want to get to Williamsburg today… let's just go.”" },
+
+  // Walkie Talkie batch 2
+
+  { spotId: "tompkins-square-park", sourceId: "wt-troy-williams", speaker: "Troy Williams", type: "walkie-talkie", basis: "shot-here", timestamp: 42, quote: "“My favorite park in the city… this is the spot that I always come back to.”" },
+  { spotId: "alphabet-city", sourceId: "wt-troy-williams", speaker: "Troy Williams", type: "walkie-talkie", basis: "shot-here", timestamp: 40, quote: "“This is in the East Village, Alphabet City.” Shoots the La Plaza Cultural garden on Ave C." },
+  { spotId: "east-village", sourceId: "wt-troy-williams", speaker: "Troy Williams", type: "walkie-talkie", basis: "haunt", timestamp: 231, quote: "“Mostly I really was focusing on the East Village right away.”" },
+
+  { spotId: "brighton-beach", sourceId: "wt-conrad-ziolkowski", speaker: "Conrad Ziolkowski", type: "walkie-talkie", basis: "shot-here", timestamp: 18, quote: "“We're here in Brighton Beach, where I'm from… we're out shooting” — the boardwalk, the jetty, the avenue." },
+  { spotId: "midtown", sourceId: "wt-conrad-ziolkowski", speaker: "Conrad Ziolkowski", type: "walkie-talkie", basis: "haunt", timestamp: 1043, quote: "“I go there usually three to four days [a week]. I'm there more than I am anywhere else.”" },
+  { spotId: "coney-island", sourceId: "wt-conrad-ziolkowski", speaker: "Conrad Ziolkowski", type: "walkie-talkie", basis: "haunt", timestamp: 1819, quote: "“Usually I'll hit Brighton Beach or walk through Coney.”" },
+  { spotId: "sunset-park", sourceId: "wt-conrad-ziolkowski", speaker: "Conrad Ziolkowski", type: "walkie-talkie", basis: "haunt", timestamp: 1825, quote: "“I'll walk all the way down to Sunset Park sometimes.”" },
+  { spotId: "howard-beach", sourceId: "wt-conrad-ziolkowski", speaker: "Conrad Ziolkowski", type: "walkie-talkie", basis: "haunt", timestamp: 324, quote: "Shoots the neighborhoods around Jamaica Bay — “going out to Howard Beach, Rockaway, Ozone Park. Mostly medium format out there.”" },
+
+  { spotId: "madison-avenue", sourceId: "wt-jas-leon", speaker: "Jas Leon", type: "walkie-talkie", basis: "shot-here", timestamp: 34, quote: "Starts at Madison & 72nd and walks down Madison into the park." },
+  { spotId: "central-park", sourceId: "wt-jas-leon", speaker: "Jas Leon", type: "walkie-talkie", basis: "shot-here", timestamp: 671, quote: "“I like to enter through Central Park because it gives you a zen moment.”" },
+  { spotId: "midtown", sourceId: "wt-jas-leon", speaker: "Jas Leon", type: "walkie-talkie", basis: "shot-here", timestamp: 758, quote: "Her route: Madison Ave → Central Park → 6th Ave → Midtown, all the way down to 14th St." },
+
+  { spotId: "central-park", sourceId: "wt-boris-apple", speaker: "Boris Apple", type: "walkie-talkie", basis: "shot-here", timestamp: 120, quote: "“As long as I've lived here, and before I lived here, I would make this a solid checkpoint.”" },
+  { spotId: "east-river-park", sourceId: "wt-boris-apple", speaker: "Boris Apple", type: "walkie-talkie", basis: "shot-here", timestamp: 1382, quote: "“Trying to take a decent amount of photos of this park changing over the last two years.”" },
+
+  { spotId: "mulberry-street", sourceId: "wt-new-york-nico", speaker: "New York Nico", type: "walkie-talkie", basis: "shot-here", timestamp: 164, quote: "“An Italian feast in the middle of Little Italy” — shoots San Gennaro by day and comes back at night." },
+  { spotId: "washington-square-park", sourceId: "wt-new-york-nico", speaker: "New York Nico", type: "walkie-talkie", basis: "haunt", timestamp: 770, quote: "Filmed a wedding proposal here; Larry the Birdman of Washington Square is a regular subject." },
+  { spotId: "coney-island", sourceId: "wt-new-york-nico", speaker: "New York Nico", type: "walkie-talkie", basis: "haunt", timestamp: 367, quote: "“Coney Island Polar Plunge is a big one.”" },
+
+  { spotId: "prospect-park", sourceId: "wt-dustin-roderick", speaker: "Dustin Roderick", type: "walkie-talkie", basis: "shot-here", timestamp: 733, quote: "“On average three to four times a week doing this kind of loop.”" },
+  { spotId: "midtown", sourceId: "wt-dustin-roderick", speaker: "Dustin Roderick", type: "walkie-talkie", basis: "haunt", timestamp: 2107, quote: "“I really enjoy going to Midtown for street stuff, 'cause there's a lot of people.”" },
+  { spotId: "financial-district", sourceId: "wt-dustin-roderick", speaker: "Dustin Roderick", type: "walkie-talkie", basis: "shot-here", timestamp: 2122, quote: "Winter street shooting downtown — “I've never been over here really, to the Wall Street Bull.”" },
+
+  { spotId: "madison-avenue", sourceId: "wt-trevor-wisecup", speaker: "Trevor Wisecup", type: "walkie-talkie", basis: "shot-here", timestamp: 103, quote: "“I started a new project. It's Madison Avenue… I'm documenting Lexington and Madison. I'm trying to make a book.”" },
+  { spotId: "bryant-park", sourceId: "wt-trevor-wisecup", speaker: "Trevor Wisecup", type: "walkie-talkie", basis: "haunt", timestamp: 189, quote: "“One of my favorite photos I've ever taken was actually in Bryant Park.”" },
+
+  { spotId: "maria-hernandez-park", sourceId: "wt-izael-rivera-flores", speaker: "Izael Rivera Flores", type: "walkie-talkie", basis: "shot-here", timestamp: 465, quote: "“We are in Bushwick, Myrtle-Wyckoff… Maria Hernandez Park, a very famous park here.” Part of his regular route." },
+  { spotId: "coney-island", sourceId: "wt-izael-rivera-flores", speaker: "Izael Rivera Flores", type: "walkie-talkie", basis: "haunt", timestamp: 642, quote: "“I've been in Coney Island four years — for me it's my favorite place to shoot.”" },
+
+  { spotId: "fifth-ave-42nd-to-central-park", sourceId: "wt-melissa-oshaughnessy", speaker: "Melissa O'Shaughnessy", type: "walkie-talkie", basis: "shot-here", timestamp: 2020, quote: "“What makes Fifth Avenue good is when the sidewalks get really crowded.”" },
+
+  { spotId: "grand-central", sourceId: "wt-jorge-garcia", speaker: "Jorge Garcia", type: "walkie-talkie", basis: "shot-here", timestamp: 91, quote: "“This here is Grand Central.”" },
+  { spotId: "midtown", sourceId: "wt-jorge-garcia", speaker: "Jorge Garcia", type: "walkie-talkie", basis: "shot-here", timestamp: 96, quote: "“We're just gonna wander around Midtown… do the Midtown thing.”" },
+
+  { spotId: "central-park", sourceId: "wt-john-wha", speaker: "John Wha", type: "walkie-talkie", basis: "shot-here", timestamp: 275, quote: "“Just wanted to dip in and see what was going on.”" },
+  { spotId: "fifth-ave-47th-to-57th", sourceId: "wt-john-wha", speaker: "John Wha", type: "walkie-talkie", basis: "shot-here", timestamp: 540, quote: "Shooting at St. Patrick's Cathedral, 5th & 50th." },
+  { spotId: "times-square", sourceId: "wt-john-wha", speaker: "John Wha", type: "walkie-talkie", basis: "shot-here", timestamp: 1064, quote: "“I have no problems with it at all… I'll dip through here every now and again.”" },
+  { spotId: "midtown", sourceId: "wt-john-wha", speaker: "John Wha", type: "walkie-talkie", basis: "haunt", timestamp: 2052, quote: "“I've been kind of obsessed with Midtown recently.”" },
+  { spotId: "brooklyn-bridge", sourceId: "wt-john-wha", speaker: "John Wha", type: "walkie-talkie", basis: "shot-here", timestamp: 2040, quote: "“Brooklyn Bridge, here we come — round two.”" },
+  { spotId: "washington-square-park", sourceId: "wt-john-wha", speaker: "John Wha", type: "walkie-talkie", basis: "haunt", timestamp: 1381, quote: "“In Washington Square I'll shoot the fountain every now and again.”" },
+
+  { spotId: "bryant-park", sourceId: "wt-conor-cunningham", speaker: "Conor James Cunningham", type: "walkie-talkie", basis: "haunt", timestamp: 339, quote: "“I really like 42nd and 6th, that area, because it gets a lot of light.”" },
+  { spotId: "coney-island", sourceId: "wt-conor-cunningham", speaker: "Conor James Cunningham", type: "walkie-talkie", basis: "haunt", timestamp: 361, quote: "“I also really like shooting Coney. I think Coney might be my favorite.”" },
+
+  { spotId: "midtown", sourceId: "wt-chris-voss", speaker: "Chris Voss", type: "walkie-talkie", basis: "shot-here", timestamp: 188, quote: "Shooting Midtown at night." },
+  { spotId: "times-square", sourceId: "wt-chris-voss", speaker: "Chris Voss", type: "walkie-talkie", basis: "haunt", timestamp: 503, quote: "“It's a good time of year for Times Square at night — I love it. Last weekend was good because it was Fleet Week.”" },
+
+  { spotId: "soho", sourceId: "wt-joe-greer", speaker: "Joe Greer", type: "walkie-talkie", basis: "shot-here", timestamp: 53, quote: "“I probably put through six rolls here in Soho… I love this corner, it's so photogenic.”" },
+  { spotId: "coney-island", sourceId: "wt-joe-greer", speaker: "Joe Greer", type: "walkie-talkie", basis: "haunt", timestamp: 576, quote: "“Coney right now is one of my favorite, if not my favorite, place to shoot.”" },
+
+  { spotId: "bushwick", sourceId: "wt-andre-d-wagner", speaker: "Andre D. Wagner", type: "walkie-talkie", basis: "shot-here", timestamp: 105, quote: "“My old neighborhood, the Bushwick/Bed-Stuy border… I've been photographing this spot for years.” Started out shooting on Broadway under the el." },
+
+  { spotId: "14th-st-1st-ave", sourceId: "wt-sabrina-santiago", speaker: "Sabrina Santiago", type: "walkie-talkie", basis: "shot-here", timestamp: 46, quote: "“We're on 14th and 1st — I chose here. A stop I usually get off at if I don't know where I want to go.”" },
+  { spotId: "lower-east-side", sourceId: "wt-sabrina-santiago", speaker: "Sabrina Santiago", type: "walkie-talkie", basis: "haunt", timestamp: 85, quote: "“Delancey Street is one of my favorite streets.”" },
+  { spotId: "williamsburg-bridge", sourceId: "wt-sabrina-santiago", speaker: "Sabrina Santiago", type: "walkie-talkie", basis: "haunt", timestamp: 91, quote: "“The mouth of the Williamsburg Bridge — I'm always crossing the Williamsburg Bridge.”" },
+  { spotId: "mulberry-street", sourceId: "wt-sabrina-santiago", speaker: "Sabrina Santiago", type: "walkie-talkie", basis: "shot-here", timestamp: 1013, quote: "“About to hit the Feast of San Gennaro, a big Italian festival here in the city.”" },
+
+  { spotId: "fifth-ave-42nd-to-central-park", sourceId: "wt-daniel-arnold", speaker: "Daniel Arnold", type: "walkie-talkie", basis: "shot-here", timestamp: 3112, quote: "“Isn't it such a pleasure to walk up Fifth Avenue? It feels like my old friend… the darkness of 55th and Fifth, oh, so cozy.”" },
+
+  { spotId: "howard-beach", sourceId: "wt-tyler-woodford", speaker: "Tyler Woodford", type: "walkie-talkie", basis: "shot-here", timestamp: 376, quote: "“Right here in Howard Beach making some photographs… I've been coming out here for a year and a half, two years. Charles Park is my favorite walk.”" },
+
+  { spotId: "foley-square", sourceId: "wt-stephanie-keith", speaker: "Stephanie Keith", type: "walkie-talkie", basis: "shot-here", timestamp: 41, quote: "“We're at Foley Square.” Her beat: the criminal courthouse perp-walk hallway, 26 Federal Plaza." },
+  { spotId: "tompkins-square-park", sourceId: "wt-stephanie-keith", speaker: "Stephanie Keith", type: "walkie-talkie", basis: "haunt", timestamp: 1192, quote: "“If there's punk shows in Tompkins Square Park, I definitely want to photograph those.”" },
+  { spotId: "coney-island", sourceId: "wt-stephanie-keith", speaker: "Stephanie Keith", type: "walkie-talkie", basis: "haunt", timestamp: 2123, quote: "“I love the Mermaid Parade.”" },
 ];
