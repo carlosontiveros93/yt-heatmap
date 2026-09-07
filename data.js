@@ -44,7 +44,7 @@ const SPOTS = [
   { id: "14th-st-1st-ave",                name: "14th St & 1st Ave / Ave A corners",           lat: 40.7317, lng: -73.9829, kind: "landmark", boundary: null },
   { id: "bethesda-fountain",              name: "Central Park — Bethesda Fountain",            lat: 40.7659, lng: -73.9711, kind: "landmark", boundary: null },
   { id: "central-park-rock",              name: "Central Park — the rock (near Heckscher)",    lat: 40.7690, lng: -73.9780, kind: "landmark", boundary: null },
-  { id: "sailboat-pond",                  name: "Central Park — sailboat pond",                lat: 40.7740, lng: -73.9526, kind: "landmark", boundary: null },
+  { id: "sailboat-pond",                  name: "Central Park — sailboat pond",                lat: 40.7743, lng: -73.9668, kind: "landmark", boundary: null },
   { id: "east-river-waterfront",          name: "East River waterfront",                       lat: 40.7290, lng: -73.9720, kind: "landmark", boundary: null },
   { id: "west-side-highway",              name: "West Side Highway / Hudson waterfront",       lat: 40.7460, lng: -74.0086, kind: "landmark", boundary: null },
   { id: "nyc-subway-elevated",            name: "NYC Subway (J/M/F elevated lines)",           lat: 40.7132, lng: -73.9576, kind: "landmark", boundary: null },
