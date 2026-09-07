@@ -1,0 +1,112 @@
+{
+  "videoId": "OSDCHi6h-7s",
+  "guest": "Troy Williams",
+  "shotToday": [
+    "Tompkins Square Park",
+    "La Plaza Cultural community garden",
+    "East Village / Alphabet City"
+  ],
+  "mentions": [
+    {
+      "place": "Tompkins Square Park",
+      "type": "shot-here",
+      "speaker": "Troy Williams",
+      "timestamp": 39,
+      "quote": "We're in Tompkins Square Park.",
+      "confidence": "high"
+    },
+    {
+      "place": "Tompkins Square Park",
+      "type": "haunt",
+      "speaker": "Troy Williams",
+      "timestamp": 42,
+      "quote": "This is my favorite park in the city... this is like the spot that I always come back to",
+      "confidence": "high"
+    },
+    {
+      "place": "East Village / Alphabet City",
+      "type": "shot-here",
+      "speaker": "Troy Williams",
+      "timestamp": 40,
+      "quote": "This is uh in the East Village, Alphabet City.",
+      "confidence": "high"
+    },
+    {
+      "place": "East Village",
+      "type": "haunt",
+      "speaker": "Troy Williams",
+      "timestamp": 231,
+      "quote": "mostly, I really was focusing on the East Village right away",
+      "confidence": "high"
+    },
+    {
+      "place": "La Plaza Cultural community garden",
+      "type": "shot-here",
+      "speaker": "Troy Williams",
+      "timestamp": 411,
+      "quote": "I think it's La Plaza Cultural, is what it's called.",
+      "confidence": "high"
+    },
+    {
+      "place": "Search and Destroy steps (East Village)",
+      "type": "haunt",
+      "speaker": "Troy Williams",
+      "timestamp": 852,
+      "quote": "hang out here and hang out on the Search and Destroy steps",
+      "confidence": "medium",
+      "note": "Named as a spot where he regularly photographs kids who hang out there, but not visited on camera during this video."
+    },
+    {
+      "place": "Midtown",
+      "type": "haunt",
+      "speaker": "Troy Williams",
+      "timestamp": 952,
+      "quote": "I've been trying to shoot in in other parts, too, like go up to Midtown",
+      "confidence": "medium",
+      "note": "Named as a place he's been trying to shoot occasionally, not confirmed as a regular haunt; not visited during this video."
+    },
+    {
+      "place": "Financial District",
+      "type": "haunt",
+      "speaker": "Troy Williams",
+      "timestamp": 959,
+      "quote": "go to Financial District",
+      "confidence": "medium",
+      "note": "Listed alongside Midtown as somewhere he's tried shooting occasionally; not visited during this video."
+    }
+  ],
+  "excluded": [
+    {
+      "place": "Brooklyn",
+      "reason": "Only mentioned as where he currently lives (bio), not named as a shooting location; also a whole borough with no more specific place given."
+    },
+    {
+      "place": "South Dakota / Minneapolis",
+      "reason": "Non-NYC places, mentioned only as biography (grew up / went to college there)."
+    },
+    {
+      "place": "9th Street and Avenue C (old apartment)",
+      "reason": "Pure biography (where he used to live); he offers to walk there and show the old apartment but the transcript never confirms they actually go, and no shooting there is mentioned."
+    },
+    {
+      "place": "Bedford Avenue, Williamsburg",
+      "reason": "Mentioned only as a nostalgic personal hangout ('crazy fun') he now avoids because it's sad; not stated to be a place he shoots or shot."
+    },
+    {
+      "place": "80th Street",
+      "reason": "Too vague/non-specific ('80th Street or something'), no borough or cross-street given."
+    },
+    {
+      "place": "Strand Bookstore",
+      "reason": "Mentioned as a place he browses photo books, not a street-photography shooting location."
+    },
+    {
+      "place": "Village Works",
+      "reason": "Named as a neighborhood landmark/staple business he passes, but not stated as a place he photographs."
+    },
+    {
+      "place": "Sephora on the corner",
+      "reason": "Mentioned hypothetically/critically about neighborhood gentrification, not as an actual or intended shooting location."
+    }
+  ]
+}

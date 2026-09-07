@@ -1,0 +1,72 @@
+{
+  "videoId": "cOTo3nMQtKg",
+  "guest": "Chris Voss",
+  "shotToday": ["Midtown Manhattan", "Times Square"],
+  "mentions": [
+    {
+      "place": "Midtown Manhattan",
+      "type": "shot-here",
+      "speaker": "Paulie B",
+      "timestamp": 188,
+      "quote": "today's a little different we're we're still in midtown ... we're actually shooting like the night time",
+      "confidence": "high"
+    },
+    {
+      "place": "Times Square",
+      "type": "shot-here",
+      "speaker": "Paulie B",
+      "timestamp": 214,
+      "quote": "plan is shoot around like times square ish yeah like towards up there",
+      "confidence": "medium",
+      "note": "stated as the plan before setting out; later dialogue about a favorite Times Square photo and a fleet week shoot there confirms they were in the area"
+    },
+    {
+      "place": "Fifth Avenue",
+      "type": "haunt",
+      "speaker": "Chris Voss",
+      "timestamp": 361,
+      "quote": "i worked at the met and i would just walk down fifth avenue ... just walked straight down fifth avenue after work ... and shoot",
+      "confidence": "medium",
+      "note": "described as a past regular habit (walking home from his job at the Met) rather than a stated current haunt"
+    },
+    {
+      "place": "Times Square",
+      "type": "haunt",
+      "speaker": "Chris Voss",
+      "timestamp": 503,
+      "quote": "it's a good time of year for times square like at night yeah i love it, last weekend was good because it was fleet week",
+      "confidence": "high"
+    },
+    {
+      "place": "Joe's Pizza",
+      "type": "shot-here",
+      "speaker": "Chris Voss",
+      "timestamp": 540,
+      "quote": "i got i got them eating joe's pizza like like five of them eating pizza",
+      "confidence": "medium",
+      "note": "recounted as part of the Times Square/fleet week photos; not explicitly stated to be a location distinct from Times Square itself"
+    }
+  ],
+  "excluded": [
+    {
+      "place": "Lower East Side",
+      "reason": "only mentioned as a plan for later that night (\"probably above down to like lower east side\"); transcript never confirms they actually got there"
+    },
+    {
+      "place": "34th Street",
+      "reason": "mentioned generically (\"not just a bunch of dudes on 34th street\") describing the street-photography community's reputation, not stated as Chris's own shooting spot"
+    },
+    {
+      "place": "San Francisco Bay Area / California",
+      "reason": "non-NYC place; discussed as where Chris is from and shot before moving to NYC"
+    },
+    {
+      "place": "unnamed church",
+      "reason": "a church is visited and photographed (~14:17-15:34) but never named or specifically identified, so it can't be recorded as a specific place"
+    },
+    {
+      "place": "unnamed area near end of walk (\"this place is weird\")",
+      "reason": "referenced around 17:32 but no specific place name is given, only a vague description"
+    }
+  ]
+}

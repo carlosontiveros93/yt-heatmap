@@ -1,0 +1,53 @@
+{
+  "videoId": "_B37JNYImks",
+  "guest": "Jorge Garcia",
+  "shotToday": ["Grand Central Terminal", "Midtown Manhattan"],
+  "mentions": [
+    {
+      "place": "Grand Central Terminal",
+      "type": "shot-here",
+      "speaker": "Jorge Garcia",
+      "timestamp": 91,
+      "quote": "this here is Grand Central",
+      "confidence": "high"
+    },
+    {
+      "place": "Midtown Manhattan",
+      "type": "shot-here",
+      "speaker": "Jorge Garcia",
+      "timestamp": 96,
+      "quote": "we're just gonna wander around Midtown ... so we're gonna do the Midtown thing",
+      "confidence": "high"
+    }
+  ],
+  "excluded": [
+    {
+      "place": "Tampa, Florida",
+      "reason": "Non-NYC place; biographical (where guest is from and took a community college photo class), not a shooting location claim."
+    },
+    {
+      "place": "Fifth Avenue",
+      "reason": "Mentioned only as the setting of a single anecdotal past photo (the 'cowboy' story), not stated as a regular spot he shoots and not visited during this video's walk."
+    },
+    {
+      "place": "Filipino Embassy (NYC)",
+      "reason": "Mentioned only as the location of one specific memorable past photo (April 2018 crosswalk shot), not claimed as a recurring haunt, and not visited during this video's walk."
+    },
+    {
+      "place": "Newport, Rhode Island",
+      "reason": "Non-NYC place; setting of a single anecdotal past photo."
+    },
+    {
+      "place": "Bogota",
+      "reason": "Non-NYC place, mentioned as a hypothetical travel destination example."
+    },
+    {
+      "place": "Tokyo",
+      "reason": "Non-NYC place, mentioned as a hypothetical travel destination example."
+    },
+    {
+      "place": "New York City (general)",
+      "reason": "Whole-city reference, not a specific place; used generically ('the New York thing', 'moved to New York')."
+    }
+  ]
+}

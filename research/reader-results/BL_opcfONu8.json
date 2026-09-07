@@ -1,0 +1,50 @@
+{
+  "videoId": "BL_opcfONu8",
+  "guest": "Tyler Woodford",
+  "shotToday": [],
+  "mentions": [
+    {
+      "place": "Ozone Park",
+      "type": "haunt",
+      "speaker": "Tyler Woodford",
+      "timestamp": 256,
+      "quote": "I was finding places that I never thought like what New York would even look like like Ozone Park",
+      "confidence": "high"
+    },
+    {
+      "place": "Highland Park",
+      "type": "haunt",
+      "speaker": "Tyler Woodford",
+      "timestamp": 258,
+      "quote": "or like parts of Highland Park",
+      "confidence": "medium",
+      "note": "Named as one of the neighborhoods found via his recurring bike-and-shoot routine, alongside Ozone Park; slightly less explicit than Ozone Park since it's the tail of the same sentence."
+    }
+  ],
+  "excluded": [
+    {
+      "place": "Manhattan",
+      "reason": "Whole borough with no more specific location; referenced repeatedly as where he used to/no longer shoots, but never narrowed down."
+    },
+    {
+      "place": "Brooklyn",
+      "reason": "Whole borough, no more specific place given (\"deeper Parts like Brooklyn\", \"riding my bike miles into Brooklyn\")."
+    },
+    {
+      "place": "Queens",
+      "reason": "Whole borough with no more specific place (\"exploring Queens\")."
+    },
+    {
+      "place": "Ventura, California",
+      "reason": "Non-NYC place (his hometown)."
+    },
+    {
+      "place": "New York book fair",
+      "reason": "Mentioned only as where he met a photographer he admires; not a shooting location."
+    },
+    {
+      "place": "Culture (coffee spot)",
+      "reason": "A coffee shop he frequents, not a place he shoots; shops/restaurants excluded per rules."
+    }
+  ]
+}

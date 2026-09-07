@@ -1,0 +1,82 @@
+{
+  "videoId": "o-K4BwmVVNo",
+  "guest": "John Wha",
+  "shotToday": ["Central Park", "St. Patrick's Cathedral", "Times Square", "Brooklyn Bridge"],
+  "mentions": [
+    {
+      "place": "Central Park",
+      "type": "shot-here",
+      "speaker": "John Wha",
+      "timestamp": 275,
+      "quote": "yeah i just wanted to dip in and see what was going on",
+      "confidence": "high"
+    },
+    {
+      "place": "St. Patrick's Cathedral",
+      "type": "shot-here",
+      "speaker": "Paulie B",
+      "timestamp": 540,
+      "quote": "here we are at st patrick's cathedral iconic st patrick's cathedral",
+      "confidence": "high"
+    },
+    {
+      "place": "Times Square",
+      "type": "shot-here",
+      "speaker": "John Wha",
+      "timestamp": 1064,
+      "quote": "i have no problems with it at all ... i'll dip through here every now and again",
+      "confidence": "high"
+    },
+    {
+      "place": "Midtown",
+      "type": "haunt",
+      "speaker": "John Wha",
+      "timestamp": 2052,
+      "quote": "i've been kind of obsessed with midtown recently ... i guess midtown",
+      "confidence": "high"
+    },
+    {
+      "place": "Brooklyn Bridge",
+      "type": "shot-here",
+      "speaker": "Paulie B",
+      "timestamp": 2040,
+      "quote": "brooklyn bridge here we come round two",
+      "confidence": "high"
+    },
+    {
+      "place": "Washington Square (fountain)",
+      "type": "haunt",
+      "speaker": "John Wha",
+      "timestamp": 1381,
+      "quote": "in washington square i'll shoot the fountain every now and again",
+      "confidence": "medium",
+      "note": "Named as a recurring spot but not visited during this video; the anecdote about wet shoes is from a past Pride event there, not today."
+    }
+  ],
+  "excluded": [
+    {
+      "place": "Bloomingdale's (bathroom)",
+      "reason": "Mentioned only as a bathroom pit-stop joke, not as a place he photographs."
+    },
+    {
+      "place": "Union Square",
+      "reason": "Only raised as Paulie B's incorrect guess for where a rally anecdote happened; guest corrects it was Times Square, so Union Square is never confirmed as a shooting location."
+    },
+    {
+      "place": "New York City (general)",
+      "reason": "Pure biography / general love of the city ('grew up in new york', 'i've been in new york since 1979') with no specific location named."
+    },
+    {
+      "place": "Korea",
+      "reason": "Non-NYC place (recent trip); biographical/identity discussion, not a shooting location claim."
+    },
+    {
+      "place": "Mount Rushmore",
+      "reason": "Used only as a figure of speech ('mount rushmore of photo books'), not an actual place."
+    },
+    {
+      "place": "Hartford",
+      "reason": "Non-NYC place, mentioned only as where a photographer he admires studied (MFA program), not a location he shoots."
+    }
+  ]
+}

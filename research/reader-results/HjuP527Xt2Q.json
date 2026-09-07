@@ -1,0 +1,91 @@
+{
+  "videoId": "HjuP527Xt2Q",
+  "guest": "Trevor Wisecup",
+  "shotToday": [
+    "Madison Avenue",
+    "54th and Madison",
+    "Lexington Avenue and Madison Avenue",
+    "Park Avenue"
+  ],
+  "mentions": [
+    {
+      "place": "Madison Avenue",
+      "type": "shot-here",
+      "speaker": "Trevor Wisecup",
+      "timestamp": 103,
+      "quote": "I started a new project. It's Madison Avenue. We're going to go there today.",
+      "confidence": "high"
+    },
+    {
+      "place": "Bryant Park",
+      "type": "haunt",
+      "speaker": "Trevor Wisecup",
+      "timestamp": 189,
+      "quote": "One of my favorite photos I've ever taken was actually in Bryant Park.",
+      "confidence": "medium",
+      "note": "Describes a favorite past photo and characterizes the park's vibe in detail (a 'safe house'/'chill spot'), implying familiarity, but he doesn't explicitly say he shoots there regularly, and it's not visited in this video."
+    },
+    {
+      "place": "54th and Madison",
+      "type": "shot-here",
+      "speaker": "Trevor Wisecup",
+      "timestamp": 554,
+      "quote": "This is uh 54th and Madison.",
+      "confidence": "high"
+    },
+    {
+      "place": "Park Avenue",
+      "type": "shot-here",
+      "speaker": "Trevor Wisecup",
+      "timestamp": 1211,
+      "quote": "Four weirdos on a corner, on Park Avenue, you know?",
+      "confidence": "high"
+    },
+    {
+      "place": "Lexington Avenue and Madison Avenue",
+      "type": "shot-here",
+      "speaker": "Trevor Wisecup",
+      "timestamp": 1535,
+      "quote": "I'm documenting like Lexington and Madison. I'm trying to make a book.",
+      "confidence": "high"
+    }
+  ],
+  "excluded": [
+    {
+      "place": "5th Avenue (woman with jacket photo)",
+      "reason": "Trevor names one specific past photograph taken there, but doesn't say he shoots there regularly and it isn't visited in this video; too thin to count as a haunt."
+    },
+    {
+      "place": "5th Avenue (Bruce Gilden's book)",
+      "reason": "This is Bruce Gilden's project location mentioned as a comparison, not a place Trevor himself shoots."
+    },
+    {
+      "place": "Virginia (childhood front door)",
+      "reason": "Non-NYC location; also a personal/biographical photo of his mother, not a street-photography haunt."
+    },
+    {
+      "place": "Key West",
+      "reason": "Non-NYC location (personal photo of his mother on a boat)."
+    },
+    {
+      "place": "Joe Coffee",
+      "reason": "Mentioned only as his former workplace / how he discovered photography (biography), not a shooting location."
+    },
+    {
+      "place": "The Met / MoMA",
+      "reason": "Named only as an aspirational goal for where his work might be exhibited, not a shooting location."
+    },
+    {
+      "place": "Subway steps (kissing couple photo)",
+      "reason": "No specific NYC place/station named, too vague to identify as a location."
+    },
+    {
+      "place": "1/2/3 subway line",
+      "reason": "Mentioned only as background detail in one photo's description; no specific station or shooting-haunt claim."
+    },
+    {
+      "place": "Virginia (hometown, general)",
+      "reason": "Pure biography ('I'm from Virginia') and non-NYC."
+    }
+  ]
+}

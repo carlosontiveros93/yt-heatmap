@@ -1,0 +1,84 @@
+{
+  "videoId": "4-0WmQncp5o",
+  "guest": "Jaclyn Licht",
+  "shotToday": [
+    "Lower East Side (near the Delancey St–Essex St subway stop), Manhattan"
+  ],
+  "mentions": [
+    {
+      "place": "Lower East Side (Delancey St–Essex St)",
+      "type": "shot-here",
+      "speaker": "Jaclyn Licht",
+      "timestamp": 31,
+      "quote": "we're here in the Lower East Side right now off the Delancey Essex stop",
+      "confidence": "high"
+    },
+    {
+      "place": "Midtown Manhattan",
+      "type": "haunt",
+      "speaker": "Jaclyn Licht",
+      "timestamp": 207,
+      "quote": "on my lunch breaks would always sneak away and just wander around midtown",
+      "confidence": "medium",
+      "note": "described as a past habit during her old job, not stated as an ongoing haunt, but she did regularly shoot there"
+    },
+    {
+      "place": "United Nations Headquarters",
+      "type": "haunt",
+      "speaker": "Jaclyn Licht",
+      "timestamp": 245,
+      "quote": "the UN also became kind of a playground for street photography",
+      "confidence": "high"
+    },
+    {
+      "place": "Lower East Side, Chinatown, and Little Italy, Manhattan",
+      "type": "haunt",
+      "speaker": "Jaclyn Licht",
+      "timestamp": 1145,
+      "quote": "I really enjoy coming into Manhattan often, especially Lower East Side and Chinatown, Little Italy",
+      "confidence": "high"
+    }
+  ],
+  "excluded": [
+    {
+      "place": "Brooklyn",
+      "reason": "stated only as where she lives (biography), no mention of shooting there; also a whole borough with no more specific spot"
+    },
+    {
+      "place": "The Bronx (non-profit headquarters welcome party)",
+      "reason": "one-off assignment anecdote, not a stated regular haunt; no specific venue named beyond an unspecified 'headquarters' in the borough"
+    },
+    {
+      "place": "Bushwick (old NYC SPG gallery)",
+      "reason": "venue for attending photo critiques, not a place she shoots"
+    },
+    {
+      "place": "Providence, Rhode Island",
+      "reason": "non-NYC"
+    },
+    {
+      "place": "Boston",
+      "reason": "non-NYC biography (where she's from)"
+    },
+    {
+      "place": "Pennsylvania / Allentown",
+      "reason": "non-NYC (road trip assignment)"
+    },
+    {
+      "place": "Uganda",
+      "reason": "non-NYC"
+    },
+    {
+      "place": "London",
+      "reason": "non-NYC (saw a Lee Miller exhibition there)"
+    },
+    {
+      "place": "JFK Airport",
+      "reason": "mentioned only as where immigrants' plane landed at midnight; she wasn't there, only at the Bronx welcome party after"
+    },
+    {
+      "place": "New York City (general)",
+      "reason": "too broad/generic ('the streets of New York as my playground'); not a specific place"
+    }
+  ]
+}

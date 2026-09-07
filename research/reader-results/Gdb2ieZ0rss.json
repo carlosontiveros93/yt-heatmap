@@ -1,0 +1,61 @@
+{
+  "videoId": "Gdb2ieZ0rss",
+  "guest": "Billy Dinh",
+  "shotToday": ["Bushwick, Brooklyn"],
+  "mentions": [
+    {
+      "place": "Bushwick, Brooklyn",
+      "type": "shot-here",
+      "speaker": "Billy Dinh",
+      "timestamp": 23,
+      "quote": "I'm based here in Brooklyn in Bushwick which is where I've taken you guys here this is Bushwick",
+      "confidence": "high"
+    },
+    {
+      "place": "Bushwick, Brooklyn",
+      "type": "haunt",
+      "speaker": "Billy Dinh",
+      "timestamp": 460,
+      "quote": "I've shot this area quite a bit so I'm starting to know a lot of locals",
+      "confidence": "high"
+    }
+  ],
+  "excluded": [
+    {
+      "place": "Philadelphia",
+      "reason": "Biography only (grew up there); non-NYC and no mention of shooting there"
+    },
+    {
+      "place": "Iceland",
+      "reason": "First trip/first camera, landscape photography; non-NYC"
+    },
+    {
+      "place": "Guatemala",
+      "reason": "Anecdote about shooting mountains/people abroad; non-NYC"
+    },
+    {
+      "place": "Southeast Asia",
+      "reason": "Region named as travel preference, no specific place; non-NYC"
+    },
+    {
+      "place": "Africa",
+      "reason": "Whole continent named as travel preference, no specific place; non-NYC"
+    },
+    {
+      "place": "South America",
+      "reason": "Region named as travel preference, no specific place; non-NYC"
+    },
+    {
+      "place": "Mardin, Turkey",
+      "reason": "Named as location of a favorite past photo; non-NYC"
+    },
+    {
+      "place": "Harlem",
+      "reason": "Mentioned only as the subject of Bruce Davidson's (another photographer's) project, not a place Billy or Paulie shoots"
+    },
+    {
+      "place": "furniture store (unnamed, in Bushwick)",
+      "reason": "Anecdote about a local reacting to being photographed; not a distinct named place beyond the already-counted Bushwick location, and it's a shop reference without a specific name"
+    }
+  ]
+}

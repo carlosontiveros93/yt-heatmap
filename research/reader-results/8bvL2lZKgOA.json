@@ -1,0 +1,64 @@
+{
+  "videoId": "8bvL2lZKgOA",
+  "guest": "Joe Greer",
+  "shotToday": ["SoHo, Manhattan (a specific street corner)"],
+  "mentions": [
+    {
+      "place": "SoHo",
+      "type": "shot-here",
+      "speaker": "Joe Greer",
+      "timestamp": 53,
+      "quote": "I probably put through like six rolls here in SoHo, man",
+      "confidence": "high"
+    },
+    {
+      "place": "SoHo (the corner)",
+      "type": "haunt",
+      "speaker": "Joe Greer",
+      "timestamp": 324,
+      "quote": "there's another reason why I love this corner, I mean this is so photogenic",
+      "confidence": "high"
+    },
+    {
+      "place": "Coney Island",
+      "type": "haunt",
+      "speaker": "Joe Greer",
+      "timestamp": 576,
+      "quote": "Coney right now is one of my favorite if not my favorite place to shoot",
+      "confidence": "high"
+    },
+    {
+      "place": "Coney Island",
+      "type": "haunt",
+      "speaker": "Paulie B",
+      "timestamp": 578,
+      "quote": "we did that last year, do we, yeah we were out there",
+      "confidence": "medium",
+      "note": "Brief agreement confirming he also shoots the Coney Island 4th of July event; not elaborated."
+    },
+    {
+      "place": "34th Street and 7th Avenue",
+      "type": "haunt",
+      "speaker": "Joe Greer",
+      "timestamp": 1179,
+      "quote": "those summers 2018 2019 ... they're there on that intersection, those were the good old days",
+      "confidence": "low",
+      "note": "Recalls hanging out on this corner with Paulie B in past summers where they met; not explicitly stated as a place he shoots, could be purely a meeting spot."
+    }
+  ],
+  "excluded": [
+    { "place": "Nashville", "reason": "Non-NYC location (guest currently lives there)." },
+    { "place": "Cuba", "reason": "Non-NYC location, described in a past anecdote about a film-loading mistake." },
+    { "place": "Oregon (church)", "reason": "Non-NYC, purely biographical (how he got into Leica)." },
+    { "place": "Gelatin Labs (New Jersey)", "reason": "Non-NYC; a film-processing lab, not a shooting location." },
+    { "place": "Jack's Wife Freda / dinner spot with Maddie", "reason": "Mentioned only as a dinner location, not a place he shoots." },
+    { "place": "Chicago", "reason": "Non-NYC; purely hypothetical answer to 'if you had to leave NYC' question." },
+    { "place": "San Francisco", "reason": "Non-NYC; purely hypothetical answer to the same question." },
+    { "place": "Manhattan", "reason": "Whole borough, no more specific place given beyond the SoHo corner already captured." },
+    { "place": "Brooklyn", "reason": "Whole borough, discussed only hypothetically ('if I had to pick one borough')." },
+    { "place": "Queens", "reason": "Whole borough, mentioned only as an elimination option in a hypothetical question." },
+    { "place": "Flushing", "reason": "Named only as one of several neighborhoods in a hypothetical 'stick to Brooklyn' aside, not stated as a place he actually shoots." },
+    { "place": "Williamsburg", "reason": "Same hypothetical aside as Flushing; not confirmed as an actual shooting haunt." },
+    { "place": "Bushwick", "reason": "Only 'familiar with' mentioned in the same hypothetical aside; not stated as a shooting location." }
+  ]
+}

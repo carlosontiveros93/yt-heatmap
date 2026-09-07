@@ -1,0 +1,72 @@
+{
+  "videoId": "9yOLOI2Y2LU",
+  "guest": "Melissa O'Shaughnessy",
+  "shotToday": ["Fifth Avenue"],
+  "mentions": [
+    {
+      "place": "Fifth Avenue",
+      "type": "shot-here",
+      "speaker": "Melissa O'Shaughnessy",
+      "timestamp": 2020,
+      "quote": "what makes Fifth Avenue good is when the sidewalks get really crowded",
+      "confidence": "high"
+    },
+    {
+      "place": "Fifth Avenue",
+      "type": "shot-here",
+      "speaker": "Melissa O'Shaughnessy",
+      "timestamp": 2044,
+      "quote": "let's go do that again and see if we can get to the front of the",
+      "confidence": "high"
+    },
+    {
+      "place": "Fifth Avenue",
+      "type": "haunt",
+      "speaker": "Melissa O'Shaughnessy",
+      "timestamp": 2248,
+      "quote": "maybe not pounding these well-trodden streets of Fifth Avenue",
+      "confidence": "medium",
+      "note": "Said in response to a question about being unique, implying it's a heavily-worked (by her and others) street-photography spot rather than a direct 'I shoot here regularly' statement."
+    },
+    {
+      "place": "The Strand (bookstore)",
+      "type": "haunt",
+      "speaker": "Melissa O'Shaughnessy",
+      "timestamp": 833,
+      "quote": "I have a picture of mother and daughter looking at books at the strand",
+      "confidence": "low",
+      "note": "Single anecdotal reference to one past photo, not stated as a place she regularly shoots; not visited in this video."
+    },
+    {
+      "place": "Times Square",
+      "type": "haunt",
+      "speaker": "Melissa O'Shaughnessy",
+      "timestamp": 875,
+      "quote": "I have a picture of an old couple under a sign in Time Square",
+      "confidence": "low",
+      "note": "Single anecdotal reference to one past photo, not stated as a place she regularly shoots; not visited in this video."
+    }
+  ],
+  "excluded": [
+    {
+      "place": "Farmers market (unnamed)",
+      "reason": "Host/guest appear to be walking near a farmers market at the start of the walk ('with the farmers market up on weekend now'), but no specific market name (e.g. Union Square Greenmarket) is ever given, so it can't be recorded as a specific place."
+    },
+    {
+      "place": "Palm Springs",
+      "reason": "Non-NYC location (site of a Joel Meyerowitz workshop she attended); explicitly excluded by the non-NYC rule."
+    },
+    {
+      "place": "Connecticut",
+      "reason": "Non-NYC location, mentioned only as where she splits her time / lives part-time; no shooting mentioned there."
+    },
+    {
+      "place": "New York City (general) / 'here'",
+      "reason": "Guest says she is 'from here' and has shot 'on the street here for about 10 years,' but this is a general/biographical statement about the whole city, not a specific place."
+    },
+    {
+      "place": "Aperture (publisher's office)",
+      "reason": "Mentioned as the location of her book publisher ('Aperture is here in our backyard'), a biographical/business detail, not a street-photography shooting location."
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "videoId": "by60qvIrzPk",
+  "guest": "Mark Portillo",
+  "shotToday": ["Midtown Manhattan", "Downtown Manhattan"],
+  "mentions": [
+    {
+      "place": "Midtown Manhattan",
+      "type": "shot-here",
+      "speaker": "Mark Portillo",
+      "timestamp": 33,
+      "quote": "Midtown, a little downtown, mix of both.",
+      "confidence": "high"
+    },
+    {
+      "place": "Downtown Manhattan",
+      "type": "shot-here",
+      "speaker": "Mark Portillo",
+      "timestamp": 33,
+      "quote": "Midtown, a little downtown, mix of both.",
+      "confidence": "high"
+    }
+  ],
+  "excluded": [
+    {
+      "place": "Flatbush, Brooklyn",
+      "reason": "Stated only as where Mark currently lives/is based ('I'm based out of Flatbush, Brooklyn'); no mention he shoots there."
+    },
+    {
+      "place": "Roa City, Philippines",
+      "reason": "Non-NYC place; his birthplace, biography only."
+    },
+    {
+      "place": "New Jersey (Loadout/Jersey)",
+      "reason": "Non-NYC place; where he was raised, biography only."
+    },
+    {
+      "place": "Prospect Park",
+      "reason": "Mentioned only as the location of a one-time past personal event (meeting Anthony Bourdain at a festival called 'Gooa'), not stated as a place he regularly shoots or shot during this video."
+    },
+    {
+      "place": "\"housing street\" (possibly a mis-transcribed street name, e.g. Houston St)",
+      "reason": "Appears only in an anecdote about meeting Daniel Arnold years ago; not confirmed as a current or regular shooting spot, and the transcription of the name is unclear."
+    },
+    {
+      "place": "Long Island",
+      "reason": "Not NYC; mentioned as the site of an upcoming boxing fight/photo gig, not street photography."
+    },
+    {
+      "place": "Upstate NY (Amish community area)",
+      "reason": "Explicitly non-NYC ('upstate'), a separate long-term project distinct from street photography, and Mark declines to disclose the specific location."
+    },
+    {
+      "place": "Pennsylvania / Indiana",
+      "reason": "Non-NYC places named only as the origin regions of some Amish communities discussed."
+    },
+    {
+      "place": "Restaurant inside a freight elevator entrance (unnamed)",
+      "reason": "Shown to Paulie B during the walk but no specific place name is given and it's not confirmed as a place they photograph rather than just a stop to check out."
+    },
+    {
+      "place": "New York City (general, as a kid)",
+      "reason": "Only mentioned as biography ('used to cut school and take the bus in and walk around, get lost') with no specific location and no mention of shooting there."
+    }
+  ]
+}

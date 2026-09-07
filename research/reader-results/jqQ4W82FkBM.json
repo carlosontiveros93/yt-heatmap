@@ -1,0 +1,85 @@
+{
+  "videoId": "jqQ4W82FkBM",
+  "guest": "Elijah Mogoli",
+  "shotToday": [
+    "Washington Square Park (Washington Square Arch)"
+  ],
+  "mentions": [
+    {
+      "place": "Washington Square Park (Washington Square Arch)",
+      "type": "shot-here",
+      "speaker": "Elijah Mogoli",
+      "timestamp": 1127,
+      "quote": "here's like the wedding spot everybody comes here",
+      "confidence": "medium",
+      "note": "Not named explicitly; inferred from context — 'the wedding spot everybody comes here' plus the Garry Winogrand 'man in the crowd' reference and description of the arch/doors strongly points to Washington Square Arch, filmed live at this point in the walk."
+    },
+    {
+      "place": "Bedford-Stuyvesant (Bed-Stuy)",
+      "type": "haunt",
+      "speaker": "Elijah Mogoli",
+      "timestamp": 368,
+      "quote": "sometimes I can interact with people shoot with people I'll be in bedside sometimes but not not too much",
+      "confidence": "medium",
+      "note": "Auto-captions render 'Bed-Stuy' as 'bed stack'/'bedside'; he confirms shooting there occasionally, though downplays frequency ('not too much')."
+    },
+    {
+      "place": "Harlem",
+      "type": "haunt",
+      "speaker": "Elijah Mogoli",
+      "timestamp": 975,
+      "quote": "I love going to Harlem that's one place I'll go",
+      "confidence": "high"
+    }
+  ],
+  "excluded": [
+    {
+      "place": "Brooklyn",
+      "reason": "Whole borough with no more specific location given ('it's Brooklyn that's it'); excluded per rule against whole-borough mentions."
+    },
+    {
+      "place": "East Flatbush",
+      "reason": "Pure biography ('Brooklyn Born and Raised specifically East Flatbush') — no mention of shooting there."
+    },
+    {
+      "place": "The Bronx",
+      "reason": "He says he shot there once two years ago ('I've been there to shoot two years ago'), but no specific location within the Bronx is named, and he explicitly says he otherwise avoids it — treated as a whole-borough mention."
+    },
+    {
+      "place": "Staten Island",
+      "reason": "He explicitly says 'I don't go there' — not a shoot location."
+    },
+    {
+      "place": "Queens",
+      "reason": "He says he 'hardly' goes there and does not describe shooting there; also a whole-borough mention with no specific spot."
+    },
+    {
+      "place": "Brooklyn Bridge / Brooklyn Heights",
+      "reason": "Mentioned only as the site of a one-time origin-story anecdote (finding a camera on the street in May 2019), not established as a place he regularly shoots or as today's shoot location."
+    },
+    {
+      "place": "Coney Island",
+      "reason": "Host asks about 'your Coney work,' but the entire surrounding conversation is about Elijah's Grenada Carnival zine/project ('ready fi di road', Juve, Grenadian Halloween) — likely an auto-caption mishearing of 'Carnival work,' not a reference to NYC's Coney Island."
+    },
+    {
+      "place": "Grenada",
+      "reason": "Non-NYC location."
+    },
+    {
+      "place": "Nigeria",
+      "reason": "Non-NYC location."
+    },
+    {
+      "place": "Paris, France",
+      "reason": "Non-NYC location."
+    },
+    {
+      "place": "Ghana",
+      "reason": "Non-NYC location."
+    },
+    {
+      "place": "Germany",
+      "reason": "Non-NYC location (mentioned only as where his light meter currently is)."
+    }
+  ]
+}

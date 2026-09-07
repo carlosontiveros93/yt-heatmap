@@ -1,0 +1,78 @@
+{
+  "videoId": "PHns5btsuCA",
+  "guest": "Cisco Vasquez",
+  "shotToday": [
+    "Broadway (near 6th Avenue) — stated starting route for today's shoot",
+    "Outdoor gallery wall / mural at the corner of \"Media Hernandez Park\" (Cisco's community gallery installation, visited with Tree and Jay on camera)"
+  ],
+  "mentions": [
+    {
+      "place": "Broadway (near 6th Avenue)",
+      "type": "shot-here",
+      "speaker": "Cisco Vasquez",
+      "timestamp": 34,
+      "quote": "Just go my normal route. Probably just go up Broadway on the 6th Avenue.",
+      "confidence": "high"
+    },
+    {
+      "place": "Orchard Beach (Bronx)",
+      "type": "haunt",
+      "speaker": "Cisco Vasquez",
+      "timestamp": 1808,
+      "quote": "I like going there because you don't really see many photographers.",
+      "confidence": "high"
+    },
+    {
+      "place": "Orchard Beach — parking lot, beach, and boardwalk",
+      "type": "haunt",
+      "speaker": "Cisco Vasquez",
+      "timestamp": 1894,
+      "quote": "There's the parking lot scene is one thing. The beach itself, the boardwalk.",
+      "confidence": "high"
+    },
+    {
+      "place": "Outdoor gallery wall / mural at corner of \"Media Hernandez Park\"",
+      "type": "shot-here",
+      "speaker": "Cisco Vasquez",
+      "timestamp": 2325,
+      "quote": "We got together here on the corner of Media Hernandez Park.",
+      "confidence": "medium",
+      "note": "Auto-captions likely garble the proper noun (possibly \"Manny Hernandez Park\" or similar); however Tree and Jay, who guard this exact wall, appear on camera with Cisco later in the video, confirming the crew is physically at this site during the shoot."
+    },
+    {
+      "place": "Broadway or Fifth Avenue",
+      "type": "haunt",
+      "speaker": "Cisco Vasquez",
+      "timestamp": 1535,
+      "quote": "I remember just shooting down like Broadway or Fifth Avenue.",
+      "confidence": "medium",
+      "note": "Describes a specific past period (biking around empty NYC in 2020) rather than a stated ongoing/current haunt."
+    }
+  ],
+  "excluded": [
+    {
+      "place": "Peekskill, NY",
+      "reason": "Where Cisco grew up (near NYC, not in NYC); pure biography, no shooting mentioned there."
+    },
+    {
+      "place": "Upper West Side",
+      "reason": "Mentioned only as where he lived in 2009; no mention of shooting there."
+    },
+    {
+      "place": "Bronx Documentary Center",
+      "reason": "Mentioned as a gallery he attended a show at (Jamal Shabazz exhibit), not a place he shoots."
+    },
+    {
+      "place": "Fifth Avenue and 36th Street",
+      "reason": "Mentioned only as the location of his commute to work and a sign he saw; no shooting mentioned in this anecdote."
+    },
+    {
+      "place": "42nd Street / subway transfer (N, R, L trains)",
+      "reason": "Mentioned only as transit directions to reach the gallery wall location, not itself a shooting location."
+    },
+    {
+      "place": "Ecuador, Colombia, Cuba, Mexico, Morocco, Brazil, Puerto Rico, Virginia, El Paso/Juarez, Art Basel (Miami)",
+      "reason": "Non-NYC locations mentioned in biography/travel anecdotes."
+    }
+  ]
+}

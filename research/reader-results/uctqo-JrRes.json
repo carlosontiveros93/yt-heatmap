@@ -1,0 +1,72 @@
+{
+  "videoId": "uctqo-JrRes",
+  "guest": "Conor James Cunningham",
+  "shotToday": ["Times Square"],
+  "mentions": [
+    {
+      "place": "Times Square",
+      "type": "shot-here",
+      "speaker": "Paulie B",
+      "timestamp": 326,
+      "quote": "times square new york new york",
+      "confidence": "medium",
+      "note": "Auto-captions have no speaker labels; this reads as a narrated location callout (song riff) rather than a quoted claim, so exact speaker is inferred."
+    },
+    {
+      "place": "42nd Street and 6th Avenue",
+      "type": "haunt",
+      "speaker": "Conor James Cunningham",
+      "timestamp": 339,
+      "quote": "i really like 42nd and 6th like that area because it gets a lot of light",
+      "confidence": "high"
+    },
+    {
+      "place": "42nd Street and 5th Avenue",
+      "type": "haunt",
+      "speaker": "Conor James Cunningham",
+      "timestamp": 343,
+      "quote": "i used to like 42nd and 5th like 2019",
+      "confidence": "medium",
+      "note": "Stated in past tense (\"used to like\") as of 2019, before the pandemic reshuffled his habits."
+    },
+    {
+      "place": "Washington Square Park",
+      "type": "haunt",
+      "speaker": "Conor James Cunningham",
+      "timestamp": 349,
+      "quote": "i used to like washington square a lot",
+      "confidence": "medium",
+      "note": "Past tense; described as a pandemic-era habit rather than a current one."
+    },
+    {
+      "place": "Coney Island",
+      "type": "haunt",
+      "speaker": "Conor James Cunningham",
+      "timestamp": 361,
+      "quote": "i also really like shooting coney i think coney might be my favorite",
+      "confidence": "high"
+    },
+    {
+      "place": "Coney Island",
+      "type": "haunt",
+      "speaker": "Paulie B",
+      "timestamp": 376,
+      "quote": "probably coney as well",
+      "confidence": "low",
+      "note": "Speaker not explicitly labeled in captions; inferred as the second person answering the reciprocal 'what's your favorite place to shoot' question."
+    },
+    {
+      "place": "Times Square",
+      "type": "haunt",
+      "speaker": "Paulie B",
+      "timestamp": 379,
+      "quote": "i've been doing a lot of times square",
+      "confidence": "low",
+      "note": "Same speaker-attribution uncertainty as the Coney Island reply immediately before it."
+    }
+  ],
+  "excluded": [
+    {"place": "Ireland / Galway", "reason": "Non-NYC location (biography and pub-watching anecdote from before he moved to NYC)."},
+    {"place": "unnamed park at ~14:20-15:05", "reason": "Guest says 'i used to come to this park a lot in 2020' while standing in a park during the walk, but the park is never named and cannot be confidently identified, so it's excluded per the conservative rule."}
+  ]
+}

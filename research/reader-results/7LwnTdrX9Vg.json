@@ -1,0 +1,46 @@
+{
+  "videoId": "7LwnTdrX9Vg",
+  "guest": "Daniel Arnold",
+  "shotToday": ["Fifth Avenue", "55th Street and Fifth Avenue", "Miriam Friedlander Way"],
+  "mentions": [
+    {
+      "place": "Miriam Friedlander Way",
+      "type": "shot-here",
+      "speaker": "Paulie B",
+      "timestamp": 1257,
+      "quote": "That's incredible. And here we are at Miriam Friedlander Way.",
+      "confidence": "high"
+    },
+    {
+      "place": "Fifth Avenue",
+      "type": "shot-here",
+      "speaker": "Daniel Arnold",
+      "timestamp": 3112,
+      "quote": "Isn't it just such a pleasure to walk up Fifth Avenue? It just feels like my old friend.",
+      "confidence": "high"
+    },
+    {
+      "place": "55th Street and Fifth Avenue",
+      "type": "haunt",
+      "speaker": "Daniel Arnold",
+      "timestamp": 3186,
+      "quote": "That 55th is a particular one. The darkness of 55th and Fifth, oh, so cozy.",
+      "confidence": "high",
+      "note": "Also functions as shot-here: he says he 'hasn't been up here in a minute' while currently walking there, but frames it explicitly as a favorite spot he has ownership feelings about, so classified as haunt."
+    }
+  ],
+  "excluded": [
+    {
+      "place": "San Gennaro Festival",
+      "reason": "Guest describes a scene from a different video filmed 5 years earlier, not something happening in this walk, and does not call it a regular haunt."
+    },
+    {
+      "place": "Ludlow Street / Lower East Side (The Knick shoot)",
+      "reason": "One-time anecdote about a past encounter with a movie set on Ludlow St; not shot during this video and not stated as a place he regularly shoots."
+    },
+    {
+      "place": "New York City",
+      "reason": "Whole city, not a specific enough place per the rules; general biographical/relationship-to-the-city talk."
+    }
+  ]
+}

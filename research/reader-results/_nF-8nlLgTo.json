@@ -1,0 +1,86 @@
+{
+  "videoId": "_nF-8nlLgTo",
+  "guest": "Boris Apple",
+  "shotToday": ["Central Park", "United Nations (UN) area", "East River Park"],
+  "mentions": [
+    {
+      "place": "Central Park",
+      "type": "shot-here",
+      "speaker": "Paulie B",
+      "timestamp": 14,
+      "quote": "we're back with another episode of walkie-talkie we're here early in Central Park with the homie Boris",
+      "confidence": "high"
+    },
+    {
+      "place": "Central Park",
+      "type": "haunt",
+      "speaker": "Boris Apple",
+      "timestamp": 55,
+      "quote": "it's just like a great little rest bite in the middle of the city um a lot of chill things going on",
+      "confidence": "high"
+    },
+    {
+      "place": "Central Park",
+      "type": "shot-here",
+      "speaker": "Boris Apple",
+      "timestamp": 120,
+      "quote": "as long as I've lived here and before I lived here I would make this a solid checkpoint",
+      "confidence": "high"
+    },
+    {
+      "place": "United Nations (UN) / UN General Assembly area",
+      "type": "shot-here",
+      "speaker": "Paulie B",
+      "timestamp": 466,
+      "quote": "so we're heading towards the UN the UN General Assembly is kind of right now happening",
+      "confidence": "medium",
+      "note": "Host narrates walking toward the UN; guest says 'let me just get this' implying he takes a photo, but no explicit landmark confirmation of shooting there."
+    },
+    {
+      "place": "East River Park",
+      "type": "shot-here",
+      "speaker": "Paulie B",
+      "timestamp": 1368,
+      "quote": "so we're coming up on on East River Park why are we over here Boris",
+      "confidence": "high"
+    },
+    {
+      "place": "East River Park",
+      "type": "haunt",
+      "speaker": "Boris Apple",
+      "timestamp": 1382,
+      "quote": "I've been trying I don't know how successfully to take decent amount of photos of this park changing over the last two years",
+      "confidence": "high"
+    }
+  ],
+  "excluded": [
+    {
+      "place": "Rhode Island",
+      "reason": "Non-NYC place; mentioned only as where he grew up, no shooting mentioned there."
+    },
+    {
+      "place": "107th Street (great aunt's apartment)",
+      "reason": "Pure biography (where he used to stay when visiting as a kid); no statement that he shot there."
+    },
+    {
+      "place": "Williamsburg / South Williamsburg (bakery fire)",
+      "reason": "One-off anecdote about a specific past event he happened to photograph, not framed as a regular haunt, and not visited during this video."
+    },
+    {
+      "place": "Brooklyn and Queens",
+      "reason": "Named only as whole boroughs ('periphery in Brooklyn and Queens') with no specific location given."
+    },
+    {
+      "place": "Contact Photolab (Brooklyn)",
+      "reason": "Mentioned as his workplace/darkroom where people can meet him and develop film, not as a street-photography shooting location."
+    },
+    {
+      "place": "New York Public Library",
+      "reason": "General advice to get a library card for photobooks; not a place he shoots."
+    },
+    {
+      "place": "Rooftop on 'indictment day'",
+      "reason": "No specific, identifiable NYC place named for this anecdote."
+    }
+  ]
+}

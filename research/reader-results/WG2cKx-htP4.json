@@ -1,0 +1,71 @@
+{
+  "videoId": "WG2cKx-htP4",
+  "guest": "Tyler Woodford",
+  "shotToday": ["Howard Beach, Queens"],
+  "mentions": [
+    {
+      "place": "Howard Beach, Queens",
+      "type": "shot-here",
+      "speaker": "Tyler Woodford",
+      "timestamp": 23,
+      "quote": "right here in Howard Beach making some photographs",
+      "confidence": "high"
+    },
+    {
+      "place": "Howard Beach, Queens",
+      "type": "haunt",
+      "speaker": "Tyler Woodford",
+      "timestamp": 376,
+      "quote": "I've been coming out here for maybe like a year and a half maybe two years",
+      "confidence": "high"
+    },
+    {
+      "place": "Charles Park, Howard Beach",
+      "type": "haunt",
+      "speaker": "Tyler Woodford",
+      "timestamp": 276,
+      "quote": "you got Charles park down there yeah yeah that's my favorite walk",
+      "confidence": "medium",
+      "note": "Named as his favorite walk within Howard Beach; unclear whether they physically walked to the park itself during this shoot or just discussed it."
+    },
+    {
+      "place": "East New York",
+      "type": "haunt",
+      "speaker": "Tyler Woodford",
+      "timestamp": 1132,
+      "quote": "I love East New York that place is awesome",
+      "confidence": "medium",
+      "note": "Said in the middle of talk about neighborhoods he wants to explore (alongside LaGuardia, which is excluded as purely aspirational); phrasing ('I love') suggests it's a place he already shoots, but it's not explicit."
+    }
+  ],
+  "excluded": [
+    {
+      "place": "The Bronx",
+      "reason": "Whole borough with no more specific place named, and Tyler explicitly says he hasn't made any work there yet ('I haven't made like any work up there') — purely aspirational."
+    },
+    {
+      "place": "LaGuardia",
+      "reason": "Named only as somewhere he wants to go in the future ('I want to go like by like LaGuardia'), not a current shooting spot or established haunt."
+    },
+    {
+      "place": "Manhattan",
+      "reason": "Mentioned only biographically/negatively ('no one really probably saw me in Manhattan' because he was out in Howard Beach instead) — not a place he shoots."
+    },
+    {
+      "place": "Fifth Avenue",
+      "reason": "Used only as a hypothetical example while explaining his photographic philosophy ('same thing with like a person on Fifth Avenue'), not stated as a place he shoots or a haunt."
+    },
+    {
+      "place": "Atlanta",
+      "reason": "Mentioned only as the hometown of photographer Mark Steinman, an influence — not a place Tyler or Paulie shoot; non-relevant anecdote about another person."
+    },
+    {
+      "place": "Ventura, California",
+      "reason": "Tyler's hometown, mentioned purely biographically in his introduction; no claim of shooting there, and non-NYC."
+    },
+    {
+      "place": "JFK Airport",
+      "reason": "Named only as a landmark to orient viewers on where Howard Beach is located, not itself described as a shooting location."
+    }
+  ]
+}

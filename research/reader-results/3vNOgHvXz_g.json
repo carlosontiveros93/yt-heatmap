@@ -1,0 +1,113 @@
+{
+  "videoId": "3vNOgHvXz_g",
+  "guest": "Jas Leon",
+  "shotToday": [
+    "Madison Avenue near 72nd Street (Upper East Side)",
+    "61st Street",
+    "Central Park",
+    "6th Avenue (Central Park South entrance)",
+    "Midtown Manhattan"
+  ],
+  "mentions": [
+    {
+      "place": "Madison Avenue at 72nd Street",
+      "type": "shot-here",
+      "speaker": "Paulie B",
+      "timestamp": 34,
+      "quote": "We are on Madison and 72nd. We're going to walk on Madison and then through Central Park.",
+      "confidence": "high"
+    },
+    {
+      "place": "61st Street / Central Park",
+      "type": "shot-here",
+      "speaker": "Paulie B",
+      "timestamp": 330,
+      "quote": "We're going to make a right onto 61st and then head into Central Park.",
+      "confidence": "high"
+    },
+    {
+      "place": "Central Park",
+      "type": "shot-here",
+      "speaker": "Jas Leon",
+      "timestamp": 671,
+      "quote": "I like to enter through Central Park because it kind of gives you like a zen moment.",
+      "confidence": "high"
+    },
+    {
+      "place": "6th Avenue",
+      "type": "shot-here",
+      "speaker": "Paulie B",
+      "timestamp": 675,
+      "quote": "We're going to go this way onto 6th Ave.",
+      "confidence": "high"
+    },
+    {
+      "place": "Midtown Manhattan",
+      "type": "shot-here",
+      "speaker": "Paulie B",
+      "timestamp": 758,
+      "quote": "So we're entering Midtown now. We're basically in Midtown.",
+      "confidence": "high"
+    },
+    {
+      "place": "Strand Book Store (Union Square / 14th St area)",
+      "type": "haunt",
+      "speaker": "Jas Leon",
+      "timestamp": 767,
+      "quote": "I go typically all the way down to 14th Street, and I like to end my day at Strand.",
+      "confidence": "high"
+    },
+    {
+      "place": "Strand Book Store (Union Square / 14th St area)",
+      "type": "shot-here",
+      "speaker": "Jas Leon",
+      "timestamp": 1822,
+      "quote": "Yeah, usually I end around this area and go into Strand and like go through photo books.",
+      "confidence": "low",
+      "note": "Said near the end of the walk, implying they may be near this spot now, but it's phrased habitually ('usually') rather than confirmed as today's actual endpoint."
+    },
+    {
+      "place": "Dominican Day Parade",
+      "type": "haunt",
+      "speaker": "Jas Leon",
+      "timestamp": 607,
+      "quote": "I was shooting the Dominican Day Parade few days back, and I had so many people ask me for a photo.",
+      "confidence": "medium",
+      "note": "Described as a recent (not today's) shoot; included as haunt since parades/events like this are a recurring subject for her, not a one-off."
+    },
+    {
+      "place": "Mexican Day Parade (23rd Street)",
+      "type": "haunt",
+      "speaker": "Jas Leon",
+      "timestamp": 1658,
+      "quote": "The Mexican Day Parade, the group of mariachi girls that I captured... was actually around this area, too, on 23rd.",
+      "confidence": "high"
+    }
+  ],
+  "excluded": [
+    {
+      "place": "Queens",
+      "reason": "Whole borough named with no specific location ('Sundays I'm either like in Queens or downtown more')."
+    },
+    {
+      "place": "Downtown Manhattan",
+      "reason": "Vague area reference with no specific street/landmark named ('...or downtown more')."
+    },
+    {
+      "place": "West Coast",
+      "reason": "Non-NYC place; pure biography (where she was born/raised), not a shooting location."
+    },
+    {
+      "place": "Leica women's street photographer photo walk",
+      "reason": "An event/group she attends, not a fixed NYC place with a specific name or location given."
+    },
+    {
+      "place": "Her apartment building (pigeon feeder anecdote)",
+      "reason": "No specific place named; anecdote about a neighbor, not clearly a shooting location she names."
+    },
+    {
+      "place": "Her dining room / home darkroom",
+      "reason": "Not a street photography shooting location; it's a home darkroom for developing film."
+    }
+  ]
+}

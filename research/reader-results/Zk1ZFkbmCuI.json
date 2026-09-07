@@ -1,0 +1,92 @@
+{
+  "videoId": "Zk1ZFkbmCuI",
+  "guest": "Dustin Roderick",
+  "shotToday": [
+    "Prospect Park",
+    "Downtown Manhattan / Wall Street Bull",
+    "Midtown Manhattan"
+  ],
+  "mentions": [
+    {
+      "place": "Prospect Park",
+      "type": "shot-here",
+      "speaker": "Paulie B",
+      "timestamp": 37,
+      "quote": "we're in Prospect P right now um this is your neighborhood",
+      "confidence": "high"
+    },
+    {
+      "place": "Prospect Park",
+      "type": "haunt",
+      "speaker": "Dustin Roderick",
+      "timestamp": 733,
+      "quote": "I'd say on average three to four times a week doing this this kind of loop",
+      "confidence": "high"
+    },
+    {
+      "place": "Midtown Manhattan",
+      "type": "haunt",
+      "speaker": "Dustin Roderick",
+      "timestamp": 1344,
+      "quote": "you get to know some of the people who are like regulars similar to like Midtown right",
+      "confidence": "medium",
+      "note": "Phrased as a comparison, but corroborates the explicit haunt statement later at 35:07"
+    },
+    {
+      "place": "Downtown Manhattan",
+      "type": "shot-here",
+      "speaker": "Paulie B",
+      "timestamp": 2009,
+      "quote": "it's winter time we're downtown let's let's shoot some Street",
+      "confidence": "medium",
+      "note": "\"downtown\" is broad, but immediately followed by the specific Wall Street Bull location"
+    },
+    {
+      "place": "Midtown Manhattan",
+      "type": "haunt",
+      "speaker": "Dustin Roderick",
+      "timestamp": 2107,
+      "quote": "I really enjoy going to Midtown for Street stuff uh cuz there's a lot of people",
+      "confidence": "high"
+    },
+    {
+      "place": "Wall Street Bull",
+      "type": "shot-here",
+      "speaker": "Dustin Roderick",
+      "timestamp": 2122,
+      "quote": "I've never been over here really to the Wall Street bull",
+      "confidence": "high"
+    },
+    {
+      "place": "Midtown Manhattan",
+      "type": "shot-here",
+      "speaker": "Paulie B",
+      "timestamp": 2418,
+      "quote": "Midtown uh black and white",
+      "confidence": "medium",
+      "note": "Appears to be an on-screen location caption rather than spoken dialogue, marking where this segment was filmed"
+    }
+  ],
+  "excluded": [
+    {
+      "place": "Central Park",
+      "reason": "Mentioned only as a comparison to Prospect Park's vibe, not visited or claimed as a place Dustin shoots"
+    },
+    {
+      "place": "Brooklyn",
+      "reason": "Whole-borough biography (\"I live in Brooklyn\"); the specific place actually shot/haunted within it, Prospect Park, is captured separately"
+    },
+    {
+      "place": "Denver",
+      "reason": "Non-NYC place; mentioned as where he went to art school"
+    },
+    {
+      "place": "Colorado",
+      "reason": "Non-NYC place; pure biography (\"I'm from Colorado\")"
+    },
+    {
+      "place": "\"the city\" (generic)",
+      "reason": "Too vague/non-specific to count as a place"
+    }
+  ]
+}

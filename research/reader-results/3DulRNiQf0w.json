@@ -1,0 +1,80 @@
+{
+  "videoId": "3DulRNiQf0w",
+  "guest": "Laura Fuchs",
+  "shotToday": [
+    "31st and 7th / Manhattan Center Parking Garage area (Midtown Manhattan)",
+    "Empire State Building area (Midtown Manhattan)",
+    "SoHo",
+    "Eliz Digital photo lab"
+  ],
+  "mentions": [
+    {
+      "place": "31st and 7th (Manhattan Center Parking Garage), Midtown Manhattan",
+      "type": "shot-here",
+      "speaker": "Laura Fuchs",
+      "timestamp": 223,
+      "quote": "31st and 7th thank you",
+      "confidence": "high"
+    },
+    {
+      "place": "Empire State Building area",
+      "type": "shot-here",
+      "speaker": "Laura Fuchs",
+      "timestamp": 255,
+      "quote": "you got the Empire right behind you",
+      "confidence": "medium",
+      "note": "Landmark named while shooting a subject; appears to be the same Midtown location as the 31st & 7th mention rather than a distinct spot."
+    },
+    {
+      "place": "Harlem",
+      "type": "haunt",
+      "speaker": "Laura Fuchs",
+      "timestamp": 1103,
+      "quote": "love Harlem Harlem never disappoints",
+      "confidence": "high"
+    },
+    {
+      "place": "Washington Square Park",
+      "type": "haunt",
+      "speaker": "Laura Fuchs",
+      "timestamp": 1135,
+      "quote": "I love Washington Square Park it's too saturated with cameras",
+      "confidence": "high"
+    },
+    {
+      "place": "SoHo",
+      "type": "shot-here",
+      "speaker": "Laura Fuchs",
+      "timestamp": 2094,
+      "quote": "have the best day in SoHo you guys",
+      "confidence": "high"
+    },
+    {
+      "place": "Eliz Digital (photo lab)",
+      "type": "shot-here",
+      "speaker": "Laura Fuchs",
+      "timestamp": 2314,
+      "quote": "this is my spot I think I just have three rolls to drop off",
+      "confidence": "medium",
+      "note": "Auto-captions render the lab's name unclearly ('Elise'/'Elizabeth'/'Eliz' Digital); she also says she photographs the owner there each visit, so it counts as shot-here despite being a shop."
+    }
+  ],
+  "excluded": [
+    {
+      "place": "Union Square",
+      "reason": "Nostalgic biography only ('used to be awesome' when she first moved for college, dancers used to hang out there) — no statement she currently shoots there."
+    },
+    {
+      "place": "Houston, TX (car/slab culture shoot)",
+      "reason": "Not a NYC location."
+    },
+    {
+      "place": "City University TV (CUNY-TV) station",
+      "reason": "Described as her part-time job/workplace and studio, not a street-photography haunt; 'in the field... all around the city' is too vague to name a place."
+    },
+    {
+      "place": "the grocery store",
+      "reason": "Generic errand mention, not a specific named place."
+    }
+  ]
+}

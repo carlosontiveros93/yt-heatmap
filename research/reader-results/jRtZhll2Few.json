@@ -1,0 +1,193 @@
+{
+  "videoId": "jRtZhll2Few",
+  "guest": "Conrad Ziolkowski",
+  "shotToday": [
+    "Brighton Beach (boardwalk, jetty, and commercial avenue)"
+  ],
+  "mentions": [
+    {
+      "place": "Brighton Beach",
+      "type": "shot-here",
+      "speaker": "Conrad Ziolkowski",
+      "timestamp": 18,
+      "quote": "we're here in Brighton Beach, uh where I'm from, Brooklyn, New York. We're out shooting.",
+      "confidence": "high"
+    },
+    {
+      "place": "Brighton Beach boardwalk",
+      "type": "shot-here",
+      "speaker": "Conrad Ziolkowski",
+      "timestamp": 706,
+      "quote": "We're on the boardwalk in Brighton Beach.",
+      "confidence": "high"
+    },
+    {
+      "place": "Port Authority",
+      "type": "haunt",
+      "speaker": "Conrad Ziolkowski",
+      "timestamp": 2504,
+      "quote": "It's a corner I like to sometimes hang back on. Port Authority.",
+      "confidence": "medium",
+      "note": "Habitual phrasing ('sometimes hang back on') suggests a regular haunt rather than confirmed footage of shooting there today; the rest of the video is set in South Brooklyn, so it's unclear if this segment was actually filmed at Port Authority or just described."
+    },
+    {
+      "place": "Coney Island",
+      "type": "haunt",
+      "speaker": "Conrad Ziolkowski",
+      "timestamp": 1819,
+      "quote": "Uh usually I'll like hit Brighton Beach or like I walk through Coney",
+      "confidence": "medium",
+      "note": "Described as part of a recurring long walk (every 2-3 weeks), not confirmed as shot during this specific outing."
+    },
+    {
+      "place": "Sunset Park",
+      "type": "haunt",
+      "speaker": "Conrad Ziolkowski",
+      "timestamp": 1825,
+      "quote": "and I'll walk all the way down to like Sunset Park sometimes",
+      "confidence": "medium",
+      "note": "Part of the same recurring long-walk description, not confirmed shot today."
+    },
+    {
+      "place": "South Brooklyn",
+      "type": "haunt",
+      "speaker": "Conrad Ziolkowski",
+      "timestamp": 259,
+      "quote": "I started shooting in South Brooklyn and I started shooting here like 3, 4 years ago",
+      "confidence": "medium",
+      "note": "Broad sub-region rather than a single specific spot, but named directly as a place he shoots (unlike a whole borough)."
+    },
+    {
+      "place": "Bensonhurst",
+      "type": "haunt",
+      "speaker": "Conrad Ziolkowski",
+      "timestamp": 312,
+      "quote": "Not here then other parts of South Brooklyn, Bensonhurst Borough Park, Gravesend.",
+      "confidence": "high"
+    },
+    {
+      "place": "Borough Park",
+      "type": "haunt",
+      "speaker": "Conrad Ziolkowski",
+      "timestamp": 312,
+      "quote": "Not here then other parts of South Brooklyn, Bensonhurst Borough Park, Gravesend.",
+      "confidence": "high"
+    },
+    {
+      "place": "Gravesend",
+      "type": "haunt",
+      "speaker": "Conrad Ziolkowski",
+      "timestamp": 312,
+      "quote": "Not here then other parts of South Brooklyn, Bensonhurst Borough Park, Gravesend.",
+      "confidence": "high"
+    },
+    {
+      "place": "Jamaica Bay",
+      "type": "haunt",
+      "speaker": "Conrad Ziolkowski",
+      "timestamp": 316,
+      "quote": "I'm also shooting out in the neighborhoods around Jamaica Bay.",
+      "confidence": "high"
+    },
+    {
+      "place": "Howard Beach",
+      "type": "haunt",
+      "speaker": "Conrad Ziolkowski",
+      "timestamp": 324,
+      "quote": "so going out to like Howard Beach",
+      "confidence": "high"
+    },
+    {
+      "place": "Rockaway",
+      "type": "haunt",
+      "speaker": "Conrad Ziolkowski",
+      "timestamp": 326,
+      "quote": "Rockaway, Ozone Park. Mostly shooting medium format out there.",
+      "confidence": "high"
+    },
+    {
+      "place": "Ozone Park",
+      "type": "haunt",
+      "speaker": "Conrad Ziolkowski",
+      "timestamp": 326,
+      "quote": "Rockaway, Ozone Park. Mostly shooting medium format out there.",
+      "confidence": "high"
+    },
+    {
+      "place": "Midtown Manhattan",
+      "type": "haunt",
+      "speaker": "Conrad Ziolkowski",
+      "timestamp": 249,
+      "quote": "starting with midtown, Manhattan downtown, shooting around Manhattan a ton",
+      "confidence": "high"
+    },
+    {
+      "place": "Midtown Manhattan",
+      "type": "haunt",
+      "speaker": "Conrad Ziolkowski",
+      "timestamp": 1043,
+      "quote": "I go there like usually three to four days. Um I'm there more more than I am anywhere else",
+      "confidence": "high"
+    },
+    {
+      "place": "Downtown Manhattan",
+      "type": "haunt",
+      "speaker": "Conrad Ziolkowski",
+      "timestamp": 241,
+      "quote": "shooting around downtown, midtown but yeah, I've been",
+      "confidence": "medium",
+      "note": "Named alongside Midtown as an area he shot in during 2010-2013 and continues to shoot; less emphasized than Midtown specifically."
+    },
+    {
+      "place": "Seventh Avenue",
+      "type": "haunt",
+      "speaker": "Conrad Ziolkowski",
+      "timestamp": 673,
+      "quote": "I flashed him on Seventh Avenue.",
+      "confidence": "low",
+      "note": "One-off anecdote about a specific confrontation while shooting, not stated as a regular spot; only mentioned once."
+    }
+  ],
+  "excluded": [
+    {
+      "place": "East New York",
+      "reason": "Only mentioned as where he grew up (biography), no statement he shoots there."
+    },
+    {
+      "place": "Midwood / Bedford Avenue",
+      "reason": "Only mentioned as where he went to high school (biography), no statement he shoots there."
+    },
+    {
+      "place": "Belt Parkway",
+      "reason": "Mentioned only as a geographic reference point near East New York, not a shooting location."
+    },
+    {
+      "place": "Queens (borough)",
+      "reason": "Mentioned as a whole borough with no specific place ('I'm out in Queens a lot'); the specific neighborhoods he names there (Howard Beach, Rockaway, Ozone Park) are captured separately."
+    },
+    {
+      "place": "Krakow, Poland",
+      "reason": "Non-NYC place."
+    },
+    {
+      "place": "Warsaw, Poland",
+      "reason": "Non-NYC place."
+    },
+    {
+      "place": "Berlin, Germany",
+      "reason": "Non-NYC place; also mentioned mainly re: an exhibit and photographer Michael Ackerman, plus his own shooting experience there, but explicitly outside NYC."
+    },
+    {
+      "place": "Paris",
+      "reason": "Non-NYC place, mentioned only in passing about adapting to shooting in a new city."
+    },
+    {
+      "place": "Northern Ireland",
+      "reason": "Non-NYC place; mentioned only in reference to a photo book by Gilles Peress, not Conrad's own shooting."
+    },
+    {
+      "place": "West Virginia",
+      "reason": "Non-NYC place; mentioned only in reference to a photo book by Susan Lipper, not Conrad's own shooting."
+    }
+  ]
+}

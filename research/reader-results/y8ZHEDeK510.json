@@ -1,0 +1,68 @@
+{
+  "videoId": "y8ZHEDeK510",
+  "guest": "Kazu Nakajima",
+  "shotToday": ["Central Park"],
+  "mentions": [
+    {
+      "place": "Central Park",
+      "type": "shot-here",
+      "speaker": "Kazu Nakajima",
+      "timestamp": 31,
+      "quote": "woke up to Central Park and here is like one of my checkpoints",
+      "confidence": "high"
+    },
+    {
+      "place": "Central Park",
+      "type": "haunt",
+      "speaker": "Kazu Nakajima",
+      "timestamp": 924,
+      "quote": "in Central Park... I come out here a lot because this place is always fascinating to me",
+      "confidence": "high"
+    },
+    {
+      "place": "Financial District",
+      "type": "haunt",
+      "speaker": "Kazu Nakajima",
+      "timestamp": 28,
+      "quote": "I usually get off train like uh downtown area like Financial District and woke up to Central Park",
+      "confidence": "medium",
+      "note": "Described as part of his regular route/checkpoint walk up to Central Park, but not explicit that he stops to shoot there rather than just passing through."
+    },
+    {
+      "place": "Times Square",
+      "type": "haunt",
+      "speaker": "Kazu Nakajima",
+      "timestamp": 719,
+      "quote": "if you are nervous to take pictures you can shoot Times Square Washington Square pockets",
+      "confidence": "low",
+      "note": "Offered as general advice for nervous first-time visitors, not explicitly stated as a place he personally shoots regularly."
+    },
+    {
+      "place": "Washington Square Park",
+      "type": "haunt",
+      "speaker": "Kazu Nakajima",
+      "timestamp": 719,
+      "quote": "if you are nervous to take pictures you can shoot Times Square Washington Square pockets",
+      "confidence": "low",
+      "note": "Offered as general advice for nervous first-time visitors, not explicitly stated as a place he personally shoots regularly."
+    }
+  ],
+  "excluded": [
+    {
+      "place": "New York City (general)",
+      "reason": "Mentioned broadly as his destination/where the community and scene is, but no specific spot named beyond the borough/city level."
+    },
+    {
+      "place": "Yamagata, Japan",
+      "reason": "Non-NYC location; his hometown, biographical only."
+    },
+    {
+      "place": "Los Angeles",
+      "reason": "Non-NYC location; mentioned biographically (where he skateboarded before moving)."
+    },
+    {
+      "place": "downtown area (unspecified)",
+      "reason": "Too vague/generic; the only specific place named in that description is Financial District, which is captured separately."
+    }
+  ]
+}

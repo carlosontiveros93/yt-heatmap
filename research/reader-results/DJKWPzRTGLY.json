@@ -1,0 +1,113 @@
+{
+  "videoId": "DJKWPzRTGLY",
+  "guest": "Marty Hamburger",
+  "shotToday": [
+    "Borough Park, Brooklyn",
+    "47th Street (Borough Park)",
+    "South Brooklyn / Kensington border area"
+  ],
+  "mentions": [
+    {
+      "place": "Borough Park, Brooklyn",
+      "type": "shot-here",
+      "speaker": "Marty Hamburger",
+      "timestamp": 43,
+      "quote": "we're like just bordering Burough Park, which is just opposite of here",
+      "confidence": "high"
+    },
+    {
+      "place": "Kensington, Brooklyn",
+      "type": "shot-here",
+      "speaker": "Marty Hamburger",
+      "timestamp": 43,
+      "quote": "Kensington['s] behind us. Few neighborhoods.",
+      "confidence": "low",
+      "note": "Named as adjacent to their position ('behind us') but not confirmed they actually walk/shoot into Kensington itself."
+    },
+    {
+      "place": "South Brooklyn",
+      "type": "shot-here",
+      "speaker": "Marty Hamburger",
+      "timestamp": 61,
+      "quote": "Welcome, man. South Brooklyn.",
+      "confidence": "medium",
+      "note": "A regional label for the area they're currently walking/shooting in, broader than a single neighborhood but more specific than the whole borough."
+    },
+    {
+      "place": "47th Street, Borough Park",
+      "type": "shot-here",
+      "speaker": "Marty Hamburger",
+      "timestamp": 147,
+      "quote": "Burough Park down here on 47th.",
+      "confidence": "high"
+    },
+    {
+      "place": "Borough Park, Brooklyn",
+      "type": "shot-here",
+      "speaker": "Marty Hamburger",
+      "timestamp": 300,
+      "quote": "This is Burough Park just so you get an idea. We're going to cut down this way.",
+      "confidence": "high"
+    },
+    {
+      "place": "Thanksgiving Day Parade (Manhattan)",
+      "type": "haunt",
+      "speaker": "Marty Hamburger",
+      "timestamp": 713,
+      "quote": "I just did the Thanksgiving Day parade... I did it the year prior.",
+      "confidence": "high",
+      "note": "Recurring annual shoot for him, though not shot during this particular video."
+    },
+    {
+      "place": "Polar Plunge (Coney Island)",
+      "type": "haunt",
+      "speaker": "Marty Hamburger",
+      "timestamp": 794,
+      "quote": "I have been. Yeah, that that one's been fun. And it's also convenient, so it really doesn't take much for me to go out there.",
+      "confidence": "medium",
+      "note": "He describes doing the Polar Plunge every year and photographing it, but the transcript never explicitly names the location as Coney Island (it's the well-known NYC Polar Bear Plunge site, inferred from context: 'beach in the middle of winter', 'convenient' for someone who lives nearby)."
+    },
+    {
+      "place": "East Broadway",
+      "type": "haunt",
+      "speaker": "Marty Hamburger",
+      "timestamp": 1184,
+      "quote": "I remember having a conversation with that person on East Broadway.",
+      "confidence": "high"
+    }
+  ],
+  "excluded": [
+    {
+      "place": "Brooklyn (whole borough)",
+      "reason": "Named only at the whole-borough level ('I love Brooklyn so much... I would shoot Brooklyn every time'), no specific location given beyond the borough itself."
+    },
+    {
+      "place": "Park Slope",
+      "reason": "Pure biography — 'I used to go to school in Park Slope' — no mention of shooting there."
+    },
+    {
+      "place": "Coney Island (as a school-days hangout)",
+      "reason": "Mentioned only as 'I hung out a lot in Coney Island' as a kid — biographical, not stated as a shooting location. (Coney Island is separately included above only via the inferred Polar Plunge connection.)"
+    },
+    {
+      "place": "Brooklyn College",
+      "reason": "Only a shoutout to friends there, not a shooting location."
+    },
+    {
+      "place": "Central Park West",
+      "reason": "Mentioned only as the location of Elliott Erwitt's famous Thanksgiving parade photo, not a place Marty or Paulie shoots."
+    },
+    {
+      "place": "Holy Spirit Church",
+      "reason": "Passed while walking and discussed biographically (his and his mom's old church); no explicit statement that he photographs there."
+    },
+    {
+      "place": "a cemetery (unnamed)",
+      "reason": "Referenced vaguely ('the cemetery that I was talking about') tying to a Bruce Davidson photo, but no specific NYC place name is given in this transcript."
+    },
+    {
+      "place": "\"the city\" (Manhattan, generic)",
+      "reason": "Referenced only generically ('how often are you coming into the city') with no specific place named."
+    }
+  ]
+}

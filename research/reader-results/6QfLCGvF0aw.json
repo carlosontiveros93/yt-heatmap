@@ -1,0 +1,98 @@
+{
+  "videoId": "6QfLCGvF0aw",
+  "guest": "Sabrina Santiago",
+  "shotToday": [
+    "14th Street and 1st Avenue (Manhattan)",
+    "Feast of San Gennaro, Little Italy"
+  ],
+  "mentions": [
+    {
+      "place": "14th Street and 1st Avenue",
+      "type": "shot-here",
+      "speaker": "Sabrina Santiago",
+      "timestamp": 46,
+      "quote": "we're on 14th and 1st, I chose here",
+      "confidence": "high"
+    },
+    {
+      "place": "14th Street L train stop",
+      "type": "haunt",
+      "speaker": "Sabrina Santiago",
+      "timestamp": 55,
+      "quote": "this is sort of a stop that I usually get off at if I don't really know where I want to go",
+      "confidence": "high"
+    },
+    {
+      "place": "Delancey Street",
+      "type": "haunt",
+      "speaker": "Sabrina Santiago",
+      "timestamp": 85,
+      "quote": "I love like Delancey street is one of my favorite streets",
+      "confidence": "high"
+    },
+    {
+      "place": "Williamsburg Bridge",
+      "type": "haunt",
+      "speaker": "Sabrina Santiago",
+      "timestamp": 91,
+      "quote": "the mouth of the Williamsburg Bridge, I'm always crossing the Williamsburg Bridge",
+      "confidence": "high"
+    },
+    {
+      "place": "Feast of San Gennaro, Little Italy",
+      "type": "shot-here",
+      "speaker": "Paulie B",
+      "timestamp": 1013,
+      "quote": "we're about to hit San Gennaro, the Feast of San Gennaro, a big Italian Festival here in the city",
+      "confidence": "high"
+    },
+    {
+      "place": "East Village (12th Street)",
+      "type": "haunt",
+      "speaker": "Sabrina Santiago",
+      "timestamp": 1207,
+      "quote": "the first picture I took with her was in the East Village, I used to live on 12th Street",
+      "confidence": "medium",
+      "note": "Describes one specific past portrait shoot in a back alley off 12th St, tied to a place she used to live, rather than a place explicitly named as regularly visited today."
+    },
+    {
+      "place": "Coney Island",
+      "type": "haunt",
+      "speaker": "Sabrina Santiago",
+      "timestamp": 1341,
+      "quote": "deciding to put someone to photograph someone in Coney Island versus in their bedroom",
+      "confidence": "low",
+      "note": "Used as a hypothetical/illustrative example of a location choice, not clearly stated as a place she actually shoots regularly."
+    }
+  ],
+  "excluded": [
+    {
+      "place": "Midtown",
+      "reason": "Mentioned only as a contrast to where she was standing ('down here') to describe the types of people seen there; not stated as a place she shoots."
+    },
+    {
+      "place": "Downtown (Manhattan)",
+      "reason": "Vague, non-specific region ('I feel like I'm usually downtown'); no specific place named, per rule excluding broad areas."
+    },
+    {
+      "place": "Mexico City",
+      "reason": "Non-NYC place (upcoming zine of street photography shot while she lived there)."
+    },
+    {
+      "place": "Yale",
+      "reason": "Non-NYC place, and mentioned only in biography of another photographer (Justine Kurland), not the guest's own shooting."
+    },
+    {
+      "place": "NYU",
+      "reason": "Mentioned by a bystander being photographed on the street, not the guest or host, and not a shooting location."
+    },
+    {
+      "place": "Rizzoli Books (\"rosoli books\")",
+      "reason": "Anecdote about attending a book talk by Larry Clark in college; not a place she shoots."
+    },
+    {
+      "place": "\"Jofy\"",
+      "reason": "Mentioned by an unrelated bystander recounting her own personal history, not the guest or host."
+    }
+  ]
+}

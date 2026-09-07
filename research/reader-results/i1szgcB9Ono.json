@@ -1,0 +1,58 @@
+{
+  "videoId": "i1szgcB9Ono",
+  "guest": "Andre D. Wagner",
+  "shotToday": [
+    "Bushwick / Bed-Stuy border, Brooklyn (his old neighborhood)"
+  ],
+  "mentions": [
+    {
+      "place": "Bushwick / Bed-Stuy border, Brooklyn",
+      "type": "shot-here",
+      "speaker": "Andre D. Wagner",
+      "timestamp": 16,
+      "quote": "we're here in my old neighborhood in Brooklyn Bushwood bedside border",
+      "confidence": "medium",
+      "note": "Auto-captions garble the place name ('Bushwood bedside border'); almost certainly 'Bushwick, Bed-Stuy border,' the Brooklyn neighborhood where the whole episode is filmed."
+    },
+    {
+      "place": "Bushwick / Bed-Stuy border, Brooklyn",
+      "type": "shot-here",
+      "speaker": "Andre D. Wagner",
+      "timestamp": 105,
+      "quote": "I used to live here for probably like 10 years I just like been working on like photographing around here",
+      "confidence": "high"
+    },
+    {
+      "place": "Bushwick / Bed-Stuy border, Brooklyn",
+      "type": "haunt",
+      "speaker": "Andre D. Wagner",
+      "timestamp": 134,
+      "quote": "I've been photographing this spot for like years and I got it pictures of it before it was like this",
+      "confidence": "high",
+      "note": "Confirms it's a recurring, years-long shooting spot, not just today's visit."
+    },
+    {
+      "place": "Broadway, Brooklyn (elevated JMZ subway line)",
+      "type": "haunt",
+      "speaker": "Andre D. Wagner",
+      "timestamp": 349,
+      "quote": "I remember early on when I first started photographing on Broadway I was thinking a lot about the subway",
+      "confidence": "medium",
+      "note": "Context (\"above ground subway system\") indicates the elevated Broadway/JMZ line in Brooklyn near his neighborhood, not Manhattan's Broadway; not conclusively pinned down."
+    }
+  ],
+  "excluded": [
+    {
+      "place": "Washington Square Park, Manhattan",
+      "reason": "Named only in connection with photographer Dave Heath's own work/book, an anecdote about someone else, not a place Andre or Paulie shoot."
+    },
+    {
+      "place": "Wales",
+      "reason": "Non-NYC place, mentioned only regarding photographer Chris Killip's work."
+    },
+    {
+      "place": "\"this corner\" (within the same Bushwick/Bed-Stuy location)",
+      "reason": "Too vague to name as a distinct place; not a specific address/landmark beyond the neighborhood already captured as shot-here."
+    }
+  ]
+}

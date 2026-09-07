@@ -1,0 +1,42 @@
+{
+  "videoId": "8eacbi8U16Q",
+  "guest": "James Berkeley",
+  "shotToday": ["Times Square"],
+  "mentions": [
+    {
+      "place": "Times Square",
+      "type": "shot-here",
+      "speaker": "Paulie B",
+      "timestamp": 880,
+      "quote": "Times Square. Times Square. Times Square.",
+      "confidence": "high"
+    },
+    {
+      "place": "Washington Square Park",
+      "type": "haunt",
+      "speaker": "James Berkeley",
+      "timestamp": 189,
+      "quote": "I'm always like Washington Square Park and then I end up here",
+      "confidence": "low",
+      "note": "Ambiguous: he seems to say he often intends/talks about shooting there but ends up at a different (unnamed) park instead, so it's unclear whether he actually shoots at Washington Square Park regularly or just talks about going there."
+    }
+  ],
+  "excluded": [
+    {
+      "place": "unnamed park ('James' favorite place to shoot')",
+      "reason": "Paulie B calls it James' favorite shooting spot and they clearly shoot there in the video, but no specific park name is ever given (James explicitly contrasts it with Washington Square Park, implying it's a different, unnamed park), so it can't be listed as a specific place."
+    },
+    {
+      "place": "Boston",
+      "reason": "Guest says he used to shoot a lot in Boston, but Boston is not in NYC, so it's out of scope."
+    },
+    {
+      "place": "Massachusetts / outside Boston",
+      "reason": "Pure biography (where he's from), non-NYC, and no mention of shooting there."
+    },
+    {
+      "place": "subway tunnels / rooftops (Boston era)",
+      "reason": "Anecdote about his earlier (non-street-photography) activities in Boston, not NYC and not current shooting locations."
+    }
+  ]
+}

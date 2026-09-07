@@ -1,0 +1,95 @@
+{
+  "videoId": "CbxDq5txzo8",
+  "guest": "Izael Rivera Flores",
+  "shotToday": [
+    "Bushwick",
+    "Myrtle-Wyckoff / Myrtle Avenue",
+    "Maria Hernandez Park"
+  ],
+  "mentions": [
+    {
+      "place": "Bushwick",
+      "type": "shot-here",
+      "speaker": "Izael Rivera Flores",
+      "timestamp": 63,
+      "quote": "right now we are in Bushwick",
+      "confidence": "high"
+    },
+    {
+      "place": "Myrtle-Wyckoff / Myrtle Avenue",
+      "type": "shot-here",
+      "speaker": "Izael Rivera Flores",
+      "timestamp": 65,
+      "quote": "we are here like in Myrtle Wyckoff this is Myrtle Avenue",
+      "confidence": "high"
+    },
+    {
+      "place": "Bushwick",
+      "type": "haunt",
+      "speaker": "Izael Rivera Flores",
+      "timestamp": 71,
+      "quote": "this has been my neighborhood for the last year and a half so it's part of my route when I go to take pictures",
+      "confidence": "high"
+    },
+    {
+      "place": "Maria Hernandez Park",
+      "type": "shot-here",
+      "speaker": "Izael Rivera Flores",
+      "timestamp": 465,
+      "quote": "this is Mario Hernandez Park...very famous Park here in Bushwick",
+      "confidence": "high"
+    },
+    {
+      "place": "Coney Island",
+      "type": "haunt",
+      "speaker": "Izael Rivera Flores",
+      "timestamp": 642,
+      "quote": "I've been here in Coney Island too like four years, I think for me it's my favorite place to shoot",
+      "confidence": "high"
+    },
+    {
+      "place": "Bed-Stuy",
+      "type": "haunt",
+      "speaker": "Izael Rivera Flores",
+      "timestamp": 719,
+      "quote": "In Winter I stick to you know to Bushwick, a bedside, and Manhattan",
+      "confidence": "low",
+      "note": "Auto-caption renders this as 'a bedside'; almost certainly a mangled transcription of 'Bed-Stuy', but not certain."
+    },
+    {
+      "place": "Heartland (Queens)",
+      "type": "haunt",
+      "speaker": "Izael Rivera Flores",
+      "timestamp": 715,
+      "quote": "in summer I would like maybe hit another spot, maybe I go to Queens, I go to Heartland",
+      "confidence": "low",
+      "note": "Named place 'Heartland' is unclear/possibly a caption mis-transcription of an actual Queens neighborhood; kept because it is more specific than the borough alone, but exact place is uncertain."
+    }
+  ],
+  "excluded": [
+    {
+      "place": "The Bronx",
+      "reason": "Guest explicitly says he has NOT gone there to shoot yet ('the only place I haven't go to shoot is the Bronx'); also just a whole borough with no specific spot named."
+    },
+    {
+      "place": "Manhattan",
+      "reason": "Mentioned only as a whole borough (e.g. 'I stick to Bushwick... and Manhattan', 'take the train to Manhattan'), never a specific place within it."
+    },
+    {
+      "place": "Brooklyn",
+      "reason": "Mentioned generically by Paulie B ('busy everywhere like in Brooklyn where we just were') as a whole-borough reference to where they already were (Bushwick), not a separate specific location."
+    },
+    {
+      "place": "Queens",
+      "reason": "Named only as a whole borough alongside the more specific (if uncertain) 'Heartland' mention, which is captured separately."
+    },
+    {
+      "place": "Puerto Rico (island, cemetery, etc.)",
+      "reason": "Non-NYC location; guest's home country and where he shoots when visiting, but outside scope of NYC places."
+    },
+    {
+      "place": "Connecticut",
+      "reason": "Non-NYC location, mentioned only biographically ('I was living in Connecticut') with no mention of shooting there."
+    }
+  ]
+}

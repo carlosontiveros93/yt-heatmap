@@ -1,0 +1,62 @@
+{
+  "videoId": "2KMTzS1M1-M",
+  "guest": "Reuben Radding",
+  "shotToday": ["Herald Square"],
+  "mentions": [
+    {
+      "place": "Herald Square",
+      "type": "shot-here",
+      "speaker": "Reuben Radding",
+      "timestamp": 625,
+      "quote": "it was a period of about three minutes just now in Herald Square where all of that went away",
+      "confidence": "high"
+    },
+    {
+      "place": "21 6th Avenue",
+      "type": "haunt",
+      "speaker": "Reuben Radding",
+      "timestamp": 549,
+      "quote": "I walked this block frequently every week and every time I pass a 21 6th Avenue I think about Gene Smith",
+      "confidence": "medium",
+      "note": "He says he walks this block frequently while discussing Eugene Smith's old shooting spot, strongly implying it's part of his regular shooting route, but he doesn't explicitly say he shoots there."
+    }
+  ],
+  "excluded": [
+    {
+      "place": "Brooklyn",
+      "reason": "Whole borough with no more specific place; mentioned only as where he lives, not where he shoots."
+    },
+    {
+      "place": "Sunset Park, Brooklyn / Fifth Avenue",
+      "reason": "Biographical memory of his first morning in NYC in the late 1980s, decades before he started photographing; explicitly not a shooting anecdote."
+    },
+    {
+      "place": "Tompkins Square Park / 7A",
+      "reason": "Anecdote about having breakfast with his girlfriend's brother-in-law; a restaurant/park mentioned only as the backdrop of a conversation, not a shooting location."
+    },
+    {
+      "place": "Rector Street",
+      "reason": "Used only as a hypothetical example of a subway-avoidance mental trick to keep himself walking/shooting; not a confirmed actual location shot in or named as a regular haunt."
+    },
+    {
+      "place": "Larry Fink's farm",
+      "reason": "Not in NYC, and visited only to show Larry Fink his prints, not to shoot street photography."
+    },
+    {
+      "place": "Arlington, Virginia",
+      "reason": "Non-NYC place, purely biographical (where he grew up)."
+    },
+    {
+      "place": "Seattle",
+      "reason": "Non-NYC place, purely biographical (where he lived around 9/11)."
+    },
+    {
+      "place": "Portugal",
+      "reason": "Non-NYC place, mentioned only as a travel destination that prompted him to get a camera."
+    },
+    {
+      "place": "New York City (general)",
+      "reason": "Too broad/whole-city references ('I love New York', 'find me here in New York City') with no specific location."
+    }
+  ]
+}

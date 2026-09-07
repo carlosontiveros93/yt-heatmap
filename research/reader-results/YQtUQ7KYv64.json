@@ -1,0 +1,98 @@
+{
+  "videoId": "YQtUQ7KYv64",
+  "guest": "Stephanie Keith",
+  "shotToday": ["Foley Square"],
+  "mentions": [
+    {
+      "place": "Foley Square",
+      "type": "shot-here",
+      "speaker": "Stephanie Keith",
+      "timestamp": 41,
+      "quote": "We're at Foley Square. One of the reasons I picked this location...",
+      "confidence": "high"
+    },
+    {
+      "place": "Manhattan Criminal Courthouse (perp walk hallway)",
+      "type": "haunt",
+      "speaker": "Stephanie Keith",
+      "timestamp": 536,
+      "quote": "we have the criminal courthouse where you can actually photograph the people walking...up and down the hallway",
+      "confidence": "high"
+    },
+    {
+      "place": "26 Federal Plaza",
+      "type": "haunt",
+      "speaker": "Stephanie Keith",
+      "timestamp": 649,
+      "quote": "even with some of my photos that I took at 26 Federal Plaza",
+      "confidence": "high"
+    },
+    {
+      "place": "Collect Pond Park",
+      "type": "haunt",
+      "speaker": "Stephanie Keith",
+      "timestamp": 444,
+      "quote": "the little park in front of the criminal court, it's called Collect Pond Park...became like this crazy carnival",
+      "confidence": "low",
+      "note": "She describes covering the crowd/scrum here but never explicitly says 'I photographed there' in the first person; inferred from context of covering courthouse events."
+    },
+    {
+      "place": "Tompkins Square Park",
+      "type": "haunt",
+      "speaker": "Stephanie Keith",
+      "timestamp": 1192,
+      "quote": "if there's like punk shows in Tompkins Square Park, like I definitely want to photograph those",
+      "confidence": "high"
+    },
+    {
+      "place": "Bike Kill (event, NYC)",
+      "type": "haunt",
+      "speaker": "Stephanie Keith",
+      "timestamp": 2164,
+      "quote": "I think one of my favorite events would be Bike Kill",
+      "confidence": "high"
+    },
+    {
+      "place": "Mermaid Parade (Coney Island, Brooklyn)",
+      "type": "haunt",
+      "speaker": "Stephanie Keith",
+      "timestamp": 2123,
+      "quote": "I love those different parts of covering New York...I love the mermaid parade",
+      "confidence": "medium",
+      "note": "She frames it within 'covering New York' but doesn't say outright 'I shoot it every year'; strongly implied."
+    },
+    {
+      "place": "NYC Pride (parade/weekend)",
+      "type": "haunt",
+      "speaker": "Stephanie Keith",
+      "timestamp": 1747,
+      "quote": "if I'm out at pride, what's the difference between what I do and what you do?",
+      "confidence": "low",
+      "note": "Event rather than a specific place; used as a hypothetical comparison, not a direct 'I shoot there regularly' statement, though it implies she does."
+    },
+    {
+      "place": "Occupy Wall Street (downtown Manhattan)",
+      "type": "haunt",
+      "speaker": "Stephanie Keith",
+      "timestamp": 926,
+      "quote": "Occupy Wall Street was like, you know, downtown...I just was like, I'm in in it",
+      "confidence": "medium",
+      "note": "She names the event/protest and says she went all-in covering it, but gives no more specific location than 'downtown'."
+    }
+  ],
+  "excluded": [
+    { "place": "Brooklyn (borough, general)", "reason": "Whole-borough biography/home statement, not a specific shooting location." },
+    { "place": "Financial District", "reason": "Explicitly says 'even if I'm not necessarily documenting it with my camera' — personal enjoyment, not stated as a shoot location." },
+    { "place": "Times Square", "reason": "Same context as Financial District — loves visiting, not stated as documenting it." },
+    { "place": "Fifth Avenue / Upper Fifth Avenue", "reason": "Same context — loves walking there, not stated as shooting there." },
+    { "place": "Stonewall Inn / Drag March route", "reason": "Described as a NYC tradition (route ending at Stonewall Inn) but no first-person statement that she shoots it." },
+    { "place": "Voodoo ceremonies / basements in Brooklyn", "reason": "No specific place named, just general 'basements in Brooklyn' across an unspecified community; too vague to count as a place." },
+    { "place": "Standing Rock, North Dakota", "reason": "Non-NYC location." },
+    { "place": "Cuba", "reason": "Non-NYC location." },
+    { "place": "London / Unite the Kingdom rally", "reason": "Non-NYC location." },
+    { "place": "Minneapolis", "reason": "Non-NYC location, and about a different photographer (David Guttenfelder), not the guest herself as a regular haunt." },
+    { "place": "Appalachia, LA, etc. (mentioned re: other photographers)", "reason": "Anecdotes about other photographers' work, not the guest's own shooting locations." },
+    { "place": "Haiti / Port-au-Prince", "reason": "Non-NYC location." },
+    { "place": "NYU / Manhattan (birthplace)", "reason": "Pure biography ('I was born in Manhattan') with no shooting claim." }
+  ]
+}

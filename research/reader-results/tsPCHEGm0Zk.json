@@ -1,0 +1,64 @@
+{
+  "videoId": "tsPCHEGm0Zk",
+  "guest": "Cody Cutter",
+  "shotToday": ["Midtown Manhattan", "Fifth Avenue", "Sixth Avenue", "Madison Avenue"],
+  "mentions": [
+    {
+      "place": "Midtown Manhattan",
+      "type": "shot-here",
+      "speaker": "Cody Cutter",
+      "timestamp": 39,
+      "quote": "We're in Midtown. Lovely old Midtown.",
+      "confidence": "high"
+    },
+    {
+      "place": "Fifth Avenue",
+      "type": "shot-here",
+      "speaker": "Cody Cutter",
+      "timestamp": 42,
+      "quote": "Uh, going up fifth, sixth, some Madison.",
+      "confidence": "medium",
+      "note": "Street named only as 'fifth' in a quick rundown while walking; inferred as Fifth Avenue from Midtown context."
+    },
+    {
+      "place": "Sixth Avenue",
+      "type": "shot-here",
+      "speaker": "Cody Cutter",
+      "timestamp": 45,
+      "quote": "Uh, going up fifth, sixth, some Madison.",
+      "confidence": "medium",
+      "note": "Street named only as 'sixth' in a quick rundown while walking; inferred as Sixth Avenue from Midtown context."
+    },
+    {
+      "place": "Madison Avenue",
+      "type": "shot-here",
+      "speaker": "Cody Cutter",
+      "timestamp": 45,
+      "quote": "some Madison. Yeah. Hitting all the hitting all the main arteries here.",
+      "confidence": "medium",
+      "note": "Named only as 'Madison'; inferred as Madison Avenue from Midtown context."
+    }
+  ],
+  "excluded": [
+    {
+      "place": "Hell's Kitchen",
+      "reason": "Mentioned as the location of Danny Clinch's photo studio where Cody worked as an assistant; no indication he street-shoots there."
+    },
+    {
+      "place": "Asbury Park, New Jersey",
+      "reason": "Biography (where he was living when he discovered Danny Clinch's gallery); non-NYC and not a shooting location."
+    },
+    {
+      "place": "Jersey City, NJ",
+      "reason": "Only appears as host Paulie B's mailing address in the video description, not a shooting location."
+    },
+    {
+      "place": "Jersey (general)",
+      "reason": "Biography only ('was living in Jersey at the time'); no shooting mentioned there, and non-NYC."
+    },
+    {
+      "place": "Preston bus station, London",
+      "reason": "Non-NYC location mentioned only as an anecdote about photographer Jamie Hawksworth's project, not a place Cody or Paulie shoot."
+    }
+  ]
+}

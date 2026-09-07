@@ -1,0 +1,145 @@
+{
+  "videoId": "ckOa9C2zGoA",
+  "guest": "New York Nico",
+  "shotToday": [
+    "San Gennaro Feast (Little Italy)",
+    "Village Revival Records (Bleecker & MacDougal)",
+    "Army Navy bag store (Little Italy)",
+    "American Heritage, Grand Street"
+  ],
+  "mentions": [
+    {
+      "place": "San Gennaro Feast, Little Italy",
+      "type": "shot-here",
+      "speaker": "New York Nico",
+      "timestamp": 92,
+      "quote": "we're going to go to San Janeiro",
+      "confidence": "high"
+    },
+    {
+      "place": "San Gennaro Feast, Little Italy",
+      "type": "shot-here",
+      "speaker": "New York Nico",
+      "timestamp": 164,
+      "quote": "an Italian feast in the middle of Little Italy",
+      "confidence": "high"
+    },
+    {
+      "place": "Village Revival Records (Bleecker & MacDougal)",
+      "type": "shot-here",
+      "speaker": "New York Nico",
+      "timestamp": 213,
+      "quote": "it's on uh bleer and McDougall",
+      "confidence": "high"
+    },
+    {
+      "place": "Puerto Rico coffee / Artful Posters block (Bleecker St)",
+      "type": "shot-here",
+      "speaker": "New York Nico",
+      "timestamp": 220,
+      "quote": "this is a great block cuz you got Puerto Rico coffee",
+      "confidence": "low",
+      "note": "he narrates the block while walking it, but doesn't confirm actually photographing there"
+    },
+    {
+      "place": "Coney Island",
+      "type": "haunt",
+      "speaker": "New York Nico",
+      "timestamp": 367,
+      "quote": "Polar Plunge Cony Island Polar Plunge is is a big one",
+      "confidence": "high"
+    },
+    {
+      "place": "Washington Square Park",
+      "type": "haunt",
+      "speaker": "New York Nico",
+      "timestamp": 770,
+      "quote": "filming a wedding proposal in Washington Square Park",
+      "confidence": "high"
+    },
+    {
+      "place": "Washington Square Park",
+      "type": "haunt",
+      "speaker": "New York Nico",
+      "timestamp": 1076,
+      "quote": "Larry the Birdman of Washington Square",
+      "confidence": "medium",
+      "note": "documentary subject located there, reinforces it as a place he shoots"
+    },
+    {
+      "place": "Joe's Pizza, Carmine St",
+      "type": "haunt",
+      "speaker": "New York Nico",
+      "timestamp": 1049,
+      "quote": "Alex at Joe's p on Carmine waiting for her trainer... they allowed me to get a few shots",
+      "confidence": "high"
+    },
+    {
+      "place": "Coney Island / Williamsburg (festival circuit)",
+      "type": "haunt",
+      "speaker": "New York Nico",
+      "timestamp": 1497,
+      "quote": "I've seen him in Coney I've seen him in Williamsburg and I've seen him here",
+      "confidence": "low",
+      "note": "describes recurring subject seen across festival locations, implying he shoots festivals there too"
+    },
+    {
+      "place": "Army Navy bag store, Little Italy",
+      "type": "shot-here",
+      "speaker": "New York Nico",
+      "timestamp": 1764,
+      "quote": "he owns Army Navy bag store right here",
+      "confidence": "high"
+    },
+    {
+      "place": "Lexington Candy Shop",
+      "type": "haunt",
+      "speaker": "New York Nico",
+      "timestamp": 2291,
+      "quote": "it's the Lexington candy shop... a Coke float um being made",
+      "confidence": "high"
+    },
+    {
+      "place": "San Gennaro Feast, Little Italy (nighttime)",
+      "type": "shot-here",
+      "speaker": "New York Nico",
+      "timestamp": 2504,
+      "quote": "we're heading back to San janiro",
+      "confidence": "high"
+    },
+    {
+      "place": "American Heritage, Grand Street",
+      "type": "shot-here",
+      "speaker": "New York Nico",
+      "timestamp": 2624,
+      "quote": "American Heritage here on Grand Street",
+      "confidence": "high"
+    }
+  ],
+  "excluded": [
+    {
+      "place": "Union Square",
+      "reason": "biography only — he grew up there / lived with parents there and had his origin-story encounter there, but never states he shoots there"
+    },
+    {
+      "place": "Los Angeles",
+      "reason": "non-NYC place"
+    },
+    {
+      "place": "Twinsburg, Ohio",
+      "reason": "non-NYC place"
+    },
+    {
+      "place": "Anthony and Sons Panino shop, Williamsburg",
+      "reason": "biographical detail about guest Sabino's family business, not a place Nico shoots"
+    },
+    {
+      "place": "Santa Con",
+      "reason": "a recurring event/gathering, not a specific place"
+    },
+    {
+      "place": "Dominican Parade / Puerto Rican Parade / Pride",
+      "reason": "events, not specific places, and routes/locations not named"
+    }
+  ]
+}

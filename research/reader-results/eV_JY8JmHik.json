@@ -1,0 +1,100 @@
+{
+  "videoId": "eV_JY8JmHik",
+  "guest": "Lanna Apisukh",
+  "shotToday": [
+    "Bushwick, Brooklyn",
+    "Brush Studios (rooftop, Bushwick)",
+    "K-Bridge Skate Park (under a bridge, Brooklyn)",
+    "unnamed restaurant opening (Eater assignment, NYC)"
+  ],
+  "mentions": [
+    {
+      "place": "Bushwick, Brooklyn",
+      "type": "shot-here",
+      "speaker": "Paulie B",
+      "timestamp": 86,
+      "quote": "So, we're here in Bushwick.",
+      "confidence": "high"
+    },
+    {
+      "place": "Brush Studios (rooftop)",
+      "type": "shot-here",
+      "speaker": "Lanna Apisukh",
+      "timestamp": 157,
+      "quote": "we're actually on the top of my husband's studio roof and he works out of here at Brush Studios",
+      "confidence": "high"
+    },
+    {
+      "place": "K-Bridge Skate Park",
+      "type": "shot-here",
+      "speaker": "Lanna Apisukh",
+      "timestamp": 1744,
+      "quote": "it looks so nice right here under the bridge... first time coming here, but I really like the location",
+      "confidence": "medium",
+      "note": "Location name inferred from an earlier plan to visit 'Kbridge Skate Park'; not explicitly re-named at the moment of arrival, but the 'under the bridge' / 'first time coming here' description matches."
+    },
+    {
+      "place": "Cooper Park",
+      "type": "haunt",
+      "speaker": "Lanna Apisukh",
+      "timestamp": 2743,
+      "quote": "I have a good photo of you at Cooper Park.",
+      "confidence": "medium",
+      "note": "Confirms she has photographed there before (also floated earlier as a possible stop today: 'maybe even Cooper'), but it's unclear whether they're currently at Cooper Park or she's recalling a past shoot there."
+    }
+  ],
+  "excluded": [
+    {
+      "place": "Blue Park",
+      "reason": "Mentioned only as a possible destination for today ('we're going to try and go to I think Blue Park'); never confirmed as actually visited or reiterated as a haunt."
+    },
+    {
+      "place": "Wyckoff Ave and Myrtle Ave, Bushwick",
+      "reason": "Mentioned only in reference to a past Guardian assignment ('walked up and down Wyoff and Myrtle, got some street photos'); not today's shoot and not stated as a regular haunt."
+    },
+    {
+      "place": "Maria Hernandez Park",
+      "reason": "Mentioned only in reference to the same past Guardian assignment (handball players there); not shot during this video and not stated as a regular haunt."
+    },
+    {
+      "place": "Mood Ring (bar)",
+      "reason": "Anecdote about another photographer's (Marissa's) nightlife photos, not a place the guest herself shoots."
+    },
+    {
+      "place": "Pike Street / Pine Street, Seattle",
+      "reason": "Non-NYC location (Seattle)."
+    },
+    {
+      "place": "Capitol Hill, Seattle",
+      "reason": "Non-NYC location; also biography (where she lived), not stated as a shooting spot in NYC."
+    },
+    {
+      "place": "FIT (Fashion Institute of Technology)",
+      "reason": "Education/biography only, not described as a shooting location."
+    },
+    {
+      "place": "ICP (International Center of Photography)",
+      "reason": "Mentioned only as where she met a photographer friend at a book fair, not a shooting location."
+    },
+    {
+      "place": "Westminster Dog Show",
+      "reason": "Described as a favorite past one-off assignment ('did that for a few days'), not shot during this video, and not framed as a place she regularly shoots."
+    },
+    {
+      "place": "Long Island Sound / Hudson River / Erie Canal",
+      "reason": "One-off past boat assignment (photographing Geraldo Rivera); not shot today and not described as a regular haunt."
+    },
+    {
+      "place": "Unnamed dog show/press venue (~14:55-15:35)",
+      "reason": "A live dog-photography scene clearly happens during the video, but no specific venue name is given."
+    },
+    {
+      "place": "Longwood, Florida",
+      "reason": "Non-NYC location (her parents' former restaurant); pure biography, not a place she shoots."
+    },
+    {
+      "place": "Bronx",
+      "reason": "Mentioned only in passing (the group 'Bronx girl skates'); a whole borough with no more specific place, and not stated as the guest's own shooting location."
+    }
+  ]
+}
