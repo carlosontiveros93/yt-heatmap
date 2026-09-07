@@ -34,7 +34,6 @@ const SPOTS = [
   { id: "high-line",              name: "The High Line",                       lat: 40.7480, lng: -74.0048, kind: "park", boundary: null },
   { id: "washington-square-park", name: "Washington Square Park",              lat: 40.7308, lng: -73.9973, kind: "park", boundary: null },
   { id: "central-park",           name: "Central Park",                        lat: 40.7712, lng: -73.9742, kind: "park", boundary: null },
-  { id: "sheep-meadow",           name: "Central Park — Sheep Meadow",         lat: 40.7719, lng: -73.9754, kind: "park", boundary: null },
 
   // landmarks
   { id: "times-square",                   name: "Times Square",                                lat: 40.7580, lng: -73.9855, kind: "landmark", boundary: null },
@@ -44,6 +43,7 @@ const SPOTS = [
   { id: "14th-st-1st-ave",                name: "14th St & 1st Ave / Ave A corners",           lat: 40.7317, lng: -73.9829, kind: "landmark", boundary: null },
   { id: "bethesda-fountain",              name: "Central Park — Bethesda Fountain",            lat: 40.7659, lng: -73.9711, kind: "landmark", boundary: null },
   { id: "central-park-rock",              name: "Central Park — the rock (near Heckscher)",    lat: 40.7690, lng: -73.9780, kind: "landmark", boundary: null },
+  { id: "sheep-meadow",                   name: "Central Park — Sheep Meadow",                 lat: 40.7719, lng: -73.9754, kind: "landmark", boundary: null },
   { id: "sailboat-pond",                  name: "Central Park — sailboat pond",                lat: 40.7743, lng: -73.9668, kind: "landmark", boundary: null },
   { id: "east-river-waterfront",          name: "East River waterfront",                       lat: 40.7290, lng: -73.9720, kind: "landmark", boundary: null },
   { id: "west-side-highway",              name: "West Side Highway / Hudson waterfront",       lat: 40.7460, lng: -74.0086, kind: "landmark", boundary: null },

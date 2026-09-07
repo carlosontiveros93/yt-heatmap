@@ -40,7 +40,8 @@
     weighted by how many photographers mentioned it. Click a marker for who said it and a link to that moment in the video.</div>
   <div class="legend">
     <span class="dot" style="background:var(--accent)"></span>recommended for visitors&nbsp;&nbsp;
-    <span class="dot" style="background:var(--fav)"></span>photographer's own favorite
+    <span class="dot" style="background:var(--fav)"></span>photographer's own favorite<br>
+    <span class="dot" style="background:rgba(245,166,35,.45); border:1.5px solid var(--accent); border-radius:2px"></span>neighborhood / park area (darker = more mentions)
   </div>
   <div id="list"></div>
 </div>
@@ -48,6 +49,7 @@
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 <script src="https://unpkg.com/leaflet.heat@0.2.0/dist/leaflet-heat.js"></script>
 <script src="data.js"></script>
+<script src="boundaries.js"></script>
 <script>
   const map = L.map('map').setView([40.7350, -73.9650], 12);
   L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -73,9 +75,15 @@
   }
   map.on('zoomend', syncMarkers);
 
+  // Area fill color steps up with mention count; areas replace the heat blob.
+  const areaStyle = n => ({
+    color: n >= 3 ? '#c8102e' : n === 2 ? '#e05c5c' : '#f5a623',
+    fillColor: n >= 3 ? '#c8102e' : n === 2 ? '#e05c5c' : '#f5a623',
+    fillOpacity: 0.18 + Math.min(n, 4) * 0.08, weight: 1.5, opacity: 0.9,
+  });
+
   const heatPoints = [];
   for (const g of spots) {
-    heatPoints.push([g.lat, g.lng, g.mentions.length]);
     const isFavOnly = g.mentions.every(m => m.type === 'favorite');
     const html = `<div class="popup"><h3>${g.name}</h3>` + g.mentions.map(m =>
       `<div class="m ${m.type === 'favorite' ? 'fav' : ''}">
@@ -83,6 +91,17 @@
          <span class="n">${m.quote}</span><br>
          <a href="${sourceById.get(m.sourceId).url}&t=${m.timestamp}s" target="_blank">▶ watch at ${fmtTime(m.timestamp)}</a>
        </div>`).join('') + '</div>';
+
+    const boundary = BOUNDARIES[g.id];
+    if (boundary) {
+      g.area = L.geoJSON(boundary.geometry, { style: areaStyle(g.mentions.length) })
+        .bindPopup(html, { maxWidth: 300 }).addTo(map);
+      continue;
+    }
+    if (g.kind !== 'landmark') {
+      console.info(`[yt-heatmap] no boundary for ${g.kind} "${g.id}" — rendering as a dot`);
+    }
+    heatPoints.push([g.lat, g.lng, g.mentions.length]);
     const marker = L.circleMarker([g.lat, g.lng], {
       radius: 6 + g.mentions.length * 2,
       color: isFavOnly ? '#e05c5c' : '#f5a623',
@@ -108,6 +127,7 @@
   function addHeat() {
     try {
       map.invalidateSize();
+      if (map.getSize().x === 0) throw new Error('map not laid out yet');
       const heat = L.heatLayer(heatPoints, { ...heatOpts(), maxZoom: 13, max: 8,
         gradient: {0.2:'#1a3a6b', 0.4:'#2d7dd2', 0.6:'#f5a623', 0.85:'#e05c5c', 1:'#c8102e'} }).addTo(map);
       map.on('zoomend', () => heat.setOptions(heatOpts()));
@@ -125,7 +145,10 @@
     div.className = 'spot';
     div.innerHTML = `<div class="name">${g.name} <span class="count">×${g.mentions.length}</span></div>
                      <div class="whos">${whos}</div>`;
-    div.onclick = () => { map.setView([g.lat, g.lng], 14); syncMarkers(); g.marker.openPopup(); };
+    div.onclick = () => {
+      if (g.area) { map.fitBounds(g.area.getBounds(), { maxZoom: 14 }); g.area.openPopup(); }
+      else { map.setView([g.lat, g.lng], 14); syncMarkers(); g.marker.openPopup(); }
+    };
     list.appendChild(div);
   }
 </script>
