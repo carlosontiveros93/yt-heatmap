@@ -20,9 +20,15 @@ City) are kept separate rather than merged. A place gets its own shape once a
 photographer names it specifically; one-person lists of many neighborhoods wait
 for a second mention.
 
+**Pins** are the precision layer: an exact corner, intersection or venue a
+photographer named on camera as where they shoot ("three rolls in an hour just on
+this one corner"), high confidence only. A pin sits alongside that person's
+mention on the containing area rather than replacing it. Shops a photographer
+visited for portraits are not pins — those are relationships, not spots.
+
 - `index.html` — the map page (Leaflet + leaflet.heat from CDN, OpenStreetMap tiles)
 - `data.js` — three tables: `SPOTS` (one per physical place: id, name, lat/lng,
-  kind = landmark | park | neighborhood | corridor), `SOURCES` (one per video), and
+  kind = landmark | park | neighborhood | corridor | pin), `SOURCES` (one per video), and
   `MENTIONS` (one per time a speaker names a spot: spotId, sourceId, speaker,
   type = visitor | favorite | walkie-talkie, basis for walkie-talkie rows, quote,
   timestamp). Mention counts are derived, not stored.
@@ -34,8 +40,8 @@ for a second mention.
   says which).
 - `transcript.txt` — the full auto-generated transcript the data was built from
 
-Heat intensity and marker size = number of photographers who mentioned the spot
-(Times Square leads with 5). Click any marker or sidebar entry for who said it
+Area color, corridor width and marker size = number of photographers who mentioned
+the spot (Midtown leads). Click any shape, marker or sidebar entry for who said it
 and a link that jumps to that moment in the video.
 
 ## Run it

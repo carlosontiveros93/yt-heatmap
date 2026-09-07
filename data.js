@@ -1,6 +1,7 @@
 // Data model:
 //   SPOTS    — one entry per physical place. `kind` is landmark | park |
-//              neighborhood | corridor (a street or waterfront stretch).
+//              neighborhood | corridor (a street or waterfront stretch) | pin (an
+//              exact corner, intersection or venue a photographer named on camera).
 //              Spots with a polygon in boundaries.js (keyed by id) render as filled
 //              areas; the rest render as dots.
 //   SOURCES  — one entry per video the mentions came from.
@@ -41,12 +42,12 @@ const SPOTS = [
   { id: "times-square",                   name: "Times Square",                                lat: 40.7580, lng: -73.9855, kind: "landmark" },
   { id: "fifth-ave-42nd-to-central-park", name: "Fifth Avenue (42nd St to Central Park)",      lat: 40.7575, lng: -73.9780, kind: "corridor" },
   { id: "fifth-ave-47th-to-57th",         name: "Fifth Ave, 47th to 57th St",                  lat: 40.7601, lng: -73.9750, kind: "corridor" },
-  { id: "diamond-district-47th",          name: "47th St btwn 5th & 6th (Diamond District)",   lat: 40.7573, lng: -73.9794, kind: "landmark" },
+  { id: "diamond-district-47th",          name: "47th St btwn 5th & 6th (Diamond District)",   lat: 40.7573, lng: -73.9794, kind: "pin" },
   { id: "14th-st-1st-ave",                name: "14th St & 1st Ave / Ave A corners",           lat: 40.7317, lng: -73.9829, kind: "corridor" },
-  { id: "bethesda-fountain",              name: "Central Park — Bethesda Fountain",            lat: 40.7740, lng: -73.9709, kind: "landmark" },
-  { id: "central-park-rock",              name: "Central Park — the rock (near Heckscher)",    lat: 40.7690, lng: -73.9780, kind: "landmark" },
-  { id: "sheep-meadow",                   name: "Central Park — Sheep Meadow",                 lat: 40.7719, lng: -73.9754, kind: "landmark" },
-  { id: "sailboat-pond",                  name: "Central Park — sailboat pond",                lat: 40.7743, lng: -73.9668, kind: "landmark" },
+  { id: "bethesda-fountain",              name: "Central Park — Bethesda Fountain",            lat: 40.7740, lng: -73.9709, kind: "pin" },
+  { id: "central-park-rock",              name: "Central Park — the rock (near Heckscher)",    lat: 40.7690, lng: -73.9780, kind: "pin" },
+  { id: "sheep-meadow",                   name: "Central Park — Sheep Meadow",                 lat: 40.7719, lng: -73.9754, kind: "pin" },
+  { id: "sailboat-pond",                  name: "Central Park — sailboat pond",                lat: 40.7743, lng: -73.9668, kind: "pin" },
   { id: "east-river-waterfront",          name: "East River waterfront",                       lat: 40.7290, lng: -73.9720, kind: "corridor" },
   { id: "west-side-highway",              name: "West Side Highway / Hudson waterfront",       lat: 40.7460, lng: -74.0086, kind: "corridor" },
   { id: "nyc-subway",                     name: "NYC Subway",                                  lat: 40.7132, lng: -73.9576, kind: "landmark" },
@@ -62,7 +63,7 @@ const SPOTS = [
   { id: "kissena-park",          name: "Kissena Park (Flushing)",                   lat: 40.7460, lng: -73.8090, kind: "park" },
   { id: "columbus-park",         name: "Columbus Park (Chinatown)",                 lat: 40.7148, lng: -73.9997, kind: "park" },
   { id: "herald-square",         name: "Herald Square (34th St)",                   lat: 40.7484, lng: -73.9878, kind: "landmark" },
-  { id: "church-ave-flatbush",   name: "Church Ave & Flatbush Ave",                 lat: 40.6505, lng: -73.9587, kind: "landmark" },
+  { id: "church-ave-flatbush",   name: "Church Ave & Flatbush Ave",                 lat: 40.6505, lng: -73.9587, kind: "pin" },
   { id: "grand-concourse",       name: "Grand Concourse (Bronx)",                   lat: 40.8700, lng: -73.8885, kind: "corridor" },
   { id: "roosevelt-ave-7-train", name: "Roosevelt Ave under the 7 train",           lat: 40.7500, lng: -73.8640, kind: "corridor" },
   { id: "eastern-parkway",       name: "Eastern Parkway (West Indian Day Carnival)", lat: 40.6700, lng: -73.9500, kind: "corridor" },
@@ -87,6 +88,24 @@ const SPOTS = [
   { id: "ozone-park",            name: "Ozone Park",                                lat: 40.6795, lng: -73.8490, kind: "neighborhood" },
   { id: "orchard-beach",         name: "Orchard Beach (Bronx)",                     lat: 40.8670, lng: -73.7920, kind: "park" },
   { id: "united-nations",        name: "United Nations",                            lat: 40.7489, lng: -73.9680, kind: "landmark" },
+
+  // pins: exact spots named on camera, high confidence only. A pin sits alongside
+  // the person's mention on the containing area; it adds precision, not a move.
+  { id: "jacks-wife-freda-corner", name: "Lafayette & Spring (Jack's Wife Freda corner)", lat: 40.7223, lng: -73.9974, kind: "pin" },
+  { id: "broadway-prince",         name: "Broadway & Prince St (Soho)",               lat: 40.7243, lng: -73.9979, kind: "pin" },
+  { id: "fulton-nostrand",         name: "Fulton St & Nostrand Ave (Bed-Stuy)",       lat: 40.6801, lng: -73.9499, kind: "pin" },
+  { id: "54th-madison",            name: "54th St & Madison Ave",                     lat: 40.7607, lng: -73.9737, kind: "pin" },
+  { id: "55th-fifth",              name: "55th St & Fifth Ave",                       lat: 40.7615, lng: -73.9753, kind: "pin" },
+  { id: "110th-cpw",               name: "110th St & Central Park West (Harlem)",     lat: 40.8003, lng: -73.9584, kind: "pin" },
+  { id: "205th-grand-concourse",   name: "205th St & Grand Concourse (Bronx)",        lat: 40.8770, lng: -73.8855, kind: "pin" },
+  { id: "kingston-eastern-pkwy",   name: "Kingston Ave & Eastern Parkway",            lat: 40.6690, lng: -73.9422, kind: "pin" },
+  { id: "corona-plaza",            name: "Corona Plaza (Roosevelt Ave & 103rd St)",   lat: 40.7496, lng: -73.8625, kind: "pin" },
+  { id: "myrtle-wyckoff",          name: "Myrtle-Wyckoff (Bushwick)",                 lat: 40.6995, lng: -73.9118, kind: "pin" },
+  { id: "la-plaza-cultural",       name: "La Plaza Cultural garden (9th St & Ave C)", lat: 40.7253, lng: -73.9787, kind: "pin" },
+  { id: "wall-street-bull",        name: "Charging Bull (Bowling Green)",             lat: 40.7056, lng: -74.0134, kind: "pin" },
+  { id: "st-patricks",             name: "St. Patrick's Cathedral (5th & 50th)",      lat: 40.7585, lng: -73.9760, kind: "pin" },
+  { id: "42nd-6th",                name: "42nd St & 6th Ave",                         lat: 40.7546, lng: -73.9846, kind: "pin" },
+  { id: "26-federal-plaza",        name: "26 Federal Plaza / Criminal Courthouse",    lat: 40.7148, lng: -74.0040, kind: "pin" },
 ];
 
 const SOURCES = [
@@ -373,4 +392,21 @@ const MENTIONS = [
   { spotId: "ozone-park", sourceId: "wt-tyler-woodford-2021", speaker: "Tyler Woodford", type: "walkie-talkie", basis: "haunt", timestamp: 256, quote: "“I was finding places that I never thought New York would even look like — like Ozone Park.”" },
 
   { spotId: "ozone-park", sourceId: "wt-conrad-ziolkowski", speaker: "Conrad Ziolkowski", type: "walkie-talkie", basis: "haunt", timestamp: 326, quote: "“Rockaway, Ozone Park. Mostly shooting medium format out there.”" },
+
+  // pins (exact spots)
+  { spotId: "jacks-wife-freda-corner", sourceId: "wt-joe-greer", speaker: "Joe Greer", type: "walkie-talkie", basis: "shot-here", timestamp: 59, quote: "“Maddie and I went to Jack's Wife Freda, just sitting out… I got through three rolls in an hour just on this one corner. The majority of my time has been spent here.”" },
+  { spotId: "broadway-prince", sourceId: "wt-alex-brown", speaker: "Alex Brown", type: "walkie-talkie", basis: "haunt", timestamp: 127, quote: "“This is probably where I spend most of my time in Soho.”" },
+  { spotId: "fulton-nostrand", sourceId: "wt-ryan-riley", speaker: "Ryan Riley", type: "walkie-talkie", basis: "shot-here", timestamp: 393, quote: "“Fulton Street and Nostrand. This is like the heart of Bed-Stuy.”" },
+  { spotId: "54th-madison", sourceId: "wt-trevor-wisecup", speaker: "Trevor Wisecup", type: "walkie-talkie", basis: "shot-here", timestamp: 554, quote: "“This is 54th and Madison.” Part of his Madison Avenue book project." },
+  { spotId: "55th-fifth", sourceId: "wt-daniel-arnold", speaker: "Daniel Arnold", type: "walkie-talkie", basis: "haunt", timestamp: 3186, quote: "“That 55th is a particular one. The darkness of 55th and Fifth — oh, so cozy.”" },
+  { spotId: "110th-cpw", sourceId: "wt-chris-perez", speaker: "Chris Perez", type: "walkie-talkie", basis: "shot-here", timestamp: 47, quote: "“We're on the corner of 110th and Central Park.”" },
+  { spotId: "205th-grand-concourse", sourceId: "wt-yusef-emuna", speaker: "Yusef Emuna", type: "walkie-talkie", basis: "shot-here", timestamp: 30, quote: "“I brought Paulie out today to 205th off of Grand Concourse.”" },
+  { spotId: "kingston-eastern-pkwy", sourceId: SRC, speaker: "Eli", type: "visitor", timestamp: 796, quote: "“Kingston Avenue, right off of Eastern Parkway. Friday at like 12, while everyone's preparing for Shabbat.”" },
+  { spotId: "corona-plaza", sourceId: "wt-willie-velazquez", speaker: "Willie Velazquez", type: "walkie-talkie", basis: "shot-here", timestamp: 18, quote: "“Right now we're in Roosevelt, Corona Plaza, where I grew up.”" },
+  { spotId: "myrtle-wyckoff", sourceId: "wt-izael-rivera-flores", speaker: "Izael Rivera Flores", type: "walkie-talkie", basis: "shot-here", timestamp: 65, quote: "“We are here in Myrtle-Wyckoff, this is Myrtle Avenue… part of my route when I go to take pictures.”" },
+  { spotId: "la-plaza-cultural", sourceId: "wt-troy-williams", speaker: "Troy Williams", type: "walkie-talkie", basis: "shot-here", timestamp: 411, quote: "Shooting in the community garden — “I think it's La Plaza Cultural, is what it's called.”" },
+  { spotId: "wall-street-bull", sourceId: "wt-dustin-roderick", speaker: "Dustin Roderick", type: "walkie-talkie", basis: "shot-here", timestamp: 2122, quote: "“I've never been over here really, to the Wall Street Bull.”" },
+  { spotId: "st-patricks", sourceId: "wt-john-wha", speaker: "John Wha", type: "walkie-talkie", basis: "shot-here", timestamp: 540, quote: "“Here we are at St. Patrick's Cathedral. Iconic.”" },
+  { spotId: "42nd-6th", sourceId: "wt-conor-cunningham", speaker: "Conor James Cunningham", type: "walkie-talkie", basis: "haunt", timestamp: 339, quote: "“I really like 42nd and 6th, that area, because it gets a lot of light.”" },
+  { spotId: "26-federal-plaza", sourceId: "wt-stephanie-keith", speaker: "Stephanie Keith", type: "walkie-talkie", basis: "haunt", timestamp: 536, quote: "“The criminal courthouse, where you can photograph the people walking up and down the hallway… photos I took at 26 Federal Plaza.”" },
 ];

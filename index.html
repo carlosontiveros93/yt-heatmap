@@ -26,6 +26,8 @@
   .popup .m { margin:6px 0; padding:6px 8px; border-left:3px solid var(--accent); background:#f4f2ee; }
   .popup .m.fav { border-left-color:var(--fav); }
   .popup .m.wt { border-left-color:#2d7dd2; }
+  .pin-tag { font-size:10px; font-weight:600; color:#c8102e; border:1px solid #c8102e; border-radius:3px; padding:0 4px; margin-left:6px; vertical-align:middle; }
+  .spot .name .pin-glyph { display:inline-block; width:9px; height:9px; border-radius:50%; background:#c8102e; border:2px solid #fff; margin-right:5px; vertical-align:middle; }
   .popup .m .w { font-weight:600; }
   .popup .m .n { color:#555; }
   .popup a { color:#0a66c2; font-size:12px; }
@@ -44,7 +46,8 @@
     <span class="dot" style="background:var(--accent)"></span>recommended for visitors&nbsp;&nbsp;
     <span class="dot" style="background:var(--fav)"></span>photographer's own favorite<br>
     <span class="dot" style="background:rgba(245,166,35,.45); border:1.5px solid var(--accent); border-radius:2px"></span>neighborhood / park area&nbsp;&nbsp;
-    <span class="dot" style="background:var(--accent); width:14px; height:4px; border-radius:2px"></span>street / waterfront corridor<br>
+    <span class="dot" style="background:var(--accent); width:14px; height:4px; border-radius:2px"></span>street / waterfront corridor&nbsp;&nbsp;
+    <span class="dot" style="background:#c8102e; border:2px solid #fff; width:11px; height:11px"></span>exact spot someone named<br>
     <span style="color:var(--muted)">darker = more mentions</span>
   </div>
   <div id="list"></div>
@@ -68,6 +71,10 @@
     .sort((a, b) => b.mentions.length - a.mentions.length);
 
   const fmtTime = t => `${Math.floor(t / 60)}:${String(t % 60).padStart(2, '0')}`;
+
+  // Pins are exact spots someone named on camera; they stay visible at every
+  // zoom and draw above everything else.
+  map.createPane('pins').style.zIndex = 650;
 
   // Markers live in one group so they can be shown/hidden together. Below
   // MARKER_MIN_ZOOM the heat layer carries the wide view on its own.
@@ -95,13 +102,19 @@
     const label = m => m.type === 'favorite' ? 'personal favorite'
                      : m.type === 'walkie-talkie' ? (m.basis === 'haunt' ? 'regular spot · Walkie Talkie' : 'shot here · Walkie Talkie')
                      : 'visitor pick';
-    const html = `<div class="popup"><h3>${g.name}</h3>` + g.mentions.map(m =>
+    const html = `<div class="popup"><h3>${g.name}${g.kind === 'pin' ? ' <span class="pin-tag">exact spot</span>' : ''}</h3>` + g.mentions.map(m =>
       `<div class="m ${m.type === 'favorite' ? 'fav' : m.type === 'walkie-talkie' ? 'wt' : ''}">
          <span class="w">${m.speaker}</span> <span class="n">(${label(m)})</span><br>
          <span class="n">${m.quote}</span><br>
          <a href="${sourceById.get(m.sourceId).url}&t=${m.timestamp}s" target="_blank">▶ watch at ${fmtTime(m.timestamp)}</a>
        </div>`).join('') + '</div>';
 
+    if (g.kind === 'pin') {
+      g.marker = L.circleMarker([g.lat, g.lng], {
+        pane: 'pins', radius: 6, color: '#ffffff', weight: 2.5, fillColor: '#c8102e', fillOpacity: 1,
+      }).addTo(map).bindPopup(html, { maxWidth: 300 });
+      continue;
+    }
     const boundary = BOUNDARIES[g.id];
     if (boundary) {
       const isLine = boundary.geometry.type === 'LineString';
@@ -171,11 +184,11 @@
     const whos = [...new Set(g.mentions.map(m => m.speaker))].join(', ');
     const div = document.createElement('div');
     div.className = 'spot';
-    div.innerHTML = `<div class="name">${g.name} <span class="count">×${g.mentions.length}</span></div>
+    div.innerHTML = `<div class="name">${g.kind === 'pin' ? '<span class="pin-glyph"></span>' : ''}${g.name} <span class="count">×${g.mentions.length}</span></div>
                      <div class="whos">${whos}</div>`;
     div.onclick = () => {
       if (g.area) { map.fitBounds(g.area.getBounds(), { maxZoom: 14 }); g.area.openPopup(); }
-      else { map.setView([g.lat, g.lng], 14); syncMarkers(); g.marker.openPopup(); }
+      else { map.setView([g.lat, g.lng], g.kind === 'pin' ? 16 : 14); syncMarkers(); g.marker.openPopup(); }
     };
     list.appendChild(div);
   }
