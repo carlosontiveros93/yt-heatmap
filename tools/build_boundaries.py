@@ -218,7 +218,7 @@ js = ("// Polygon boundaries for spots, keyed by spot id. Most come from NYC Ope
       "// with hand-placed waypoints. See each entry's `source`. Spots without an\n"
       "// entry here render as dots.\n"
       "const BOUNDARIES = " + json.dumps(out, separators=(',', ':')) + ";\n")
-open('boundaries.js', 'w').write(js)
+open('cities/nyc/boundaries.js', 'w').write(js)
 for r in report:
     print(f"{r[0]:24s} {str(r[1]):22s} rings={r[2]} points={r[3]}")
 print('bytes:', len(js))

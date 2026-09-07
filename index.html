@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>NYC Street Photography Heatmap</title>
+<title>Street Photography Heatmap</title>
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
 <style>
   :root { --bg:#14161a; --panel:#1d2026; --text:#e8e6e1; --muted:#9a978f; --accent:#f5a623; --fav:#e05c5c; }
@@ -11,7 +11,9 @@
   body { margin:0; font-family:-apple-system, "Segoe UI", sans-serif; background:var(--bg); color:var(--text); display:flex; height:100vh; }
   #sidebar { width:340px; min-width:280px; overflow-y:auto; background:var(--panel); padding:16px; border-right:1px solid #2c2f36; }
   #map { flex:1; }
+  .cityrow { display:flex; align-items:center; gap:6px; font-size:11px; color:var(--muted); margin:0 0 8px; }
   h1 { font-size:18px; margin:0 0 4px; }
+  #city { font:12px -apple-system, "Segoe UI", sans-serif; color:var(--text); background:#23262d; border:1px solid #2c2f36; border-radius:6px; padding:2px 6px; height:22px; cursor:pointer; }
   .sub { font-size:12px; color:var(--muted); margin-bottom:12px; line-height:1.5; }
   .sub a { color:var(--accent); }
   .legend { font-size:12px; color:var(--muted); margin-bottom:12px; }
@@ -37,11 +39,9 @@
 </head>
 <body>
 <div id="sidebar">
-  <h1>NYC Street Photography Spots</h1>
-  <div class="sub">Where NYC street photographers say to shoot — and where they actually shoot. Built from Paulie B's
-    <a href="https://www.youtube.com/watch?v=X0CbbpuR9vs" target="_blank">"Where should visitors go for street photography?"</a>
-    plus 46 episodes of his <em>Walkie Talkie</em> series, weighted by how many photographers named each spot.
-    Click a spot for who said it and a link to that moment in the video.</div>
+  <div class="cityrow">City <select id="city" title="Switch city"></select></div>
+  <h1 id="title"></h1>
+  <div class="sub" id="intro"></div>
   <div class="legend">
     <span class="dot" style="background:var(--accent)"></span>recommended for visitors&nbsp;&nbsp;
     <span class="dot" style="background:var(--fav)"></span>photographer's own favorite<br>
@@ -55,10 +55,34 @@
 <div id="map"></div>
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 <script src="https://unpkg.com/leaflet.heat@0.2.0/dist/leaflet-heat.js"></script>
-<script src="data.js"></script>
-<script src="boundaries.js"></script>
+<script src="cities/cities.js"></script>
 <script>
-  const map = L.map('map').setView([40.7350, -73.9650], 12);
+  // The site is static (no build step), so a city is chosen from the URL
+  // (?city=nyc, default nyc) and its three files are injected as script tags.
+  // The map code below runs only after all three have loaded.
+  const cityId = (() => {
+    const want = new URLSearchParams(location.search).get('city');
+    return CITIES.some(c => c.id === want) ? want : CITIES[0].id;
+  })();
+  const citySelect = document.getElementById('city');
+  for (const c of CITIES) citySelect.add(new Option(c.name, c.id, false, c.id === cityId));
+  citySelect.onchange = () => { location.search = '?city=' + citySelect.value; };
+
+  const loadScript = src => new Promise((ok, fail) => {
+    const el = document.createElement('script');
+    el.src = src; el.onload = ok; el.onerror = () => fail(new Error('failed to load ' + src));
+    document.head.appendChild(el);
+  });
+  (async () => {
+    for (const f of ['config.js', 'data.js', 'boundaries.js']) await loadScript(`cities/${cityId}/${f}`);
+    document.title = CITY.pageTitle;
+    document.getElementById('title').textContent = CITY.title;
+    document.getElementById('intro').innerHTML = CITY.intro;
+    init();
+  })().catch(e => { document.getElementById('intro').textContent = e.message; console.error(e); });
+
+  function init() {
+  const map = L.map('map').setView(CITY.center, CITY.zoom);
   L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '&copy; OpenStreetMap contributors', maxZoom: 19,
     className: 'dimmed-tiles'
@@ -191,6 +215,7 @@
       else { map.setView([g.lat, g.lng], g.kind === 'pin' ? 16 : 14); syncMarkers(); g.marker.openPopup(); }
     };
     list.appendChild(div);
+  }
   }
 </script>
 </body>

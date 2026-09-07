@@ -28,13 +28,17 @@ enough on its own. A pin sits alongside that person's mention on the containing
 area rather than replacing it. Shops a photographer visited for portraits are not
 pins — those are relationships, not spots.
 
-- `index.html` — the map page (Leaflet + leaflet.heat from CDN, OpenStreetMap tiles)
-- `data.js` — three tables: `SPOTS` (one per physical place: id, name, lat/lng,
+- `index.html` — the map page (Leaflet + leaflet.heat from CDN, OpenStreetMap tiles).
+  Picks a city from `?city=` in the URL (default `nyc`) and loads that city's three
+  files from `cities/<id>/`; the sidebar has a city switcher.
+- `cities/cities.js` — the list of cities the switcher offers (id + display name).
+- `cities/<id>/config.js` — that city's name, page title, start center/zoom and intro text.
+- `cities/<id>/data.js` — three tables: `SPOTS` (one per physical place: id, name, lat/lng,
   kind = landmark | park | neighborhood | corridor | pin), `SOURCES` (one per video), and
   `MENTIONS` (one per time a speaker names a spot: spotId, sourceId, speaker,
   type = visitor | favorite | walkie-talkie, basis for walkie-talkie rows, quote,
   timestamp). Mention counts are derived, not stored.
-- `boundaries.js` — shapes keyed by spot id. Polygons render as filled areas and
+- `cities/<id>/boundaries.js` — shapes keyed by spot id. Polygons render as filled areas and
   LineStrings as thick corridor lines (color = mention count); anything without a
   shape falls back to a dot. Sources: NYC Open Data NTA 2020 and Parks Properties
   where the official area matches what the speaker meant, OpenStreetMap (Domino
@@ -52,5 +56,5 @@ and a link that jumps to that moment in the video.
 python3 -m http.server 8749 --directory .
 ```
 
-Then open http://localhost:8749. (It needs a local server rather than opening
+Then open http://localhost:8749 (or http://localhost:8749/?city=nyc). (It needs a local server rather than opening
 the file directly because it loads `data.js` and map tiles.)

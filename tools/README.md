@@ -15,8 +15,9 @@ The pipeline that built the data, run from the repo root. Python 3 stdlib only.
    agents, one per episode) against the rules in the main README, returning JSON per
    episode into `research/reader-results/`. Human review of a proposal document
    (`research/proposals/`) happens before anything is written to `data.js`.
-5. `build_boundaries.py` — builds `boundaries.js` from the GeoJSON files, OSM (Domino
+5. `build_boundaries.py` — builds `cities/nyc/boundaries.js` from the GeoJSON files, OSM (Domino
    Park) and the hand-drawn shapes listed inside it. Rerun after editing shapes.
 
-For a new city: a `research/<city>/` folder, the city's official neighborhood and
+For a new city: a `cities/<id>/` folder (config.js, data.js, boundaries.js) plus an
+entry in `cities/cities.js`; a `research/<city>/` folder, the city's official neighborhood and
 park GeoJSON, a gazetteer for the scan, and the same read → propose → review loop.
