@@ -113,13 +113,20 @@
   syncMarkers();
 
   // Heat radius is in screen pixels, so halve it for every zoom level below
-  // the baseline (and grow it when zooming in) to keep blobs tied to a
-  // real-world area instead of swallowing the borough when zoomed out.
-  const BASE_ZOOM = 12, BASE_RADIUS = 45, BASE_BLUR = 30;
+  // the baseline to keep blobs tied to a real-world area when zoomed out.
+  // Growth when zooming in is capped at one level: past ~90px the canvas
+  // shadow blur breaks up into square tiles.
+  const BASE_ZOOM = 12, BASE_RADIUS = 45, BASE_BLUR = 30, HEAT_MAX_ZOOM = 14;
   function heatOpts() {
-    const scale = Math.pow(2, map.getZoom() - BASE_ZOOM);
+    const scale = Math.pow(2, Math.min(map.getZoom() - BASE_ZOOM, 1));
     return { radius: Math.max(10, BASE_RADIUS * scale),
              blur: Math.max(8, BASE_BLUR * scale) };
+  }
+  // Above HEAT_MAX_ZOOM the dots and areas already tell the story, so the
+  // heat canvas fades out rather than smearing over individual blocks.
+  function syncHeatVisibility(heat) {
+    heat._canvas.style.transition = 'opacity .3s';
+    heat._canvas.style.opacity = map.getZoom() > HEAT_MAX_ZOOM ? '0' : '1';
   }
 
   // The heat canvas throws if the map hasn't been laid out yet, so retry
@@ -130,7 +137,8 @@
       if (map.getSize().x === 0) throw new Error('map not laid out yet');
       const heat = L.heatLayer(heatPoints, { ...heatOpts(), maxZoom: 13, max: 8,
         gradient: {0.2:'#1a3a6b', 0.4:'#2d7dd2', 0.6:'#f5a623', 0.85:'#e05c5c', 1:'#c8102e'} }).addTo(map);
-      map.on('zoomend', () => heat.setOptions(heatOpts()));
+      map.on('zoomend', () => { heat.setOptions(heatOpts()); syncHeatVisibility(heat); });
+      syncHeatVisibility(heat);
     } catch (e) {
       setTimeout(addHeat, 250);
     }
