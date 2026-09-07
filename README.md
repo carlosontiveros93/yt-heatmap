@@ -20,11 +20,13 @@ City) are kept separate rather than merged. A place gets its own shape once a
 photographer names it specifically; one-person lists of many neighborhoods wait
 for a second mention.
 
-**Pins** are the precision layer: an exact corner, intersection or venue a
-photographer named on camera as where they shoot ("three rolls in an hour just on
-this one corner"), high confidence only. A pin sits alongside that person's
-mention on the containing area rather than replacing it. Shops a photographer
-visited for portraits are not pins — those are relationships, not spots.
+**Pins** are the precision layer: an exact corner, intersection or venue where a
+photographer demonstrably shot — either said so ("three rolls in an hour just on
+this one corner") or is seen shooting there in the episode (verified by watching,
+not just the transcript). High confidence only; "we're starting at X" is not
+enough on its own. A pin sits alongside that person's mention on the containing
+area rather than replacing it. Shops a photographer visited for portraits are not
+pins — those are relationships, not spots.
 
 - `index.html` — the map page (Leaflet + leaflet.heat from CDN, OpenStreetMap tiles)
 - `data.js` — three tables: `SPOTS` (one per physical place: id, name, lat/lng,
