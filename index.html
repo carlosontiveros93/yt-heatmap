@@ -55,26 +55,23 @@
     className: 'dimmed-tiles'
   }).addTo(map);
 
-  // Group mentions that share coordinates into one "spot" with a mention count.
-  const groups = new Map();
-  for (const m of MENTIONS) {
-    const key = m.lat.toFixed(4) + ',' + m.lng.toFixed(4);
-    if (!groups.has(key)) groups.set(key, { lat: m.lat, lng: m.lng, mentions: [] });
-    groups.get(key).mentions.push(m);
-  }
+  // Join mentions onto their spots. Mention count is derived here, not stored.
+  const sourceById = new Map(SOURCES.map(s => [s.id, s]));
+  const spots = SPOTS.map(s => ({ ...s, mentions: MENTIONS.filter(m => m.spotId === s.id) }))
+    .filter(s => s.mentions.length > 0)
+    .sort((a, b) => b.mentions.length - a.mentions.length);
+
+  const fmtTime = t => `${Math.floor(t / 60)}:${String(t % 60).padStart(2, '0')}`;
 
   const heatPoints = [];
-  const spots = [...groups.values()].sort((a, b) => b.mentions.length - a.mentions.length);
-
   for (const g of spots) {
     heatPoints.push([g.lat, g.lng, g.mentions.length]);
-    const name = g.mentions[0].spot;
-    const isFavOnly = g.mentions.every(m => m.kind === 'favorite');
-    const html = `<div class="popup"><h3>${name}</h3>` + g.mentions.map(m =>
-      `<div class="m ${m.kind === 'favorite' ? 'fav' : ''}">
-         <span class="w">${m.who}</span> <span class="n">(${m.kind === 'favorite' ? 'personal favorite' : 'visitor pick'})</span><br>
-         <span class="n">${m.note}</span><br>
-         <a href="https://www.youtube.com/watch?v=X0CbbpuR9vs&t=${m.t}s" target="_blank">▶ watch at ${Math.floor(m.t/60)}:${String(m.t%60).padStart(2,'0')}</a>
+    const isFavOnly = g.mentions.every(m => m.type === 'favorite');
+    const html = `<div class="popup"><h3>${g.name}</h3>` + g.mentions.map(m =>
+      `<div class="m ${m.type === 'favorite' ? 'fav' : ''}">
+         <span class="w">${m.speaker}</span> <span class="n">(${m.type === 'favorite' ? 'personal favorite' : 'visitor pick'})</span><br>
+         <span class="n">${m.quote}</span><br>
+         <a href="${sourceById.get(m.sourceId).url}&t=${m.timestamp}s" target="_blank">▶ watch at ${fmtTime(m.timestamp)}</a>
        </div>`).join('') + '</div>';
     const marker = L.circleMarker([g.lat, g.lng], {
       radius: 6 + g.mentions.length * 2,
@@ -112,10 +109,10 @@
   // Sidebar list
   const list = document.getElementById('list');
   for (const g of spots) {
-    const whos = [...new Set(g.mentions.map(m => m.who))].join(', ');
+    const whos = [...new Set(g.mentions.map(m => m.speaker))].join(', ');
     const div = document.createElement('div');
     div.className = 'spot';
-    div.innerHTML = `<div class="name">${g.mentions[0].spot} <span class="count">×${g.mentions.length}</span></div>
+    div.innerHTML = `<div class="name">${g.name} <span class="count">×${g.mentions.length}</span></div>
                      <div class="whos">${whos}</div>`;
     div.onclick = () => { map.setView([g.lat, g.lng], 14); g.marker.openPopup(); };
     list.appendChild(div);

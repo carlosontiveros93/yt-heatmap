@@ -5,9 +5,10 @@ Paulie B's video ["I asked photographers in NYC: Where should visitors go for
 street photography?"](https://www.youtube.com/watch?v=X0CbbpuR9vs).
 
 - `index.html` — the map page (Leaflet + leaflet.heat from CDN, OpenStreetMap tiles)
-- `data.js` — every mention pulled from the video transcript: spot, coordinates,
-  who said it, whether it was a visitor recommendation or their personal
-  favorite, a note, and the timestamp in the video
+- `data.js` — three tables: `SPOTS` (one per physical place: id, name, lat/lng,
+  kind = landmark | park | neighborhood, boundary placeholder), `SOURCES` (one per
+  video), and `MENTIONS` (one per recommendation: spotId, sourceId, speaker,
+  visitor vs. favorite, quote, timestamp). Mention counts are derived, not stored.
 - `transcript.txt` — the full auto-generated transcript the data was built from
 
 Heat intensity and marker size = number of photographers who mentioned the spot
