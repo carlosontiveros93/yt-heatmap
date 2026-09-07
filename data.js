@@ -14,7 +14,6 @@
 const SPOTS = [
   // neighborhoods
   { id: "midtown",              name: "Midtown",                                   lat: 40.7549, lng: -73.9840, kind: "neighborhood" },
-  { id: "midtown-34th-to-park", name: "Midtown (34th St to the park, 9th to Lex)", lat: 40.7529, lng: -73.9827, kind: "neighborhood" },
   { id: "alphabet-city",        name: "Alphabet City (East Village)",              lat: 40.7248, lng: -73.9793, kind: "neighborhood" },
   { id: "bushwick",             name: "Bushwick — under the Broadway el",          lat: 40.6934, lng: -73.9272, kind: "corridor" },
   { id: "blissville",           name: "Blissville (Queens)",                       lat: 40.7365, lng: -73.9345, kind: "neighborhood" },
@@ -112,7 +111,7 @@ const MENTIONS = [
   { spotId: "alphabet-city",         sourceId: SRC, speaker: "John", type: "favorite", timestamp: 246, quote: "Very neighbor-hoody; loves the community aspect." },
   { spotId: "14th-st-1st-ave",       sourceId: SRC, speaker: "John", type: "favorite", timestamp: 287, quote: "First L stop into Manhattan; good mix of people 3–7pm, great light down 14th St." },
 
-  { spotId: "midtown-34th-to-park", sourceId: SRC, speaker: "Tall photographer", type: "visitor",  timestamp: 359, quote: "Coming from Denver/Albuquerque: “what you get in a week elsewhere you get in a day here.”" },
+  { spotId: "midtown",              sourceId: SRC, speaker: "Tall photographer", type: "visitor",  timestamp: 359, quote: "“Anywhere from 34th to the park, 9th over to Lexington.” Coming from Denver/Albuquerque: “what you get in a week elsewhere you get in a day here.”" },
   { spotId: "high-line",            sourceId: SRC, speaker: "Tall photographer", type: "favorite", timestamp: 386, quote: "“My favorite park. Hard to make images there, but rewarding.”" },
 
   { spotId: "times-square", sourceId: SRC, speaker: "Ian", type: "visitor",  timestamp: 444, quote: "“Just blow it open at Times Square, then trickle around.”" },
