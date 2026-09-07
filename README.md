@@ -6,7 +6,7 @@ they actually shoot. Two layers of evidence from Paulie B's YouTube channel:
 - ["I asked photographers in NYC: Where should visitors go for street
   photography?"](https://www.youtube.com/watch?v=X0CbbpuR9vs) — ~10 photographers
   recommend spots for visitors and name their own favorites.
-- 36 episodes of the *Walkie Talkie* series — a day shooting with one
+- 46 episodes of the *Walkie Talkie* series — a day shooting with one
   photographer, usually on their home turf. Each mention records whether they
   shot there in the episode (`basis: "shot-here"`) or named it as a regular
   spot (`basis: "haunt"`). Only episodes with clear location signal were used;

@@ -15,7 +15,7 @@ const SPOTS = [
   // neighborhoods
   { id: "midtown",              name: "Midtown",                                   lat: 40.7549, lng: -73.9840, kind: "neighborhood" },
   { id: "alphabet-city",        name: "Alphabet City (East Village)",              lat: 40.7248, lng: -73.9793, kind: "neighborhood" },
-  { id: "bushwick",             name: "Bushwick — under the Broadway el",          lat: 40.6934, lng: -73.9272, kind: "corridor" },
+  { id: "bushwick",             name: "Broadway el (Bushwick / Bed-Stuy border)",  lat: 40.6934, lng: -73.9272, kind: "corridor" },
   { id: "blissville",           name: "Blissville (Queens)",                       lat: 40.7365, lng: -73.9345, kind: "neighborhood" },
   { id: "coney-island",         name: "Coney Island",                              lat: 40.5749, lng: -73.9786, kind: "neighborhood" },
   { id: "crown-heights",        name: "Crown Heights (Kingston Ave & Eastern Pkwy)", lat: 40.6690, lng: -73.9422, kind: "neighborhood" },
@@ -80,6 +80,13 @@ const SPOTS = [
   { id: "williamsburg-bridge",   name: "Williamsburg Bridge",                       lat: 40.7132, lng: -73.9720, kind: "landmark" },
   { id: "madison-avenue",        name: "Madison Avenue (42nd to 72nd)",             lat: 40.7621, lng: -73.9720, kind: "corridor" },
   { id: "mulberry-street",       name: "Mulberry St / Little Italy (San Gennaro)",  lat: 40.7196, lng: -73.9963, kind: "corridor" },
+
+  // added from Walkie Talkie batch 3
+  { id: "bushwick-core",         name: "Bushwick (Knickerbocker / Myrtle-Wyckoff)", lat: 40.7000, lng: -73.9190, kind: "neighborhood" },
+  { id: "borough-park",          name: "Borough Park",                              lat: 40.6330, lng: -73.9900, kind: "neighborhood" },
+  { id: "ozone-park",            name: "Ozone Park",                                lat: 40.6795, lng: -73.8490, kind: "neighborhood" },
+  { id: "orchard-beach",         name: "Orchard Beach (Bronx)",                     lat: 40.8670, lng: -73.7920, kind: "park" },
+  { id: "united-nations",        name: "United Nations",                            lat: 40.7489, lng: -73.9680, kind: "landmark" },
 ];
 
 const SOURCES = [
@@ -113,7 +120,6 @@ const SOURCES = [
   { id: "wt-new-york-nico", title: "a day with New York Nico (Walkie Talkie episode 47) -- Video street photography?", channel: "Paulie B", url: "https://www.youtube.com/watch?v=ckOa9C2zGoA" },
   { id: "wt-dustin-roderick", title: "from Large Format Photos to 35mm Street Photography -- Walkie Talkie with Dustin Roderick (ep 41)", channel: "Paulie B", url: "https://www.youtube.com/watch?v=Zk1ZFkbmCuI" },
   { id: "wt-trevor-wisecup", title: "a day with nyc Photographer Trevor Wisecup (Walkie Talkie ep. 27)", channel: "Paulie B", url: "https://www.youtube.com/watch?v=HjuP527Xt2Q" },
-  { id: "wt-lanna-apisukh", title: "A day with pro photographer Lanna Apisukh (Walkie Talkie episode 62)", channel: "Paulie B", url: "https://www.youtube.com/watch?v=eV_JY8JmHik" },
   { id: "wt-izael-rivera-flores", title: "a day with Puerto Rican Photographer Izael Rivera Flores -- Walkie Talkie episode 19", channel: "Paulie B", url: "https://www.youtube.com/watch?v=CbxDq5txzo8" },
   { id: "wt-melissa-oshaughnessy", title: "a day with NYC photographer Melissa O'Shaughnessy -- Walkie Talkie ep. 24", channel: "Paulie B", url: "https://www.youtube.com/watch?v=9yOLOI2Y2LU" },
   { id: "wt-jorge-garcia", title: "Starting NYCSPC -- Walkie Talkie with Jorge Garcia (ep. 30) -- Founder of NYCSPC & ContactPhoto", channel: "Paulie B", url: "https://www.youtube.com/watch?v=_B37JNYImks" },
@@ -126,6 +132,17 @@ const SOURCES = [
   { id: "wt-daniel-arnold", title: "A day with photographer Daniel Arnold (Walkie Talkie episode 39)", channel: "Paulie B", url: "https://www.youtube.com/watch?v=7LwnTdrX9Vg" },
   { id: "wt-tyler-woodford", title: "shoot what you love to shoot -- Walkie Talkie with Tyler Woodford (ep 42)", channel: "Paulie B", url: "https://www.youtube.com/watch?v=WG2cKx-htP4" },
   { id: "wt-stephanie-keith", title: "A Day with NYC Photojournalist Stephanie Keith | Walkie Talkie", channel: "Paulie B", url: "https://www.youtube.com/watch?v=YQtUQ7KYv64" },
+  { id: "wt-marty-hamburger", title: "a day with Brooklyn Photographer, Marty Hamburger (Walkie Talkie ep. 82)", channel: "Paulie B", url: "https://www.youtube.com/watch?v=DJKWPzRTGLY" },
+  { id: "wt-mark-portillo", title: "A Day with NYC Photographer Mark Portillo (Walkie Talkie)", channel: "Paulie B", url: "https://www.youtube.com/watch?v=by60qvIrzPk" },
+  { id: "wt-elijah-mogoli", title: "a day with Brooklyn photographer Elijah Mogoli -- NYC Street Photography -- Walkie Talkie ep. 17", channel: "Paulie B", url: "https://www.youtube.com/watch?v=jqQ4W82FkBM" },
+  { id: "wt-cisco-vasquez", title: "Respect, Dignity, & Community through Photography \u2014 Walkie Talkie with Cisco Vasquez", channel: "Paulie B", url: "https://www.youtube.com/watch?v=PHns5btsuCA" },
+  { id: "wt-cody-cutter", title: "a day with NYC Street Photographer Cody Cutter (Walkie Talkie episode 67)", channel: "Paulie B", url: "https://www.youtube.com/watch?v=tsPCHEGm0Zk" },
+  { id: "wt-james-berkeley", title: "Leica M4 Street Photography in NYC // Walkie Talkie with James Berkeley", channel: "Paulie B", url: "https://www.youtube.com/watch?v=8eacbi8U16Q" },
+  { id: "wt-laura-fuchs", title: "a day with nyc photographer Laura Fuchs -- Walkie Talkie episode 43", channel: "Paulie B", url: "https://www.youtube.com/watch?v=3DulRNiQf0w" },
+  { id: "wt-reuben-radding", title: "a day with NYC Street Photographer Reuben Radding (Walkie Talkie episode 13)", channel: "Paulie B", url: "https://www.youtube.com/watch?v=2KMTzS1M1-M" },
+  { id: "wt-jaclyn-licht", title: "A Day with Jaclyn Licht | Street, Documentary, & UN Photographer | Walkie Talkie ep. 85", channel: "Paulie B", url: "https://www.youtube.com/watch?v=4-0WmQncp5o" },
+  { id: "wt-billy-dinh", title: "Billy Dinh on Photographing Daily life, Travel, and Why he Photographs -- Walkie Talkie Ep. 34", channel: "Paulie B", url: "https://www.youtube.com/watch?v=Gdb2ieZ0rss" },
+  { id: "wt-tyler-woodford-2021", title: "It's Part of the Process -- Walkie Talkie with Tyler Woodford -- NYC Street Photography", channel: "Paulie B", url: "https://www.youtube.com/watch?v=BL_opcfONu8" },
 ];
 
 const SRC = "paulie-b-where-to-shoot";
@@ -319,4 +336,41 @@ const MENTIONS = [
   { spotId: "foley-square", sourceId: "wt-stephanie-keith", speaker: "Stephanie Keith", type: "walkie-talkie", basis: "shot-here", timestamp: 41, quote: "“We're at Foley Square.” Her beat: the criminal courthouse perp-walk hallway, 26 Federal Plaza." },
   { spotId: "tompkins-square-park", sourceId: "wt-stephanie-keith", speaker: "Stephanie Keith", type: "walkie-talkie", basis: "haunt", timestamp: 1192, quote: "“If there's punk shows in Tompkins Square Park, I definitely want to photograph those.”" },
   { spotId: "coney-island", sourceId: "wt-stephanie-keith", speaker: "Stephanie Keith", type: "walkie-talkie", basis: "haunt", timestamp: 2123, quote: "“I love the Mermaid Parade.”" },
+
+  // Walkie Talkie batch 3
+
+  { spotId: "borough-park", sourceId: "wt-marty-hamburger", speaker: "Marty Hamburger", type: "walkie-talkie", basis: "shot-here", timestamp: 147, quote: "“Borough Park, down here on 47th… we're going to cut down this way.”" },
+  { spotId: "coney-island", sourceId: "wt-marty-hamburger", speaker: "Marty Hamburger", type: "walkie-talkie", basis: "haunt", timestamp: 794, quote: "Photographs the Polar Plunge every year — “it's also convenient, so it doesn't take much for me to go out there.”" },
+
+  { spotId: "borough-park", sourceId: "wt-conrad-ziolkowski", speaker: "Conrad Ziolkowski", type: "walkie-talkie", basis: "haunt", timestamp: 312, quote: "“Other parts of South Brooklyn — Bensonhurst, Borough Park, Gravesend.”" },
+
+  { spotId: "midtown", sourceId: "wt-mark-portillo", speaker: "Mark Portillo", type: "walkie-talkie", basis: "shot-here", timestamp: 33, quote: "“Midtown, a little downtown, mix of both.”" },
+
+  { spotId: "washington-square-park", sourceId: "wt-elijah-mogoli", speaker: "Elijah Mogoli", type: "walkie-talkie", basis: "shot-here", timestamp: 1127, quote: "At the arch: “this is the wedding spot, everybody comes here.”" },
+  { spotId: "harlem", sourceId: "wt-elijah-mogoli", speaker: "Elijah Mogoli", type: "walkie-talkie", basis: "haunt", timestamp: 975, quote: "“I love going to Harlem, that's one place I'll go.”" },
+
+  { spotId: "orchard-beach", sourceId: "wt-cisco-vasquez", speaker: "Cisco Vasquez", type: "walkie-talkie", basis: "haunt", timestamp: 1808, quote: "“I like going there because you don't really see many photographers… the parking-lot scene, the beach itself, the boardwalk.”" },
+
+  { spotId: "midtown", sourceId: "wt-cody-cutter", speaker: "Cody Cutter", type: "walkie-talkie", basis: "shot-here", timestamp: 39, quote: "“We're in Midtown. Lovely old Midtown… going up Fifth, Sixth, some Madison. Hitting all the main arteries.”" },
+
+  { spotId: "times-square", sourceId: "wt-james-berkeley", speaker: "James Berkeley", type: "walkie-talkie", basis: "shot-here", timestamp: 880, quote: "Shooting Times Square with Paulie." },
+
+  { spotId: "midtown", sourceId: "wt-laura-fuchs", speaker: "Laura Fuchs", type: "walkie-talkie", basis: "shot-here", timestamp: 223, quote: "Shooting at 31st & 7th — “you got the Empire right behind you.”" },
+  { spotId: "harlem", sourceId: "wt-laura-fuchs", speaker: "Laura Fuchs", type: "walkie-talkie", basis: "haunt", timestamp: 1103, quote: "“Love Harlem. Harlem never disappoints.”" },
+  { spotId: "washington-square-park", sourceId: "wt-laura-fuchs", speaker: "Laura Fuchs", type: "walkie-talkie", basis: "haunt", timestamp: 1135, quote: "“I love Washington Square Park — it's too saturated with cameras.”" },
+  { spotId: "soho", sourceId: "wt-laura-fuchs", speaker: "Laura Fuchs", type: "walkie-talkie", basis: "shot-here", timestamp: 2094, quote: "“Have the best day in Soho, you guys.”" },
+
+  { spotId: "herald-square", sourceId: "wt-reuben-radding", speaker: "Reuben Radding", type: "walkie-talkie", basis: "shot-here", timestamp: 625, quote: "“A period of about three minutes just now in Herald Square where all of that went away.”" },
+
+  { spotId: "lower-east-side", sourceId: "wt-jaclyn-licht", speaker: "Jaclyn Licht", type: "walkie-talkie", basis: "shot-here", timestamp: 31, quote: "“We're here in the Lower East Side, off the Delancey-Essex stop… I really enjoy coming into Manhattan, especially Lower East Side and Chinatown.”" },
+  { spotId: "chinatown", sourceId: "wt-jaclyn-licht", speaker: "Jaclyn Licht", type: "walkie-talkie", basis: "haunt", timestamp: 1145, quote: "“Especially Lower East Side and Chinatown, Little Italy.”" },
+  { spotId: "united-nations", sourceId: "wt-jaclyn-licht", speaker: "Jaclyn Licht", type: "walkie-talkie", basis: "haunt", timestamp: 245, quote: "“The UN also became kind of a playground for street photography.”" },
+
+  { spotId: "united-nations", sourceId: "wt-boris-apple", speaker: "Boris Apple", type: "walkie-talkie", basis: "shot-here", timestamp: 466, quote: "Heading to the UN during the General Assembly — “let me just get this.”" },
+
+  { spotId: "bushwick-core", sourceId: "wt-billy-dinh", speaker: "Billy Dinh", type: "walkie-talkie", basis: "shot-here", timestamp: 460, quote: "“I'm based here in Bushwick, which is where I've taken you guys… I've shot this area quite a bit, so I'm starting to know a lot of locals.”" },
+
+  { spotId: "ozone-park", sourceId: "wt-tyler-woodford-2021", speaker: "Tyler Woodford", type: "walkie-talkie", basis: "haunt", timestamp: 256, quote: "“I was finding places that I never thought New York would even look like — like Ozone Park.”" },
+
+  { spotId: "ozone-park", sourceId: "wt-conrad-ziolkowski", speaker: "Conrad Ziolkowski", type: "walkie-talkie", basis: "haunt", timestamp: 326, quote: "“Rockaway, Ozone Park. Mostly shooting medium format out there.”" },
 ];
