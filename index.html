@@ -63,6 +63,16 @@
 
   const fmtTime = t => `${Math.floor(t / 60)}:${String(t % 60).padStart(2, '0')}`;
 
+  // Markers live in one group so they can be shown/hidden together. Below
+  // MARKER_MIN_ZOOM the heat layer carries the wide view on its own.
+  const MARKER_MIN_ZOOM = 12;
+  const markers = L.layerGroup();
+  function syncMarkers() {
+    if (map.getZoom() >= MARKER_MIN_ZOOM) markers.addTo(map);
+    else map.removeLayer(markers);
+  }
+  map.on('zoomend', syncMarkers);
+
   const heatPoints = [];
   for (const g of spots) {
     heatPoints.push([g.lat, g.lng, g.mentions.length]);
@@ -78,9 +88,10 @@
       color: isFavOnly ? '#e05c5c' : '#f5a623',
       fillColor: isFavOnly ? '#e05c5c' : '#f5a623',
       fillOpacity: 0.75, weight: 1.5,
-    }).addTo(map).bindPopup(html, { maxWidth: 300 });
+    }).addTo(markers).bindPopup(html, { maxWidth: 300 });
     g.marker = marker;
   }
+  syncMarkers();
 
   // Heat radius is in screen pixels, so halve it for every zoom level below
   // the baseline (and grow it when zooming in) to keep blobs tied to a
@@ -114,7 +125,7 @@
     div.className = 'spot';
     div.innerHTML = `<div class="name">${g.name} <span class="count">×${g.mentions.length}</span></div>
                      <div class="whos">${whos}</div>`;
-    div.onclick = () => { map.setView([g.lat, g.lng], 14); g.marker.openPopup(); };
+    div.onclick = () => { map.setView([g.lat, g.lng], 14); syncMarkers(); g.marker.openPopup(); };
     list.appendChild(div);
   }
 </script>
