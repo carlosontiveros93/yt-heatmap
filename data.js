@@ -1,5 +1,6 @@
 // Data model:
-//   SPOTS    — one entry per physical place. `kind` is landmark | park | neighborhood.
+//   SPOTS    — one entry per physical place. `kind` is landmark | park |
+//              neighborhood | corridor (a street or waterfront stretch).
 //              Spots with a polygon in boundaries.js (keyed by id) render as filled
 //              areas; the rest render as dots.
 //   SOURCES  — one entry per video the mentions came from.
@@ -13,7 +14,7 @@ const SPOTS = [
   { id: "midtown",              name: "Midtown",                                   lat: 40.7549, lng: -73.9840, kind: "neighborhood" },
   { id: "midtown-34th-to-park", name: "Midtown (34th St to the park, 9th to Lex)", lat: 40.7529, lng: -73.9827, kind: "neighborhood" },
   { id: "alphabet-city",        name: "Alphabet City (East Village)",              lat: 40.7248, lng: -73.9793, kind: "neighborhood" },
-  { id: "bushwick",             name: "Bushwick — under the Broadway el",          lat: 40.6934, lng: -73.9272, kind: "neighborhood" },
+  { id: "bushwick",             name: "Bushwick — under the Broadway el",          lat: 40.6934, lng: -73.9272, kind: "corridor" },
   { id: "blissville",           name: "Blissville (Queens)",                       lat: 40.7373, lng: -73.9319, kind: "neighborhood" },
   { id: "coney-island",         name: "Coney Island",                              lat: 40.5749, lng: -73.9786, kind: "neighborhood" },
   { id: "crown-heights",        name: "Crown Heights (Kingston Ave & Eastern Pkwy)", lat: 40.6690, lng: -73.9422, kind: "neighborhood" },
@@ -37,16 +38,16 @@ const SPOTS = [
 
   // landmarks
   { id: "times-square",                   name: "Times Square",                                lat: 40.7580, lng: -73.9855, kind: "landmark" },
-  { id: "fifth-ave-42nd-to-central-park", name: "Fifth Avenue (42nd St to Central Park)",      lat: 40.7575, lng: -73.9780, kind: "landmark" },
-  { id: "fifth-ave-47th-to-57th",         name: "Fifth Ave, 47th to 57th St",                  lat: 40.7601, lng: -73.9750, kind: "landmark" },
+  { id: "fifth-ave-42nd-to-central-park", name: "Fifth Avenue (42nd St to Central Park)",      lat: 40.7575, lng: -73.9780, kind: "corridor" },
+  { id: "fifth-ave-47th-to-57th",         name: "Fifth Ave, 47th to 57th St",                  lat: 40.7601, lng: -73.9750, kind: "corridor" },
   { id: "diamond-district-47th",          name: "47th St btwn 5th & 6th (Diamond District)",   lat: 40.7573, lng: -73.9794, kind: "landmark" },
-  { id: "14th-st-1st-ave",                name: "14th St & 1st Ave / Ave A corners",           lat: 40.7317, lng: -73.9829, kind: "landmark" },
+  { id: "14th-st-1st-ave",                name: "14th St & 1st Ave / Ave A corners",           lat: 40.7317, lng: -73.9829, kind: "corridor" },
   { id: "bethesda-fountain",              name: "Central Park — Bethesda Fountain",            lat: 40.7659, lng: -73.9711, kind: "landmark" },
   { id: "central-park-rock",              name: "Central Park — the rock (near Heckscher)",    lat: 40.7690, lng: -73.9780, kind: "landmark" },
   { id: "sheep-meadow",                   name: "Central Park — Sheep Meadow",                 lat: 40.7719, lng: -73.9754, kind: "landmark" },
   { id: "sailboat-pond",                  name: "Central Park — sailboat pond",                lat: 40.7743, lng: -73.9668, kind: "landmark" },
-  { id: "east-river-waterfront",          name: "East River waterfront",                       lat: 40.7290, lng: -73.9720, kind: "landmark" },
-  { id: "west-side-highway",              name: "West Side Highway / Hudson waterfront",       lat: 40.7460, lng: -74.0086, kind: "landmark" },
+  { id: "east-river-waterfront",          name: "East River waterfront",                       lat: 40.7290, lng: -73.9720, kind: "corridor" },
+  { id: "west-side-highway",              name: "West Side Highway / Hudson waterfront",       lat: 40.7460, lng: -74.0086, kind: "corridor" },
   { id: "nyc-subway-elevated",            name: "NYC Subway (J/M/F elevated lines)",           lat: 40.7132, lng: -73.9576, kind: "landmark" },
 ];
 

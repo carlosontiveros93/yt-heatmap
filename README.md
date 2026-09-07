@@ -6,13 +6,15 @@ street photography?"](https://www.youtube.com/watch?v=X0CbbpuR9vs).
 
 - `index.html` — the map page (Leaflet + leaflet.heat from CDN, OpenStreetMap tiles)
 - `data.js` — three tables: `SPOTS` (one per physical place: id, name, lat/lng,
-  kind = landmark | park | neighborhood), `SOURCES` (one per video), and
+  kind = landmark | park | neighborhood | corridor), `SOURCES` (one per video), and
   `MENTIONS` (one per recommendation: spotId, sourceId, speaker, visitor vs.
   favorite, quote, timestamp). Mention counts are derived, not stored.
-- `boundaries.js` — polygons keyed by spot id. Neighborhoods and parks with a
-  polygon render as filled areas (color = mention count) instead of dots; anything
-  without one falls back to a dot. Sources: NYC Open Data NTA 2020 and Parks
-  Properties, OpenStreetMap (Domino Park), and two hand-drawn approximations.
+- `boundaries.js` — shapes keyed by spot id. Polygons render as filled areas and
+  LineStrings as thick corridor lines (color = mention count); anything without a
+  shape falls back to a dot. Sources: NYC Open Data NTA 2020 and Parks Properties
+  where the official area matches what the speaker meant, OpenStreetMap (Domino
+  Park), and hand-drawn approximations where it doesn't (each entry's `source`
+  says which).
 - `transcript.txt` — the full auto-generated transcript the data was built from
 
 Heat intensity and marker size = number of photographers who mentioned the spot

@@ -41,7 +41,9 @@
   <div class="legend">
     <span class="dot" style="background:var(--accent)"></span>recommended for visitors&nbsp;&nbsp;
     <span class="dot" style="background:var(--fav)"></span>photographer's own favorite<br>
-    <span class="dot" style="background:rgba(245,166,35,.45); border:1.5px solid var(--accent); border-radius:2px"></span>neighborhood / park area (darker = more mentions)
+    <span class="dot" style="background:rgba(245,166,35,.45); border:1.5px solid var(--accent); border-radius:2px"></span>neighborhood / park area&nbsp;&nbsp;
+    <span class="dot" style="background:var(--accent); width:14px; height:4px; border-radius:2px"></span>street / waterfront corridor<br>
+    <span style="color:var(--muted)">darker = more mentions</span>
   </div>
   <div id="list"></div>
 </div>
@@ -75,11 +77,14 @@
   }
   map.on('zoomend', syncMarkers);
 
-  // Area fill color steps up with mention count; areas replace the heat blob.
+  // Color steps up with mention count; areas and corridors replace the heat blob.
+  const heatColor = n => n >= 3 ? '#c8102e' : n === 2 ? '#e05c5c' : '#f5a623';
   const areaStyle = n => ({
-    color: n >= 3 ? '#c8102e' : n === 2 ? '#e05c5c' : '#f5a623',
-    fillColor: n >= 3 ? '#c8102e' : n === 2 ? '#e05c5c' : '#f5a623',
+    color: heatColor(n), fillColor: heatColor(n),
     fillOpacity: 0.18 + Math.min(n, 4) * 0.08, weight: 1.5, opacity: 0.9,
+  });
+  const corridorStyle = n => ({
+    color: heatColor(n), weight: 7 + Math.min(n, 4) * 2, opacity: 0.8, lineCap: 'round', lineJoin: 'round',
   });
 
   const heatPoints = [];
@@ -94,7 +99,8 @@
 
     const boundary = BOUNDARIES[g.id];
     if (boundary) {
-      g.area = L.geoJSON(boundary.geometry, { style: areaStyle(g.mentions.length) })
+      const isLine = boundary.geometry.type === 'LineString';
+      g.area = L.geoJSON(boundary.geometry, { style: (isLine ? corridorStyle : areaStyle)(g.mentions.length) })
         .bindPopup(html, { maxWidth: 300 }).addTo(map);
       continue;
     }
