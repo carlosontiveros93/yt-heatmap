@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NYC Street Photography Heatmap</title>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+<style>
+  :root { --bg:#14161a; --panel:#1d2026; --text:#e8e6e1; --muted:#9a978f; --accent:#f5a623; --fav:#e05c5c; }
+  * { box-sizing:border-box; }
+  body { margin:0; font-family:-apple-system, "Segoe UI", sans-serif; background:var(--bg); color:var(--text); display:flex; height:100vh; }
+  #sidebar { width:340px; min-width:280px; overflow-y:auto; background:var(--panel); padding:16px; border-right:1px solid #2c2f36; }
+  #map { flex:1; }
+  h1 { font-size:18px; margin:0 0 4px; }
+  .sub { font-size:12px; color:var(--muted); margin-bottom:12px; line-height:1.5; }
+  .sub a { color:var(--accent); }
+  .legend { font-size:12px; color:var(--muted); margin-bottom:12px; }
+  .dot { display:inline-block; width:10px; height:10px; border-radius:50%; margin-right:4px; vertical-align:middle; }
+  .spot { padding:8px 10px; border-radius:8px; margin-bottom:6px; cursor:pointer; background:#23262d; }
+  .spot:hover { background:#2b2f38; }
+  .spot .name { font-weight:600; font-size:13px; }
+  .spot .count { color:var(--accent); font-size:12px; }
+  .spot .whos { color:var(--muted); font-size:11px; margin-top:2px; }
+  .popup { font-size:13px; max-width:260px; }
+  .popup h3 { margin:0 0 6px; font-size:14px; }
+  .popup .m { margin:6px 0; padding:6px 8px; border-left:3px solid var(--accent); background:#f4f2ee; }
+  .popup .m.fav { border-left-color:var(--fav); }
+  .popup .m .w { font-weight:600; }
+  .popup .m .n { color:#555; }
+  .popup a { color:#0a66c2; font-size:12px; }
+  .leaflet-popup-content-wrapper { border-radius:8px; }
+  .dimmed-tiles { filter: grayscale(60%) brightness(80%); }
+</style>
+</head>
+<body>
+<div id="sidebar">
+  <h1>NYC Street Photography Spots</h1>
+  <div class="sub">Every location recommended in Paulie B's video
+    <a href="https://www.youtube.com/watch?v=X0CbbpuR9vs" target="_blank">"Where should visitors go for street photography?"</a>,
+    weighted by how many photographers mentioned it. Click a marker for who said it and a link to that moment in the video.</div>
+  <div class="legend">
+    <span class="dot" style="background:var(--accent)"></span>recommended for visitors&nbsp;&nbsp;
+    <span class="dot" style="background:var(--fav)"></span>photographer's own favorite
+  </div>
+  <div id="list"></div>
+</div>
+<div id="map"></div>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="https://unpkg.com/leaflet.heat@0.2.0/dist/leaflet-heat.js"></script>
+<script src="data.js"></script>
+<script>
+  const map = L.map('map').setView([40.7350, -73.9650], 12);
+  L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '&copy; OpenStreetMap contributors', maxZoom: 19,
+    className: 'dimmed-tiles'
+  }).addTo(map);
+
+  // Group mentions that share coordinates into one "spot" with a mention count.
+  const groups = new Map();
+  for (const m of MENTIONS) {
+    const key = m.lat.toFixed(4) + ',' + m.lng.toFixed(4);
+    if (!groups.has(key)) groups.set(key, { lat: m.lat, lng: m.lng, mentions: [] });
+    groups.get(key).mentions.push(m);
+  }
+
+  const heatPoints = [];
+  const spots = [...groups.values()].sort((a, b) => b.mentions.length - a.mentions.length);
+
+  for (const g of spots) {
+    heatPoints.push([g.lat, g.lng, g.mentions.length]);
+    const name = g.mentions[0].spot;
+    const isFavOnly = g.mentions.every(m => m.kind === 'favorite');
+    const html = `<div class="popup"><h3>${name}</h3>` + g.mentions.map(m =>
+      `<div class="m ${m.kind === 'favorite' ? 'fav' : ''}">
+         <span class="w">${m.who}</span> <span class="n">(${m.kind === 'favorite' ? 'personal favorite' : 'visitor pick'})</span><br>
+         <span class="n">${m.note}</span><br>
+         <a href="https://www.youtube.com/watch?v=X0CbbpuR9vs&t=${m.t}s" target="_blank">▶ watch at ${Math.floor(m.t/60)}:${String(m.t%60).padStart(2,'0')}</a>
+       </div>`).join('') + '</div>';
+    const marker = L.circleMarker([g.lat, g.lng], {
+      radius: 6 + g.mentions.length * 2,
+      color: isFavOnly ? '#e05c5c' : '#f5a623',
+      fillColor: isFavOnly ? '#e05c5c' : '#f5a623',
+      fillOpacity: 0.75, weight: 1.5,
+    }).addTo(map).bindPopup(html, { maxWidth: 300 });
+    g.marker = marker;
+  }
+
+  // Heat radius is in screen pixels, so halve it for every zoom level below
+  // the baseline (and grow it when zooming in) to keep blobs tied to a
+  // real-world area instead of swallowing the borough when zoomed out.
+  const BASE_ZOOM = 12, BASE_RADIUS = 45, BASE_BLUR = 30;
+  function heatOpts() {
+    const scale = Math.pow(2, map.getZoom() - BASE_ZOOM);
+    return { radius: Math.max(10, BASE_RADIUS * scale),
+             blur: Math.max(8, BASE_BLUR * scale) };
+  }
+
+  // The heat canvas throws if the map hasn't been laid out yet, so retry
+  // until it succeeds instead of adding it unconditionally.
+  function addHeat() {
+    try {
+      map.invalidateSize();
+      const heat = L.heatLayer(heatPoints, { ...heatOpts(), maxZoom: 13, max: 4,
+        gradient: {0.2:'#1a3a6b', 0.4:'#2d7dd2', 0.6:'#f5a623', 0.85:'#e05c5c', 1:'#ffffff'} }).addTo(map);
+      map.on('zoomend', () => heat.setOptions(heatOpts()));
+    } catch (e) {
+      setTimeout(addHeat, 250);
+    }
+  }
+  addHeat();
+
+  // Sidebar list
+  const list = document.getElementById('list');
+  for (const g of spots) {
+    const whos = [...new Set(g.mentions.map(m => m.who))].join(', ');
+    const div = document.createElement('div');
+    div.className = 'spot';
+    div.innerHTML = `<div class="name">${g.mentions[0].spot} <span class="count">×${g.mentions.length}</span></div>
+                     <div class="whos">${whos}</div>`;
+    div.onclick = () => { map.setView([g.lat, g.lng], 14); g.marker.openPopup(); };
+    list.appendChild(div);
+  }
+</script>
+</body>
+</html>
