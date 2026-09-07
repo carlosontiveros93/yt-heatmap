@@ -123,6 +123,15 @@
   }
   syncMarkers();
 
+  // Stacking order decides what a click hits. Draw the largest areas first
+  // (bottom), smaller areas above them, and corridors above every area, so an
+  // overlapped small spot is still clickable.
+  const bboxArea = layer => { const b = layer.getBounds(); return (b.getEast() - b.getWest()) * (b.getNorth() - b.getSouth()); };
+  const shaped = spots.filter(s => s.area);
+  const isLine = s => BOUNDARIES[s.id].geometry.type === 'LineString';
+  shaped.filter(s => !isLine(s)).sort((a, b) => bboxArea(b.area) - bboxArea(a.area)).forEach(s => s.area.bringToFront());
+  shaped.filter(isLine).forEach(s => s.area.bringToFront());
+
   // Heat radius is in screen pixels, so halve it for every zoom level below
   // the baseline to keep blobs tied to a real-world area when zoomed out.
   // Growth when zooming in is capped at one level: past ~90px the canvas
