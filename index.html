@@ -25,6 +25,7 @@
   .popup h3 { margin:0 0 6px; font-size:14px; }
   .popup .m { margin:6px 0; padding:6px 8px; border-left:3px solid var(--accent); background:#f4f2ee; }
   .popup .m.fav { border-left-color:var(--fav); }
+  .popup .m.wt { border-left-color:#2d7dd2; }
   .popup .m .w { font-weight:600; }
   .popup .m .n { color:#555; }
   .popup a { color:#0a66c2; font-size:12px; }
@@ -35,9 +36,10 @@
 <body>
 <div id="sidebar">
   <h1>NYC Street Photography Spots</h1>
-  <div class="sub">Every location recommended in Paulie B's video
-    <a href="https://www.youtube.com/watch?v=X0CbbpuR9vs" target="_blank">"Where should visitors go for street photography?"</a>,
-    weighted by how many photographers mentioned it. Click a marker for who said it and a link to that moment in the video.</div>
+  <div class="sub">Where NYC street photographers say to shoot — and where they actually shoot. Built from Paulie B's
+    <a href="https://www.youtube.com/watch?v=X0CbbpuR9vs" target="_blank">"Where should visitors go for street photography?"</a>
+    plus 16 episodes of his <em>Walkie Talkie</em> series, weighted by how many photographers named each spot.
+    Click a spot for who said it and a link to that moment in the video.</div>
   <div class="legend">
     <span class="dot" style="background:var(--accent)"></span>recommended for visitors&nbsp;&nbsp;
     <span class="dot" style="background:var(--fav)"></span>photographer's own favorite<br>
@@ -90,9 +92,12 @@
   const heatPoints = [];
   for (const g of spots) {
     const isFavOnly = g.mentions.every(m => m.type === 'favorite');
+    const label = m => m.type === 'favorite' ? 'personal favorite'
+                     : m.type === 'walkie-talkie' ? (m.basis === 'haunt' ? 'regular spot · Walkie Talkie' : 'shot here · Walkie Talkie')
+                     : 'visitor pick';
     const html = `<div class="popup"><h3>${g.name}</h3>` + g.mentions.map(m =>
-      `<div class="m ${m.type === 'favorite' ? 'fav' : ''}">
-         <span class="w">${m.speaker}</span> <span class="n">(${m.type === 'favorite' ? 'personal favorite' : 'visitor pick'})</span><br>
+      `<div class="m ${m.type === 'favorite' ? 'fav' : m.type === 'walkie-talkie' ? 'wt' : ''}">
+         <span class="w">${m.speaker}</span> <span class="n">(${label(m)})</span><br>
          <span class="n">${m.quote}</span><br>
          <a href="${sourceById.get(m.sourceId).url}&t=${m.timestamp}s" target="_blank">▶ watch at ${fmtTime(m.timestamp)}</a>
        </div>`).join('') + '</div>';
