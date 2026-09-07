@@ -108,8 +108,8 @@
   function addHeat() {
     try {
       map.invalidateSize();
-      const heat = L.heatLayer(heatPoints, { ...heatOpts(), maxZoom: 13, max: 4,
-        gradient: {0.2:'#1a3a6b', 0.4:'#2d7dd2', 0.6:'#f5a623', 0.85:'#e05c5c', 1:'#ffffff'} }).addTo(map);
+      const heat = L.heatLayer(heatPoints, { ...heatOpts(), maxZoom: 13, max: 8,
+        gradient: {0.2:'#1a3a6b', 0.4:'#2d7dd2', 0.6:'#f5a623', 0.85:'#e05c5c', 1:'#c8102e'} }).addTo(map);
       map.on('zoomend', () => heat.setOptions(heatOpts()));
     } catch (e) {
       setTimeout(addHeat, 250);
