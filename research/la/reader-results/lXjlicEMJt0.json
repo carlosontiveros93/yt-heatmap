@@ -1,0 +1,89 @@
+{
+  "videoId": "lXjlicEMJt0",
+  "guest": "Adali Schell",
+  "shotToday": [
+    "Wilton Pl & Santa Monica Blvd (former Sears building), East Hollywood",
+    "Northeast Los Angeles (unidentified residential street, orange building)"
+  ],
+  "route": [
+    {"place": "Adali's apartment (photo books, prints) - not a spot", "timestamp": 6},
+    {"place": "Driving from apartment toward East Hollywood / Los Feliz-adjacent in Adali's Mercedes", "timestamp": 1005},
+    {"place": "Wilton Pl & Santa Monica Blvd, East Hollywood - park, walk, shoot around the old Sears building", "timestamp": 1533},
+    {"place": "Turn the corner off Santa Monica Blvd; shooting trees, hand-painted signs, storefronts, a truck", "timestamp": 1652},
+    {"place": "Back in the car, talk while driving; heading east/northeast", "timestamp": 2704},
+    {"place": "Drive by the LA River and under a freeway overpass (not stopped)", "timestamp": 3254},
+    {"place": "Park and start the 'long walk' in Northeast LA - orange building, tree shadows, buffed tags", "timestamp": 3480},
+    {"place": "Golden-hour end of the same walk ('go out on the road', 'last seconds of gold light')", "timestamp": 4389},
+    {"place": "Back at Adali's apartment for slide show", "timestamp": 4501}
+  ],
+  "mentions": [
+    {
+      "place": "Wilton Pl & Santa Monica Blvd (former Sears building), East Hollywood",
+      "type": "shot-here",
+      "speaker": "Adali Schell",
+      "timestamp": 1533,
+      "quote": "we are in the intersection of Wilton and Santa Monica which is very close to where I grew up East Hollywood um this spot means something to me I think we should get out and maybe walk around here",
+      "confidence": "high",
+      "pinCandidate": true,
+      "note": "Strongest pin in the episode. He names the exact intersection, gets out, and shoots: 1545 'this building this used to be a Sears... I've been photographing its kind of evolution', 1574 'have photos of it from a whole bunch of different years' (so it is also a haunt), 1626 'I'm going to try to maybe make a picture here', 1652 'we should turn the corner and I'll show you something else', 1681-1725 shooting trees / telephone lines / hand-painted signs / storefronts, 1823 'I've taken this photo before of this truck'. The closed Sears at Santa Monica Blvd near Wilton Pl / St Andrews Pl (verify exact corner on video: he says the building is 'behind us' and makes a U-turn). Recurs 1533-1834."
+    },
+    {
+      "place": "East Hollywood",
+      "type": "haunt",
+      "speaker": "Adali Schell",
+      "timestamp": 1005,
+      "quote": "take Paulie to kind of where I grew up East Hollywood Los vas adjacent um go show you some of my favorite spots to shoot there that I kind of have been these very familiar lifelong place places",
+      "confidence": "high",
+      "pinCandidate": false,
+      "note": "'Los vas' = Los Feliz (caption garble). Neighborhood-level haunt; when asked how often he goes there (1032) he answers 'all the time'. The Wilton & Santa Monica stop is the concrete instance."
+    },
+    {
+      "place": "Northeast Los Angeles",
+      "type": "haunt",
+      "speaker": "Adali Schell",
+      "timestamp": 2704,
+      "quote": "generally when I'm shooting I'm always heading east okay the Northeast is my favorite place to take pictures in the light is superb and it gets really hilly over there",
+      "confidence": "high",
+      "pinCandidate": false,
+      "note": "Region-level haunt (Northeast LA: Highland Park / Glassell Park / Cypress Park / Eagle Rock area), no specific neighborhood named. Also stated as where he mostly works from the bike (1772)."
+    },
+    {
+      "place": "Northeast Los Angeles (unidentified street, orange building)",
+      "type": "shot-here",
+      "speaker": "Adali Schell",
+      "timestamp": 3489,
+      "quote": "the orange of this building is so fabulous so this is a quality of like Northeast Los Angeles that I really really really am moved by like just like look at these Shadows",
+      "confidence": "medium",
+      "pinCandidate": false,
+      "note": "The 'long walk' (4504) happens here: 3480 'so let's walk tired of being in this car', 3522 'the buffed Tags', 3570 'this is a frame right here', 3677 'this is so good right here', 4389-4478 golden-hour shooting. No street or cross street is ever named, so the exact location must come from the video footage. Just before parking they drove by the LA River (3254) and under a freeway (3391), so likely somewhere near the river/110 or 5 - human should verify from visuals."
+    },
+    {
+      "place": "Los Angeles River",
+      "type": "haunt",
+      "speaker": "Adali Schell",
+      "timestamp": 3471,
+      "quote": "I've been hitting it again and again and it's been this thing kind of eating at me like man I could that needs more work",
+      "confidence": "medium",
+      "pinCandidate": false,
+      "note": "Spent two months shooting the river for NYT Magazine (3216-3235) and says he keeps returning to it as an ongoing project (3309 'I've been revisiting it recently'). Only driven past today (3254 'we about to drive by it'). It's a 51-mile corridor; the part he singles out as most interesting is 'where the river intersected the highway system' (3417-3423). No specific stretch named, so no pin."
+    }
+  ],
+  "excluded": [
+    {"place": "Downtown Los Angeles / Venice Beach / Santa Monica / Hollywood Boulevard (1116-1132)", "reason": "Past-tense former haunts he has disavowed: 'I shot all those places a hell of a lot and I was left with photos that weren't really Los Angeles'. He also says he 'essentially quit street photography' (2424). Flagged for human decision - they are named as regular spots, but in the past."},
+    {"place": "Hollywood and Vine (1160)", "reason": "Reference to a Winogrand photograph, not a spot he shoots."},
+    {"place": "Hollywood Boulevard (2343)", "reason": "Figurative: Ohio work is 'a way for me to maybe get away from Hollywood Boulevard'."},
+    {"place": "Downtown (1953)", "reason": "Childhood memory: went downtown the day after seeing the Vivian Maier documentary at 13-14."},
+    {"place": "Downtown LA art high school (4004)", "reason": "Biography (school he attended)."},
+    {"place": "Los Feliz (1009, 'Los vas adjacent')", "reason": "Biography - describes where he grew up (East Hollywood, Los Feliz-adjacent); not itself shot today."},
+    {"place": "Rose Gallery Santa Monica / Bellows Gallery San Diego (3156-3159)", "reason": "Galleries he aspires to show at, not shooting spots."},
+    {"place": "Long Beach / Pacific (3450-3461)", "reason": "Mentioned only as where the LA River empties; not a spot."},
+    {"place": "San Gabriel River / Rio Hondo (3183)", "reason": "Named while explaining the LA river system; not shot."},
+    {"place": "LA highway system / freeway overpass they passed under (3385-3404)", "reason": "General interest in freeway angles; no specific location and no shooting."},
+    {"place": "Whole-city 'LA' / 'Los Angeles' / 'LA County' mentions (throughout)", "reason": "City/county level."},
+    {"place": "Riding around LA on his bicycle at golden hour (825, 1772)", "reason": "Method/practice statement, no specific place."},
+    {"place": "New Paris & Dayton, Ohio; Midwest (2101 onward)", "reason": "Outside the LA area (family project)."},
+    {"place": "School of Visual Arts, 23rd St between 2nd and 3rd, New York (1989-1994)", "reason": "Outside LA; biography."},
+    {"place": "LAX (885)", "reason": "Likely caption garble in a list of photographers' books (Winogrand etc.), not a place mention."},
+    {"place": "Adali's apartment", "reason": "Interview / slide-show location, not a shooting spot."}
+  ]
+}

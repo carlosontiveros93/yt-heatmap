@@ -1,0 +1,136 @@
+{
+  "videoId": "cpdytzJ24xo",
+  "guest": "Stephen Vanasco",
+  "shotToday": [
+    "Hollywood Blvd (Hollywood/Highland area walking east to Vine)",
+    "Hollywood & Vine",
+    "Hollywood/Vine Metro B Line station",
+    "Wilshire/Vermont (Koreatown)",
+    "Wilshire Blvd, Koreatown (Vermont to Western)",
+    "The Wiltern (Wilshire & Western)",
+    "Downtown LA - Broadway (Historic Core)",
+    "Downtown LA - Financial District (Heat shootout street, likely S Flower St near 5th/6th)"
+  ],
+  "route": [
+    {"place": "North Hollywood Metro station, San Fernando Valley (start, transit only)", "timestamp": 52},
+    {"place": "Hollywood - walking along Hollywood Blvd toward Vine", "timestamp": 163},
+    {"place": "Hollywood & Vine intersection", "timestamp": 754},
+    {"place": "Hollywood/Vine Metro station (yellow-tinted station)", "timestamp": 878},
+    {"place": "Wilshire/Vermont station, Koreatown", "timestamp": 967},
+    {"place": "Wilshire Blvd walking toward the Wiltern", "timestamp": 1419},
+    {"place": "Wilshire/Western station (failed D Line transfer; wait for Waymo)", "timestamp": 1432},
+    {"place": "Walk back along Wilshire to the B Line (Art Deco architecture on Wilshire)", "timestamp": 1503},
+    {"place": "Downtown Los Angeles arrival", "timestamp": 1942},
+    {"place": "Broadway, Downtown LA", "timestamp": 2026},
+    {"place": "Financial District, Downtown LA", "timestamp": 2232},
+    {"place": "Heat shootout street, Financial District", "timestamp": 2314}
+  ],
+  "mentions": [
+    {
+      "place": "Hollywood Blvd (walk toward Vine)",
+      "type": "shot-here",
+      "speaker": "Stephen Vanasco",
+      "timestamp": 163,
+      "quote": "All right, so we're going to walk down this way towards Vine.",
+      "confidence": "medium",
+      "pinCandidate": false,
+      "note": "After taking the B Line from North Hollywood they get off in Hollywood (almost certainly Hollywood/Highland) and walk along Hollywood Blvd to Vine while talking. Corridor: Hollywood Blvd roughly Highland to Vine. Cross street 'Vine' given; start station is inferred, not stated. Recurs at 2039 as a general LA spot: 'Hollywood Boulevard is one of them.'"
+    },
+    {
+      "place": "Hollywood & Vine",
+      "type": "shot-here",
+      "speaker": "Stephen Vanasco",
+      "timestamp": 754,
+      "quote": "So, we're walking up on the intersection of Hollywood and Vine. Just kind of like a historic, nostalgic, great photo when a grand made on this corner appear years ago.",
+      "confidence": "high",
+      "pinCandidate": true,
+      "note": "Exact intersection. 'when a grand' = Winogrand (chapter title 'Hollywood & Vine; Winogrand's Corner'). Stephen describes the light/setting of the Winogrand photo and says 'it's always fun to like walk past it' (782) - suggests a recurring stop for him too. They are standing on the corner shooting/filming at this timestamp."
+    },
+    {
+      "place": "Hollywood/Vine Metro B Line station",
+      "type": "shot-here",
+      "speaker": "Stephen Vanasco",
+      "timestamp": 884,
+      "quote": "I always love this station over cover like just like this yellow tint. Like if you're ... the kind of photographer who ... loves to post up and wait for something like this probably could be a good spot for that.",
+      "confidence": "medium",
+      "pinCandidate": true,
+      "note": "'we're at our next train station' (875) right after Hollywood & Vine, so this is Hollywood/Vine station (the one with the yellow-tinted canopy / escalator entrance). He recommends it as a post-up spot and 'always' loves it; he does not explicitly say he shot a frame here. Human should verify from video whether he shoots at the station."
+    },
+    {
+      "place": "Wilshire/Vermont, Koreatown",
+      "type": "shot-here",
+      "speaker": "Stephen Vanasco",
+      "timestamp": 967,
+      "quote": "All right, so got off the train in Worcester, Vermont. Good walking space for Los Angeles with bodies, people, activity.",
+      "confidence": "high",
+      "pinCandidate": true,
+      "note": "'Worcester, Vermont' is the auto-caption garble of Wilshire/Vermont (B/D Line station, Koreatown). He explicitly describes it as a good walking/shooting spot with foot traffic and they walk from here. Intersection-level pin at Wilshire Blvd & Vermont Ave."
+    },
+    {
+      "place": "Wilshire Blvd, Koreatown (Vermont to Western)",
+      "type": "shot-here",
+      "speaker": "Stephen Vanasco",
+      "timestamp": 1788,
+      "quote": "There's like a lot of Art Deco architecture on Wilshire using materials that like just don't get used anymore. It's like a bit of this older LA that's kind of slowly slowly um disappearing",
+      "confidence": "high",
+      "pinCandidate": false,
+      "note": "Corridor: they walk Wilshire Blvd west from Vermont to Western (Wiltern at 1419, D Line at Wilshire/Western at 1432), then walk back east along Wilshire to the B Line (1503). He says he photographs architecture/light/shadow (1713-1721), so the Art Deco buildings on this stretch are subject matter. Recurs at 2037 as a general LA foot-traffic street: 'Wilshire, I think was one of them.'"
+    },
+    {
+      "place": "The Wiltern (Wilshire Blvd & Western Ave)",
+      "type": "shot-here",
+      "speaker": "Stephen Vanasco",
+      "timestamp": 1419,
+      "quote": "Yeah, so this is the Wiltern building theater up here. Wraps around. Pretty sick.",
+      "confidence": "medium",
+      "pinCandidate": true,
+      "note": "They arrive at the Wiltern (SW corner Wilshire & Western) and admire the Art Deco building; he compares it to the Eastern Columbia downtown. Explicit venue, but transcript does not confirm a frame was made here - verify in video (~23:40)."
+    },
+    {
+      "place": "Broadway, Downtown LA (Historic Core)",
+      "type": "shot-here",
+      "speaker": "Stephen Vanasco",
+      "timestamp": 2026,
+      "quote": "Broadway right here is one of those streets that you could find that. Uh even kind of like the outer blocks around here, you could find that.",
+      "confidence": "high",
+      "pinCandidate": false,
+      "note": "Answering Paulie's 'is like downtown here ... an area a lot of street photographers gravitate towards?' (2011). They are on Broadway; he says 'this for downtown, this is it' (2053) and 'I'll kind of lap around here' (2075) - also a haunt statement. He explicitly avoids going east toward Skid Row. 'Got in my shot with this cart' (2142) confirms he is actively shooting on this stretch. Exact block range not given; Broadway between roughly 3rd and 9th is the Historic Core. Recurrence: haunt."
+    },
+    {
+      "place": "Financial District, Downtown LA",
+      "type": "shot-here",
+      "speaker": "Stephen Vanasco",
+      "timestamp": 2232,
+      "quote": "Yeah, so this is our financial district. A little bit tiny compared to New York, but",
+      "confidence": "high",
+      "pinCandidate": false,
+      "note": "They walk 'a few blocks west' (2079) from Broadway into the Financial District. Corridor / neighborhood-level; see Heat street entry for the pin."
+    },
+    {
+      "place": "Heat shootout street, Financial District (likely S Flower St between 5th and 6th)",
+      "type": "shot-here",
+      "speaker": "Stephen Vanasco",
+      "timestamp": 2314,
+      "quote": "This was like the iconic street if you ever saw the movie Heat. Crazy crazy shootout scene they did over here. They blocked it off from there to there.",
+      "confidence": "medium",
+      "pinCandidate": true,
+      "note": "Street name not spoken. The Heat (1995) bank-shootout was filmed on S Flower St around 5th/6th St (and on Wilshire near Flower). Since they are in the Financial District, Flower St at 5th/6th is the most likely location - human should confirm from the video footage (~38:30)."
+    }
+  ],
+  "excluded": [
+    {"place": "North Hollywood / San Fernando Valley", "reason": "Start point and transit only: 'we're just going to start off here in North Hollywood' (52). No shooting described; 'starting at X' alone is not enough."},
+    {"place": "Hollywood, K-Town, Downtown (neighborhood names)", "reason": "Neighborhood-level itinerary at 59-60; captured instead via the specific streets/intersections above."},
+    {"place": "Echo Park (lotus flowers)", "reason": "Past body of work ('Done some work photographing these like lotus flowers at Echo Park', 257), nature/detail work, not shot today and not stated as a regular street spot. Human may decide if it belongs as a haunt."},
+    {"place": "Sunset Boulevard", "reason": "Ed Ruscha's project (818), not the guest's."},
+    {"place": "Santa Barbara pier / Cabrillo Boulevard / Pismo Beach Pier", "reason": "Guest's ongoing personal project on daughter pick-ups (1071-1099) - a genuine recurring shooting location but outside the Los Angeles area."},
+    {"place": "The Valley shopping center / pawn shop", "reason": "Stolen-camera anecdote (1539-1558), not a shooting spot."},
+    {"place": "Kith store, LA", "reason": "Licensing/business mention (1346), not a spot."},
+    {"place": "Eastern Columbia Building, Downtown", "reason": "Mentioned as comparison to the Wiltern ('when we go downtown the Eastern building', 1426); not demonstrated they went to it or shot it."},
+    {"place": "Wilshire/Western station (D Line)", "reason": "Transit only - failed transfer, waited for a Waymo (1432-1491). Covered by the Wilshire corridor entry."},
+    {"place": "Skid Row", "reason": "Explicitly not his subject: 'it's not necessarily my cup of tea' (2071)."},
+    {"place": "Venice boardwalk", "reason": "Listed at 2042 as one of LA's foot-traffic street spots ('The boardwalk in Venice is another one') in a general sense, alongside Broadway/Wilshire/Hollywood Blvd. Not clearly his own haunt and not shot today; flagged for human - could be a medium 'haunt'."},
+    {"place": "Venice (Baywatch filming)", "reason": "Film-production aside (2335)."},
+    {"place": "SoHo, New York / San Francisco", "reason": "Comparison cities, not LA."},
+    {"place": "Wilshire (general, 2037) and Hollywood Boulevard (2039)", "reason": "Folded into the corridor mentions above as recurrences rather than separate entries."}
+  ]
+}

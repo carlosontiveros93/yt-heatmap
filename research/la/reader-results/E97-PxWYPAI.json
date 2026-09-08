@@ -1,0 +1,83 @@
+{
+  "videoId": "E97-PxWYPAI",
+  "guest": "Jeremy Paige (@eatenbyflowers)",
+  "shotToday": [
+    "Hollywood Boulevard (Hollywood Walk of Fame stretch), Hollywood"
+  ],
+  "route": [
+    {
+      "place": "Hollywood Boulevard, Hollywood - a street corner near Jeremy's apartment ('this corner', the garbage-can corner), exact cross street not named",
+      "timestamp": 187
+    },
+    {
+      "place": "Walking Hollywood Boulevard / Walk of Fame (tourists, stars, street vendors, tour-bus 'blue ones') for the rest of the episode; no cross streets or endpoints named",
+      "timestamp": 385
+    }
+  ],
+  "mentions": [
+    {
+      "place": "Hollywood Boulevard, Hollywood",
+      "type": "haunt",
+      "speaker": "Jeremy Paige",
+      "timestamp": 19,
+      "quote": "I take photos on Hollywood Boulevard basically that's about it",
+      "confidence": "high",
+      "pinCandidate": false,
+      "note": "His sole regular spot. Recurs constantly: 54 'the neighborhood is basically Hollywood Boulevard'; 96 'this is basically the only place I shoot'; 1434 'so many people who shoot in Hollywood now'; 1942 'I really like shooting around here'. Reference to Walk of Fame stars at 163 ('I didn't know this person had a star') places it on the Walk of Fame stretch. Corridor pin: Hollywood Blvd, no cross streets given."
+    },
+    {
+      "place": "Hollywood Boulevard, Hollywood",
+      "type": "shot-here",
+      "speaker": "Jeremy Paige (with Paulie B)",
+      "timestamp": 183,
+      "quote": "let's go do some of that walking all right cool man let go",
+      "confidence": "high",
+      "pinCandidate": false,
+      "note": "Whole episode is walked and shot on Hollywood Blvd: 385 'well take some photos'; 407 'I love those the blue ones ... take people's portraits on the side of them'; 898 'good job oh you got one'; 1484 'sorry sorry get well soon' (shooting a crying woman); 2147 'I think I got it'; 2301 'we both missed it'. Paulie is also shooting ('we both missed it', 2301). No specific block, cross street, or endpoint is ever named in the audio."
+    },
+    {
+      "place": "Unnamed street corner on Hollywood Boulevard near Jeremy's apartment ('this corner' with the garbage can)",
+      "type": "shot-here",
+      "speaker": "Jeremy Paige",
+      "timestamp": 187,
+      "quote": "I love being right here on this corner cuz just right here at all times ... I shot dunking a basketball in a garbage can and it was that garbage can ... I just came downstairs walked to the corner and snapped off photo",
+      "confidence": "medium",
+      "pinCandidate": true,
+      "note": "This is the episode's start point and a specific corner he shoots from regularly (he lives upstairs). It is an exact corner, but the cross street is never spoken; a human must identify it from the video frame (look for the garbage can and the building he points to). Pin only if the corner can be identified visually."
+    }
+  ],
+  "excluded": [
+    {
+      "place": "Downtown Los Angeles",
+      "reason": "Mentioned only as a place he feels lost in ('if I go downtown I'm just completely flabbergast', 108). Not shot today, not a haunt."
+    },
+    {
+      "place": "New Orleans / Bourbon Street",
+      "reason": "Biography ('I'm from New Orleans originally so this feels like Bourbon Street', 64). Not an LA place."
+    },
+    {
+      "place": "Boston",
+      "reason": "Anecdote about friend Brad Romano's hometown (2090). Not an LA place."
+    },
+    {
+      "place": "Coffee spot where he got the 'Good Time Ice' photo (1657, 'I was here having a coffee')",
+      "reason": "Unnamed cafe on Hollywood Blvd, told as a past-photo memory while they pass it; no business name given. Could be folded into the Hollywood Blvd corridor; not enough to pin."
+    },
+    {
+      "place": "Motel with 'Hollywood' signage (1748, 'there's like a motel there ... I think it's torn down now')",
+      "reason": "Backdrop of a past photo (the spitting/neck-brace photo); described as torn down. One-off memory."
+    },
+    {
+      "place": "Freeway / interstate overpass (1848, car-crash photo)",
+      "reason": "One-off past photo memory, no location given."
+    },
+    {
+      "place": "'The blue ones' (407)",
+      "reason": "Refers to objects (likely blue tour buses/vans on Hollywood Blvd) he used to shoot portraits beside, not a place. Already covered by the Hollywood Blvd corridor."
+    },
+    {
+      "place": "LA / 'here' generic (2093 'shooting la like someone would shoot in Boston')",
+      "reason": "Whole-city mention."
+    }
+  ]
+}

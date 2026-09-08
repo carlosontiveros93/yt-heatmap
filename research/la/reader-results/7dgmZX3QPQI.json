@@ -1,0 +1,88 @@
+{
+  "videoId": "7dgmZX3QPQI",
+  "guest": "Daniel Gutierrez",
+  "shotToday": [
+    "Wilton Place (walking south into Koreatown)",
+    "Koreatown",
+    "Western Avenue vicinity (Koreatown)"
+  ],
+  "route": [
+    {"place": "Unnamed residential street near where Daniel grew up (he points out a landmark from childhood; homeless tent next to a big house)", "timestamp": 131},
+    {"place": "Wilton Place, heading south ('down Wilton') into Koreatown; possibly starting at Beverly Blvd ('Wilton and B...')", "timestamp": 148},
+    {"place": "Koreatown, walking through side streets / 'these neighborhoods' (urban landscapes, flash shots, a bed on the street, a dog in a window)", "timestamp": 152},
+    {"place": "Near Western Avenue, debating whether to cross it", "timestamp": 909},
+    {"place": "Still walking Koreatown-area streets; it starts raining", "timestamp": 1942}
+  ],
+  "mentions": [
+    {
+      "place": "Wilton Place (Koreatown edge)",
+      "type": "shot-here",
+      "speaker": "Daniel Gutierrez",
+      "timestamp": 148,
+      "quote": "so now we're going down Wilton um and B this is basically us walking into Korea Town",
+      "confidence": "high",
+      "pinCandidate": true,
+      "note": "Clearest location statement in the episode. 'Wilton um and B' is very likely 'Wilton and Beverly' (Beverly Blvd is Koreatown's northern edge; walking south on Wilton Pl from Beverly is literally 'walking into Koreatown'). Pin candidate at Wilton Pl & Beverly Blvd is a reasonable guess but the caption is garbled, so a human should verify from the video. Just before this (131-148) Daniel is shooting a landmark he has known since childhood and a homeless tent in front of a big house, so shooting is happening right here."
+    },
+    {
+      "place": "Koreatown",
+      "type": "shot-here",
+      "speaker": "Daniel Gutierrez",
+      "timestamp": 152,
+      "quote": "this is basically us walking into Korea Town",
+      "confidence": "high",
+      "pinCandidate": false,
+      "note": "The bulk of the episode is walked and shot in Koreatown side streets after this point: flash shots at 237-252 and 981-998 ('when I flash it it's going to bring out the detail'), a bed on the street at 915, a dog at a window at 850. Neighborhood-level, not a single pin."
+    },
+    {
+      "place": "Western Avenue (Koreatown)",
+      "type": "shot-here",
+      "speaker": "Daniel Gutierrez",
+      "timestamp": 909,
+      "quote": "if I should walk on the other block or if I should walk uh or reach across western",
+      "confidence": "medium",
+      "pinCandidate": false,
+      "note": "Said while shooting mid-walk; implies they are at or near Western Ave in Koreatown (consistent with walking east/south from Wilton). Exact cross street not stated, so corridor-level only."
+    },
+    {
+      "place": "Hollywood",
+      "type": "haunt",
+      "speaker": "Daniel Gutierrez",
+      "timestamp": 331,
+      "quote": "I was always shooting either Hollywood Santa Monica or downtown on the weekend",
+      "confidence": "medium",
+      "pinCandidate": false,
+      "note": "Stated as his regular pre-pandemic weekend street spots; he then pivoted to walking less-touched neighborhoods. Past-tense habit, not necessarily current. No specific street given."
+    },
+    {
+      "place": "Santa Monica",
+      "type": "haunt",
+      "speaker": "Daniel Gutierrez",
+      "timestamp": 331,
+      "quote": "I was always shooting either Hollywood Santa Monica or downtown on the weekend",
+      "confidence": "medium",
+      "pinCandidate": false,
+      "note": "Same sentence as Hollywood; past regular weekend spot. Area-level only."
+    },
+    {
+      "place": "Downtown Los Angeles",
+      "type": "haunt",
+      "speaker": "Daniel Gutierrez",
+      "timestamp": 331,
+      "quote": "I was always shooting either Hollywood Santa Monica or downtown on the weekend",
+      "confidence": "medium",
+      "pinCandidate": false,
+      "note": "Same sentence; past regular weekend spot. Recurs at 201-209 ('protest at City Hall ... I'll make my way towards downtown ... so I could shoot along the way') as a description of how he plans a shooting day around downtown events, which reinforces downtown as a regular destination."
+    }
+  ],
+  "excluded": [
+    {"place": "Mid City", "reason": "Biography only: 'grew up in Mid City' (26). Note: at 131-138 he says the thing he is photographing 'has been here since I was a kid... every time I would walk my mom to catch a bus', so the walk starts in or near his childhood neighborhood, but Mid City is never named as today's location and Wilton/Koreatown is the stated start."},
+    {"place": "Los Angeles (city-wide)", "reason": "City-level mentions only ('walking Los Angeles with the camera', 'I've been living here for 24 years')."},
+    {"place": "City Hall / downtown protest", "reason": "Hypothetical example of how he plans a shooting day (191-209), not something shot in this episode."},
+    {"place": "Los Angeles Public Library, Downtown", "reason": "Visited for free large-format printing with friend Jet Lara (1379), not for shooting."},
+    {"place": "Hawthorne", "reason": "Where he bought his X-Pro 3 from a private seller (1168); purchase anecdote."},
+    {"place": "Beverly Hills", "reason": "Anthony Hernandez's 1980s street work (1532), not the guest's spot."},
+    {"place": "LA River", "reason": "Anthony Hernandez's project on objects left by homeless people (1541), not the guest's spot."},
+    {"place": "Unnamed 'this area with all these sort of cars' (548) / bed on street (915) / dog at window (850)", "reason": "Shot-here moments but no place name given; folded into the Koreatown neighborhood-level mention."}
+  ]
+}
