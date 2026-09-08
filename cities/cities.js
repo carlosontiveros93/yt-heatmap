@@ -3,4 +3,5 @@
 // cities/<id>/config.js next to its data.js and boundaries.js.
 const CITIES = [
   { id: "nyc", name: "New York" },
+  { id: "la",  name: "Los Angeles" },
 ];
