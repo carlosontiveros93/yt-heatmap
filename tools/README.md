@@ -19,8 +19,11 @@ The pipeline that built the data, run from the repo root. Python 3 stdlib only.
    agents, one per episode) against the rules in the main README, returning JSON per
    episode into `research/reader-results/`. Human review of a proposal document
    (`research/proposals/`) happens before anything is written to `data.js`.
-5. `build_boundaries.py` — builds `cities/nyc/boundaries.js` from the GeoJSON files, OSM (Domino
-   Park) and the hand-drawn shapes listed inside it. Rerun after editing shapes.
+5. `build_boundaries.py [city]` — builds `cities/<city>/boundaries.js` from the official GeoJSON
+   plus hand-drawn shapes. Per-city definitions (which official features to use, hand-drawn
+   polygons, corridor waypoints, extras like the OSM Domino Park trace) are in
+   `boundaries/<city>.py`. Rerun after editing shapes. LA corridor and pin coordinates were
+   snapped to OSM intersections (Overpass API) rather than eyeballed.
 
 For a new city: a `cities/<id>/` folder (config.js, data.js, boundaries.js) plus an
 entry in `cities/cities.js`; a `research/<city>/` folder, the city's official neighborhood and

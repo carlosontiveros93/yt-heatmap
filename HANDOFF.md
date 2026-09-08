@@ -47,7 +47,18 @@ Adding a city = one folder under `cities/` with those three files + one line in
 `cities/cities.js`. Nothing else in index.html should need to change; if it does,
 tell me why first.
 
-## Step 2 — Los Angeles (start here)
+## Step 2 — Los Angeles — DONE (commit d339a9b, pushed)
+
+Result: 9 spots, 11 mentions, 3 pins from four episodes (Vanasco, Gutierrez, Paige, Schell).
+Nazir Wayman (kQKkKCdwZA8) turned out to be **Philadelphia** (use it in Step 3); C.P. Plunkett
+(1uOiTskNYWs) is Chicago. Proposal and decisions: `research/proposals/la_proposed.md`.
+Decided: Gutierrez's past-tense haunts dropped; Northeast LA walk skipped; five medium pins
+(Hollywood/Vine station, the Wiltern, Heat street, Wilton & Beverly, Paige's corner) left out
+until someone watches the clips (timestamps in the proposal, section B).
+Tools are now per-city: `scan_locations.py <city>` + `gazetteers/<city>.py`,
+`build_boundaries.py <city>` + `boundaries/<city>.py`; NYC output verified byte-identical.
+
+Original plan, for reference:
 
 Sources: Paulie B's LA Walkie Talkie episodes — Stephen Vanasco (cpdytzJ24xo),
 Daniel Gutierrez (7dgmZX3QPQI), Jeremy Paige (E97-PxWYPAI), Adali Schell
@@ -72,10 +83,11 @@ Order of work, stopping for me between each:
    add LA to `cities/cities.js`, verify in the browser (`python3 -m http.server 8749`,
    open `?city=la`, and confirm `?city=nyc` is unchanged), then commit and push.
 
-## Step 3 — Philadelphia (after Step 2)
+## Step 3 — Philadelphia (start here)
 
-Paulie has one Philly episode (Olu Okiemute, eloT_IvSaOI) — enough to seed a few
-spots, not a map. Before pulling anything, run a search pass for other sources (other
+Paulie has two Philly episodes: Olu Okiemute (eloT_IvSaOI) and Nazir Wayman (kQKkKCdwZA8,
+already pulled to `research/la/raw.json`; move it to `research/philly/`) — enough to seed a
+few spots, not a map. Before pulling anything, run a search pass for other sources (other
 YouTube channels' Philly street-photography walk-and-talks, "best spots" videos, local
 photographer interviews) and bring me a candidate list to approve one by one; I've
 agreed other channels are fine as long as I approve each. Shapes: OpenDataPhilly
@@ -91,4 +103,4 @@ neighborhoods and parks. I live near Philly, so I can verify places by eye.
   (I watch to verify). "We're starting at X" is not enough. Shop portraits are not pins.
 - High/medium confidence only; when in doubt, leave it out and tell me why.
 
-Start with Step 2, item 1.
+Start with Step 3: the source search, bringing a candidate list to approve.
