@@ -1,0 +1,472 @@
+{
+ "videoId": "eloT_IvSaOI",
+ "guest": "Olu Okiemute",
+ "isPhiladelphia": true,
+ "shotToday": [
+  "10th Street, Center City (block not stated; worked briefly at the start, no frame confirmed in transcript)",
+  "City Hall / Dilworth Park (return stop; several frames by sequence, spot not spoken)",
+  "Chestnut Street, City Hall west toward Rittenhouse (Hasselblad portrait)",
+  "Walnut Street near 18th (camping spot, then walked)",
+  "18th & Walnut, NE corner of Rittenhouse Square",
+  "Rittenhouse Square",
+  "City Hall Station, Broad Street Line platform (underground)"
+ ],
+ "route": [
+  {
+   "place": "Stated plan: start at City Hall, walk Chestnut to Rittenhouse and back, then (if feet allow) Market East to Chinatown, then Dilworth one more time",
+   "timestamp": 73
+  },
+  {
+   "place": "10th Street, Center City East (first working stop: 'let's hit 10th Street real quick')",
+   "timestamp": 122
+  },
+  {
+   "place": "Cross over and work west toward City Hall",
+   "timestamp": 284
+  },
+  {
+   "place": "Chestnut Street (Hasselblad portrait of seated smoker; 'thanks Chestnut Street')",
+   "timestamp": 543
+  },
+  {
+   "place": "Walnut Street near 18th (posted up at a 'popular camping spot', then 'keep walking down Walnut')",
+   "timestamp": 665
+  },
+  {
+   "place": "18th & Walnut, NE corner of Rittenhouse Square",
+   "timestamp": 679
+  },
+  {
+   "place": "Into Rittenhouse Square (squirrel-feeding scene 745-798)",
+   "timestamp": 688
+  },
+  {
+   "place": "Back to City Hall / Dilworth Park (frames at 882-888, 1145-1168, 1314-1362 placed here by sequence)",
+   "timestamp": 841
+  },
+  {
+   "place": "Downstairs into City Hall Station",
+   "timestamp": 1371
+  },
+  {
+   "place": "Broad Street Line platform, City Hall Station (greets fellow operator: 'Philadelphia's finest when you're on the Broad Street Line')",
+   "timestamp": 1472
+  },
+  {
+   "place": "Back above ground at an unnamed corner ('I got my corner shot')",
+   "timestamp": 1881
+  },
+  {
+   "place": "Sign-off, location not stated",
+   "timestamp": 2135
+  }
+ ],
+ "mentions": [
+  {
+   "place": "10th Street, Center City (block not stated)",
+   "type": "shot-here",
+   "speaker": "Olu Okiemute",
+   "timestamp": 122,
+   "quote": "and yeah let's hit 10th Street real quick yeah so this is Philadelphia like not really enough people are on the Block for this and you put time in but every like 15 minutes or so",
+   "confidence": "medium",
+   "pinCandidate": false,
+   "note": "Both readers counted this at medium. First working stop before they 'cross this way and then we'll work our way over to City Hall' (284-290), so it is east of Broad; 'hit' = go shoot it, and he evaluates the block's foot traffic ('you put time in but every like 15 minutes or so', 133-146), which is working a spot, not transit. Speaker attribution is inferred (Read B flagged it): Olu leads the route, 'so this is Philadelphia' is the local's voice, and Paulie's next line at 146 is a question to Olu. Cross street never spoken and no frame is confirmed in the transcript; reviewer should check footage 2:02-4:44 and move to excluded if no shooting is shown.",
+   "suggestedKind": "corridor"
+  },
+  {
+   "place": "City Hall / Dilworth Park",
+   "type": "haunt",
+   "speaker": "Olu Okiemute",
+   "timestamp": 73,
+   "quote": "today we are going to do what is a really standard really basic Street photo boy Philadelphia loop we're going to start at City Hall and we're going to hope and pray that some folks appear",
+   "confidence": "medium",
+   "pinCandidate": false,
+   "note": "DISPUTED: Read A counted this (as a City Hall haunt); Read B excluded the loop and start-point statements as itinerary. Re-read at 68-88 and 841-849: kept at medium because the evidence goes beyond 'we're starting at X'. He calls the whole circuit 'really standard really basic', plans to 'hit deal worth [Dilworth] one more time' (86), returns at 841 saying 'let's go back to City Hall hope that you know some hooligans are at Dorth [Dilworth] being bad' (an expectation from experience of what is usually there), and names City Hall Station his favorite (849, separate row). Regularity is implied rather than stated outright, so medium; reviewer may drop this row if 'standard loop' is read as generic-Philadelphia rather than personal habit. Same person also has a shot-here row for this stop (841).",
+   "suggestedKind": "landmark"
+  },
+  {
+   "place": "City Hall / Dilworth Park",
+   "type": "shot-here",
+   "speaker": "Olu Okiemute",
+   "timestamp": 841,
+   "quote": "let's go back to City Hall hope that you know some hooligans are at Dorth being bad and if we got nothing we'll go undergr for a little bit",
+   "confidence": "medium",
+   "pinCandidate": true,
+   "note": "Both readers agreed on this at medium with pin candidate. 'Dorth' (844) and 'deal worth' (86) are auto-caption garbles of Dilworth Park, the plaza on City Hall's west side. Read A split City Hall and Dilworth Park into two shot-here rows; merged here into one row because Olu uses them interchangeably as one stop ('start at City Hall... hit Dilworth one more time'; 'back to City Hall... hooligans at Dilworth') and the rules forbid counting one person twice for the same place. Frames that follow by sequence, none of which names the spot: 'street photography again it's happening' (870-882), 'oh cutie... it's a really cute one' (882-888), horses (891-901), 'get flipped up let's go with the sun... my picture was probably better though' (1145-1153), 'one critical Focus shot today' (1165), and the worker portrait with badge and keys (1314-1362) immediately before 'go downstairs' (1371). Reviewer: confirm from footage ~14:00-23:00 and rename to Dilworth Park if the shooting is on the plaza. Same person also has a haunt row (73).",
+   "suggestedKind": "landmark"
+  },
+  {
+   "place": "Chestnut Street (City Hall west toward Rittenhouse)",
+   "type": "shot-here",
+   "speaker": "Olu Okiemute",
+   "timestamp": 543,
+   "quote": "finally got my wind shot today that was a good one okay thanks Chestnut Street something something anything okay hustle blood's going back away it's done",
+   "confidence": "high",
+   "pinCandidate": false,
+   "note": "Both readers agreed, high. Explicit thanks to Chestnut Street by name right after making the Hasselblad ('hustle blood' garble) portrait of the seated smoker: 'I kind of like the colors where he is the hustle blood might have to come out' (488-493), 'can I just get a photograph of you real quick you're good Right Where You Are' (504-508). Corridor per the plan (78-80: 'walk Chestnut to the ridden house [Rittenhouse] area and back'), roughly Broad/15th west to 18th-19th; the block is not spoken, so the portrait spot could be pinned from footage ~8:05-9:10. Read A also proposed a Chestnut haunt from the loop plan (78); dropped, see excluded.",
+   "suggestedKind": "corridor"
+  },
+  {
+   "place": "Walnut Street near 18th (approaching Rittenhouse Square)",
+   "type": "shot-here",
+   "speaker": "Olu Okiemute",
+   "timestamp": 665,
+   "quote": "yeah we'll keep walking down Walnut as I stood here looking everyone that was here has passed us by popular camping spot but I'm not feeling it right now",
+   "confidence": "medium",
+   "pinCandidate": false,
+   "note": "Both readers agreed at medium. 'Camping' in his own definition (642-662) means posting up on one corner to shoot, so he was actively working a fixed spot on Walnut and then walks Walnut with the camera out ('you have to keep moving cuz you have to find it'). Fourteen seconds later they are at 18th & Walnut (679), so the camped spot is that corner (separate pin row). The extent of Walnut actually walked is not stated, hence medium for the corridor.",
+   "suggestedKind": "corridor"
+  },
+  {
+   "place": "18th & Walnut (NE corner of Rittenhouse Square)",
+   "type": "shot-here",
+   "speaker": "Olu Okiemute",
+   "timestamp": 679,
+   "quote": "this is what Walnut and what street is this we're at 18th in Walnut 18th Walnut right by this this little Park yeah R house has kind of given it to us today",
+   "confidence": "high",
+   "pinCandidate": true,
+   "note": "Both readers agreed, high, pin candidate. Paulie asks the cross street (675) and Olu answers 18th & Walnut on camera; 'this little Park' = Rittenhouse Square ('R house' garble), whose NE corner is 18th & Walnut. This is the 'popular camping spot' he had just been standing at (665-672). Same person also has a haunt row for this corner (669).",
+   "suggestedKind": "pin"
+  },
+  {
+   "place": "18th & Walnut (NE corner of Rittenhouse Square)",
+   "type": "haunt",
+   "speaker": "Olu Okiemute",
+   "timestamp": 669,
+   "quote": "as I stood here looking everyone that was here has passed us by popular camping spot but I'm not feeling it right now",
+   "confidence": "medium",
+   "pinCandidate": false,
+   "note": "DISPUTED: Read B recorded this haunt; Read A declined because 'popular' describes photographers generally rather than his own habit. Re-read at 665-672: kept at medium because he names the corner a known post-up spot while camped on it himself, and frames the adjacent park as a repeat fallback ('written house pictures again', 693). He does not say 'I come here all the time', and 'popular' is about street photographers in general, so the reviewer may drop this row and rely on the Rittenhouse Square haunt instead. Same person and corner as the shot-here row (679); different basis, and the pin lives on that row.",
+   "suggestedKind": "pin"
+  },
+  {
+   "place": "Rittenhouse Square",
+   "type": "shot-here",
+   "speaker": "Olu Okiemute",
+   "timestamp": 688,
+   "quote": "we're going to we're going to we're going to bite we're going to go in Written House what you kind of don't really want to do as a Treet photographer",
+   "confidence": "medium",
+   "pinCandidate": true,
+   "note": "Both readers counted it; Read A said high, Read B medium. Set to medium: the park's name survives only as garbles ('Written House' 689/694, 'R house' 684, 'RI pics' 700, 'ridden house' 78), which the garble rule scores as medium, and no line confirms a frame inside the park ('they getting made so good today' at 706-710 is ambiguous; the squirrel-feeding scene at 745-798 and 'the squirrel did take it I'm going do that again later' at 816-818 are an interaction). The mapping to Rittenhouse Square itself is near-certain because they are at 18th & Walnut 'right by this this little Park' (679-682) and enter it to shoot. Reviewer: confirm frames in footage ~11:28-13:40. Same person also has a haunt row (693).",
+   "suggestedKind": "park"
+  },
+  {
+   "place": "Rittenhouse Square",
+   "type": "haunt",
+   "speaker": "Olu Okiemute",
+   "timestamp": 693,
+   "quote": "you know it's like a written house pictures again that's all you did today all you could get was RI pics but it's all right you know sometimes you don't have a choice we take what we can get",
+   "confidence": "medium",
+   "pinCandidate": false,
+   "note": "Both readers agreed at medium. 'written house pictures' / 'RI pics' = Rittenhouse pictures. The self-deprecating 'Rittenhouse pictures again' frames the square as a habitual fallback he has shot many times when the streets are dead; it is also the turnaround of the 'standard... Philadelphia loop' (73-80). Regularity implied rather than stated, and the name is garbled, hence medium. Same person also shot there today (688); different basis, pin lives on that row.",
+   "suggestedKind": "park"
+  },
+  {
+   "place": "City Hall Station (Broad Street Line)",
+   "type": "haunt",
+   "speaker": "Olu Okiemute",
+   "timestamp": 849,
+   "quote": "I like I like City Hall Station as far as subway stations go in Philadelphia it has my favorite unique characteristics it still has some of its original grit on the Broad Street Line portion at least",
+   "confidence": "high",
+   "pinCandidate": false,
+   "note": "Both readers counted it; Read A said high, Read B medium. Set to high: the place is named clearly (no garble), the 'favorite' statement is explicit and made while planning to go underground to shoot ('if we got nothing we'll go underground for a little bit', 848), and it is paired with 'during the winter like every day if I'm being really good about it' about shooting underground (1393-1397) and the sign-off 'I'll be underground' (2166-2169). Reviewer may soften to medium if 'favorite' is read as aesthetic preference rather than a shooting habit. Same person also shot there today (1371).",
+   "suggestedKind": "pin"
+  },
+  {
+   "place": "City Hall Station (Broad Street Line)",
+   "type": "shot-here",
+   "speaker": "Olu Okiemute",
+   "timestamp": 1371,
+   "quote": "I'm putting it away you want to try to go downstairs yeah let's do it you know just in case something's down there it's a lot harder to get away with but it's worth it sometimes plus we might see one of my friends you know riding by on a train",
+   "confidence": "medium",
+   "pinCandidate": true,
+   "note": "Both readers agreed at medium with pin candidate. The station is not named at the moment of descent, but the plan at 848-849 ('we'll go underground for a little bit I like City Hall Station') and the platform greeting 'Philadelphia's finest when you're on the Broad Street Line' (1470-1472) place them on the BSL level of City Hall Station, and they descend from the City Hall stop. He describes what he shoots down there (1415-1450: people with headphones, 'moving way slower... 30th of a second at f4'). Underground segment ~24:16-25:30 (1456-1530) with train footage ('there goes', 1518); no line confirms a frame, so reviewer should confirm from footage. Same person also has a haunt row (849).",
+   "suggestedKind": "pin"
+  },
+  {
+   "place": "Broad Street Line (SEPTA subway, full length)",
+   "type": "haunt",
+   "speaker": "Olu Okiemute",
+   "timestamp": 864,
+   "quote": "and you know me I'm a big Broad Street Line fan anyway I've walked the whole thing taking trains up and down the whole thing",
+   "confidence": "medium",
+   "pinCandidate": false,
+   "note": "Both readers agreed at medium and both flagged it as broad. Line-level, not a single spot: he rides the BSL up and down shooting and has walked its whole length; paired with 'I can't get to the same spots and some of them aren't as friendly as others' (1402-1407) about underground shooting. Part of the familiarity is job-related (operated BSL trains, 230-235; greets a fellow operator, 1470-1485; shows train-window photos in gallery shows, 1040-1051). No stations other than City Hall are named; reviewer may fold this into the City Hall Station haunt or drop it as too lumped.",
+   "suggestedKind": "corridor"
+  }
+ ],
+ "excluded": [
+  {
+   "place": "Philadelphia / Philly / 'greatest city in the world' (city-level)",
+   "reason": "Both readers excluded. City-level and biographical statements only: 'we're back in Philadelphia' (15), 'greatest city in the world' (25), 'born and raised in Philly' (198-206), 'it's still Philadelphia it's still small enough' (240-258), 'everything I want to shoot is in Philly' (582-630), 'Philadelphia is so funny especially being from here' (798-814). Not mappable.",
+   "timestamp": 15
+  },
+  {
+   "place": "'Street photo boy Philadelphia loop' as a whole itinerary (City Hall -> Chestnut -> Rittenhouse -> back -> Market East -> Chinatown -> Dilworth)",
+   "reason": "Read B excluded it as a stated itinerary; Read A used it as the haunt basis for City Hall and Chestnut. Resolution: not mapped as a route-level haunt (too lumped for the map); its legs are counted individually where the walk demonstrably reached. The 'really standard really basic' framing is cited as supporting evidence only in the City Hall / Dilworth Park haunt row, where extra evidence exists (86, 841-849).",
+   "timestamp": 68
+  },
+  {
+   "place": "Chestnut Street as a haunt",
+   "reason": "DISPUTED: Read A counted a Chestnut haunt at medium (78: 'we're going to walk Chestnut to the ridden house area and back'); Read B did not. Re-read: the only basis is that Chestnut is the walking leg of the planned loop; nothing says he returns to Chestnut itself, and the rule requires the speaker to name a regular spot. Dropped. Chestnut remains as a high-confidence shot-here row (543).",
+   "timestamp": 78
+  },
+  {
+   "place": "City Hall as mere starting point / transit ('start at City Hall' 75; 'work our way over to City Hall' 287)",
+   "reason": "Both readers agreed these lines would not count alone ('we're starting at X' rule). The City Hall / Dilworth Park stop is counted via the explicit return to shoot at 841 (shot-here) and via the loop-plus-return evidence in the haunt row (73), not via these lines.",
+   "timestamp": 75
+  },
+  {
+   "place": "Market East",
+   "reason": "Both readers excluded. Plan only and conditional: 'if our feet are up for it we head Market East over to Chinatown' (82). Never confirmed reached in the 37-minute cut (may appear in the 52-minute Patreon version). The unnamed post-subway corner shot at 1881 could in principle be on this leg, but the transcript never says.",
+   "timestamp": 82
+  },
+  {
+   "place": "Chinatown",
+   "reason": "Both readers excluded. Plan only, same conditional as Market East (82-86); never confirmed reached or shot.",
+   "timestamp": 84
+  },
+  {
+   "place": "'deal worth' (86) / 'Dorth' (844) and Dilworth Park as a separate row",
+   "reason": "Both are auto-caption garbles of Dilworth Park (the plaza on City Hall's west side that holds the City Hall Station headhouses). Read A recorded Dilworth Park as its own shot-here row alongside City Hall; Read B merged them. Resolution: merged into a single 'City Hall / Dilworth Park' row because Olu treats them as one stop and one person may not be counted twice for the same place. Reviewer may rename that row to Dilworth Park if footage (~14:00-23:00) shows the shooting on the plaza.",
+   "timestamp": 86
+  },
+  {
+   "place": "'ridden house' (78) / 'R house' (684) / 'Written House' (689, 694) / 'RI pics' (700) / 'this little Park' (682)",
+   "reason": "Both readers listed these. Auto-caption garbles and pronoun references for Rittenhouse Square, folded into the Rittenhouse Square and 18th & Walnut rows; listed here so the aliases are auditable.",
+   "timestamp": 78
+  },
+  {
+   "place": "'the Block' (130)",
+   "reason": "Read B listed it. Refers to the 10th Street block they are standing on; folded into the 10th Street row.",
+   "timestamp": 130
+  },
+  {
+   "place": "Broad Street Line (as workplace)",
+   "reason": "Both readers excluded. 'I was um operating the Broad Street Line subway trains for a few months' (230-235) and the classmate/operator exchange on the platform (1470-1485) are job biography. The separate shooting statement at 864 ('taking trains up and down the whole thing') is counted as a haunt row.",
+   "timestamp": 230
+  },
+  {
+   "place": "Trains (childhood subject)",
+   "reason": "Read B listed it. Biography: 'I used to just take pictures of trains until I was like 14' (334-337). No place named.",
+   "timestamp": 334
+  },
+  {
+   "place": "Baltimore and Ohio Railroad",
+   "reason": "Both readers excluded. Origin-of-interest biography ('the Baltimore and Ohio Railroad started it', 564-567); a historic railroad, not a Philadelphia shooting spot.",
+   "timestamp": 564
+  },
+  {
+   "place": "Subject categories: subway tunnels, steam turbines, horses, old railroad infrastructure, architecture, alleyways, cats",
+   "reason": "Both readers excluded (Read B listed alleyways separately). Things he photographs, not named places: 'sometimes subway tunnels or steam turbines horses' (50-53), 'horses old railroad infrastructure architecture we still have Alleyways' (600-605), favorite photographs of a steam turbine and a cat (2000-2006).",
+   "timestamp": 50
+  },
+  {
+   "place": "Horses seen during the City Hall segment",
+   "reason": "Both readers excluded. 'with Philadelphia the horses we love the horses here these horses aren't my favorite horses' (891-901) are subjects encountered at the City Hall stop (likely mounted police), not a place; location not stated. Olu also rides/walks horses for work (213-217, 245-247), which is biography.",
+   "timestamp": 891
+  },
+  {
+   "place": "Bridge climbing / power plants / 'be on a bridge'",
+   "reason": "Both readers excluded. Past group-outing references ('the bridge climbing thing or power plants', 932-935) and the generic sign-off ('I'll be underground be on a bridge', 2166-2169). No Philadelphia location named.",
+   "timestamp": 932
+  },
+  {
+   "place": "Subway tunnels / underground / 'downstairs' (general)",
+   "reason": "Both readers excluded as general practice statements: 'sometimes subway tunnels' (50), 'we'll go underground for a little bit' (848), 'during the winter like every day' (1393-1397), 'I can't get to the same spots and some of them aren't as friendly as others' (1402-1407), 'I'll be underground' (2169). Other stations are never named; folded into the City Hall Station and Broad Street Line rows.",
+   "timestamp": 1393
+  },
+  {
+   "place": "Unnamed frames inside the City Hall segment ('oh cutie... really cute one'; 'get flipped up let's go with the sun... my picture was probably better'; 'one critical Focus shot today')",
+   "reason": "Both readers excluded as separate places. Frames made at 882-888 and 1139-1168 with no location spoken; placed under the City Hall / Dilworth Park row by sequence (after 'go back to City Hall' at 841, before 'go downstairs' at 1371). Human to confirm from footage.",
+   "timestamp": 1139
+  },
+  {
+   "place": "Portrait of worker with badge and keys ('excuse me sir when is your break')",
+   "reason": "Both readers excluded as a separate place. Frame made at 1314-1362 ('you mind looking up at me cool thanks'), location not spoken; immediately precedes 'go downstairs' (1371), so cited as support in the City Hall / Dilworth Park row. Human to confirm from footage ~21:54-22:47.",
+   "timestamp": 1324
+  },
+  {
+   "place": "'Nair Wayan'",
+   "reason": "Both readers excluded. A person who taught him the overhead-portrait trick (1362-1367), name garbled; not a place.",
+   "timestamp": 1362
+  },
+  {
+   "place": "FWS Gallery / custom framing shop ('framework studio and gallery'), 21st & Walnut",
+   "reason": "Both readers excluded. Former workplace (1545-1556) and the venue for his self-organized group shows (1578-1660); name garbled in captions. An exhibition space, not a shooting spot.",
+   "timestamp": 1548
+  },
+  {
+   "place": "The Halide Project ('haly project or halide')",
+   "reason": "Both readers excluded. Photo award/organization through which he first showed printed work in 2020 (1560-1573). Not a place he shoots.",
+   "timestamp": 1569
+  },
+  {
+   "place": "Gallery viewings / shows",
+   "reason": "Both readers excluded. References to showing work in galleries (1025-1032, 1196-1209, 1532-1669) describe exhibitions, not places he shoots.",
+   "timestamp": 1025
+  },
+  {
+   "place": "Instagram / Flickr",
+   "reason": "Both readers excluded. Platforms, not places (1003-1093, 2147-2166).",
+   "timestamp": 1003
+  },
+  {
+   "place": "The gym / home / laundry / groceries",
+   "reason": "Both readers excluded. Time-budget talk (1738-1765), not locations.",
+   "timestamp": 1742
+  },
+  {
+   "place": "Hypothetical 'one corner for an hour' in a 'densely populated Urban Metropolis'",
+   "reason": "Read A listed it. Generic camping-vs-walking philosophy (646-655), not a real place.",
+   "timestamp": 646
+  },
+  {
+   "place": "'the store right down the street here' (portrait subject's workplace)",
+   "reason": "Both readers excluded. 'make the store right down the street here' (1877-1878) is where the post-subway portrait subject works and where Olu will drop off a print; a relationship, not a shooting spot, and the street is never named.",
+   "timestamp": 1877
+  },
+  {
+   "place": "Post-subway unnamed corner ('I got my corner shot') and the passed-over 'guy with the doll on his shoulder'",
+   "reason": "Both readers excluded pending footage. Portrait of a passer-by pulled into the light ('excuse me your outfit do you mind coming back into the light', 1847-1869) followed by 'okay that was fun I got my corner shot' (1881-1886), then a shot he declined because the subject 'wasn't in the light' (1890-1898). Street and corner are never spoken; comes after the underground segment, so it could be back near City Hall or on the planned Market East / Chinatown leg. Reviewer should geolocate from footage ~30:47-31:40; if placed, it is a pin candidate.",
+   "timestamp": 1881
+  },
+  {
+   "place": "'Public Safety'",
+   "reason": "Read B listed it. Fragment of his message to train fans ('these trains move a lot faster what you may think Public Safety', 1494-1509), not a place.",
+   "timestamp": 1499
+  },
+  {
+   "place": "Sign-off location",
+   "reason": "Closing segment (2135-2184) does not state where they are; only Read A noted it in the route. Not mappable.",
+   "timestamp": 2135
+  }
+ ],
+ "verification": {
+  "videoId": "eloT_IvSaOI",
+  "verdicts": [
+   {
+    "place": "10th Street, Center City (block not stated)",
+    "type": "shot-here",
+    "timestamp": 122,
+    "quoteFound": true,
+    "ruleOk": false,
+    "inPhiladelphia": true,
+    "keep": false,
+    "reason": "Quote is at 122-142 as stated. But nothing in the transcript shows shooting on 10th Street: 'let's hit 10th Street real quick' is a plan (functionally the 'we're starting at X' exclusion), the only follow-up is a foot-traffic complaint ('not really enough people are on the Block for this... you put time in but every like 15 minutes or so'), then about 2.5 minutes of interview (146-282) and 'we'll cross this way and then we'll work our way over to City Hall' (284-290), which reads as moving on. No frame, no 'I stood here', the speaker of 'let's hit' is inferred (could be Paulie), the block is never named and 10th Street is a long corridor. Not convinced. Reinstate only if footage 2:02-4:44 shows him shooting on the block."
+   },
+   {
+    "place": "City Hall / Dilworth Park",
+    "type": "haunt",
+    "timestamp": 73,
+    "quoteFound": true,
+    "ruleOk": false,
+    "inPhiladelphia": true,
+    "keep": false,
+    "reason": "Quote is at 65-76. The basis is 'we're going to start at City Hall', which is exactly the 'we're starting at X' exclusion, plus 'really standard really basic Street photo boy Philadelphia loop', which describes a generic Philadelphia street-photography route rather than a spot he says he personally returns to. 'hit deal worth [Dilworth] one more time' (86) is today's itinerary and 'hope some hooligans are at Dorth [Dilworth] being bad' (842-844) is an expectation about the place, not a statement of his own regular return. The haunt rule requires the speaker to name it as a regular spot; he never does. Read B was right. The place is still on the map through the shot-here row at 841, so nothing is lost by dropping this."
+   },
+   {
+    "place": "City Hall / Dilworth Park",
+    "type": "shot-here",
+    "timestamp": 841,
+    "quoteFound": true,
+    "ruleOk": true,
+    "inPhiladelphia": true,
+    "keep": true,
+    "reason": "Quote is at 841-849. They announce the return to City Hall to shoot, and the segment before 'you want to try to go downstairs' (1367-1371) contains shooting: 'help I'm working... my picture was probably better though' (1139-1153), 'it's one critical Focus shot today' (1165-1168), and the worker portrait 'you mind looking up at me cool thanks' (1324-1362). The descent ends on the Broad Street Line platform (1470-1472) after he named City Hall Station as the underground target (849), so the stop before the descent is City Hall. Medium is correct: no line names the spot where those frames were made and the cut is edited, so some of 882-1168 could still be on the walk back from Rittenhouse ('oh I got to cross the street', 1156). 'Dorth' = Dilworth garble is sound. Pin candidate stands only pending footage 14:00-23:00."
+   },
+   {
+    "place": "Chestnut Street (City Hall west toward Rittenhouse)",
+    "type": "shot-here",
+    "timestamp": 543,
+    "quoteFound": true,
+    "ruleOk": true,
+    "inPhiladelphia": true,
+    "keep": true,
+    "reason": "Quote is at 541-550. Explicit Hasselblad ('hustle blood') portrait of a seated smoker at 488-535 ('can I just get a photograph of you real quick you're good Right Where You Are', 'that's a good job') followed immediately by 'thanks Chestnut Street'. Explicit and unambiguous; high is right. The block is not spoken, so corridor is the right kind; footage 8:05-9:10 could pin the exact spot."
+   },
+   {
+    "place": "Walnut Street near 18th (approaching Rittenhouse Square)",
+    "type": "shot-here",
+    "timestamp": 665,
+    "quoteFound": true,
+    "ruleOk": false,
+    "inPhiladelphia": true,
+    "keep": false,
+    "reason": "Quote is at 665-672. The only Walnut-corridor action is 'we'll keep walking down Walnut', which is transit, and within about 25 seconds they turn into Rittenhouse Square instead ('we're going to go in Written House', 686-689). The camping ('as I stood here looking') happened at the corner Paulie asks about ten seconds later, 18th & Walnut (679), which already has its own shot-here row for the same person; a second row for the same spot under a corridor name is double counting, and the corridor's extent is never stated. Small and specific beats lumped: keep the corner, drop the corridor."
+   },
+   {
+    "place": "18th & Walnut (NE corner of Rittenhouse Square)",
+    "type": "shot-here",
+    "timestamp": 679,
+    "quoteFound": true,
+    "ruleOk": true,
+    "inPhiladelphia": true,
+    "keep": true,
+    "reason": "Quote is at 675-684; the corner is named on camera in answer to Paulie's question, and 'this little Park' / 'R house' is Rittenhouse Square, whose NE corner is 18th & Walnut. The shot-here basis is 'as I stood here looking everyone that was here has passed us by popular camping spot' (667-672): he explicitly posted up on this corner to shoot, which is working the spot. But no frame is confirmed and he says 'I'm not feeling it right now', so confidence should be medium for the shooting (the location itself is high), and the pin candidate needs footage (~11:05-11:25) to show a frame. Keep as the one exact corner he named on camera."
+   },
+   {
+    "place": "18th & Walnut (NE corner of Rittenhouse Square)",
+    "type": "haunt",
+    "timestamp": 669,
+    "quoteFound": true,
+    "ruleOk": false,
+    "inPhiladelphia": true,
+    "keep": false,
+    "reason": "Quote is at 667-672. 'popular camping spot' describes the corner's popularity among photographers generally; he never says he returns to it himself, and in the same breath dismisses it ('I'm not feeling it right now'). The haunt rule requires the speaker to name it as their own regular spot. Read A was right to decline. The corner stays on the map via the shot-here row at 679."
+   },
+   {
+    "place": "Rittenhouse Square",
+    "type": "shot-here",
+    "timestamp": 688,
+    "quoteFound": true,
+    "ruleOk": true,
+    "inPhiladelphia": true,
+    "keep": true,
+    "reason": "Quote is at 686-693. They enter the park expressly to make pictures ('we're going to bite we're going to go in Rittenhouse... Rittenhouse pictures again... all you could get was Rittenhouse pics', 686-702) and spend roughly two minutes inside it (squirrel-feeding interaction 745-798, 'the squirrel did take it' 816-818) before leaving at 841. The name survives only as garbles ('Written House', 'R house', 'RI pics', 'ridden house'), and no line confirms a specific frame ('they getting made so good today' at 706 is ambiguous), so medium is correct. The pin candidate should be understood as the park, not a corner; footage 11:28-13:40 to confirm."
+   },
+   {
+    "place": "Rittenhouse Square",
+    "type": "haunt",
+    "timestamp": 693,
+    "quoteFound": true,
+    "ruleOk": true,
+    "inPhiladelphia": true,
+    "keep": true,
+    "reason": "Quote is at 693-706. 'Rittenhouse pictures again... that's all you did today... all you could get was Rittenhouse pics' is a statement about his own recurring pattern: the park is the fallback he has ended up shooting before, said while going back to it. The word 'again' is what makes this a regular spot rather than a one-off; it is inferred rather than stated, and the name is garbled, so medium is right."
+   },
+   {
+    "place": "City Hall Station (Broad Street Line)",
+    "type": "haunt",
+    "timestamp": 849,
+    "quoteFound": true,
+    "ruleOk": true,
+    "inPhiladelphia": true,
+    "keep": true,
+    "reason": "Quote is at 849-864 and the name is clear. It is said as the choice for 'if we got nothing we'll go underground for a little bit' (848), i.e. where he goes to shoot underground, and it pairs with going underground to take photos 'during the winter like every day if I'm being really good about it' (1393-1397) and 'I can't get to the same spots' (1402-1407). That makes it a regular underground shooting spot by context. But 'it has my favorite unique characteristics... original grit' is a preference statement, and he never says he shoots there all the time, so this should be medium, not high. Keep."
+   },
+   {
+    "place": "City Hall Station (Broad Street Line)",
+    "type": "shot-here",
+    "timestamp": 1371,
+    "quoteFound": true,
+    "ruleOk": true,
+    "inPhiladelphia": true,
+    "keep": true,
+    "reason": "Quote is at 1367-1385. They go downstairs to shoot (Paulie's 'how do you go underground to take photos... like what we're about to do', 1385-1393), the underground segment runs 1456-1530 with a train passing ('there goes', 1518), and the greeting 'Philadelphia's finest when you're on the Broad Street Line' (1470-1472) fixes the BSL level. The station is never named at the descent; it is City Hall Station only because he named it as the underground target at 849 and they descend from the City Hall stop (the other BSL stop on their route, Walnut-Locust, is never mentioned). No line confirms a frame. Medium, with the pin pending footage 24:16-25:30, is the right treatment; keep."
+   },
+   {
+    "place": "Broad Street Line (SEPTA subway, full length)",
+    "type": "haunt",
+    "timestamp": 864,
+    "quoteFound": true,
+    "ruleOk": false,
+    "inPhiladelphia": true,
+    "keep": false,
+    "reason": "Quote is at 864-870. This is fandom and job biography, not a named shooting spot: he operated BSL trains (230-235), has been a train enthusiast since childhood (334-337), and 'I've walked the whole thing taking trains up and down the whole thing' describes riding and walking the line. No station other than City Hall is named and nothing says he shoots along it regularly. It is also line-level, the whole north-south spine of the city, which under the rules is as lumped as a section-level statement and not mappable. Both readers flagged it as broad. Drop; the City Hall Station rows carry the underground evidence."
+   }
+  ],
+  "missed": []
+ },
+ "_method": "two independent full reads (recall-oriented + strict) -> reconcile -> adversarial verify; see verification.verdicts"
+}

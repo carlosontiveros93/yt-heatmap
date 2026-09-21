@@ -93,6 +93,23 @@ photographer interviews) and bring me a candidate list to approve one by one; I'
 agreed other channels are fine as long as I approve each. Shapes: OpenDataPhilly
 neighborhoods and parks. I live near Philly, so I can verify places by eye.
 
+### Step 3 progress — 2026-09-21 (not yet approved)
+
+- Paulie's two Philly episodes are pulled (`research/philly/raw.json`, timestamped transcripts in
+  `research/philly/transcripts/`), fully read (two independent readers → merge → adversarial verify;
+  results in `research/philly/reader-results/`), and proposed in
+  `research/proposals/philly_proposed.md`: 7 spots / 13 mentions at my lean, 3 high pins, all Center City.
+- Shapes are ready: OpenDataPhilly neighborhoods + PPR parks downloaded (gitignored), gazetteer in
+  `tools/gazetteers/philly.py`, boundary definitions in `tools/boundaries/philly.py` (preview built to
+  `research/philly/boundaries_preview.js`; `cities/philly/` untouched).
+- Source search done: `research/philly/sources_candidates.md` lists ~60 candidate videos in tiers,
+  from 23 YouTube searches (`tools/search_youtube.py`) plus full video lists of 14 channels
+  (`research/philly/channels/`). Nothing beyond Paulie's two episodes has been pulled.
+- Next: Carlos answers the decisions in section D of the proposal and approves sources; then pull the
+  approved transcripts, read them the same way, extend the proposal, and only then write `cities/philly/`.
+- Note: Nazir's episode was re-pulled fresh rather than moved out of `research/la/raw.json`, so the LA
+  raw file still contains it (harmless; the LA scan ignores it).
+
 ## Rules that carry over (all in README.md)
 - Shot-there counts, regular haunt counts, biography and borough-level don't.
 - Small and accurate beats large and lumped; overlapping small shapes are fine;

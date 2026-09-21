@@ -1,11 +1,17 @@
-"""Pull the full video list for a YouTube channel via the page data + browse continuations."""
+"""Pull the full video list for a YouTube channel via the page data + browse continuations.
+
+    python3 tools/pull_channel.py                                   # Paulie B -> research/paulieb_videos.json
+    python3 tools/pull_channel.py <channel videos URL> <out.json>   # any channel, e.g. https://www.youtube.com/channel/UC.../videos
+"""
 import json, re, sys, time, urllib.request
 
 UA = {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 Chrome/128 Safari/537.36',
       'Accept-Language': 'en-US,en;q=0.9'}
 S = 'research/'
+CHANNEL_URL = sys.argv[1] if len(sys.argv) > 1 else 'https://www.youtube.com/@PaulieB/videos'
+OUT = sys.argv[2] if len(sys.argv) > 2 else S + 'paulieb_videos.json'
 
-html = urllib.request.urlopen(urllib.request.Request('https://www.youtube.com/@PaulieB/videos', headers=UA)).read().decode('utf-8', 'ignore')
+html = urllib.request.urlopen(urllib.request.Request(CHANNEL_URL, headers=UA)).read().decode('utf-8', 'ignore')
 data = json.loads(re.search(r'var ytInitialData = (\{.*?\});</script>', html, re.S).group(1))
 cfg = json.loads(re.search(r'ytcfg\.set\((\{.*?\})\);', html, re.S).group(1))
 api_key = cfg['INNERTUBE_API_KEY']
@@ -66,5 +72,5 @@ while tokens:
     if not progressed: break
     time.sleep(0.5)
 
-json.dump(videos, open(S + 'paulieb_videos.json', 'w'), indent=1)
+json.dump(videos, open(OUT, 'w'), indent=1)
 print(len(videos), 'videos saved')

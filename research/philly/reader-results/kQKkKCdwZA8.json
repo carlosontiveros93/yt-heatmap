@@ -1,0 +1,422 @@
+{
+ "videoId": "kQKkKCdwZA8",
+ "guest": "Nazir Wayman",
+ "isPhiladelphia": true,
+ "shotToday": [
+  "Broad & Walnut, Center City (his favorite corner; the Ray Metzker corner)",
+  "Rittenhouse Square (inferred: 'the park' reached by walking west on Walnut from Broad past the former Atmos store; dog photos)",
+  "St. Patrick's Day Parade crowd along JFK Blvd at 15th St / City Hall's northwest corner (street inferred from the Municipal Services Building adjacency; human to confirm)",
+  "Municipal Services Building plaza (Thomas Paine Plaza) and 'the pit', 1401 JFK Blvd, Broad to 15th"
+ ],
+ "route": [
+  {
+   "place": "Philadelphia, St. Patrick's Day Parade day (start; starts raining at 59)",
+   "timestamp": 12
+  },
+  {
+   "place": "Talking with hammered parade-goers ('get a picture of this'), location not stated",
+   "timestamp": 264
+  },
+  {
+   "place": "Background audio of a Tibetan rally speech, location not stated",
+   "timestamp": 353
+  },
+  {
+   "place": "Frame made 'in between the two trucks' (parade floats), location not stated",
+   "timestamp": 434
+  },
+  {
+   "place": "Broad & Walnut (favorite corner; Ray Metzker corner; University of the Arts on the corner)",
+   "timestamp": 659
+  },
+  {
+   "place": "Leaving the corner west on Walnut St toward 'the park' (his daily route, 'we're about to do it right now')",
+   "timestamp": 883
+  },
+  {
+   "place": "Passing the former Atmos store, 1509 Walnut St ('actually this is a store')",
+   "timestamp": 959
+  },
+  {
+   "place": "Rittenhouse Square (inferred): dog photographs; sun comes out at 1370; puppy encounter with parade-bound couple at 1407",
+   "timestamp": 1137
+  },
+  {
+   "place": "Second Ray Metzker spot, unnamed (a building built in 1987 now blocks the light; 'this silver thing wasn't here')",
+   "timestamp": 1536
+  },
+  {
+   "place": "Shooting St. Patrick's parade-goers on the block leading to the Municipal Services Building (street not stated)",
+   "timestamp": 1607
+  },
+  {
+   "place": "Municipal Services Building plaza ('Muni'), 1401 JFK Blvd, Broad to 15th",
+   "timestamp": 2010
+  },
+  {
+   "place": "'The pit' (sunken section of the MSB plaza)",
+   "timestamp": 2408
+  },
+  {
+   "place": "Back in the parade crowd beside the plaza (buys a light-up hat at 2467; group portraits through ~3070)",
+   "timestamp": 2461
+  },
+  {
+   "place": "Breaks away from the parade crowd; walking interview",
+   "timestamp": 3185
+  },
+  {
+   "place": "Ends with coffee, shop not named ('started with coffee ending with coffee')",
+   "timestamp": 3672
+  }
+ ],
+ "mentions": [
+  {
+   "place": "Broad & Walnut, Center City",
+   "type": "shot-here",
+   "speaker": "Nazir Wayman",
+   "timestamp": 659,
+   "quote": "yeah man this is my favorite Corner in the entire city right here what corner is this this is Broad and walnut",
+   "confidence": "medium",
+   "pinCandidate": true,
+   "note": "Both readers counted it; Read A said high, Read B said medium. Resolved to MEDIUM on re-read: the exact intersection is stated on camera ('right here', 659-662), but the transcript never says a frame was made on the corner today. The frame at 602 and 649 ('that guy ran at the perfect time') is made just before the reveal, so shooting on the corner is clear from context, not explicit. Human to confirm from footage ~10:00-11:10. 'Ray meker' = Ray Metzker, who made a famous photograph here (664-670). Same person and place also has a haunt row below (different basis).",
+   "suggestedKind": "pin"
+  },
+  {
+   "place": "Broad & Walnut, Center City",
+   "type": "haunt",
+   "speaker": "Nazir Wayman",
+   "timestamp": 710,
+   "quote": "I photograph on this corner so much I didn't even I'm not even thinking of anybody else doing it",
+   "confidence": "high",
+   "pinCandidate": true,
+   "note": "Both readers agreed, high. Supporting lines: 'my favorite Corner in the entire city' (659); 'the same Corners that I've been photographing since 2020' (745-747, about Laurence Salzmann's photographs); best light 'around like 2 1 or two cuz the sun will like gradually come down Broad Street South Broad ... and then it just blasts right here' (761-770); 'I tried to remake the photo he took many times' (773); and it is a fixed leg of his daily route, 'I walk right to that corner make my way straight up to the park' (913-916). University of the Arts on this corner (679-683) is biography and excluded; the Broad Street light remark is folded in here, not a separate corridor. Same place as the shot-here row above; both bases apply.",
+   "suggestedKind": "pin"
+  },
+  {
+   "place": "Rittenhouse Square",
+   "type": "shot-here",
+   "speaker": "Nazir Wayman",
+   "timestamp": 1157,
+   "quote": "beautiful beautiful dogs that was an insane time to like take a picture of a dog just sniffing the other dogs meat",
+   "confidence": "medium",
+   "pinCandidate": false,
+   "note": "Both readers agreed, medium; Read A labeled it 'the park down Walnut St (most likely Rittenhouse Square)', Read B 'Rittenhouse Square'. Park name is never spoken. Inference: at 880-886 he says 'we can actually make our way to the park we have like a tiny little park down the street the city was kind of built around four Parks' (Penn's squares); they then pass the former Atmos store (959-971, 'it's crazy that it's right here' 1080-1082), which both readers place at 1509 Walnut St, one block WEST of Broad, so 'down the street' is west on Walnut, which reaches Rittenhouse Square (18th-19th) rather than Washington Square (east). Frames there: 'let's see if I can get this one' (1137), the dog picture (1157-1161), sun comes out (1370-1375), puppy encounter with a couple 'going to go to the parade' (1407-1454). Human to confirm from footage ~19:00-24:15. Same inferred park also has a haunt row.",
+   "suggestedKind": "park"
+  },
+  {
+   "place": "Rittenhouse Square",
+   "type": "haunt",
+   "speaker": "Nazir Wayman",
+   "timestamp": 910,
+   "quote": "so I get off the train go to loom I walk right to that corner make my way straight up to the park and then I kind of like I'm very loose with getting back to lack cologne",
+   "confidence": "medium",
+   "pinCandidate": false,
+   "note": "Both readers agreed, medium. Paulie asks 'what's your normal routine or route' and Nazir answers 'we're about to do it right now' (889-896): train -> La Colombe ('loom' / 'lock colom' / 'lack cologne', auto-caption garble) -> 'that corner' (Broad & Walnut) -> 'straight up to the park' -> loose walk back to La Colombe. Out 'every day after work which is like around 3:30 so I catch that late evening light' (941-947). Medium because the park's identity as Rittenhouse is inferred from the westward walk (see shot-here row), never stated.",
+   "suggestedKind": "park"
+  },
+  {
+   "place": "Second Ray Metzker spot, unnamed (Center City, on the walk between Rittenhouse Square and the Municipal Services Building)",
+   "type": "haunt",
+   "speaker": "Nazir Wayman",
+   "timestamp": 1536,
+   "quote": "this is also another ray Meer spot I broke down one of his images right here we can actually go to where he took the photograph so he took the picture from here",
+   "confidence": "medium",
+   "pinCandidate": true,
+   "note": "Both readers kept it as a medium haunt. Read A suggested it might also be shot-here if the footage shows him shooting; Read B had no shot-here row. Resolved on re-read of 1536-1581: no frame is stated ('I've tried I've tried' 1575-1581 refers to past attempts to remake Metzker's 1982 picture), so haunt only. The location is NOT named; the row exists so the spot is not lost. Clues: 'this silver thing wasn't here' (1552-1554), 'they built this building right here in 1987 so the building wasn't here that means a lot of light was able to just beam straight across here' (1562-1571). Position in the walk: after the park (1137-1454) and before the MSB (2010). Both readers speculated One Liberty Place (completed 1987, 16th-17th & Market/Chestnut), which is never spoken; human must identify the spot from footage ~25:36-26:20 and may add a shot-here row if frames are visible.",
+   "suggestedKind": "pin"
+  },
+  {
+   "place": "Municipal Services Building plaza (Thomas Paine Plaza / 'Muni' / 'the pit'), 1401 JFK Blvd, Broad to 15th",
+   "type": "shot-here",
+   "speaker": "Nazir Wayman",
+   "timestamp": 2010,
+   "quote": "what is this spot right here this is the municipal Services building we call it mun it's in iconic skate spot",
+   "confidence": "high",
+   "pinCandidate": true,
+   "note": "Both readers agreed, high. Geography corrected: Read A placed the plaza 'between 15th and 16th', which is Love Park; the MSB is 1401 JFK Blvd, so its plaza runs from Broad to 15th on the north side of JFK, across from City Hall, with Love Park across 15th. 'mun' = Muni. They are on the plaza from 2010; at 2408 'hey this is the pit' (the sunken section skaters took over, 2227-2236, 'when I say it's like a zoo people just stand here' 2418-2425) and at 2433 'I really hope the flag covered his face' he reacts to a frame just made there. Subject of his long-term book project (2098-2116, 2243). 'The pit' is folded in here rather than counted a second time for the same person. Same person/place also has a haunt row.",
+   "suggestedKind": "pin"
+  },
+  {
+   "place": "Municipal Services Building plaza (Thomas Paine Plaza / 'Muni' / 'the pit'), 1401 JFK Blvd, Broad to 15th",
+   "type": "haunt",
+   "speaker": "Nazir Wayman",
+   "timestamp": 2324,
+   "quote": "I still come every day well every day I come downtown it's always been like come downtown go to lock colom come here and then I'll do my route but now that this isn't really here I just do my my little walk around and I'll end up in the pit",
+   "confidence": "high",
+   "pinCandidate": true,
+   "note": "Both readers agreed, high; strongest haunt in the episode. Read A quoted 2044 ('which has been like my home since I pretty much started skating'), Read B quoted 2324; kept 2324 because it states the present-day daily routine outright. Also: 'I come here and I've been taking pictures since about 2020 2019' (2127-2132), Polaroids here with friends since 2016 (2139-2143), 'when they put the gates up I came every day every day all day' (2176-2179), '15 rolls a day' (2309-2311), 'I met a lot of my really good friends here' (2058-2061). Same place as the shot-here row above.",
+   "suggestedKind": "pin"
+  },
+  {
+   "place": "JFK Blvd at 15th St, St. Patrick's Day Parade crowd alongside the Municipal Services Building plaza (City Hall's northwest corner)",
+   "type": "shot-here",
+   "speaker": "Nazir Wayman",
+   "timestamp": 2001,
+   "quote": "this is a great we literally didn't even go all the way down the block yet this is fun what is this spot right here this is the municipal Services building",
+   "confidence": "medium",
+   "pinCandidate": false,
+   "note": "DISAGREEMENT: Read A kept this as a medium corridor; Read B excluded it because the street is never spoken and folded the crowd shooting into the MSB rows. Resolved by re-reading 1607-2013 and 2461-3185: the parade-goer shooting is continuous and explicit ('get in there' 1609, 'how's your parade going' 1615, 'picture picture' 1759, 'I'm out of film switch cameras' 1968, 'hop in hop in' 1981, 'photo of all of us real quick' 2579-2583, 'can I get a picture of you with the little hat on' 2877, 'I ran out of film on this one' 3070) and brackets the MSB plaza on both sides: the pre-MSB stretch ends 'we literally didn't even go all the way down the block yet' (2004) and is immediately followed by 'what is this spot right here' (2010); the post-pit stretch starts with the hat vendor at 2461-2479. KEPT as a MEDIUM CORRIDOR (not a pin): the MSB name is high-confidence and the parade runs along JFK Blvd past it, so the crowd shooting sits on JFK around 15th/Broad; more of the day's frames were made here than anywhere else and the MSB pin alone would understate it. The street name is inferred, never spoken; the earlier 1607-1645 stretch could be one block west (JFK at Love Park or on 15th St). Human to check footage ~26:47-33:30 and ~41:00-53:00. Parades in general recur for him ('I try to shoot them every time they come up' 103-105) but an annual event is not a fixed spot, so no haunt row.",
+   "suggestedKind": "corridor"
+  }
+ ],
+ "excluded": [
+  {
+   "place": "Philadelphia / Philly / 'here' / 'this city'",
+   "reason": "Both readers excluded. City-level: 'today we're in Philadelphia' (12), 'based out of Philadelphia' (26), 'born and raised' (34-35, biography), 'here in Philly' (101), 'photo Community here in Philadelphia' (1194), 'anybody here in this city' (1266), 'Philadelphia' (2991). Captured via the specific spots instead.",
+   "timestamp": 12
+  },
+  {
+   "place": "New York",
+   "reason": "Both readers excluded. Comparison city for crowd density ('let's say for instance New York can get that same feeling any day', 122-128). Outside Philadelphia.",
+   "timestamp": 122
+  },
+  {
+   "place": "Fifth Avenue, New York (captioned 'fifth half')",
+   "reason": "Both readers excluded. Winogrand comparison ('even if you just walk down fifth half every day', 3264-3270). Outside Philadelphia.",
+   "timestamp": 3267
+  },
+  {
+   "place": "Parades in general (annual events)",
+   "reason": "Read A listed this; kept. 'I try to shoot them every time they come up' (103-105) is about recurring events, not a fixed place; today's parade shooting is captured by the JFK Blvd corridor row and the MSB rows.",
+   "timestamp": 105
+  },
+  {
+   "place": "Mummers Parade route ('from around 20th in JFK all the way down to South Philly')",
+   "reason": "Both readers excluded. Annual Jan 1 event described (188-261), not shot in this episode; 'we try to stay away from there' (228-231) muddles his own attendance; Winogrand's 1965 Mummers photo (251-264) is another photographer's work. Flag for human: could be treated as an annual-event haunt (JFK Blvd / Broad St south), but the transcript does not justify a place-level entry.",
+   "timestamp": 242
+  },
+  {
+   "place": "Two Street (2nd St, South Philly)",
+   "reason": "Both readers excluded. Mummers after-parade ('they do another parade on two Street which is it lasts all night', 248-251); not stated as his own shooting spot and not shot today.",
+   "timestamp": 248
+  },
+  {
+   "place": "South Philly",
+   "reason": "Both readers excluded. Section-level, spoken only in the Mummers description ('South Philly Italians' 225; parade end point 245).",
+   "timestamp": 225
+  },
+  {
+   "place": "Early parade stretch before Broad & Walnut (hammered parade-goers 264-300; 'a guy just appeared in the frame in between the two trucks' 425-434)",
+   "reason": "Read B excluded the 'two trucks' frame; Read A only had it in the route. Kept excluded on re-read: frames were made (Paulie's 'get a picture of this' 300; Nazir's 425-434) but no location is spoken anywhere in 264-434. Somewhere on the parade route before they reach Broad & Walnut at 659. Human may locate from footage ~4:24-7:15.",
+   "timestamp": 434
+  },
+  {
+   "place": "Lhasa / Tibet",
+   "reason": "Both readers excluded. Captured audio from a bystander's Tibetan Uprising Day rally speech (353-415; March 10 matches the 2024 parade date); not a photo spot and outside Philadelphia. The rally's location in Philly is not stated.",
+   "timestamp": 392
+  },
+  {
+   "place": "University of the Arts (Broad & Walnut)",
+   "reason": "Both readers excluded. Biography: 'I actually went to school here this is the uh College of University of the Arts and I went there for a semester' (676-686); professor David Graham. The corner itself is counted as Broad & Walnut.",
+   "timestamp": 679
+  },
+  {
+   "place": "Broad Street / South Broad",
+   "reason": "Both readers excluded. Light description for the Broad & Walnut corner ('the sun will like gradually come down Broad Street South Broad or I guess all of Broad and then it just blasts right here', 764-770); folded into the Broad & Walnut rows rather than a separate corridor.",
+   "timestamp": 764
+  },
+  {
+   "place": "'the same Corners that I've been photographing since 2020'",
+   "reason": "Read B listed this; kept. Unnamed corners beyond Broad & Walnut (743-747, about Laurence Salzmann's photographs, captioned 'Lawrence salsman'); cannot map.",
+   "timestamp": 745
+  },
+  {
+   "place": "The train (SEPTA)",
+   "reason": "Both readers excluded. Shutter-noise anecdotes on the train (494-499, 531-547) and 'I get off the train' (896); no line or station named; transit only.",
+   "timestamp": 494
+  },
+  {
+   "place": "La Colombe coffee (captioned 'lock colom', 'loom', 'lack cologne')",
+   "reason": "Both readers excluded. Daily coffee stop and social anchor of his route ('immediately go to lock colom all the people at that lock colom are my friends', 896-903; 'come downtown go to lock colom come here', 2330; 'started with coffee ending with coffee', 3672). Auto-caption garble almost certainly = La Colombe. A routine waypoint, not a shooting spot; which branch is unstated (the Dilworth Park / City Hall cafe fits 'go to La Colombe come here [MSB]'; the 19th & Sansom cafe fits 'getting back' from the park). Human may map as a route anchor.",
+   "timestamp": 899
+  },
+  {
+   "place": "Downtown / Center City",
+   "reason": "Both readers excluded. Section-level: 'it's downtown right here' (239), 'downtown Center City doesn't really have a culture so it kind of can get very repetitive' (930-934), photographers who 'come downtown and just shoot downtown all the time' (1203-1207), 'Center City based photographers' (1335), 'every day I come downtown' (2324-2327), Metzker's City Stills is 'all pretty much my home turf' (2812-2820). His general territory; captured via Broad & Walnut, Rittenhouse Square, the JFK corridor and MSB.",
+   "timestamp": 930
+  },
+  {
+   "place": "Atmos store, 1509 Walnut St (closed)",
+   "reason": "Both readers excluded. Former commercial client: Adidas x Atmos campaign shot with family, girlfriend and friends, plus a gallery show (956-1089); 'it's closed down now they closed down all their American stores' (959-963). Walked past today ('actually this is a store', 959) so useful only as a route anchor showing they went west on Walnut from Broad; the 1509 Walnut address is both readers' knowledge, not spoken.",
+   "timestamp": 959
+  },
+  {
+   "place": "Darkrooms (Jeffrey Stockbridge's, and his own home darkroom)",
+   "reason": "Read B listed Stockbridge's darkroom (1070-1077, the printer who made his big prints); Read A listed his home darkroom ('I can't print those in my home dark room', 1075-1077; 'late night in the dark room', 3077). Merged; neither is a shooting location.",
+   "timestamp": 1073
+  },
+  {
+   "place": "North Philly",
+   "reason": "Both readers excluded. Section-level and other photographers' work: Eugene Richards' backflip photo 'in North Philly off of bed' (1108-1119, street garbled); friends who 'go to North Philly' for community-based work (1220); Richards' 'Cocaine True Cocaine Blue' (2826-2870) is also his work, not Nazir's spot. 'I try to do all of it' (1230-1232) is too vague to map.",
+   "timestamp": 1220
+  },
+  {
+   "place": "The stables / black cowboys (captioned 'staes')",
+   "reason": "Both readers excluded. Other photographers' community subject ('go to the staes and play with the uh black cowboys', 1222-1225; likely the Fletcher Street riders); not stated as his spot and not shot today.",
+   "timestamp": 1222
+  },
+  {
+   "place": "Youth centers / rec centers",
+   "reason": "Both readers excluded. Other photographers' subjects (1225-1230) and his own childhood ('where I'm growing up it was very much me in the rec centers', 1234-1243); unnamed.",
+   "timestamp": 1228
+  },
+  {
+   "place": "Adrien Renee's neighborhood",
+   "reason": "Both readers excluded. Another photographer's work 'within his own neighborhood and Community where he lives' (1305-1319); unnamed.",
+   "timestamp": 1316
+  },
+  {
+   "place": "Philadelphia Museum of Art ('the art museum')",
+   "reason": "Both readers excluded. Context for Laurence Salzmann's 'City/2' project ('City over two', 1675-1714); not a shooting spot.",
+   "timestamp": 1708
+  },
+  {
+   "place": "Kensington",
+   "reason": "Both readers excluded. Jeffrey Stockbridge's book on Kensington (1716-1741): another photographer's famous work, not Nazir's spot.",
+   "timestamp": 1719
+  },
+  {
+   "place": "Three infamous skate plazas 'throughout America'",
+   "reason": "Read B listed this; kept. General statement (2019-2027); MSB and Love Park handled separately.",
+   "timestamp": 2025
+  },
+  {
+   "place": "Love Park (JFK Plaza)",
+   "reason": "Both readers excluded. Skate history ('Love Park being the the second one or the most famous one', 2027-2030; 'which is what they did over at Love Park', 2069-2073; 'reliving what happened at Love Park', 2203) and friend Jonathan Rentschler's (captioned 'rler') book 'Love' on its last days (2073-2084). Not stated as Nazir's shooting spot. It is directly across 15th St from the MSB plaza, so it may appear in footage and the 1607-1645 crowd shooting could be along its JFK frontage.",
+   "timestamp": 2027
+  },
+  {
+   "place": "City Hall Plaza (demolished skate plaza, now Dilworth Park)",
+   "reason": "Both readers excluded. History only ('we had City Hall Plaza which was across the street which they demolished and I think 2012 2011', 2033-2040).",
+   "timestamp": 2033
+  },
+  {
+   "place": "Police station across the street from the MSB",
+   "reason": "Both readers excluded. Context for why skating there is hard ('there's a police station right across street', 2219-2220); not a spot.",
+   "timestamp": 2219
+  },
+  {
+   "place": "The pit (sunken section of the Municipal Services Building plaza)",
+   "reason": "Both readers folded it into the MSB rows. 'we kind of took over what we call the pit now' (2227-2230), 'hey this is the pit' (2408), 'I'll end up in the pit' (2337). Same person, same venue, so not counted a second time.",
+   "timestamp": 2408
+  },
+  {
+   "place": "'he shot here' (Andy Kota)",
+   "reason": "Read B listed this; Read A folded it into the Philadelphia exclusion. Kept as its own row: another photographer who influenced him ('he shot here and had a very heavy influence on me', 2526-2548); 'here' means Philadelphia generally.",
+   "timestamp": 2528
+  },
+  {
+   "place": "One Liberty Place (speculative identity of the second Ray Metzker spot)",
+   "reason": "Never spoken. Both readers guessed it from 'they built this building right here in 1987' (1562-1566) and the walk's direction; it is listed here so the guess is not mistaken for transcript evidence. The spot is carried unnamed as a haunt row; human to identify from footage ~25:36-26:20.",
+   "timestamp": 1566
+  },
+  {
+   "place": "Second Ray Metzker spot, shot-here basis",
+   "reason": "Read A suggested a possible shot-here row pending footage; Read B did not. Re-read of 1536-1581 finds no frame stated at this stop ('I've tried I've tried' refers to past remake attempts), so only the haunt row is kept. Human may add shot-here if the footage shows him shooting there.",
+   "timestamp": 1575
+  },
+  {
+   "place": "'the papi store' (captioned 'pop store' / 'poppy store')",
+   "reason": "Both readers excluded. Best-cheesesteak joke about generic corner stores ('the best cheese steak is at the pop store', 3278-3289); not a place.",
+   "timestamp": 3278
+  },
+  {
+   "place": "'my neighborhood' and 'other neighborhoods that I tend to go to with my family'",
+   "reason": "Both readers excluded. Genuine recurring community work ('I do make work in my neighborhood and around other neighborhoods that I tend to go to with my family', 3312-3322) but no neighborhood is named; cannot map. Flag for human.",
+   "timestamp": 3317
+  },
+  {
+   "place": "Instagram handle ('the abbreviations for Philly backwards')",
+   "reason": "Read B listed this; kept. Not a place (3688-3694).",
+   "timestamp": 3691
+  }
+ ],
+ "verification": {
+  "videoId": "kQKkKCdwZA8",
+  "verdicts": [
+   {
+    "place": "Broad & Walnut, Center City",
+    "type": "shot-here",
+    "timestamp": 659,
+    "quoteFound": true,
+    "ruleOk": true,
+    "inPhiladelphia": true,
+    "keep": true,
+    "reason": "Quote is verbatim at 659-662. Shot-here is clear from context, not stated: 'if I can get over there in time' (590-594) and 'Dam that guy ran at the perfect time' (602) are a frame being made; the same line is replayed at 649 after the sponsor insert, then 5 s of music, then 'this is my favorite Corner in the entire city right here' (659), so the frame was made at or beside the corner. No 'I just shot here' line exists, so medium is correct and a human should confirm from footage ~10:00-11:10. Exact intersection is spoken, so pin candidate stands. Not a double count: the haunt row is a different basis and both notes say so."
+   },
+   {
+    "place": "Broad & Walnut, Center City",
+    "type": "haunt",
+    "timestamp": 710,
+    "quoteFound": true,
+    "ruleOk": true,
+    "inPhiladelphia": true,
+    "keep": true,
+    "reason": "Quote is verbatim at 708-714. Haunt is explicit and repeated: 'my favorite Corner in the entire city' (659), 'I photograph on this corner so much' (710), best time 'around like 2 1 or two' with the light coming down Broad (759-770), 'I tried to remake the photo he took many times' (773-776), and a fixed leg of his daily route 'I walk right to that corner' (913). High confidence is justified. 'Ray meker' = Ray Metzker, 'Lawrence salsman' = Laurence Salzmann, both correctly read as garble."
+   },
+   {
+    "place": "Rittenhouse Square",
+    "type": "shot-here",
+    "timestamp": 1157,
+    "quoteFound": true,
+    "ruleOk": true,
+    "inPhiladelphia": true,
+    "keep": true,
+    "reason": "Quote is verbatim at 1154-1161. The park is never named ('Rittenhouse' appears nowhere in the transcript); the identity rests on 'tiny little park down the street ... built around four Parks' (883-886) said at Broad & Walnut, plus passing the closed Atmos store ('actually this is a store', 959; 'it's crazy that it's right here', 1080), whose 1509 Walnut address is reader knowledge, giving a westward walk on Walnut toward Rittenhouse rather than Washington Square. That chain is plausible enough for medium but no stronger. Two cautions for the human: (1) the dog frame at 1137-1161 is only ~75 s after they were still at the Atmos storefront (1080-1084), i.e. 2-3 blocks short of the square, so it may have been made on Walnut St en route; the frames most safely inside the park are 1370-1375 ('the sun is coming out ... f11 baby') and the puppy frame at 1439-1447 ('I'm pulling out the other one'). (2) If footage ~19:00-24:15 does not show Rittenhouse Square, rename rather than drop: shooting at 'the park' on his route is well supported even if the name is not. Optional: the Walnut St leg from Broad to the park is his stated daily route and possibly where the 1157 frame was made; readers did not carry it as a corridor and it is too inferred to add as a clear miss."
+   },
+   {
+    "place": "Rittenhouse Square",
+    "type": "haunt",
+    "timestamp": 910,
+    "quoteFound": true,
+    "ruleOk": true,
+    "inPhiladelphia": true,
+    "keep": true,
+    "reason": "Quote is verbatim at 910-921 ('loom' / 'lock colom' / 'lack cologne' = La Colombe garble). Paulie asks for the normal route and Nazir answers 'we're about to do it right now' (889-896), then train -> La Colombe -> 'that corner' -> 'straight up to the park' -> loose walk back; out 'every day after work ... around 3:30' (941-947). The park is unambiguously a fixed daily leg, so haunt is justified; medium only because the park's identity as Rittenhouse is inferred (see shot-here row), never spoken. Same caveat: confirm the park from footage and rename if needed."
+   },
+   {
+    "place": "Second Ray Metzker spot, unnamed (Center City, on the walk between Rittenhouse Square and the Municipal Services Building)",
+    "type": "haunt",
+    "timestamp": 1536,
+    "quoteFound": true,
+    "ruleOk": false,
+    "inPhiladelphia": true,
+    "keep": false,
+    "reason": "Quote is verbatim at 1536-1549, but the row fails on two rule counts. (1) No place is named anywhere in 1536-1581: the only clues are 'this silver thing wasn't here' (1552-1554) and 'they built this building right here in 1987' (1562-1566); One Liberty Place is a reader guess, not transcript. An unnamed spot cannot be a pin candidate ('said it on camera, or the footage shows it') and cannot be mapped. (2) The haunt basis is thin: 'I've tried I've tried' (1575-1581) describes past attempts to remake Metzker's 1982 image, not a statement that this is a regular spot, and no frame is made here today. Move to excluded with the footage window ~25:36-26:20 so the human can identify the spot and re-add it as a pin only if the footage shows him shooting there or he names it."
+   },
+   {
+    "place": "Municipal Services Building plaza (Thomas Paine Plaza / 'Muni' / 'the pit'), 1401 JFK Blvd, Broad to 15th",
+    "type": "shot-here",
+    "timestamp": 2010,
+    "quoteFound": true,
+    "ruleOk": true,
+    "inPhiladelphia": true,
+    "keep": true,
+    "reason": "Quote is verbatim at 2010-2019 ('mun' = Muni). They arrive at the MSB at 2010 straight out of continuous crowd shooting ('hop in hop in', 1981; 'take one', 1990; 'we literally didn't even go all the way down the block yet', 2001-2004). At 2398-2408 he goes 'over' to 'the pit' and at 2433-2435 reacts to a frame just made ('I really hope the flag covered his face'). Shot-here is therefore clear from context; note there is no explicit 'I shot here today' line, so this is arguably medium rather than high, though the place is beyond doubt. Geography check passes: MSB is 1401 JFK Blvd, north side, Broad to 15th, across from City Hall; Love Park is across 15th. Folding 'the pit' into this row is correct (same person, same venue). Suggest adding to this row's note that the parade-crowd frames at 1968-2004 and 2461-3070 were made on and beside this plaza, since the separate JFK corridor row is being dropped."
+   },
+   {
+    "place": "Municipal Services Building plaza (Thomas Paine Plaza / 'Muni' / 'the pit'), 1401 JFK Blvd, Broad to 15th",
+    "type": "haunt",
+    "timestamp": 2324,
+    "quoteFound": true,
+    "ruleOk": true,
+    "inPhiladelphia": true,
+    "keep": true,
+    "reason": "Quote is verbatim at 2324-2337 and states the present-day daily routine outright. Fully corroborated: 'my home since I pretty much started skating' (2044-2049), 'I come here and I've been taking pictures since about 2020 2019' (2127-2132), Polaroids here since 2016 (2139-2143), 'when they put the gates up I came every day every day all day' (2176-2179), '15 rolls a day' (2309-2311), current book project on this plaza (2098-2116, 2243). High is justified; strongest haunt in the episode."
+   },
+   {
+    "place": "JFK Blvd at 15th St, St. Patrick's Day Parade crowd alongside the Municipal Services Building plaza (City Hall's northwest corner)",
+    "type": "shot-here",
+    "timestamp": 2001,
+    "quoteFound": true,
+    "ruleOk": false,
+    "inPhiladelphia": true,
+    "keep": false,
+    "reason": "Quote is verbatim at 2001-2013, and the parade-crowd shooting it points to is real and prolific (1607-2004, 2461-3070). But the place is not in the transcript: 'JFK' is spoken exactly once in the whole episode, in the Mummers route description at 242, and neither '15th' nor any street is ever named for the St. Patrick's crowd. The corridor's name rests on outside knowledge of the parade route and the MSB's frontage, and its extent is unknown (the 1607-1645 stretch could be a block away, as the readers admit). It also counts the same person a second time within the same block as the MSB shot-here row. Under 'small and specific' and 'when uncertain, keep=false', drop it and fold the crowd frames into the MSB shot-here note as 'parade crowd on and beside the plaza (street not spoken)'. A human watching ~26:47-33:30 and ~41:00-53:00 can add a JFK Blvd corridor if the footage shows the street."
+   }
+  ],
+  "missed": []
+ },
+ "_method": "two independent full reads (recall-oriented + strict) -> reconcile -> adversarial verify; see verification.verdicts"
+}
