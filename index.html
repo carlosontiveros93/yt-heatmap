@@ -41,6 +41,14 @@
   .cluster { display:flex; align-items:center; justify-content:center; border-radius:50%; background:var(--panel); border:2px solid var(--accent); color:#fff; font-weight:600; font-size:12px; box-shadow:0 1px 4px rgba(0,0,0,.45); }
   .cluster-m { font-size:13px; }
   .cluster-l { font-size:14px; }
+  /* Filter chips: pressed = on (solid border in the chip's color), unpressed = off (dim, dashed). */
+  .filters { margin-bottom:12px; }
+  .chips { display:flex; flex-wrap:wrap; gap:4px; margin-bottom:6px; }
+  .chip { font:11px -apple-system, "Segoe UI", sans-serif; color:var(--text); background:#23262d; border:1px solid var(--chip, var(--accent)); border-radius:999px; padding:3px 9px; cursor:pointer; }
+  .chip:hover { background:#2b2f38; }
+  .chip[aria-pressed="false"] { color:var(--muted); background:transparent; border:1px dashed #3a3e47; }
+  .filtmeta { display:flex; justify-content:space-between; font-size:11px; color:var(--muted); }
+  .filtmeta a { color:var(--accent); text-decoration:none; }
 </style>
 </head>
 <body>
@@ -55,6 +63,11 @@
     <span class="dot" style="background:var(--accent); width:14px; height:4px; border-radius:2px"></span>street / waterfront corridor&nbsp;&nbsp;
     <span class="dot" style="background:#c8102e; border:2px solid #fff; width:11px; height:11px"></span>exact spot someone named<br>
     <span style="color:var(--muted)">darker = more mentions</span>
+  </div>
+  <div class="filters">
+    <div class="chips" id="kindChips" title="Kinds of spot to show"></div>
+    <div class="chips" id="typeChips" title="Kinds of mention to count"></div>
+    <div class="filtmeta"><span id="count"></span><a href="#" id="reset">reset</a></div>
   </div>
   <div id="list"></div>
 </div>
@@ -73,7 +86,25 @@
   })();
   const citySelect = document.getElementById('city');
   for (const c of CITIES) citySelect.add(new Option(c.name, c.id, false, c.id === cityId));
-  citySelect.onchange = () => { location.search = '?city=' + citySelect.value; };
+  citySelect.onchange = () => { const p = new URLSearchParams(location.search); p.set('city', citySelect.value); location.search = '?' + p; };
+
+  // Filters live in the URL beside ?city= (&kind=pin,corridor&type=walkie-talkie)
+  // so a filtered view is shareable and survives reload. Absent = everything on.
+  const KINDS = ['neighborhood', 'park', 'corridor', 'landmark', 'pin'];
+  const TYPES = [['visitor', 'visitor pick', 'var(--accent)'], ['favorite', 'personal favorite', 'var(--fav)'], ['walkie-talkie', 'Walkie Talkie', '#2d7dd2']];
+  const readSet = (key, all) => {
+    const v = (new URLSearchParams(location.search).get(key) || '').split(',').filter(x => all.includes(x));
+    return new Set(v.length ? v : all);
+  };
+  const filter = { kind: readSet('kind', KINDS), type: readSet('type', TYPES.map(t => t[0])) };
+  function syncUrl() {
+    const p = new URLSearchParams(location.search);
+    for (const [key, all] of [['kind', KINDS], ['type', TYPES.map(t => t[0])]]) {
+      if (filter[key].size < all.length) p.set(key, all.filter(x => filter[key].has(x)).join(','));
+      else p.delete(key);
+    }
+    history.replaceState(null, '', location.pathname + ([...p].length ? '?' + p : ''));
+  }
 
   const loadScript = src => new Promise((ok, fail) => {
     const el = document.createElement('script');
@@ -146,9 +177,7 @@
     color: heatColor(n), weight: 7 + Math.min(n, 4) * 2, opacity: 0.8, lineCap: 'round', lineJoin: 'round',
   });
 
-  const heatPoints = [];
   for (const g of spots) {
-    const isFavOnly = g.mentions.every(m => m.type === 'favorite');
     const label = m => m.type === 'favorite' ? 'personal favorite'
                      : m.type === 'walkie-talkie' ? (m.basis === 'haunt' ? 'regular spot · Walkie Talkie' : 'shot here · Walkie Talkie')
                      : 'visitor pick';
@@ -167,33 +196,30 @@
     }
     const boundary = BOUNDARIES[g.id];
     if (boundary) {
-      const isLine = boundary.geometry.type === 'LineString';
-      g.area = L.geoJSON(boundary.geometry, { style: (isLine ? corridorStyle : areaStyle)(g.mentions.length) })
+      g.isLine = boundary.geometry.type === 'LineString';
+      g.area = L.geoJSON(boundary.geometry, { style: (g.isLine ? corridorStyle : areaStyle)(g.mentions.length) })
         .bindPopup(html, { maxWidth: 300 }).addTo(map);
       continue;
     }
     if (g.kind !== 'landmark') {
       console.info(`[yt-heatmap] no boundary for ${g.kind} "${g.id}" — rendering as a dot`);
     }
-    heatPoints.push([g.lat, g.lng, g.mentions.length]);
-    const marker = L.circleMarker([g.lat, g.lng], {
-      radius: 6 + g.mentions.length * 2,
-      color: isFavOnly ? '#e05c5c' : '#f5a623',
-      fillColor: isFavOnly ? '#e05c5c' : '#f5a623',
-      fillOpacity: 0.75, weight: 1.5,
-    }).addTo(markers).bindPopup(html, { maxWidth: 300 });
-    g.marker = marker;
+    // Size and color come from the counted mentions, so applyFilters sets them
+    // and adds the dot to the cluster group.
+    g.marker = L.circleMarker([g.lat, g.lng], { fillOpacity: 0.75, weight: 1.5 }).bindPopup(html, { maxWidth: 300 });
   }
   syncMarkers();
 
   // Stacking order decides what a click hits. Draw the largest areas first
   // (bottom), smaller areas above them, and corridors above every area, so an
-  // overlapped small spot is still clickable.
+  // overlapped small spot is still clickable. Re-run after every filter change,
+  // because re-adding a hidden layer would put it on top.
   const bboxArea = layer => { const b = layer.getBounds(); return (b.getEast() - b.getWest()) * (b.getNorth() - b.getSouth()); };
-  const shaped = spots.filter(s => s.area);
-  const isLine = s => BOUNDARIES[s.id].geometry.type === 'LineString';
-  shaped.filter(s => !isLine(s)).sort((a, b) => bboxArea(b.area) - bboxArea(a.area)).forEach(s => s.area.bringToFront());
-  shaped.filter(isLine).forEach(s => s.area.bringToFront());
+  function restack() {
+    const shaped = spots.filter(s => s.area && s.visible);
+    shaped.filter(s => !s.isLine).sort((a, b) => bboxArea(b.area) - bboxArea(a.area)).forEach(s => s.area.bringToFront());
+    shaped.filter(s => s.isLine).forEach(s => s.area.bringToFront());
+  }
 
   // Heat radius is in screen pixels, so halve it for every zoom level below
   // the baseline to keep blobs tied to a real-world area when zoomed out.
@@ -213,12 +239,14 @@
   }
 
   // The heat canvas throws if the map hasn't been laid out yet, so retry
-  // until it succeeds instead of adding it unconditionally.
+  // until it succeeds instead of adding it unconditionally. heatPoints is
+  // rebuilt by applyFilters, which also refreshes the layer once it exists.
+  let heat = null, heatPoints = [];
   function addHeat() {
     try {
       map.invalidateSize();
       if (map.getSize().x === 0) throw new Error('map not laid out yet');
-      const heat = L.heatLayer(heatPoints, { ...heatOpts(), maxZoom: 13, max: 8,
+      heat = L.heatLayer(heatPoints, { ...heatOpts(), maxZoom: 13, max: 8,
         gradient: {0.2:'#1a3a6b', 0.4:'#2d7dd2', 0.6:'#f5a623', 0.85:'#e05c5c', 1:'#c8102e'} }).addTo(map);
       map.on('zoomend', () => { heat.setOptions(heatOpts()); syncHeatVisibility(heat); });
       syncHeatVisibility(heat);
@@ -226,17 +254,16 @@
       setTimeout(addHeat, 250);
     }
   }
-  addHeat();
 
-  // Sidebar list
+  // Sidebar list: one row per spot, built once. applyFilters shows, hides,
+  // reorders and recounts the rows.
   const list = document.getElementById('list');
   let pendingShow = null;
   for (const g of spots) {
-    const whos = [...new Set(g.mentions.map(m => m.speaker))].join(', ');
     const div = document.createElement('div');
     div.className = 'spot';
-    div.innerHTML = `<div class="name">${g.kind === 'pin' ? '<span class="pin-glyph"></span>' : ''}${g.name} <span class="count">×${g.mentions.length}</span></div>
-                     <div class="whos">${whos}</div>`;
+    div.innerHTML = `<div class="name">${g.kind === 'pin' ? '<span class="pin-glyph"></span>' : ''}${g.name} <span class="count"></span></div>
+                     <div class="whos"></div>`;
     div.onclick = () => {
       if (g.area) { map.fitBounds(g.area.getBounds(), { maxZoom: 14 }); g.area.openPopup(); }
       else if (g.kind === 'pin') { map.setView([g.lat, g.lng], 16); g.marker.openPopup(); }
@@ -262,8 +289,68 @@
         map.setView([g.lat, g.lng], 14);
       }
     };
+    g.row = div;
     list.appendChild(div);
   }
+
+  // Filters. A spot shows when its kind is on and it has at least one mention
+  // of a type that is on. Its color, size, ×N and the names under it use only
+  // those mentions; the popup still lists every mention. The heat layer is
+  // rebuilt from the dots that remain.
+  function applyFilters() {
+    heatPoints = [];
+    let shown = 0;
+    for (const g of spots) {
+      const counted = g.mentions.filter(m => filter.type.has(m.type));
+      g.count = counted.length;
+      g.visible = filter.kind.has(g.kind) && g.count > 0;
+      if (g.visible) shown++;
+      if (g.area) {
+        g.area.setStyle((g.isLine ? corridorStyle : areaStyle)(g.count));
+        if (g.visible) g.area.addTo(map); else map.removeLayer(g.area);
+      } else if (g.kind === 'pin') {
+        if (g.visible) g.marker.addTo(map); else map.removeLayer(g.marker);
+      } else {
+        const favOnly = counted.every(m => m.type === 'favorite');
+        g.marker.setStyle({ radius: 6 + g.count * 2, color: favOnly ? '#e05c5c' : '#f5a623', fillColor: favOnly ? '#e05c5c' : '#f5a623' });
+        // The cluster group queues adds while it is off the map, without
+        // checking for duplicates, so track membership here.
+        if (g.visible && !g.inCluster) markers.addLayer(g.marker);
+        if (!g.visible && g.inCluster) markers.removeLayer(g.marker);
+        g.inCluster = g.visible;
+        if (g.visible) heatPoints.push([g.lat, g.lng, g.count]);
+      }
+      g.row.style.display = g.visible ? '' : 'none';
+      g.row.querySelector('.count').textContent = '×' + g.count;
+      g.row.querySelector('.whos').textContent = [...new Set(counted.map(m => m.speaker))].join(', ');
+    }
+    for (const g of spots.filter(g => g.visible).sort((a, b) => b.count - a.count)) list.appendChild(g.row);
+    restack();
+    if (heat) heat.setLatLngs(heatPoints);
+    document.getElementById('count').textContent = `showing ${shown} of ${spots.length} spots`;
+  }
+
+  // Filter chips: one button per kind and per mention type; "reset" turns
+  // everything back on.
+  const repaintChips = [];
+  function addChip(container, key, value, label, color) {
+    const b = document.createElement('button');
+    b.type = 'button'; b.className = 'chip'; b.textContent = label;
+    if (color) b.style.setProperty('--chip', color);
+    const paint = () => b.setAttribute('aria-pressed', String(filter[key].has(value)));
+    b.onclick = () => { if (filter[key].has(value)) filter[key].delete(value); else filter[key].add(value); paint(); applyFilters(); syncUrl(); };
+    paint(); repaintChips.push(paint); container.appendChild(b);
+  }
+  for (const k of KINDS) addChip(document.getElementById('kindChips'), 'kind', k, k);
+  for (const [t, label, color] of TYPES) addChip(document.getElementById('typeChips'), 'type', t, label, color);
+  document.getElementById('reset').onclick = e => {
+    e.preventDefault();
+    filter.kind = new Set(KINDS); filter.type = new Set(TYPES.map(t => t[0]));
+    repaintChips.forEach(paint => paint()); applyFilters(); syncUrl();
+  };
+
+  applyFilters();
+  addHeat();
   }
 </script>
 </body>
