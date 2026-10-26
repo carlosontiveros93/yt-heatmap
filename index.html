@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Street Photography Heatmap</title>
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+<link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css">
 <style>
   :root { --bg:#14161a; --panel:#1d2026; --text:#e8e6e1; --muted:#9a978f; --accent:#f5a623; --fav:#e05c5c; }
   * { box-sizing:border-box; }
@@ -35,6 +36,11 @@
   .popup a { color:#0a66c2; font-size:12px; }
   .leaflet-popup-content-wrapper { border-radius:8px; }
   .dimmed-tiles { filter: grayscale(60%) brightness(80%); }
+  /* Cluster bubbles (Leaflet.markercluster). Only the plugin's animation CSS is
+     loaded, not its green/yellow Default.css, so the look here is the whole style. */
+  .cluster { display:flex; align-items:center; justify-content:center; border-radius:50%; background:var(--panel); border:2px solid var(--accent); color:#fff; font-weight:600; font-size:12px; box-shadow:0 1px 4px rgba(0,0,0,.45); }
+  .cluster-m { font-size:13px; }
+  .cluster-l { font-size:14px; }
 </style>
 </head>
 <body>
@@ -55,6 +61,7 @@
 <div id="map"></div>
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 <script src="https://unpkg.com/leaflet.heat@0.2.0/dist/leaflet-heat.js"></script>
+<script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
 <script src="cities/cities.js"></script>
 <script>
   // The site is static (no build step), so a city is chosen from the URL
@@ -100,10 +107,29 @@
   // zoom and draw above everything else.
   map.createPane('pins').style.zIndex = 650;
 
-  // Markers live in one group so they can be shown/hidden together. Below
-  // MARKER_MIN_ZOOM the heat layer carries the wide view on its own.
-  const MARKER_MIN_ZOOM = 12;
-  const markers = L.layerGroup();
+  // Landmark dots live in a cluster group: dots that would overlap collapse
+  // into one bubble showing how many spots are inside; zoom in or click to
+  // split them. Below MARKER_MIN_ZOOM the group is off the map and the heat
+  // layer carries the wide view on its own. Pins, areas and corridors are
+  // never clustered.
+  const MARKER_MIN_ZOOM = 11;
+  // Dots cluster when their centers are within CLUSTER_RADIUS px. The biggest
+  // dot has a 12px radius, so two of them touch at 24px apart: 28 means
+  // "cluster when they would touch". The plugin's default of 80 would fold
+  // dots that sit visibly apart at zoom 12.
+  const CLUSTER_RADIUS = 28;
+  const CLUSTER_SIZE = n => n >= 7 ? ['l', 44] : n >= 4 ? ['m', 36] : ['s', 28];
+  const markers = L.markerClusterGroup({
+    maxClusterRadius: CLUSTER_RADIUS,
+    disableClusteringAtZoom: 15,
+    spiderfyOnMaxZoom: true,
+    showCoverageOnHover: false,
+    spiderLegPolylineOptions: { weight: 1.5, color: '#f5a623', opacity: 0.6 },
+    iconCreateFunction: cluster => {
+      const [size, px] = CLUSTER_SIZE(cluster.getChildCount());
+      return L.divIcon({ html: String(cluster.getChildCount()), className: `cluster cluster-${size}`, iconSize: [px, px] });
+    },
+  });
   function syncMarkers() {
     if (map.getZoom() >= MARKER_MIN_ZOOM) markers.addTo(map);
     else map.removeLayer(markers);
@@ -204,6 +230,7 @@
 
   // Sidebar list
   const list = document.getElementById('list');
+  let pendingShow = null;
   for (const g of spots) {
     const whos = [...new Set(g.mentions.map(m => m.speaker))].join(', ');
     const div = document.createElement('div');
@@ -212,7 +239,28 @@
                      <div class="whos">${whos}</div>`;
     div.onclick = () => {
       if (g.area) { map.fitBounds(g.area.getBounds(), { maxZoom: 14 }); g.area.openPopup(); }
-      else { map.setView([g.lat, g.lng], g.kind === 'pin' ? 16 : 14); syncMarkers(); g.marker.openPopup(); }
+      else if (g.kind === 'pin') { map.setView([g.lat, g.lng], 16); g.marker.openPopup(); }
+      else {
+        // A landmark dot may be off the map (below MARKER_MIN_ZOOM) or folded
+        // into a cluster bubble. Fly to it first. Once the move settles the
+        // dot is usually its own marker again, so open the popup directly; if
+        // it is still inside a bubble, let the plugin split or spiderfy that
+        // bubble. (zoomToShowLayer is not called in the first case on purpose:
+        // its "already visible" path ignores the plugin's own split animation
+        // and never fires.) A click on another row before then cancels this.
+        if (pendingShow) map.off('moveend', pendingShow);
+        pendingShow = () => {
+          pendingShow = null;
+          if (map.hasLayer(g.marker)) { g.marker.openPopup(); return; }
+          // Still inside a bubble at zoom 14: let the plugin split or spiderfy
+          // it, but only after its own split animation from the fly-to has
+          // finished, or it loses track of the marker mid-animation.
+          const split = () => markers.zoomToShowLayer(g.marker, () => g.marker.openPopup());
+          if (markers._inZoomAnimation) markers.once('animationend', split); else split();
+        };
+        map.once('moveend', pendingShow);
+        map.setView([g.lat, g.lng], 14);
+      }
     };
     list.appendChild(div);
   }
