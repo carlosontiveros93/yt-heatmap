@@ -6,6 +6,7 @@ const CITY = {
   pageTitle: "LA Street Photography Heatmap",
   center: [34.0700, -118.2950],
   zoom: 12,
+  areaLabel: "Area",   // what the area filter is called here (spots carry an `area`)
   intro: `Where Los Angeles street photographers actually shoot, from four episodes of Paulie B's
     <em>Walkie Talkie</em> series (Stephen Vanasco, Daniel Gutierrez, Jeremy Paige, Adali Schell).
     A small map so far: LA is a city of corridors, and these episodes were more talk than walk.

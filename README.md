@@ -34,7 +34,8 @@ pins — those are relationships, not spots.
 - `cities/cities.js` — the list of cities the switcher offers (id + display name).
 - `cities/<id>/config.js` — that city's name, page title, start center/zoom and intro text.
 - `cities/<id>/data.js` — three tables: `SPOTS` (one per physical place: id, name, lat/lng,
-  kind = landmark | park | neighborhood | corridor | pin), `SOURCES` (one per video), and
+  kind = landmark | park | neighborhood | corridor | pin, area = borough or region for the
+  sidebar's area filter, null for citywide), `SOURCES` (one per video), and
   `MENTIONS` (one per time a speaker names a spot: spotId, sourceId, speaker,
   type = visitor | favorite | walkie-talkie, basis for walkie-talkie rows, quote,
   timestamp). Mention counts are derived, not stored.

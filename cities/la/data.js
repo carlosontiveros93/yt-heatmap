@@ -5,20 +5,20 @@
 
 const SPOTS = [
   // neighborhoods
-  { id: "koreatown",          name: "Koreatown",                              lat: 34.0617, lng: -118.3005, kind: "neighborhood" },
-  { id: "east-hollywood",     name: "East Hollywood",                         lat: 34.0906, lng: -118.2950, kind: "neighborhood" },
-  { id: "financial-district", name: "Financial District (Downtown)",          lat: 34.0505, lng: -118.2562, kind: "neighborhood" },
+  { id: "koreatown",          name: "Koreatown",                              lat: 34.0617, lng: -118.3005, kind: "neighborhood", area: "Koreatown" },
+  { id: "east-hollywood",     name: "East Hollywood",                         lat: 34.0906, lng: -118.2950, kind: "neighborhood", area: "Hollywood" },
+  { id: "financial-district", name: "Financial District (Downtown)",          lat: 34.0505, lng: -118.2562, kind: "neighborhood", area: "Downtown" },
 
   // corridors
-  { id: "hollywood-blvd",     name: "Hollywood Blvd (Highland to Vine)",      lat: 34.1017, lng: -118.3328, kind: "corridor" },
-  { id: "wilshire-ktown",     name: "Wilshire Blvd, Koreatown (Vermont to Western)", lat: 34.0618, lng: -118.3003, kind: "corridor" },
-  { id: "broadway-dtla",      name: "Broadway, Historic Core (3rd to 9th St)", lat: 34.0467, lng: -118.2520, kind: "corridor" },
+  { id: "hollywood-blvd",     name: "Hollywood Blvd (Highland to Vine)",      lat: 34.1017, lng: -118.3328, kind: "corridor", area: "Hollywood" },
+  { id: "wilshire-ktown",     name: "Wilshire Blvd, Koreatown (Vermont to Western)", lat: 34.0618, lng: -118.3003, kind: "corridor", area: "Koreatown" },
+  { id: "broadway-dtla",      name: "Broadway, Historic Core (3rd to 9th St)", lat: 34.0467, lng: -118.2520, kind: "corridor", area: "Downtown" },
 
   // pins: exact spots named on camera, high confidence only. A pin sits alongside
   // the person's mention on the containing area; it adds precision, not a move.
-  { id: "hollywood-and-vine",  name: "Hollywood & Vine",                        lat: 34.1016, lng: -118.3267, kind: "pin" },
-  { id: "wilshire-vermont",    name: "Wilshire Blvd & Vermont Ave",              lat: 34.0618, lng: -118.2917, kind: "pin" },
-  { id: "wilton-santa-monica", name: "Wilton Pl & Santa Monica Blvd (old Sears)", lat: 34.0908, lng: -118.3136, kind: "pin" },
+  { id: "hollywood-and-vine",  name: "Hollywood & Vine",                        lat: 34.1016, lng: -118.3267, kind: "pin", area: "Hollywood" },
+  { id: "wilshire-vermont",    name: "Wilshire Blvd & Vermont Ave",              lat: 34.0618, lng: -118.2917, kind: "pin", area: "Koreatown" },
+  { id: "wilton-santa-monica", name: "Wilton Pl & Santa Monica Blvd (old Sears)", lat: 34.0908, lng: -118.3136, kind: "pin", area: "Hollywood" },
 ];
 
 const SOURCES = [

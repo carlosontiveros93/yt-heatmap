@@ -6,6 +6,7 @@ const CITY = {
   pageTitle: "NYC Street Photography Heatmap",
   center: [40.7350, -73.9650],
   zoom: 12,
+  areaLabel: "Borough",   // what the area filter is called here (spots carry an `area`)
   intro: `Where NYC street photographers say to shoot — and where they actually shoot. Built from Paulie B's
     <a href="https://www.youtube.com/watch?v=X0CbbpuR9vs" target="_blank">"Where should visitors go for street photography?"</a>
     plus 46 episodes of his <em>Walkie Talkie</em> series, weighted by how many photographers named each spot.

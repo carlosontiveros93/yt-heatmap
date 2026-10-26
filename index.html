@@ -14,7 +14,7 @@
   #map { flex:1; }
   .cityrow { display:flex; align-items:center; gap:6px; font-size:11px; color:var(--muted); margin:0 0 8px; }
   h1 { font-size:18px; margin:0 0 4px; }
-  #city { font:12px -apple-system, "Segoe UI", sans-serif; color:var(--text); background:#23262d; border:1px solid #2c2f36; border-radius:6px; padding:2px 6px; height:22px; cursor:pointer; }
+  #city, #area { font:12px -apple-system, "Segoe UI", sans-serif; color:var(--text); background:#23262d; border:1px solid #2c2f36; border-radius:6px; padding:2px 6px; height:22px; cursor:pointer; }
   .sub { font-size:12px; color:var(--muted); margin-bottom:12px; line-height:1.5; }
   .sub a { color:var(--accent); }
   .legend { font-size:12px; color:var(--muted); margin-bottom:12px; }
@@ -67,6 +67,7 @@
   <div class="filters">
     <div class="chips" id="kindChips" title="Kinds of spot to show"></div>
     <div class="chips" id="typeChips" title="Kinds of mention to count"></div>
+    <div class="chips" id="areaRow"><select id="area" title="Only spots in one area"></select></div>
     <div class="filtmeta"><span id="count"></span><a href="#" id="reset">reset</a></div>
   </div>
   <div id="list"></div>
@@ -96,13 +97,14 @@
     const v = (new URLSearchParams(location.search).get(key) || '').split(',').filter(x => all.includes(x));
     return new Set(v.length ? v : all);
   };
-  const filter = { kind: readSet('kind', KINDS), type: readSet('type', TYPES.map(t => t[0])) };
+  const filter = { kind: readSet('kind', KINDS), type: readSet('type', TYPES.map(t => t[0])), area: new URLSearchParams(location.search).get('area') || '' };
   function syncUrl() {
     const p = new URLSearchParams(location.search);
     for (const [key, all] of [['kind', KINDS], ['type', TYPES.map(t => t[0])]]) {
       if (filter[key].size < all.length) p.set(key, all.filter(x => filter[key].has(x)).join(','));
       else p.delete(key);
     }
+    if (filter.area) p.set('area', filter.area); else p.delete('area');
     history.replaceState(null, '', location.pathname + ([...p].length ? '?' + p : ''));
   }
 
@@ -127,6 +129,7 @@
   }).addTo(map);
 
   // Join mentions onto their spots. Mention count is derived here, not stored.
+  // (A spot's data field `area` is its borough/region; its map layer is `shape`.)
   const sourceById = new Map(SOURCES.map(s => [s.id, s]));
   const spots = SPOTS.map(s => ({ ...s, mentions: MENTIONS.filter(m => m.spotId === s.id) }))
     .filter(s => s.mentions.length > 0)
@@ -197,7 +200,7 @@
     const boundary = BOUNDARIES[g.id];
     if (boundary) {
       g.isLine = boundary.geometry.type === 'LineString';
-      g.area = L.geoJSON(boundary.geometry, { style: (g.isLine ? corridorStyle : areaStyle)(g.mentions.length) })
+      g.shape = L.geoJSON(boundary.geometry, { style: (g.isLine ? corridorStyle : areaStyle)(g.mentions.length) })
         .bindPopup(html, { maxWidth: 300 }).addTo(map);
       continue;
     }
@@ -216,9 +219,9 @@
   // because re-adding a hidden layer would put it on top.
   const bboxArea = layer => { const b = layer.getBounds(); return (b.getEast() - b.getWest()) * (b.getNorth() - b.getSouth()); };
   function restack() {
-    const shaped = spots.filter(s => s.area && s.visible);
-    shaped.filter(s => !s.isLine).sort((a, b) => bboxArea(b.area) - bboxArea(a.area)).forEach(s => s.area.bringToFront());
-    shaped.filter(s => s.isLine).forEach(s => s.area.bringToFront());
+    const shaped = spots.filter(s => s.shape && s.visible);
+    shaped.filter(s => !s.isLine).sort((a, b) => bboxArea(b.shape) - bboxArea(a.shape)).forEach(s => s.shape.bringToFront());
+    shaped.filter(s => s.isLine).forEach(s => s.shape.bringToFront());
   }
 
   // Heat radius is in screen pixels, so halve it for every zoom level below
@@ -265,7 +268,7 @@
     div.innerHTML = `<div class="name">${g.kind === 'pin' ? '<span class="pin-glyph"></span>' : ''}${g.name} <span class="count"></span></div>
                      <div class="whos"></div>`;
     div.onclick = () => {
-      if (g.area) { map.fitBounds(g.area.getBounds(), { maxZoom: 14 }); g.area.openPopup(); }
+      if (g.shape) { map.fitBounds(g.shape.getBounds(), { maxZoom: 14 }); g.shape.openPopup(); }
       else if (g.kind === 'pin') { map.setView([g.lat, g.lng], 16); g.marker.openPopup(); }
       else {
         // A landmark dot may be off the map (below MARKER_MIN_ZOOM) or folded
@@ -293,21 +296,22 @@
     list.appendChild(div);
   }
 
-  // Filters. A spot shows when its kind is on and it has at least one mention
-  // of a type that is on. Its color, size, ×N and the names under it use only
-  // those mentions; the popup still lists every mention. The heat layer is
-  // rebuilt from the dots that remain.
+  // Filters. A spot shows when its kind is on, it has at least one mention of
+  // a type that is on, and it is in the chosen area (a spot with no area is
+  // citywide and always passes). Its color, size, ×N and the names under it
+  // use only the counted mentions; the popup still lists every mention. The
+  // heat layer is rebuilt from the dots that remain.
   function applyFilters() {
     heatPoints = [];
     let shown = 0;
     for (const g of spots) {
       const counted = g.mentions.filter(m => filter.type.has(m.type));
       g.count = counted.length;
-      g.visible = filter.kind.has(g.kind) && g.count > 0;
+      g.visible = filter.kind.has(g.kind) && g.count > 0 && (!filter.area || !g.area || g.area === filter.area);
       if (g.visible) shown++;
-      if (g.area) {
-        g.area.setStyle((g.isLine ? corridorStyle : areaStyle)(g.count));
-        if (g.visible) g.area.addTo(map); else map.removeLayer(g.area);
+      if (g.shape) {
+        g.shape.setStyle((g.isLine ? corridorStyle : areaStyle)(g.count));
+        if (g.visible) g.shape.addTo(map); else map.removeLayer(g.shape);
       } else if (g.kind === 'pin') {
         if (g.visible) g.marker.addTo(map); else map.removeLayer(g.marker);
       } else {
@@ -343,9 +347,24 @@
   }
   for (const k of KINDS) addChip(document.getElementById('kindChips'), 'kind', k, k);
   for (const [t, label, color] of TYPES) addChip(document.getElementById('typeChips'), 'type', t, label, color);
+  // Area dropdown (boroughs in NYC, regions in LA). Options come from the
+  // data, most spots first; the row is hidden for a city whose spots carry
+  // no area at all.
+  const areaSel = document.getElementById('area');
+  const areaCounts = new Map();
+  for (const g of spots) if (g.area) areaCounts.set(g.area, (areaCounts.get(g.area) || 0) + 1);
+  const areas = [...areaCounts.keys()].sort((a, b) => areaCounts.get(b) - areaCounts.get(a));
+  if (!areas.includes(filter.area)) filter.area = '';
+  if (areas.length) {
+    areaSel.add(new Option('all ' + (CITY.areaLabel || 'area').toLowerCase() + 's', ''));
+    for (const a of areas) areaSel.add(new Option(a, a, false, a === filter.area));
+    areaSel.onchange = () => { filter.area = areaSel.value; applyFilters(); syncUrl(); };
+  } else {
+    document.getElementById('areaRow').style.display = 'none';
+  }
   document.getElementById('reset').onclick = e => {
     e.preventDefault();
-    filter.kind = new Set(KINDS); filter.type = new Set(TYPES.map(t => t[0]));
+    filter.kind = new Set(KINDS); filter.type = new Set(TYPES.map(t => t[0])); filter.area = ''; areaSel.value = '';
     repaintChips.forEach(paint => paint()); applyFilters(); syncUrl();
   };
 
