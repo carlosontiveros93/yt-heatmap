@@ -9,7 +9,7 @@
 <style>
   :root { --bg:#14161a; --panel:#1d2026; --text:#e8e6e1; --muted:#9a978f; --accent:#f5a623; --fav:#e05c5c; }
   * { box-sizing:border-box; }
-  body { margin:0; font-family:-apple-system, "Segoe UI", sans-serif; background:var(--bg); color:var(--text); display:flex; height:100vh; }
+  body { margin:0; font-family:-apple-system, "Segoe UI", sans-serif; background:var(--bg); color:var(--text); display:flex; height:100vh; height:100dvh; }
   #sidebar { width:340px; min-width:280px; overflow-y:auto; background:var(--panel); padding:16px; border-right:1px solid #2c2f36; }
   #map { flex:1; }
   .cityrow { display:flex; align-items:center; gap:6px; font-size:11px; color:var(--muted); margin:0 0 8px; }
@@ -18,6 +18,7 @@
   .sub { font-size:12px; color:var(--muted); margin-bottom:12px; line-height:1.5; }
   .sub a { color:var(--accent); }
   .legend { font-size:12px; color:var(--muted); margin-bottom:12px; }
+  .legend .li { display:contents; }   /* only the phone layout needs these spans; here they add no box */
   .dot { display:inline-block; width:10px; height:10px; border-radius:50%; margin-right:4px; vertical-align:middle; }
   .spot { padding:8px 10px; border-radius:8px; margin-bottom:6px; cursor:pointer; background:#23262d; }
   .spot:hover { background:#2b2f38; }
@@ -49,25 +50,81 @@
   .chip[aria-pressed="false"] { color:var(--muted); background:transparent; border:1px dashed #3a3e47; }
   .filtmeta { display:flex; justify-content:space-between; font-size:11px; color:var(--muted); }
   .filtmeta a { color:var(--accent); text-decoration:none; }
+  /* ---- Phone (under 700px wide): the map fills the screen and the sidebar
+     becomes a bottom sheet with three stops (collapsed / half / full). The
+     handle drags between them; a tap on it steps to the next one. Everything
+     in the media query is scoped to phones, so the desktop layout above is
+     untouched. ---- */
+  .handle { display:none; }
+  @media (max-width: 699px) {
+    #sidebar {
+      position:fixed; left:0; right:0; bottom:0; z-index:1100;   /* above Leaflet's controls (1000) */
+      width:auto; min-width:0; padding:0 16px;
+      border-right:0; border-top:1px solid #2c2f36; border-radius:14px 14px 0 0;
+      box-shadow:0 -4px 16px rgba(0,0,0,.4); overscroll-behavior:contain;
+      /* A grid puts the title and the city select on one row and the chips
+         straight under them, ahead of the intro and legend, without moving
+         any markup. */
+      display:grid; grid-template-columns:minmax(0, 1fr) auto; column-gap:10px; align-content:start;
+      grid-template-areas:"handle handle" "title city" "filters filters" "sub sub" "legend legend" "list list";
+      transition:height .25s ease;
+    }
+    #sidebar[data-sheet="collapsed"] { height:120px; overflow:hidden; }
+    #sidebar[data-sheet="half"] { height:50vh; height:50dvh; }
+    #sidebar[data-sheet="full"] { height:calc(100vh - 48px); height:calc(100dvh - 48px); }
+    #sidebar.dragging { transition:none; }
+    @media (prefers-reduced-motion: reduce) { #sidebar { transition:none; } }
+    .handle { display:block; grid-area:handle; position:sticky; top:0; z-index:1; padding:7px 0 5px; background:var(--panel); border:0; cursor:grab; touch-action:none; user-select:none; -webkit-user-select:none; }
+    .handle::before { content:""; display:block; width:36px; height:4px; border-radius:2px; background:#4a4e58; margin:0 auto; }
+    h1 { grid-area:title; align-self:center; margin:0; font-size:14px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;   /* one line; fits down to 375px, trimmed with … below that */
+         cursor:grab; touch-action:none; user-select:none; -webkit-user-select:none; }   /* the title drags the sheet too */
+    .cityrow { grid-area:city; margin:0; }
+    .cityrow .lbl { display:none; }   /* the select reads "New York" on its own; the title needs the room */
+    #city { height:28px; font-size:16px; }   /* 16px: below that iOS Safari zooms the page when a control is tapped */
+    .filters { grid-area:filters; margin:2px 0 0; }
+    /* One finger-scrollable strip of chips; it bleeds into the sheet's side
+       padding so chips can slide right up to the edge. */
+    .chiprows { display:flex; gap:10px; overflow-x:auto; scrollbar-width:none; margin:0 -16px; padding:0 16px; }
+    .chiprows::-webkit-scrollbar { display:none; }
+    .chips { flex:none; flex-wrap:nowrap; gap:6px; margin:0; }
+    .chip { min-height:44px; padding:0 14px; font-size:13px; }
+    #area { height:44px; font-size:16px; border-radius:22px; padding:0 12px; }
+    .filtmeta { align-items:center; min-height:26px; font-size:12px; }
+    .filtmeta a { display:flex; align-items:center; align-self:stretch; padding-left:16px; }   /* the whole row height is tappable */
+    .sub { grid-area:sub; margin:10px 0 0; }
+    .legend { grid-area:legend; margin:10px 0 0; }
+    .legend .li { display:inline-block; white-space:nowrap; }   /* lines break between items, never between a dot and its label */
+    #list { grid-area:list; margin-top:10px; }
+    .spot { min-height:44px; padding:10px 12px; }
+    .popup { max-width:min(260px, calc(85vw - 48px)); }   /* 48px = Leaflet's own popup margins and padding */
+    .leaflet-popup-content { max-height:55vh; max-height:55dvh; overflow:auto; }   /* a spot with many mentions scrolls inside its popup */
+    .leaflet-bottom.leaflet-right { top:0; bottom:auto; }   /* map credit moves up: the sheet would cover it */
+  }
 </style>
 </head>
 <body>
 <div id="sidebar">
-  <div class="cityrow">City <select id="city" title="Switch city"></select></div>
+  <button type="button" class="handle" id="handle" aria-label="Resize the panel"></button>
+  <div class="cityrow"><span class="lbl">City</span> <select id="city" title="Switch city"></select></div>
   <h1 id="title"></h1>
   <div class="sub" id="intro"></div>
+  <!-- Each legend item is wrapped in a .li span so the phone can keep a dot with its
+       label. The span closes just before the next item on purpose: splitting a text
+       node any other way shifted a few glyphs by a sub-pixel on desktop. -->
   <div class="legend">
-    <span class="dot" style="background:var(--accent)"></span>recommended for visitors&nbsp;&nbsp;
-    <span class="dot" style="background:var(--fav)"></span>photographer's own favorite<br>
-    <span class="dot" style="background:rgba(245,166,35,.45); border:1.5px solid var(--accent); border-radius:2px"></span>neighborhood / park area&nbsp;&nbsp;
-    <span class="dot" style="background:var(--accent); width:14px; height:4px; border-radius:2px"></span>street / waterfront corridor&nbsp;&nbsp;
-    <span class="dot" style="background:#c8102e; border:2px solid #fff; width:11px; height:11px"></span>exact spot someone named<br>
+    <span class="li"><span class="dot" style="background:var(--accent)"></span>recommended for visitors&nbsp;&nbsp;
+    </span><span class="li"><span class="dot" style="background:var(--fav)"></span>photographer's own favorite</span><br>
+    <span class="li"><span class="dot" style="background:rgba(245,166,35,.45); border:1.5px solid var(--accent); border-radius:2px"></span>neighborhood / park area&nbsp;&nbsp;
+    </span><span class="li"><span class="dot" style="background:var(--accent); width:14px; height:4px; border-radius:2px"></span>street / waterfront corridor&nbsp;&nbsp;
+    </span><span class="li"><span class="dot" style="background:#c8102e; border:2px solid #fff; width:11px; height:11px"></span>exact spot someone named</span><br>
     <span style="color:var(--muted)">darker = more mentions</span>
   </div>
   <div class="filters">
-    <div class="chips" id="kindChips" title="Kinds of spot to show"></div>
-    <div class="chips" id="typeChips" title="Kinds of mention to count"></div>
-    <div class="chips" id="areaRow"><select id="area" title="Only spots in one area"></select></div>
+    <div class="chiprows">
+      <div class="chips" id="kindChips" title="Kinds of spot to show"></div>
+      <div class="chips" id="typeChips" title="Kinds of mention to count"></div>
+      <div class="chips" id="areaRow"><select id="area" title="Only spots in one area"></select></div>
+    </div>
     <div class="filtmeta"><span id="count"></span><a href="#" id="reset">reset</a></div>
   </div>
   <div id="list"></div>
@@ -108,6 +165,51 @@
     history.replaceState(null, '', location.pathname + ([...p].length ? '?' + p : ''));
   }
 
+  // Phone bottom sheet (the max-width media query in the CSS). Three stops;
+  // the handle drags between them and a tap on it steps to the next one.
+  // Tapping a spot or the bare map drops the sheet so the map is in view.
+  const sheet = document.getElementById('sidebar'), handle = document.getElementById('handle');
+  const phone = matchMedia('(max-width: 699px)');
+  const SHEET_COLLAPSED = 120;   // px, matches the CSS
+  const NEXT_STOP = { collapsed: 'half', half: 'full', full: 'collapsed' };
+  function setSheet(stop) {
+    sheet.dataset.sheet = stop;
+    if (stop === 'collapsed') sheet.scrollTop = 0;   // show the title and chips, not mid-list
+  }
+  setSheet('collapsed');
+  // The handle and the title are both drag surfaces (phones only: on desktop
+  // the title is plain text and the handle is hidden).
+  let drag = null;
+  function dragSheet(el) {
+    el.onpointerdown = e => {
+      if (!phone.matches) return;
+      drag = { y: e.clientY, h: sheet.offsetHeight, moved: false };
+      el.setPointerCapture(e.pointerId);
+      sheet.classList.add('dragging');
+    };
+    el.onpointermove = e => {
+      if (!drag) return;
+      const dy = drag.y - e.clientY;
+      if (Math.abs(dy) > 6) drag.moved = true;
+      sheet.style.height = Math.min(innerHeight, Math.max(SHEET_COLLAPSED, drag.h + dy)) + 'px';
+    };
+    el.onpointerup = el.onpointercancel = e => {
+      if (!drag) return;
+      const h = sheet.offsetHeight, half = innerHeight / 2, full = innerHeight - 48;
+      sheet.classList.remove('dragging'); sheet.style.height = '';   // the CSS transition carries it the rest of the way
+      if (e.type === 'pointerup' && !drag.moved) setSheet(NEXT_STOP[sheet.dataset.sheet]);   // a tap
+      else setSheet(h < (SHEET_COLLAPSED + half) / 2 ? 'collapsed' : h < (half + full) / 2 ? 'half' : 'full');   // snap to the nearest stop
+      drag = null;
+    };
+  }
+  dragSheet(handle); dragSheet(document.getElementById('title'));
+  handle.onclick = e => { if (e.detail === 0) setSheet(NEXT_STOP[sheet.dataset.sheet]); };   // keyboard only; taps are handled above
+  // Keyboard focus landing in the part of the sheet that is clipped while it
+  // is collapsed would scroll the header out of view, so open the sheet instead.
+  sheet.addEventListener('focusin', e => {
+    if (phone.matches && sheet.dataset.sheet === 'collapsed' && !e.target.closest('.handle, #title, .cityrow, .filters')) setSheet('half');
+  });
+
   const loadScript = src => new Promise((ok, fail) => {
     const el = document.createElement('script');
     el.src = src; el.onload = ok; el.onerror = () => fail(new Error('failed to load ' + src));
@@ -127,6 +229,9 @@
     attribution: '&copy; OpenStreetMap contributors', maxZoom: 19,
     className: 'dimmed-tiles'
   }).addTo(map);
+  // A tap on the bare map, or any popup opening (a tap on a shape or a dot),
+  // drops the phone sheet so the map is in view.
+  map.on('click popupopen', () => { if (phone.matches) setSheet('collapsed'); });
 
   // Join mentions onto their spots. Mention count is derived here, not stored.
   // (A spot's data field `area` is its borough/region; its map layer is `shape`.)
@@ -268,29 +373,30 @@
     div.innerHTML = `<div class="name">${g.kind === 'pin' ? '<span class="pin-glyph"></span>' : ''}${g.name} <span class="count"></span></div>
                      <div class="whos"></div>`;
     div.onclick = () => {
-      if (g.shape) { map.fitBounds(g.shape.getBounds(), { maxZoom: 14 }); g.shape.openPopup(); }
-      else if (g.kind === 'pin') { map.setView([g.lat, g.lng], 16); g.marker.openPopup(); }
-      else {
-        // A landmark dot may be off the map (below MARKER_MIN_ZOOM) or folded
-        // into a cluster bubble. Fly to it first. Once the move settles the
-        // dot is usually its own marker again, so open the popup directly; if
-        // it is still inside a bubble, let the plugin split or spiderfy that
-        // bubble. (zoomToShowLayer is not called in the first case on purpose:
-        // its "already visible" path ignores the plugin's own split animation
-        // and never fires.) A click on another row before then cancels this.
-        if (pendingShow) map.off('moveend', pendingShow);
-        pendingShow = () => {
-          pendingShow = null;
-          if (map.hasLayer(g.marker)) { g.marker.openPopup(); return; }
-          // Still inside a bubble at zoom 14: let the plugin split or spiderfy
-          // it, but only after its own split animation from the fly-to has
-          // finished, or it loses track of the marker mid-animation.
-          const split = () => markers.zoomToShowLayer(g.marker, () => g.marker.openPopup());
-          if (markers._inZoomAnimation) markers.once('animationend', split); else split();
-        };
-        map.once('moveend', pendingShow);
-        map.setView([g.lat, g.lng], 14);
-      }
+      if (phone.matches) setSheet('collapsed');
+      // Fly to the spot and open its popup once the move settles, so Leaflet's
+      // auto-pan (which nudges the map to keep a popup on screen) measures the
+      // finished view rather than a frame of the animation. A click on another
+      // row before then cancels this one.
+      if (pendingShow) map.off('moveend', pendingShow);
+      pendingShow = () => {
+        pendingShow = null;
+        if (g.shape || g.kind === 'pin') { (g.shape || g.marker).openPopup(); return; }
+        // A landmark dot may have been off the map (below MARKER_MIN_ZOOM) or
+        // folded into a cluster bubble. After the move it is usually its own
+        // marker again, so open the popup directly; if it is still inside a
+        // bubble at zoom 14, let the plugin split or spiderfy that bubble, but
+        // only after its own split animation from the fly-to has finished, or
+        // it loses track of the marker mid-animation. (zoomToShowLayer is not
+        // called in the first case on purpose: its "already visible" path
+        // ignores that animation and never fires.)
+        if (map.hasLayer(g.marker)) { g.marker.openPopup(); return; }
+        const split = () => markers.zoomToShowLayer(g.marker, () => g.marker.openPopup());
+        if (markers._inZoomAnimation) markers.once('animationend', split); else split();
+      };
+      map.once('moveend', pendingShow);
+      if (g.shape) map.fitBounds(g.shape.getBounds(), { maxZoom: 14, paddingBottomRight: [0, phone.matches ? SHEET_COLLAPSED : 0] });
+      else map.setView([g.lat, g.lng], g.kind === 'pin' ? 16 : 14);
     };
     g.row = div;
     list.appendChild(div);
