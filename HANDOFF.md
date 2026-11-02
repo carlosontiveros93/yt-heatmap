@@ -110,6 +110,32 @@ neighborhoods and parks. I live near Philly, so I can verify places by eye.
 - Note: Nazir's episode was re-pulled fresh rather than moved out of `research/la/raw.json`, so the LA
   raw file still contains it (harmless; the LA scan ignores it).
 
+## Polish pass — DONE (2026-11-01, commits 6b8277d, 785e156, fee82d4, d4a5480 + this one)
+
+The UI changed; data did not (only the `area` field was added to every spot).
+- **Clustering** — landmark dots that would overlap fold into a numbered bubble from
+  zoom 11 up (Leaflet.markercluster 1.5.3, cluster radius 28px, no clustering at 15+).
+  Pins, areas and corridors never cluster. A sidebar click on a clustered dot flies to
+  it and opens its popup once the move settles.
+- **Filters** — kind chips, mention-type chips and an area dropdown (`areaLabel` in
+  config.js names it: Borough / Area). All in the URL (`kind=`, `type=`, `area=`), with
+  "showing N of M spots" and a reset link. See README "Filters and URL parameters".
+- **Data** — every SPOTS row has `area` (borough/region, `null` = citywide, e.g. NYC
+  Subway). A new city's spots need it too, or the dropdown hides itself.
+- **Phone layout** — under 700px the map fills the screen and the sidebar is a bottom
+  sheet (collapsed 120px / half / full; drag the handle or title, tap to step; tapping a
+  spot, a shape or the bare map drops it). All of it is CSS inside one
+  `@media (max-width: 699px)` block plus ~40 lines of JS; desktop is untouched.
+- **Small things** — theme-color and apple-mobile-web-app-capable meta tags, popup
+  "watch" links carry `rel="noopener"`, the "no boundary for …" console note only
+  prints with `?debug=1`.
+- **How it was verified** — headless Chrome (Playwright) rendering before/after and
+  pixel-diffing the map pane and the whole page at 1280 and 700 wide, zooms 10–15,
+  both cities (0 differing pixels for every step); plus scripted phone checks at
+  390/430/375/320 wide. Reuse the idea: any change meant to be invisible on desktop
+  should come with that diff.
+- Still open, not planned: choosing an area filters the map but does not move it.
+
 ## Rules that carry over (all in README.md)
 - Shot-there counts, regular haunt counts, biography and borough-level don't.
 - Small and accurate beats large and lumped; overlapping small shapes are fine;

@@ -3,6 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#14161a">
+<meta name="apple-mobile-web-app-capable" content="yes">
 <title>Street Photography Heatmap</title>
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
 <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css">
@@ -142,6 +144,7 @@
     const want = new URLSearchParams(location.search).get('city');
     return CITIES.some(c => c.id === want) ? want : CITIES[0].id;
   })();
+  const DEBUG = new URLSearchParams(location.search).get('debug') === '1';   // ?debug=1 turns on console notes
   const citySelect = document.getElementById('city');
   for (const c of CITIES) citySelect.add(new Option(c.name, c.id, false, c.id === cityId));
   citySelect.onchange = () => { const p = new URLSearchParams(location.search); p.set('city', citySelect.value); location.search = '?' + p; };
@@ -293,7 +296,7 @@
       `<div class="m ${m.type === 'favorite' ? 'fav' : m.type === 'walkie-talkie' ? 'wt' : ''}">
          <span class="w">${m.speaker}</span> <span class="n">(${label(m)})</span><br>
          <span class="n">${m.quote}</span><br>
-         <a href="${sourceById.get(m.sourceId).url}&t=${m.timestamp}s" target="_blank">▶ watch at ${fmtTime(m.timestamp)}</a>
+         <a href="${sourceById.get(m.sourceId).url}&t=${m.timestamp}s" target="_blank" rel="noopener">▶ watch at ${fmtTime(m.timestamp)}</a>
        </div>`).join('') + '</div>';
 
     if (g.kind === 'pin') {
@@ -309,7 +312,7 @@
         .bindPopup(html, { maxWidth: 300 }).addTo(map);
       continue;
     }
-    if (g.kind !== 'landmark') {
+    if (g.kind !== 'landmark' && DEBUG) {
       console.info(`[yt-heatmap] no boundary for ${g.kind} "${g.id}" — rendering as a dot`);
     }
     // Size and color come from the counted mentions, so applyFilters sets them

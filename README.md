@@ -28,9 +28,13 @@ enough on its own. A pin sits alongside that person's mention on the containing
 area rather than replacing it. Shops a photographer visited for portraits are not
 pins — those are relationships, not spots.
 
-- `index.html` — the map page (Leaflet + leaflet.heat from CDN, OpenStreetMap tiles).
-  Picks a city from `?city=` in the URL (default `nyc`) and loads that city's three
-  files from `cities/<id>/`; the sidebar has a city switcher.
+- `index.html` — the map page (Leaflet, leaflet.heat and Leaflet.markercluster from
+  CDN, OpenStreetMap tiles). Picks a city from `?city=` in the URL (default `nyc`) and
+  loads that city's three files from `cities/<id>/`; the sidebar has a city switcher.
+  Landmark dots that would overlap collapse into a numbered cluster bubble from zoom 11
+  up (pins, areas and corridors never cluster). Under 700px wide the sidebar becomes a
+  bottom sheet over a full-screen map: drag the handle or the title between collapsed,
+  half and full.
 - `cities/cities.js` — the list of cities the switcher offers (id + display name).
 - `cities/<id>/config.js` — that city's name, page title, start center/zoom and intro text.
 - `cities/<id>/data.js` — three tables: `SPOTS` (one per physical place: id, name, lat/lng,
@@ -50,6 +54,27 @@ pins — those are relationships, not spots.
 Area color, corridor width and marker size = number of photographers who mentioned
 the spot (Midtown leads). Click any shape, marker or sidebar entry for who said it
 and a link that jumps to that moment in the video.
+
+## Filters and URL parameters
+
+The sidebar filters by kind of spot (chips), kind of mention (chips) and area
+(dropdown: boroughs in NYC, regions in LA). A spot stays when its kind is on, it has
+at least one mention of a type that is on, and it is in the chosen area (a citywide
+spot passes every area). Its color, size and ×N count only the mentions that are on;
+the popup still lists every mention. The heat layer is rebuilt from what remains.
+
+Filters live in the URL, so a filtered view can be shared:
+
+| parameter | values | absent means |
+|---|---|---|
+| `city` | `nyc`, `la` (see `cities/cities.js`) | `nyc` |
+| `kind` | comma list of `neighborhood`, `park`, `corridor`, `landmark`, `pin` | all |
+| `type` | comma list of `visitor`, `favorite`, `walkie-talkie` | all |
+| `area` | one area name as it appears in the dropdown, e.g. `Queens` | all |
+| `debug` | `1` to log console notes (e.g. which spots have no boundary) | quiet |
+
+Example: `?city=nyc&kind=pin,corridor&type=walkie-talkie&area=Brooklyn`. "reset" in
+the sidebar clears everything but `city`.
 
 ## Run it
 
