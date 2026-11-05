@@ -4,4 +4,5 @@
 const CITIES = [
   { id: "nyc", name: "New York" },
   { id: "la",  name: "Los Angeles" },
+  { id: "philly", name: "Philadelphia" },
 ];

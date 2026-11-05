@@ -110,6 +110,25 @@ neighborhoods and parks. I live near Philly, so I can verify places by eye.
 - Note: Nazir's episode was re-pulled fresh rather than moved out of `research/la/raw.json`, so the LA
   raw file still contains it (harmless; the LA scan ignores it).
 
+### Step 3 — Philly LIVE with Paulie's two episodes (2026-11-05)
+
+Carlos answered section D of the proposal and approved the list; `cities/philly/` is written and
+Philadelphia is in `cities/cities.js`. **9 spots, 16 mentions, 2 pins, 5 shapes**, all Center City
+(`areaLabel: "Area"`, every spot `area: "Center City"` except the Broad Street Line, which is `null`).
+- Decided: Dilworth shot-here only (haunt dropped); Walnut St corridor kept (Olu shot-here + Nazir
+  haunt); JFK Blvd and 10th St left out (commented out in `tools/boundaries/philly.py`); SEPTA Broad
+  Street Line kept at medium as a landmark dot; City Hall shape = Dilworth Park trace.
+- Pins written: Broad & Walnut, 18th & Walnut. City Hall Station is a landmark dot, not a pin.
+- Pins NOT written, waiting for Carlos to watch the clips (he had no preference on which to check):
+  the pit at the MSB plaza (Nazir 40:08–40:40), City Hall Station platform (Olu 24:16–25:30),
+  Dilworth Park (Olu 14:42–22:42), Chestnut St portrait (Olu 8:05–9:10), second Metzker spot
+  (Nazir 25:36–26:21), Olu's corner shot (30:47–31:21). Details in the proposal, section B.
+- Next: other-channel sources. Carlos chose "go live first, sources after": show him Tier A of
+  `research/philly/sources_candidates.md` video by video, pull only what he approves, read the same
+  way, extend the proposal, get approval, then add. Nothing non-Paulie has been pulled.
+- Gotcha: after editing `cities/cities.js` the browser can serve a cached copy and fall back to NYC;
+  hard reload.
+
 ## Polish pass — DONE (2026-11-01, commits 6b8277d, 785e156, fee82d4, d4a5480 + this one)
 
 The UI changed; data did not (only the `area` field was added to every spot).
@@ -146,4 +165,4 @@ The UI changed; data did not (only the `area` field was added to every spot).
   (I watch to verify). "We're starting at X" is not enough. Shop portraits are not pins.
 - High/medium confidence only; when in doubt, leave it out and tell me why.
 
-Start with Step 3: the source search, bringing a candidate list to approve.
+Start with Step 3's "Next": walking Carlos through the other-channel candidates.

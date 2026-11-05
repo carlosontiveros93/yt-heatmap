@@ -8,7 +8,7 @@ property (Center City District runs it), so it is traced from OpenStreetMap
 Services Building plaza is hand-drawn as its city block. Corridor waypoints are
 OSM intersections. Reasoning: research/proposals/philly_proposed.md.
 
-Spot ids here must match cities/philly/data.js once that is written (after approval).
+Spot ids here must match cities/philly/data.js.
 """
 import json
 
@@ -43,10 +43,11 @@ CORRIDORS = {
     'chestnut-st':  [[-75.16393, 39.95087], [-75.16561, 39.95109], [-75.16718, 39.95128], [-75.16877, 39.95148], [-75.17035, 39.95167]],
     # Walnut St, Broad to 18th (Nazir's daily route from his corner to the park; Olu's camping spot near 18th)
     'walnut-st':    [[-75.16426, 39.94935], [-75.16595, 39.94957], [-75.16750, 39.94977], [-75.16911, 39.94997], [-75.17068, 39.95016]],
-    # JFK Blvd, Broad to 16th (parade crowd beside the MSB plaza, City Hall's northwest corner)
-    'jfk-blvd':     [[-75.16366, 39.95340], [-75.16506, 39.95362], [-75.16662, 39.95383]],
-    # 10th St, Market to Locust (Center City East; block not spoken)
-    '10th-st':      [[-75.15673, 39.95153], [-75.15706, 39.95002], [-75.15739, 39.94849], [-75.15764, 39.94736]],
+    # Not approved (2026-11-05), kept here in case the footage is checked later:
+    # JFK Blvd, Broad to 16th (parade crowd beside the MSB plaza; street never spoken)
+    # 'jfk-blvd':   [[-75.16366, 39.95340], [-75.16506, 39.95362], [-75.16662, 39.95383]],
+    # 10th St, Market to Locust (Center City East; no frame in the transcript)
+    # '10th-st':    [[-75.15673, 39.95153], [-75.15706, 39.95002], [-75.15739, 39.94849], [-75.15764, 39.94736]],
 }
 
 
