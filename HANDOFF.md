@@ -149,8 +149,8 @@ Carlos approved all 20 Tier A videos one by one, then the proposal
   "shot here · <channel>" / "regular spot · <channel>". Other-channel mentions still use
   `type: "walkie-talkie"` so filters and counts work unchanged. NYC/LA sources are all Paulie B.
 - Open: the blue filter chip still says "Walkie Talkie" in Philly (suggest a per-city label);
-  the 20 other-channel transcripts and `raw_other.json` are on disk but NOT committed (ask Carlos
-  whether third-party transcripts belong in the public repo); Tier B (16 videos) untouched;
+  the 20 other-channel transcripts and `raw_other.json` stay on Carlos's disk only (his decision,
+  2026-11-05: third-party transcripts do not go in the public repo; they are in .gitignore); Tier B (16 videos) untouched;
   left-out items and footage leads (Lancaster Ave, Spencer's wall at 11:42, Friendship Gate,
   12th & Market) are in the proposal, section C.
 
