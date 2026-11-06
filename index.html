@@ -458,7 +458,9 @@
     paint(); repaintChips.push(paint); container.appendChild(b);
   }
   for (const k of KINDS) addChip(document.getElementById('kindChips'), 'kind', k, k);
-  for (const [t, label, color] of TYPES) addChip(document.getElementById('typeChips'), 'type', t, label, color);
+  // A city can rename a type's filter chip in its config (CITY.typeLabels), e.g. Philly's
+  // "walkie-talkie" rows come mostly from other channels, so its chip says "photographer videos".
+  for (const [t, label, color] of TYPES) addChip(document.getElementById('typeChips'), 'type', t, (CITY.typeLabels || {})[t] || label, color);
   // Area dropdown (boroughs in NYC, regions in LA). Options come from the
   // data, most spots first; the row is hidden for a city whose spots carry
   // no area at all.

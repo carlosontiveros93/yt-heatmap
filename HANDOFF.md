@@ -148,8 +148,9 @@ Carlos approved all 20 Tier A videos one by one, then the proposal
 - **index.html changed (Carlos OK'd):** popup rows whose source channel is not "Paulie B" read
   "shot here · <channel>" / "regular spot · <channel>". Other-channel mentions still use
   `type: "walkie-talkie"` so filters and counts work unchanged. NYC/LA sources are all Paulie B.
-- Open: the blue filter chip still says "Walkie Talkie" in Philly (suggest a per-city label);
-  the 20 other-channel transcripts and `raw_other.json` stay on Carlos's disk only (his decision,
+- Filter chip: Philly's blue chip now says "photographer videos" via an optional
+  `typeLabels` map in config.js (index.html uses it when present; NYC/LA unchanged). 2026-11-05.
+- Open: the 20 other-channel transcripts and `raw_other.json` stay on Carlos's disk only (his decision,
   2026-11-05: third-party transcripts do not go in the public repo; they are in .gitignore); Tier B (16 videos) untouched;
   left-out items and footage leads (Lancaster Ave, Spencer's wall at 11:42, Friendship Gate,
   12th & Market) are in the proposal, section C.
@@ -190,4 +191,4 @@ The UI changed; data did not (only the `area` field was added to every spot).
   (I watch to verify). "We're starting at X" is not enough. Shop portraits are not pins.
 - High/medium confidence only; when in doubt, leave it out and tell me why.
 
-Start by asking Carlos what is next: the Philly filter-chip label, Tier B sources, or the unverified pins.
+Start by asking Carlos what is next: Tier B sources or the unverified pins.

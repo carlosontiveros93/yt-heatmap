@@ -7,6 +7,8 @@ const CITY = {
   center: [39.9560, -75.1660],
   zoom: 13,
   areaLabel: "Area",   // what the area filter is called here (spots carry an `area`)
+  // Filter-chip names for this city. Rows keep type "walkie-talkie" in data.js; only the label changes.
+  typeLabels: { "walkie-talkie": "photographer videos" },
   intro: `Where Philadelphia street photographers actually shoot. Started from two episodes of
     Paulie B's <em>Walkie Talkie</em> series (Olu Okiemute, Nazir Wayman), then widened with
     walk-and-talks and "where I shoot" videos from other channels (Sam Rivera, Dante Sisofo,
