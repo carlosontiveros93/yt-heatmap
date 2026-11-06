@@ -1,0 +1,52 @@
+{
+ "videoId": "t2x6VZR4eyc",
+ "title": "The BEST location for Street Photography in Philadelphia (2024)",
+ "people": ["Dante Sisofo"],
+ "isPhiladelphia": true,
+ "mentions": [
+  {
+   "place": "City Hall tunnels (pedestrian archways through Philadelphia City Hall, Broad & Market)",
+   "kind": "pin-candidate",
+   "speaker": "Dante Sisofo",
+   "basis": "haunt",
+   "confidence": "high",
+   "timestamp": 2,
+   "quote": "wanted to share my favorite place to practice street photography in Philadelphia and it's in the tunnels of City Hall",
+   "locationEvidence": "Named outright: 'the tunnels of City Hall' (0:05-0:07), 'City Hall in my City Philadelphia' (2:24-2:30), 'the tunnels of City Hall' again (3:45). The 'tunnels' are the four arched portals that lead from the street into the City Hall courtyard. This video never says which of the four he is in; his 2023 video (aimOhkdFXco) names the one facing Dilworth Plaza (west side) as the best.",
+   "notes": "Regular-habit language is explicit: 'favorite place', 'you can photograph in this same mundane place over and over again' (0:43-0:47), 'the light that's consistent year round' (2:38), 'the best place for me to practice my street photography' (4:20-4:24). Same person and place as aimOhkdFXco; the 2023 video has the better haunt quote because it states a daily walk-through and names the specific portal."
+  },
+  {
+   "place": "City Hall tunnels (pedestrian archways through Philadelphia City Hall, Broad & Market)",
+   "kind": "pin-candidate",
+   "speaker": "Dante Sisofo",
+   "basis": "shot-here",
+   "confidence": "high",
+   "timestamp": 47,
+   "quote": "and I just find it so nice when I can make these minimalist compositions of this boy carrying the newspaper",
+   "locationEvidence": "He is standing in the tunnel while talking ('as you can see through the the LCD screen as people enter this patch of light here', 0:07-0:11) and reacts to a frame just made there. Which portal is not stated in this video.",
+   "notes": "Frames demonstrably made on camera: the boy with the newspaper and medal (0:47-0:59), silhouettes 'as you can see in in in the photograph' (3:31-3:38), and a self-portrait ('maybe I got it maybe I didn't sometimes yeah I did', 4:31-4:35). Shooting vertical and horizontal on the Ricoh throughout."
+  }
+ ],
+ "excluded": [
+  {
+   "what": "City Hall building / architecture in general ('this city hall building just generally is worth exploring')",
+   "timestamp": 174,
+   "why": "Recommendation to visitors and a remark that you can photograph the architecture; folded into the City Hall tunnels rows rather than counted as a separate, larger place."
+  },
+  {
+   "what": "Philadelphia (city-level: 'share the beauty of my city here Philadelphia')",
+   "timestamp": 231,
+   "why": "City-level statement, not mappable."
+  }
+ ],
+ "unresolved": [
+  {
+   "what": "Which of the four City Hall portals (north, south, east, west) this video was filmed in. Never spoken. A local could tell from the footage; the 2023 video says the west one (Dilworth side) is his preferred one.",
+   "timestamp": 7
+  },
+  {
+   "what": "Caption gap 1:13-1:33 followed by 'that's that's a white man' (1:33). Unclear exchange, possibly with a passer-by; no place information.",
+   "timestamp": 93
+  }
+ ]
+}

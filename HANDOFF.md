@@ -123,11 +123,36 @@ Philadelphia is in `cities/cities.js`. **9 spots, 16 mentions, 2 pins, 5 shapes*
   the pit at the MSB plaza (Nazir 40:08–40:40), City Hall Station platform (Olu 24:16–25:30),
   Dilworth Park (Olu 14:42–22:42), Chestnut St portrait (Olu 8:05–9:10), second Metzker spot
   (Nazir 25:36–26:21), Olu's corner shot (30:47–31:21). Details in the proposal, section B.
-- Next: other-channel sources. Carlos chose "go live first, sources after": show him Tier A of
+- Done since (see next block): other-channel sources. Carlos chose "go live first, sources after": show him Tier A of
   `research/philly/sources_candidates.md` video by video, pull only what he approves, read the same
   way, extend the proposal, get approval, then add. Nothing non-Paulie has been pulled.
 - Gotcha: after editing `cities/cities.js` the browser can serve a cached copy and fall back to NYC;
   hard reload.
+
+### Step 3 — other channels added (2026-11-05)
+
+Carlos approved all 20 Tier A videos one by one, then the proposal
+(`research/proposals/philly_other_sources_proposed.md`, his answers = section D). Philly is now
+**20 spots, 37 mentions, 4 pins, 14 sources** (2 Paulie + 12 from other channels).
+- Added: pins 15th & Chestnut (Sam Rivera) and City Hall west archway (Dante Sisofo); City Hall
+  (hand-drawn building footprint); Chinatown (OpenDataPhilly shape); Market St East (City Hall to
+  10th) and South St (Front to 10th), both extents chosen by Carlos; Southeast Asian Market dot in
+  FDR Park (approximate); the El as a citywide dot; Dante's three "Philly in Flux" avenue walks
+  (Lehigh, Woodland, Germantown) as long lines. Extra mentions on Rittenhouse (now 4 people),
+  Dilworth, Walnut and Chestnut.
+- Areas now: Center City, South / North / Southwest / Northwest Philadelphia; config zoom 13.
+- How it was read: one reader agent per photographer, then all 65 quotes machine-checked against
+  the transcripts. No second reader or refuter this round.
+- Corridor lines are traced from OpenStreetMap (`research/philly/osm_corridors.json`, Overpass;
+  overpass-api.de worked this time, kumi timed out) and stored in `tools/boundaries/philly.py`.
+- **index.html changed (Carlos OK'd):** popup rows whose source channel is not "Paulie B" read
+  "shot here · <channel>" / "regular spot · <channel>". Other-channel mentions still use
+  `type: "walkie-talkie"` so filters and counts work unchanged. NYC/LA sources are all Paulie B.
+- Open: the blue filter chip still says "Walkie Talkie" in Philly (suggest a per-city label);
+  the 20 other-channel transcripts and `raw_other.json` are on disk but NOT committed (ask Carlos
+  whether third-party transcripts belong in the public repo); Tier B (16 videos) untouched;
+  left-out items and footage leads (Lancaster Ave, Spencer's wall at 11:42, Friendship Gate,
+  12th & Market) are in the proposal, section C.
 
 ## Polish pass — DONE (2026-11-01, commits 6b8277d, 785e156, fee82d4, d4a5480 + this one)
 
@@ -165,4 +190,4 @@ The UI changed; data did not (only the `area` field was added to every spot).
   (I watch to verify). "We're starting at X" is not enough. Shop portraits are not pins.
 - High/medium confidence only; when in doubt, leave it out and tell me why.
 
-Start with Step 3's "Next": walking Carlos through the other-channel candidates.
+Start by asking Carlos what is next: the Philly filter-chip label, Tier B sources, or the unverified pins.

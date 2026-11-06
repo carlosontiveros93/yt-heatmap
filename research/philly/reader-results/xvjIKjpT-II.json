@@ -1,0 +1,211 @@
+{
+  "videoId": "xvjIKjpT-II",
+  "title": "7 Dope Philly Night Photography Spots",
+  "people": [
+    {
+      "name": "Ryan (Violentshock)",
+      "phillyBased": "yes, strongly implied: \"back in the day we used to skate\" at Dilworth, \"that's my tax money\", \"places in philadelphia where i constantly go to\""
+    }
+  ],
+  "isPhiladelphia": true,
+  "videoLevelNote": "Talking-head list video about NIGHT photography; nothing in the transcript shows him shooting on location in this video, so no shot-here. Haunt basis for all seven comes from blanket statements: at 971s \"i go to these places a lot man for real\"; at 885s \"so these are my seven places that i actually like to shoot at night\"; at 1004s \"places in philadelphia where i constantly go to to take some dope shots of the city at night\". Almost everything is skyline, long exposure and lights; only Chinatown has people/street-life language.",
+  "mentions": [
+    {
+      "place": "South Street Bridge (over the Schuylkill)",
+      "kind": "landmark",
+      "speaker": "Ryan (Violentshock)",
+      "mentionType": "recommendation",
+      "basis": "haunt",
+      "genre": "cityscape",
+      "genreEvidence": "\"good shot of the city skyland along the schuylkill river\"; tripod, \"long exposure shots\", \"with a wide angle lens you can get the whole entire skyline\" including FMC building, Amtrak building, 30th Street Station.",
+      "confidence": "high",
+      "timestamp": 66,
+      "quote": "and on this spot you can actually get a good shot of the city skyland along the schuylkill river",
+      "locationEvidence": "Named directly at 57s: \"number one south street bridge\".",
+      "notes": "Haunt rests on the blanket statement at 971s, not a bridge-specific one."
+    },
+    {
+      "place": "Philadelphia Museum of Art, top of the Rocky Steps (view to City Hall)",
+      "kind": "landmark",
+      "speaker": "Ryan (Violentshock)",
+      "mentionType": "recommendation",
+      "basis": "haunt",
+      "genre": "cityscape",
+      "genreEvidence": "\"a phenomenal place to get a shot of the city skyline\"; set up \"on top of the rocky steps\" for \"a shot of city hall and it's surrounding buildings\".",
+      "confidence": "high",
+      "timestamp": 136,
+      "quote": "the art museum is a phenomenal place to get a shot of the city skyline",
+      "locationEvidence": "Named directly: art museum, rocky steps.",
+      "notes": "Also says to go to the right of the museum for another skyline shot with the Schuylkill in front (160s)."
+    },
+    {
+      "place": "Behind the Art Museum (Fairmount Water Works area): view of Boathouse Row and the Fairmount dam",
+      "kind": "pin-candidate",
+      "speaker": "Ryan (Violentshock)",
+      "mentionType": "recommendation",
+      "basis": "haunt",
+      "genre": "cityscape",
+      "genreEvidence": "View of lit buildings and water: Boathouse Row lights (\"it's christmas the whole year at bullhouse row\") and the \"river waterfalls\".",
+      "confidence": "medium",
+      "timestamp": 177,
+      "quote": "behind the art museum you can actually uh get a shot of the bow house row and river waterfalls",
+      "locationEvidence": "\"bow house row\" / \"bullhouse row\" = Boathouse Row; \"school river waterfalls\" = the Schuylkill dam at Fairmount. The standing point is 'behind the art museum', which is the Water Works / riverside area; he does not name the Water Works.",
+      "notes": "Boathouse Row is the subject, not the place to stand. Part of his Art Museum entry (spot 2), split out because it is a different vantage point."
+    },
+    {
+      "place": "Penn's Landing (Delaware waterfront: historic ships, RiverRink ferris wheel, view of Ben Franklin Bridge)",
+      "kind": "landmark",
+      "speaker": "Ryan (Violentshock)",
+      "mentionType": "recommendation",
+      "basis": "haunt",
+      "genre": "cityscape",
+      "genreEvidence": "\"you can get a shot of the benjamin franklin bridge\", \"old-timey ships\", ferris wheel \"for long exposure shots you can make a whirly world\".",
+      "confidence": "high",
+      "timestamp": 319,
+      "quote": "so pens landing amazing go check it out",
+      "locationEvidence": "Named at 221s: \"number three penn's landing\". Ships named: USS Olympia, a submarine (\"uss big canna\" = USS Becuna), \"mushulu\" = Moshulu. Ferris wheel and skate rink = the RiverRink area. \"from pennsylvania you can get a shot\" (274s) is a garble of Penn's Landing.",
+      "notes": "Large waterfront stretch; the tightest sub-areas he names are the historic ships basin and the ferris wheel/rink. Beer garden and donuts are amenities, not spots."
+    },
+    {
+      "place": "Cira Green (rooftop park next to the FMC Tower, University City)",
+      "kind": "park",
+      "speaker": "Ryan (Violentshock)",
+      "mentionType": "recommendation",
+      "basis": "haunt",
+      "genre": "cityscape",
+      "genreEvidence": "\"you can get the whole skyline of philly\"; \"if you're like a portrait photographer you can get some really dope city skyline background shots\".",
+      "confidence": "high",
+      "timestamp": 405,
+      "quote": "sarah green is pretty cool you can get the whole skyline of philly",
+      "locationEvidence": "\"sierra green\" / \"sarah green\" = Cira Green; \"it's next to the fmc building\", \"a little mini park on top of the building\", reached by elevators.",
+      "notes": "Spot-specific haunt support at 432s: the guard \"always watches me every time i go to the roof\". Practical notes he gives: private property, open 7am to 8pm (as of the video), no tripods."
+    },
+    {
+      "place": "Benjamin Franklin Bridge pedestrian walkway",
+      "kind": "landmark",
+      "speaker": "Ryan (Violentshock)",
+      "mentionType": "recommendation",
+      "basis": "haunt",
+      "genre": "cityscape",
+      "genreEvidence": "Elevated view shots: \"a shot of ray street\" (Race Street from above), \"the trains going back and forth from philly to camden\" (PATCO), tripod and camera-shake talk.",
+      "confidence": "high",
+      "timestamp": 574,
+      "quote": "benjamin franklin bridge is a really great place to shoot because you can actually get a shot of ray street",
+      "locationEvidence": "Named at 494s: \"number five benjamin franklin bridge\". \"ray street\" = Race Street; \"patrol line\" = PATCO line. He gives walkway hours (6am to 9pm in summer), so he means standing on the bridge walkway.",
+      "notes": ""
+    },
+    {
+      "place": "Chinatown (Arch Street and the restaurant blocks around 10th)",
+      "kind": "neighborhood",
+      "speaker": "Ryan (Violentshock)",
+      "mentionType": "recommendation",
+      "basis": "haunt",
+      "genre": "mixed",
+      "genreEvidence": "Lights/colors: \"so many lights\", \"really really neat colors\", fog and rain reflections. People/street life: \"shadows and silhouettes of people going in and out of the restaurants\" (668s), \"you got some really great characters there too\" (714s), ducks hanging in windows, \"you can still walk around\".",
+      "confidence": "high",
+      "timestamp": 623,
+      "quote": "chinatown is actually a really really dope place to shoot and because of so many so many lights in there",
+      "locationEvidence": "Named at 612s: \"number six chinatown\". Sub-area named at 694s: LED lights \"in arch street arts arts in chinatown\" (= Arch Street).",
+      "notes": "The only one of the seven with street-photography language. Explicit recommendation at 711s: \"chinatown i do suggest chinatown you guys go there\"."
+    },
+    {
+      "place": "Chinatown Friendship Gate (the arch at 10th and Arch)",
+      "kind": "pin-candidate",
+      "speaker": "Ryan (Violentshock)",
+      "mentionType": "recommendation",
+      "basis": "haunt",
+      "genre": "mixed",
+      "genreEvidence": "The arch itself is an architecture/lights subject (\"chinatown arch lights kind of like flash sometimes\"); the people-silhouette remark follows immediately after it.",
+      "confidence": "medium",
+      "timestamp": 657,
+      "quote": "uh you have the chinatown arch which you can shoot",
+      "locationEvidence": "\"chinatown arch\" = the Friendship Gate on 10th Street at Arch. Cross streets are my knowledge, not stated by him.",
+      "notes": "Sub-spot of the Chinatown entry; drop if you only want one Chinatown mention."
+    },
+    {
+      "place": "City Hall (the four approaches: North Broad, South Broad, East and West Market)",
+      "kind": "landmark",
+      "speaker": "Ryan (Violentshock)",
+      "mentionType": "recommendation",
+      "basis": "haunt",
+      "genre": "cityscape",
+      "genreEvidence": "Architecture and street-vista shots: \"you can get north abroad south broad east and west market\"; William Penn statue; \"in south broad you can actually see all these led lights\" (animated lights on Avenue of the Arts).",
+      "confidence": "high",
+      "timestamp": 753,
+      "quote": "most of my shots are at city hall why because you can get north abroad south broad east and west market",
+      "locationEvidence": "Named at 749s: \"number seven oh man this is city hall\".",
+      "notes": "Strongest haunt statement in the video: \"most of my shots are at city hall\". He notes the inner courtyard gates close at night."
+    },
+    {
+      "place": "Dilworth Park (west side of City Hall)",
+      "kind": "park",
+      "speaker": "Ryan (Violentshock)",
+      "mentionType": "recommendation",
+      "basis": "haunt",
+      "genre": "cityscape",
+      "genreEvidence": "Atmosphere/lights: steam from the ground for \"epic batman photos\", trees, lights, subway entrance, seasonal rink. No people language.",
+      "confidence": "medium",
+      "timestamp": 823,
+      "quote": "dover park is actually really cool because sometimes they will turn on the steam they have steam there",
+      "locationEvidence": "\"dilworth park\" named at 762s (\"you also got dilworth park which is really cool\"); \"dover park\" at 823s is the same place garbled.",
+      "notes": "Presented as part of the City Hall entry (spot 7). Could reasonably be read as mixed, but he gives no people/street-life words, so cityscape."
+    }
+  ],
+  "excluded": [
+    {
+      "what": "Camden (view across the river)",
+      "timestamp": 261,
+      "why": "Not Philadelphia, and he dismisses it: 'who wants to shoot camden'."
+    },
+    {
+      "what": "Beer garden and donuts at Penn's Landing; beer and food at Cira Green",
+      "timestamp": 251,
+      "why": "Amenities, not photo spots."
+    },
+    {
+      "what": "Dim Sum Garden",
+      "timestamp": 686,
+      "why": "Restaurant recommendation, not a photo spot."
+    },
+    {
+      "what": "Boathouse Row as a place to stand",
+      "timestamp": 180,
+      "why": "It is the subject seen from behind the Art Museum, not where he tells you to go. Captured under the 'behind the Art Museum' vantage point."
+    },
+    {
+      "what": "FMC building, Amtrak building, 30th Street Station",
+      "timestamp": 105,
+      "why": "Subjects visible from South Street Bridge, not places to shoot from."
+    },
+    {
+      "what": "LOVE Park",
+      "timestamp": 862,
+      "why": "\"from city hall you can actually see um love park the park is really cool\" is a what-you-can-see remark plus a comment on the fountains, not a clear 'go shoot there'. Borderline; add as low confidence if you want it."
+    },
+    {
+      "what": "South Broad Street LED lights",
+      "timestamp": 850,
+      "why": "Described as a shot you get from City Hall; folded into the City Hall entry rather than a separate place."
+    },
+    {
+      "what": "City Hall inner courtyard at night",
+      "timestamp": 795,
+      "why": "He says the gates close and he cannot get in; a wish, not a spot he shoots."
+    },
+    {
+      "what": "Old skate spot at Dilworth",
+      "timestamp": 768,
+      "why": "Biography."
+    },
+    {
+      "what": "\"philly's pretty cool at night\" / safety talk / future 'secret spots'",
+      "timestamp": 919,
+      "why": "City-level statements and plans not carried out."
+    }
+  ],
+  "unresolved": [
+    "No shot-here evidence in the transcript: it reads as a talking-head list. If the video shows his own photos or on-location footage per spot, basis could be upgraded by someone watching it.",
+    "Penn's Landing is a long waterfront; he does not say where exactly he stands for the Ben Franklin Bridge shot.",
+    "'To the right of the art museum' skyline-with-Schuylkill vantage (160s): exact standing point not given; left as a note on the Art Museum entry."
+  ]
+}

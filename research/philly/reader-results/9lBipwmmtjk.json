@@ -1,0 +1,61 @@
+{
+  "videoId": "9lBipwmmtjk",
+  "title": "Philly Street Photography ~ With Spencer & Baby Linden",
+  "people": [
+    {
+      "name": "Spencer (with baby Linden)",
+      "role": "featured photographer, named only in the title",
+      "phillyBased": "not stated in this transcript",
+      "sameAsOtherVideo": "Supported by metadata only, not by speech: this title says 'Spencer & Baby Linden'; in uUAVHAXzupw the guest says 'I'm Spencer. This is Lyndon' (0:57) and shoots with the baby on his chest for 'a little over two years'. This video is dated Leap Day 2024, which fits that timeline. Same first name, same child's name (caption spelling differs), same city and practice: very likely the same person, but nothing spoken in this video's captions confirms it."
+    },
+    {
+      "name": "Channel owner / second photographer (BTS Playground; hashtags #cliffordluckphotography #cliffordluckvisuals suggest Clifford Luck)",
+      "role": "filmer / second half of the 'duo of photographers' in the description",
+      "phillyBased": "not stated"
+    }
+  ],
+  "isPhiladelphia": true,
+  "captionQuality": "No usable speech. 41 minutes of '[Music]' plus single-syllable fragments, and song lyrics at 39:45-40:49. Every place below comes from the video DESCRIPTION in the transcript file header, not from anything said on camera.",
+  "mentions": [
+    {
+      "place": "Streets around City Hall (Center City)",
+      "kind": "landmark",
+      "speaker": "none (uploader's written description, third person)",
+      "basis": "shot-here",
+      "confidence": "low",
+      "timestamp": null,
+      "quote": "In the vibrant streets surrounding City Hall, the diversity of Philadelphia is on full display",
+      "locationEvidence": "Description names City Hall twice ('the bustling scenes of City Hall') and uses #CityHallCapture. No cross streets.",
+      "notes": "Description text reads as generic promotional copy and does not say which of the two photographers shot what. Captions give no confirmation and no timestamps. Needs a footage check to confirm and to narrow to a side of City Hall (Dilworth Park, 15th & Market, etc.). Consistent with the other video, where Spencer's walk passes the Clothespin at 15th & Market."
+    },
+    {
+      "place": "Rittenhouse Square (park)",
+      "kind": "park",
+      "speaker": "none (uploader's written description, third person)",
+      "basis": "shot-here",
+      "confidence": "low",
+      "timestamp": null,
+      "quote": "Moving through the picturesque paths of Rittenhouse Square, the photographers observe couples stealing intimate glances",
+      "locationEvidence": "Description names Rittenhouse Square twice and uses #RittenhouseSquareMoments.",
+      "notes": "Same caveats as City Hall: written description only, no speaker, no timestamp, needs footage check."
+    }
+  ],
+  "excluded": [
+    {
+      "what": "Song lyrics ('I am so troubled by the soul of', 'I need you in this life')",
+      "timestamp": 2385,
+      "why": "Background music, not speech."
+    },
+    {
+      "what": "'bonus video of killer sunrise' (description)",
+      "timestamp": null,
+      "why": "No location given; not street shooting evidence."
+    }
+  ],
+  "unresolved": [
+    {
+      "timestamp": null,
+      "note": "Entire route. With no spoken captions, the footage itself (0:00-39:45) is the only way to place frames; a local could pin the City Hall and Rittenhouse segments and anything in between (likely Market/Chestnut/Walnut between Broad and 18th, but that is a guess, not evidence)."
+    }
+  ]
+}

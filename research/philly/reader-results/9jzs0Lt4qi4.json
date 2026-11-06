@@ -1,0 +1,75 @@
+{
+ "videoId": "9jzs0Lt4qi4",
+ "title": "GERMANTOWN_AVE_IN_FLUX_06_02_2026",
+ "people": [
+  "Dante Sisofo"
+ ],
+ "isPhiladelphia": true,
+ "mentions": [
+  {
+   "place": "Germantown Avenue, from Chestnut Hill down to 2nd Street",
+   "kind": "corridor",
+   "speaker": "Dante Sisofo",
+   "basis": "shot-here",
+   "confidence": "high",
+   "timestamp": 0,
+   "quote": "I just got back from walking the entirety of Germantown Avenue here in Philadelphia, all the way from the northern parts of Chestnut Hill down towards the river at Second Street.",
+   "locationEvidence": "START: 'northern parts of Chestnut Hill' / 'top of Chestnut Hill' (0:07, 0:25); 'I took the train to Chestnut Hill West, got off the station, and began walking down Germantown Avenue' (2:28-2:35) - start cross street not spoken. END: 2nd Street ('I wound up all the way down at Second Street', 5:10). DIRECTION: southeast, toward Center City/the river. Stats: 14.3 km, 4 hours 30 minutes, 206 images (1:30-1:34). Date: June 2, 2026 (1:52).",
+   "notes": "Unclear whether he first walked up to the city line (Northwestern Ave) or started at the station (near Germantown & Evergreen); 14.3 km is closer to the full avenue. Same walk recapped in YoRaLIcCJCI - count once. Project page: flux.dantesisofo.com/projects/germantown-ave-in-flux/."
+  },
+  {
+   "place": "Germantown Avenue commercial strip in Germantown (old signage/storefronts)",
+   "kind": "pin-candidate",
+   "speaker": "Dante Sisofo",
+   "basis": "shot-here",
+   "confidence": "medium",
+   "timestamp": 282,
+   "quote": "I photographed so many of these signs um along my walk and there was one strip in Germantown on Germantown Ave that like it felt like you were in like the like the freaking 80s or 90s or something",
+   "locationEvidence": "'one strip in Germantown on Germantown Ave'; 'I was photographing sign after sign' (7:23). No cross streets.",
+   "notes": "Frames clearly made; block range not spoken (a local would likely read this as the Germantown business district around Chelten Ave - inference)."
+  },
+  {
+   "place": "Germantown Avenue at 2nd Street (end of walk; new apartments)",
+   "kind": "pin-candidate",
+   "speaker": "Dante Sisofo",
+   "basis": "shot-here",
+   "confidence": "medium",
+   "timestamp": 310,
+   "quote": "I wound up all the way down at Second Street. Then we had these like more recent like modern apartments that were are being built.",
+   "locationEvidence": "Germantown Ave & 2nd St, the avenue's southern end.",
+   "notes": "End point; frames of modern apartments shown from the zine."
+  },
+  {
+   "place": "Market Street (previous day; extent not stated)",
+   "kind": "corridor",
+   "speaker": "Dante Sisofo",
+   "basis": "shot-here",
+   "confidence": "medium",
+   "timestamp": 386,
+   "quote": "Oh, here's Market Street. Yeah, so I did Market Street yesterday, Germantown Ave. Today.",
+   "locationEvidence": "No cross streets. 'Yesterday' = June 1, 2026.",
+   "notes": "Same walk as the Market Street mention in YoRaLIcCJCI - count once. Extent NOT stated."
+  }
+ ],
+ "excluded": [
+  {
+   "what": "Chestnut Hill West station",
+   "timestamp": 148,
+   "why": "Arrival point by train; no shooting stated at the station itself (used as start evidence)."
+  },
+  {
+   "what": "'document the entirety of the birthplace of the country' / 'cover this whole city'",
+   "timestamp": 52,
+   "why": "City-level statements."
+  }
+ ],
+ "unresolved": [
+  "Exact start point at the top of Chestnut Hill (station vs. city line).",
+  "3:16 'beautiful cobblestone road and this home that's surrounded by the woodlands' - likely upper Germantown Ave (Chestnut Hill/Mt. Airy), house not named.",
+  "3:35 abandoned building with doorways; 3:47 gas price sign; 4:05 funeral car.",
+  "4:32 Cybertruck outside a church and the dog that almost bit him.",
+  "4:40 'fiat food' (garbled sign/shop name).",
+  "4:47 and 7:12-7:33 the 80s/90s signage strip 'in Germantown' - block range; storefront with laundry outside.",
+  "5:19 'a street weave' (garble) near the end of the walk."
+ ]
+}

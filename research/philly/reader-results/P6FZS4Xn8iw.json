@@ -1,0 +1,36 @@
+{
+ "videoId": "P6FZS4Xn8iw",
+ "title": "I Walk One Street Every Day in Philadelphia (The Ultimate Street Photography Challenge)",
+ "people": [
+  "Dante Sisofo"
+ ],
+ "isPhiladelphia": true,
+ "mentions": [
+  {
+   "place": "Lancaster Avenue (extent not stated)",
+   "kind": "corridor",
+   "speaker": "Dante Sisofo",
+   "basis": "shot-here",
+   "confidence": "high",
+   "timestamp": 2,
+   "quote": "What's popping people? It's Dante, currently walking down Lancaster Ave here in Philadelphia.",
+   "locationEvidence": "Only 'walking down Lancaster Ave'. No start/end cross streets, no neighborhood named. Surroundings described: warehouse, houses, dilapidated sidewalks, shoes on wires, 'quite desolate' (0:23-0:58). Shooting confirmed at 2:25 ('you can see I'm photographing these doorways, photographing the buildings') and 9:45 ('I just walked for like, I don't know, an hour and a half, 2 hours or something. I already have like 800 photos').",
+   "notes": "Walk-and-talk filmed on the street. Extent NOT stated in transcript or description; direction only 'down'. The Lancaster Ave project page on flux.dantesisofo.com would give the line."
+  }
+ ],
+ "excluded": [
+  {
+   "what": "City Hall / City Hall station as 'the heart of the city' with transit 'arteries'",
+   "timestamp": 95,
+   "why": "Description of how he gets around (subway hub); no shooting there stated."
+  },
+  {
+   "what": "'documenting every street in Philadelphia'",
+   "timestamp": 11,
+   "why": "City-level project statement."
+  }
+ ],
+ "unresolved": [
+  "Whole video: which stretch of Lancaster Ave (West Philly: Powelton/Mantua/Belmont up to Overbrook) - no cross street is spoken; a local could place it from the warehouse/rowhouse footage at 0:23-0:45."
+ ]
+}

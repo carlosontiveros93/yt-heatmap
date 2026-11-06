@@ -1,0 +1,88 @@
+{
+ "videoId": "uuSjvodevgA",
+ "title": "Ricoh GR IV Monochrome Geotagging POV | Philly in Flux #2",
+ "people": [
+  "Dante Sisofo"
+ ],
+ "isPhiladelphia": true,
+ "mentions": [
+  {
+   "place": "Woodland Avenue, from Cobbs Creek Parkway toward University City",
+   "kind": "corridor",
+   "speaker": "Dante Sisofo",
+   "basis": "shot-here",
+   "confidence": "high",
+   "timestamp": 24,
+   "quote": "so I arrived here on Woodland Avenue and Cobbs Creek Parkway. So we're all the way up at the top here in West Philly. Time to walk down towards University City",
+   "locationEvidence": "START: Woodland Ave & Cobbs Creek Parkway (0:24). DIRECTION: 'walk down towards University City' (0:31), i.e. northeast. END: not spoken - only 'walking one street from start to finish' (11:55) and 'you can see the end of the walk, you can see the start of the walk' on the map (17:56). Passes through 'Africa Town' (11:10) and a McDonald's. Date said: June 16, 2026 (12:53). He calls the area West Philly, then corrects to 'Southwest Philly' (17:13-17:17).",
+   "notes": "End cross street NOT stated; whether he reached University City is not confirmed in speech. Project page: flux.dantesisofo.com/geotag-catalog/woodland-ave-in-flux/."
+  },
+  {
+   "place": "Woodland Avenue near Cobbs Creek Parkway (portrait of man with eye injury, start of walk)",
+   "kind": "pin-candidate",
+   "speaker": "Dante Sisofo",
+   "basis": "shot-here",
+   "confidence": "medium",
+   "timestamp": 200,
+   "quote": "Yo, can I can I make a photo of that? That's crazy.",
+   "locationEvidence": "Happens in the first minutes after arriving at Woodland & Cobbs Creek Pkwy; confirmed later: 'as soon as I arrived on this walk here on Woodland Avenue, I made one of my craziest photos' (11:14) and 'it was the first scene that I stumbled across here on my walk' (18:35). People were getting ice cream (2:07, 2:54); a 'Red Light Supermarket' is mentioned at 1:27.",
+   "notes": "Frame made (thanks him at 5:33). Exact corner not spoken - near the walk's start, likely by an ice cream spot/supermarket. The '3 blocks' / 'five blocks down' he mentions is where he was shot years ago, not a photo location."
+  },
+  {
+   "place": "McDonald's on Woodland Avenue at the edge of 'Africa Town' (Southwest Philly)",
+   "kind": "pin-candidate",
+   "speaker": "Dante Sisofo",
+   "basis": "shot-here",
+   "confidence": "medium",
+   "timestamp": 661,
+   "quote": "McDonald's, I'm loving it.",
+   "locationEvidence": "'I'm apparently in Africa Town. I just We're We're leaving Africa Town' (11:10-11:12). Later on the map: 'You can see the McDonald's there that I photographed' (17:45).",
+   "notes": "Photographed per 17:45. Cross street not spoken."
+  },
+  {
+   "place": "Lehigh Avenue (previous day, whole street)",
+   "kind": "corridor",
+   "speaker": "Dante Sisofo",
+   "basis": "shot-here",
+   "confidence": "high",
+   "timestamp": 132,
+   "quote": "Today is just Woodland Ave. Yesterday I did Lehigh.",
+   "locationEvidence": "'I was on Lehigh. Lehigh Ave, yeah. I did the whole thing' (2:19-2:21).",
+   "notes": "Duplicate of ktLSt9TIUkc (same person, same walk) - count once."
+  }
+ ],
+ "excluded": [
+  {
+   "what": "LIST/progress stat: '30% complete out of 50 corridors documented', ~45 hours, 88 miles",
+   "timestamp": 1015,
+   "why": "Project totals; no street names given."
+  },
+  {
+   "what": "Where the man was shot: 'three blocks from the corner' / 'Five blocks down' on Woodland",
+   "timestamp": 217,
+   "why": "Another person's biography, not a photo location."
+  },
+  {
+   "what": "Local resident: 'living in Southwest like 25 years'",
+   "timestamp": 158,
+   "why": "Other person's biography; huge region."
+  },
+  {
+   "what": "'West Philly' / 'Southwest Philly'",
+   "timestamp": 22,
+   "why": "Huge-region labels; used only as context."
+  },
+  {
+   "what": "Printing/assembling the zine at home (16:20 onward)",
+   "timestamp": 980,
+   "why": "Not a shooting location."
+  }
+ ],
+ "unresolved": [
+  "End point of the Woodland Ave walk - not spoken (check project map).",
+  "1:27 'Red Light Supermarket' (possibly a garble) near the start at Woodland & Cobbs Creek Pkwy.",
+  "2:02-5:40 exact corner of the eye-injury portrait (ice cream spot near the start).",
+  "11:01 which McDonald's on Woodland Ave, and the boundary of 'Africa Town'.",
+  "13:19 'beautiful old signs' photographed just past the McDonald's."
+ ]
+}

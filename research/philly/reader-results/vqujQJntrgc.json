@@ -1,0 +1,175 @@
+{
+  "videoId": "vqujQJntrgc",
+  "title": "The Art & Hustle of Philly Street Photography.",
+  "people": [
+    {
+      "name": "Sam (Sammy) Rivera",
+      "role": "guest",
+      "phillyBased": true,
+      "asStated": "\"I am a Philadelphia street photographer\" (0:29); from New Jersey, came to Philly for school, 8 years in Philly / 6 as resident (25:07); member of the Public Ledger collective"
+    },
+    {
+      "name": "Jay Espinal",
+      "role": "host",
+      "phillyBased": "not stated in transcript",
+      "asStated": "Host of Creative Talks; only asks questions and tags along, never says he shoots anywhere"
+    }
+  ],
+  "isPhiladelphia": true,
+  "mentions": [
+    {
+      "place": "Rittenhouse Square",
+      "kind": "park",
+      "speaker": "Sam Rivera (guest)",
+      "basis": "shot-here",
+      "confidence": "high",
+      "timestamp": 33,
+      "quote": "We are here in Writtenhouse to uh start our day",
+      "locationEvidence": "\"Writtenhouse\" = Rittenhouse; at 1:37 he spots a man and moves in close (\"I want to try to get in close\"); at 36:05 he confirms it was a frame made in the park: \"at the very start of when we started filming the guy in the park with the newspaper and stuff ... after I shoot it, I got to keep moving\". The route then heads east from here, consistent with Rittenhouse Square.",
+      "notes": "The start-point alone would not count, but the 36:05 callback confirms a photo was made in the park at the start. Exact spot in the square not stated."
+    },
+    {
+      "place": "15th St & Chestnut St (intersection)",
+      "kind": "pin-candidate",
+      "speaker": "Sam Rivera (guest)",
+      "basis": "haunt",
+      "confidence": "high",
+      "timestamp": 1609,
+      "quote": "15th and Chestnut is like the uh, is like the meeting spot cuz that's where we just coincidentally it's a great intersection with great light in the afternoon.",
+      "locationEvidence": "Cross streets said outright: 15th and Chestnut. Continues: \"you just show up there and there's going to be another street photographer there.\"",
+      "notes": "Stated as a shared habit of Sam and the Public Ledger collective photographers; best afternoon light. Strongest pin in the video."
+    },
+    {
+      "place": "Walnut St / Chestnut St, Rittenhouse Square east to Broad St",
+      "kind": "corridor",
+      "speaker": "Sam Rivera (guest)",
+      "basis": "haunt",
+      "confidence": "medium",
+      "timestamp": 78,
+      "quote": "take Walnut, Chestnut, make our way down to Broad Street, City Hall.",
+      "locationEvidence": "Introduced at 1:11 as \"typical route for me\"; \"make our way east from here\" (from Rittenhouse) along Walnut and Chestnut to Broad St. Roughly 18th St to Broad St.",
+      "notes": "Part of one stated typical route (Rittenhouse -> Walnut/Chestnut -> Broad/City Hall -> Market St east). Which of the two streets and which blocks are not specified. Unlocated frames made mid-walk (dog portrait 12:00, portrait 22:47) probably fall on this stretch but are never placed."
+    },
+    {
+      "place": "City Hall / Broad St",
+      "kind": "landmark",
+      "speaker": "Sam Rivera (guest)",
+      "basis": "haunt",
+      "confidence": "medium",
+      "timestamp": 78,
+      "quote": "take Walnut, Chestnut, make our way down to Broad Street, City Hall.",
+      "locationEvidence": "Named waypoint of his \"typical route\"; repeated mid-walk at 17:13: \"Circle back this way. Head to city hall and then head down market.\"",
+      "notes": "Waypoint on the habitual route; no frame explicitly tied to City Hall in the transcript."
+    },
+    {
+      "place": "Market St, east of City Hall",
+      "kind": "corridor",
+      "speaker": "Sam Rivera (guest)",
+      "basis": "haunt",
+      "confidence": "medium",
+      "timestamp": 87,
+      "quote": "we're going to keep heading east, head down Market Street.",
+      "locationEvidence": "Part of the \"typical route for me\"; east from City Hall down Market St. Repeated at 17:13 \"head down market\".",
+      "notes": "How far east is not stated (\"see where we end up from there\"). No frame explicitly tied to Market St."
+    },
+    {
+      "place": "Fountain where kids were playing (unnamed; possibly Dilworth Park at City Hall, or the Rittenhouse Square fountain)",
+      "kind": "pin-candidate",
+      "speaker": "Sam Rivera (guest)",
+      "basis": "shot-here",
+      "confidence": "low",
+      "timestamp": 1256,
+      "quote": "Like the kids that were just playing in the fountain.",
+      "locationEvidence": "None stated. Said about 3.5 minutes after \"Head to city hall and then head down market\" (17:13), so Dilworth Park's fountain is a plausible guess; the walk also began at Rittenhouse Square, which has a fountain.",
+      "notes": "Doubly uncertain: he refers to kids they just saw as great subject matter but never says he made a frame, and the fountain is not named. Needs the footage to confirm both."
+    },
+    {
+      "place": "The El (Market-Frankford Line)",
+      "kind": "corridor",
+      "speaker": "Sam Rivera (guest)",
+      "basis": "haunt",
+      "confidence": "low",
+      "timestamp": 1219,
+      "quote": "I take a lot of photos on the L cuz that's just such an integral part of my life.",
+      "locationEvidence": "\"the L\" = the El, Philadelphia's Market-Frankford elevated/subway line. No station or stretch named.",
+      "notes": "Clear habit, but a whole transit line, not a pinnable place; low confidence is about location, not about the habit. \"Like I said\" refers to an earlier remark not in the edit."
+    }
+  ],
+  "excluded": [
+    {
+      "what": "Chinatown",
+      "timestamp": 93,
+      "why": "\"Might take a lap around Chinatown\" - tentative plan, never shown or mentioned as carried out."
+    },
+    {
+      "what": "Downtown / Center City in general",
+      "timestamp": 1574,
+      "why": "\"I got a job at Sweet Green downtown ... before and after work. I would just, you know, do my rounds\" and 34:18 \"force myself to go out downtown\" - genuine habit but region-level; the specific places are covered by the route and 15th & Chestnut."
+    },
+    {
+      "what": "Corner by a church where he photographed a family waiting for a bus last year",
+      "timestamp": 1189,
+      "why": "Single past photo (\"I took last year actually at that corner uh, of the church\"), not shot in this video and not stated as a haunt; place unnamed. Listed under unresolved."
+    },
+    {
+      "what": "Philadelphia Museum of Art",
+      "timestamp": 277,
+      "why": "Biography: school trip to see a Dave Heath exhibition; no shooting."
+    },
+    {
+      "what": "True Hand tattoo studio, Fishtown",
+      "timestamp": 1651,
+      "why": "Venue of the Public Ledger group show; not a shooting location."
+    },
+    {
+      "what": "Gallery passed on the walk",
+      "timestamp": 1419,
+      "why": "\"this is a gallery right here ... I had some work in here for an exhibition\" - exhibition venue, relationship not shooting; unnamed."
+    },
+    {
+      "what": "Bar hosting his First Friday show",
+      "timestamp": 1758,
+      "why": "Exhibition venue, unnamed; not shooting."
+    },
+    {
+      "what": "Amsterdam transportation/bus center",
+      "timestamp": 1160,
+      "why": "Not Philadelphia."
+    },
+    {
+      "what": "New Jersey (bays, sunsets, woods trails)",
+      "timestamp": 141,
+      "why": "Biography, not Philadelphia."
+    }
+  ],
+  "unresolved": [
+    {
+      "what": "Dog portrait (\"can I take a picture of your dog?\") - frame clearly made, location never said; on the walk east from Rittenhouse, likely Walnut or Chestnut St",
+      "timestamp": 720
+    },
+    {
+      "what": "Freestyle rapper/street performer Sam says he sees \"out here every once in a while\" - a regular performer spot a local could place; no frame confirmed",
+      "timestamp": 463
+    },
+    {
+      "what": "\"that corner ... of the church\" with scaffolding and a bus stop, pointed at on camera shortly after \"Head to city hall\" - church not named (a local could identify from footage)",
+      "timestamp": 1189
+    },
+    {
+      "what": "Fountain with kids playing, referred to as just seen - Dilworth Park vs Rittenhouse Square fountain vs other",
+      "timestamp": 1256
+    },
+    {
+      "what": "Asked-for portrait (\"Yo, feel free to say no. Can I take a picture?\" ... \"That's sick\") - frame made, location unnamed; right beside the unnamed gallery where Sam exhibited last winter, which would pin it",
+      "timestamp": 1367
+    },
+    {
+      "what": "\"There's a guy on top of a truck over there\" - Sam goes to look, probably shoots; location unnamed, late in the walk (likely the Market St east leg)",
+      "timestamp": 2247
+    },
+    {
+      "what": "Second street performer (\"This guy's really good, too\") - location unnamed",
+      "timestamp": 2348
+    }
+  ]
+}

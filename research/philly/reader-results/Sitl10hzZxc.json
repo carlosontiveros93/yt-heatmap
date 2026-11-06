@@ -1,0 +1,36 @@
+{
+  "videoId": "Sitl10hzZxc",
+  "title": "Philly LOVE Stories: @southstreetsam",
+  "people": [
+    {"name": "Sami Aziz", "alias": "South Street Sam", "role": "photographer (subject, speaks almost the whole video)"},
+    {"name": "unnamed off-camera Visit Philadelphia interviewer", "role": "one prompt near 4:17-4:22"},
+    {"name": "unnamed passers-by / portrait subjects", "role": "brief street exchanges"}
+  ],
+  "isPhiladelphia": true,
+  "mentions": [
+    {
+      "place": "South Street",
+      "kind": "corridor",
+      "speaker": "Sam (Sami Aziz)",
+      "basis": "haunt",
+      "confidence": "high",
+      "timestamp": 18,
+      "quote": "street photographer and I take portraits every day on South Street",
+      "locationEvidence": "Street named explicitly by Sam as his own daily habit. Video description (Visit Philadelphia) also says 'viral portraits of residents and visitors on South Street' and that he has shot 'more than 100,000 photos since September 2023' there. No cross streets, block range or landmarks are said anywhere in the transcript or description, so it cannot be narrowed below the corridor.",
+      "notes": "BEST QUOTE across the two videos (present-tense, his own habit, names the street). Supporting lines, all Sam: 23s 'Street so I've basically kept a streak of taking portraits every day on South' (streak since September 23rd 2023); 89s 'together the Spider-Man kid was just a regular day of shooting on South Street'; 175s-180s 'human interaction I've had on the this one street'. Also likely shot-here: the video includes him working the street (69s 'what's up guys we look amazing', 87s 'can I take a portrait of you guys together') but the transcript never states where that footage was filmed; South Street is the obvious inference from the framing, not a stated fact, so the entry is logged as haunt rather than shot-here."
+    }
+  ],
+  "excluded": [
+    {"what": "West coast", "timestamp": 142, "why": "Biography (lived there), not Philadelphia."},
+    {"what": "Morocco", "timestamp": 144, "why": "Biography (lived there), not Philadelphia."},
+    {"what": "Philly as home city / grew up in", "timestamp": 58, "why": "City-level and biographical statements ('give back to my home City', 289s 'city that I that I grew up in'), no specific place."},
+    {"what": "DoorDash delivery driving", "timestamp": 215, "why": "Biography (previous job), no place named."},
+    {"what": "'South Street's home' answer", "timestamp": 264, "why": "Emotional statement about belonging, not a shooting statement; adds no location detail beyond the corridor entry."}
+  ],
+  "unresolved": [
+    "Which part of South Street: no cross streets, blocks or landmarks are said in the transcript or description.",
+    "Where the on-street portrait footage (69s, 87s) was filmed: almost certainly South Street but never stated in the transcript; would need the video frames to confirm and to read any storefronts or street signs.",
+    "41s 'violation write me for no stopping $76 oh no it's terrible': sounds like a parking-ticket exchange with a passer-by or portrait subject; speaker unclear, no place named.",
+    "259s 'South Street idots' is a caption garble of the interviewer's prompt, most likely 'South Street is dot dot dot' (finish the sentence); not a place."
+  ]
+}

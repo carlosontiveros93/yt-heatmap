@@ -1,0 +1,140 @@
+{
+  "videoId": "x-n7QurpA08",
+  "title": "A Few of the Best Photo Spots in Philadelphia",
+  "people": [
+    {
+      "name": "Liam Gordon (The Liam Gordon)",
+      "phillyBased": "implied, not stated outright in the transcript: friends 'visiting from Scotland' come to him, he plays local guide, and talks about 'Easter in America'"
+    }
+  ],
+  "isPhiladelphia": true,
+  "videoLevelNote": "Speaker frames the whole list as tourist sights where he shot posed photos of visiting friends, and explicitly says it is NOT a street photography list: at 13s, \"these aren't necessarily the best places to go for a photo shoot or for street photography\". No spot in this video is described in street-photography terms. No 'haunt' claims beyond 'my favorite places'.",
+  "mentions": [
+    {
+      "place": "Fairmount Water Works (below the Philadelphia Museum of Art, on the Schuylkill)",
+      "kind": "landmark",
+      "speaker": "Liam Gordon",
+      "mentionType": "recommendation",
+      "basis": "shot-here",
+      "genre": "cityscape",
+      "genreEvidence": "Tourist-sight backdrop for posed photos of friends; no people/street-life language. Video-level disclaimer at 13s that these are not street photography spots.",
+      "confidence": "high",
+      "timestamp": 74,
+      "quote": "a four spot was the Philly waterworks it's located right binning dart museum so if you're going there anyways it's worth going down to the waterworks for a loop",
+      "locationEvidence": "\"Philly waterworks\" + \"right binning dart museum\" (= right behind the art museum) is the Fairmount Water Works.",
+      "notes": "\"a four spot\" = \"our first spot\"; \"for a loop\" = \"for a look\". Lukewarm: he adds the light was terrible and he did not get good pictures."
+    },
+    {
+      "place": "Gazebo/pavilion on the hill path between the Water Works and the Art Museum",
+      "kind": "pin-candidate",
+      "speaker": "Liam Gordon",
+      "mentionType": "recommendation",
+      "basis": "shot-here",
+      "genre": "cityscape",
+      "genreEvidence": "Structure/architecture: \"little gazebo type thing which I think looks really cool\"; he took a black-and-white photo of/at it.",
+      "confidence": "low",
+      "timestamp": 96,
+      "quote": "there's this little gazebo type thing which I think looks really cool",
+      "locationEvidence": "\"followed up the hell on the way towards that museum\" (= followed up the hill) from the Water Works; one of the pavilions on the cliff path above the Water Works.",
+      "notes": "Weak as a recommendation (he says it looks cool, not 'go here') and which exact pavilion is not stated. Could be folded into the Water Works entry."
+    },
+    {
+      "place": "Philadelphia Museum of Art, Rocky Steps / top of the steps looking down the Parkway to City Hall",
+      "kind": "landmark",
+      "speaker": "Liam Gordon",
+      "mentionType": "recommendation",
+      "basis": "shot-here",
+      "genre": "cityscape",
+      "genreEvidence": "Architecture and skyline backdrop: columns framing posed subjects, then \"you're gonna see City Hall and the background\" (163s). Posed tourist portraits, not street.",
+      "confidence": "high",
+      "timestamp": 107,
+      "quote": "the art museum itself is a really cool place to go and shoot this is the spot where Sylvester Stallone runs up the steps in the first Rocky movie",
+      "locationEvidence": "Named directly: art museum, Rocky steps, City Hall in the background.",
+      "notes": "Two setups: at the museum facade/columns (about 119s) and at the top edge of the steps facing City Hall (about 153s)."
+    },
+    {
+      "place": "Elfreth's Alley, Old City",
+      "kind": "corridor",
+      "speaker": "Liam Gordon",
+      "mentionType": "recommendation",
+      "basis": "shot-here",
+      "genre": "cityscape",
+      "genreEvidence": "Architecture/icon: \"these super old houses\", \"really cool like Philadelphia icon type place\"; he calls it a tourist trap in summer. No street-life language.",
+      "confidence": "medium",
+      "timestamp": 187,
+      "quote": "then we headed down to old say for this old residential street there's still residential to this day it's like the oldest one in Philly or one of the oldest in the country",
+      "locationEvidence": "Street is never named. \"old say\" = Old City; an old, still-residential street billed as the oldest in Philly / one of the oldest in the country is Elfreth's Alley. Identification is inference, hence medium.",
+      "notes": "Shot-here support: \"got a couple fours\" (= photos) at 213s. Recommendation: \"it was definitely worth bringing them\" (221s)."
+    },
+    {
+      "place": "Unidentified Center City hotel: grand staircase with reflective marble wall, plus top-floor event rooms with large windows over the skyline",
+      "kind": "pin-candidate",
+      "speaker": "Liam Gordon",
+      "mentionType": "recommendation",
+      "basis": "shot-here",
+      "genre": "cityscape",
+      "genreEvidence": "Interior architecture and skyline view: \"a nice free view of the Philadelphia skyline\" (284s); window-framed silhouettes of his friends and wife.",
+      "confidence": "low",
+      "timestamp": 236,
+      "quote": "now the next spot is a hotel which I'm pretty certain there's not a tourist trap in the summer but I do know these really cool stairs in the bauxite",
+      "locationEvidence": "Hotel is never clearly named. Clues: \"right in the center of the city\", weddings held there, \"reflective marble wall\", \"massive stairs\", top floor with \"huge glass windows\", and \"after the hotel we headed down Broad Street\" (367s). \"in the bauxite\" may be a garble of \"in the Bellevue\" (The Bellevue, Broad and Walnut) or of \"in the back side\"; Loews Philadelphia (PSFS building, 12th and Market) also fits the marble and top-floor-windows clues.",
+      "notes": "Low confidence on location only; he clearly shot there and recommends it. Interior and access is by asking staff, so probably not a map pin regardless. See unresolved."
+    },
+    {
+      "place": "South Broad Street median, looking north at City Hall",
+      "kind": "pin-candidate",
+      "speaker": "Liam Gordon",
+      "mentionType": "recommendation",
+      "basis": "shot-here",
+      "genre": "cityscape",
+      "genreEvidence": "Classic architecture/vista shot: \"this shot in the middle of the street looking down at City Hall\"; described as a tourist and wedding photo spot.",
+      "confidence": "medium",
+      "timestamp": 380,
+      "quote": "I wanted to come down here and get this shot in the middle of the street looking down at City Hall",
+      "locationEvidence": "\"after the hotel we headed down Broad Street we walked down the street a bit and in the middle\" (367s). Which block is not stated; South Broad is inferred from the standard City Hall median shot and from heading 'down' Broad.",
+      "notes": "Recommendation is soft: \"another really popular tourist spot basically everybody that comes to Philly will commentate this fall\" (= will come and take this photo). Exact cross street unknown."
+    },
+    {
+      "place": "LOVE statue, LOVE Park (JFK Plaza)",
+      "kind": "park",
+      "speaker": "Liam Gordon",
+      "mentionType": "recommendation",
+      "basis": "shot-here",
+      "genre": "cityscape",
+      "genreEvidence": "Landmark/tourist backdrop: \"still cool to come and shoot with a love statue\"; no street-life language.",
+      "confidence": "medium",
+      "timestamp": 413,
+      "quote": "it's still cool to come and shoot with a love statue",
+      "locationEvidence": "Named directly: \"the last place we went to his love statue\" (389s), in the park whose fountain was removed in the redesign.",
+      "notes": "Shot-here is inferred from 'the last place we went to' during the filmed outing; he does not describe a specific photo taken there. He is mildly negative about the redesigned park."
+    }
+  ],
+  "excluded": [
+    {
+      "what": "Scotland / UK snacks and tea",
+      "timestamp": 35,
+      "why": "Biography and chit-chat, not a place."
+    },
+    {
+      "what": "City Hall itself",
+      "timestamp": 163,
+      "why": "Only appears as the background subject seen from the Art Museum steps and from Broad Street; he does not send viewers to City Hall as a place to shoot."
+    },
+    {
+      "what": "Old LOVE Park fountain ('waterfall') shots",
+      "timestamp": 392,
+      "why": "Description of how the park used to be; the fountain he describes is gone."
+    },
+    {
+      "what": "\"we went to loads of other places that I didn't film\" (description)",
+      "timestamp": null,
+      "why": "Unnamed places, nothing to map."
+    }
+  ],
+  "unresolved": [
+    "Which hotel (236s to 359s)? Never clearly named. \"in the bauxite\" might be \"in the Bellevue\" (Broad and Walnut) or just \"in the back side\"; Loews Philadelphia (PSFS building) also fits 'reflective marble', big stairs and top-floor wedding rooms with huge windows. The video footage or its location tag would settle it.",
+    "\"from our PI max\" at 288s: unclear garble, possibly naming the vantage point or the hotel; could not resolve.",
+    "Which block of Broad Street for the median shot (367s to 385s): not stated.",
+    "Which gazebo/pavilion between the Water Works and the Art Museum (96s): not stated."
+  ]
+}

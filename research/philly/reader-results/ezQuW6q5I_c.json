@@ -1,0 +1,86 @@
+{
+ "videoId": "ezQuW6q5I_c",
+ "title": "Why Philadelphia for Street Photography?",
+ "people": ["Dante Sisofo"],
+ "isPhiladelphia": true,
+ "mentions": [
+  {
+   "place": "Market Street, Center City East (Market East, around 11th-12th)",
+   "kind": "corridor",
+   "speaker": "Dante Sisofo",
+   "basis": "haunt",
+   "confidence": "high",
+   "timestamp": 8,
+   "quote": "walking here on Market Street my favorite Street to practice street photography in Philadelphia",
+   "locationEvidence": "Street named outright. The stretch he is on is fixed by what he points at: the Hard Rock Cafe (0:51), 'a brewery across the street', 'big LED advertisements that are a reminiscent of Times Square' (1:04-1:10), 'this is the Pennsylvania Convention Center' (1:13), 'the reading terminals on the other side and you can actually walk through here to get there' (1:21-1:24), 'we got Chinatown over here' (5:28). That is Market Street east of City Hall around 11th-12th Streets.",
+   "notes": "Explicit personal favorite, stated as his own practice. He does not say how much of Market Street he means; the landmarks only cover the 11th-12th block, so the corridor should be drawn short (roughly 10th-13th) unless another source extends it. No frame is made in this video: he is walking and talking to a GoPro, so there is no shot-here row."
+  },
+  {
+   "place": "12th & Market (intersection by the Hard Rock Cafe / Reading Terminal headhouse)",
+   "kind": "pin-candidate",
+   "speaker": "Dante Sisofo",
+   "basis": "haunt",
+   "confidence": "medium",
+   "timestamp": 46,
+   "quote": "right so like here at uh Market Street we have a really great intersection Big crosswalks Lots of people the Hard Rock Cafe",
+   "locationEvidence": "Cross street is never spoken. Inferred from landmarks: the Hard Rock Cafe sits at the corner of 12th & Market in the Reading Terminal headhouse; the Convention Center entrance and the walk-through to Reading Terminal Market are in that same building; the brewery and LED billboards across the street match the East Market development on the south side between 11th and 12th.",
+   "notes": "Same person and same favorite street as the corridor row, so count once: this row is the small-and-accurate version of it. Medium because (a) the cross street is my inference from landmarks, not his words, and (b) he praises the intersection as a 'pocket' with lots of people rather than saying 'I shoot this corner'. A reviewer should confirm the corner from footage 0:46-1:27."
+  }
+ ],
+ "excluded": [
+  {
+   "what": "Pennsylvania Convention Center",
+   "timestamp": 73,
+   "why": "Pointed out as a reason crowds exist on Market Street; a landmark used to locate the spot, not a place he says he shoots."
+  },
+  {
+   "what": "Reading Terminal Market ('the reading terminals', 'the writing terminal')",
+   "timestamp": 81,
+   "why": "Mentioned as being on the other side of the building and later as a food option (2:39); no shooting, no habit stated."
+  },
+  {
+   "what": "Old City / cobblestone streets",
+   "timestamp": 126,
+   "why": "Tourism recommendation ('enjoy the um Old City enjoy the historic uh Cobblestone roads'), not his own shooting."
+  },
+  {
+   "what": "Philadelphia Museum of Art / Rocky Steps / riversides / museums",
+   "timestamp": 133,
+   "why": "City-attraction list for visitors; no shooting or habit stated."
+  },
+  {
+   "what": "South Philadelphia open-air market ('open Arab Market' = open air market, almost certainly the 9th Street Italian Market)",
+   "timestamp": 161,
+   "why": "He explicitly says it is not a haunt: 'I don't really go down there that much I gotta get my hair cut down there but uh that's about it' (2:50-2:55)."
+  },
+  {
+   "what": "Ray Metzker ('Ray Metzger')",
+   "timestamp": 202,
+   "why": "Another photographer's work in Philadelphia; not a place and not his own shooting."
+  },
+  {
+   "what": "Chinatown ('we got Chinatown over here')",
+   "timestamp": 328,
+   "why": "Pointed at in passing as the video is cut off; no shooting or habit stated."
+  },
+  {
+   "what": "Philadelphia city-level praise (people, history, 'birthplace of America', 'streets like this and certain times of day')",
+   "timestamp": 95,
+   "why": "City-level statements, not mappable."
+  }
+ ],
+ "unresolved": [
+  {
+   "what": "Exact corner and side of the street he is standing on while describing the 'really great intersection' (Hard Rock Cafe, brewery across the street, LED billboards). Believed to be 12th & Market; confirm from footage.",
+   "timestamp": 46
+  },
+  {
+   "what": "Where on Market Street the conversation with the passer-by about the GoPro happens (3:28-4:45). He says 'people are friendly here you saw it'. No location spoken; presumably the same block.",
+   "timestamp": 208
+  },
+  {
+   "what": "Sign-off caption 'We the People David' (5:39): unclear, possibly a sign or mural he is reading, or a garble. Not a usable place.",
+   "timestamp": 339
+  }
+ ]
+}

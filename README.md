@@ -42,7 +42,9 @@ pins — those are relationships, not spots.
   sidebar's area filter, null for citywide), `SOURCES` (one per video), and
   `MENTIONS` (one per time a speaker names a spot: spotId, sourceId, speaker,
   type = visitor | favorite | walkie-talkie, basis for walkie-talkie rows, quote,
-  timestamp). Mention counts are derived, not stored.
+  timestamp). Mention counts are derived, not stored. Philadelphia also uses videos from
+  other channels (each approved by hand); those rows keep type `walkie-talkie` and the
+  popup names the source's channel instead of "Walkie Talkie".
 - `cities/<id>/boundaries.js` — shapes keyed by spot id. Polygons render as filled areas and
   LineStrings as thick corridor lines (color = mention count); anything without a
   shape falls back to a dot. Sources: NYC Open Data NTA 2020 and Parks Properties

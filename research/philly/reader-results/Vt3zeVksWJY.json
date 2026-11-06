@@ -1,0 +1,132 @@
+{
+  "videoId": "Vt3zeVksWJY",
+  "title": "Street Photo Walk with Lou, Joe, De'Von the Wolf,  Mr. Tan, Mei in center city Philadelphia, 7-16-22",
+  "people": [
+    "Alex Wong",
+    "Lou Wilson (captioned 'blue'/'lou')",
+    "Joe Routon",
+    "Wolf De'Von Davis (captioned 'wolf')",
+    "Hong Mei (captioned 'mae'/'may')",
+    "Professor Tan (captioned 'tan'/'mr tanner')"
+  ],
+  "isPhiladelphia": true,
+  "mentions": [
+    {
+      "place": "Chinatown (Philadelphia)",
+      "kind": "neighborhood",
+      "speaker": "Alex Wong",
+      "basis": "shot-here",
+      "confidence": "high",
+      "timestamp": 2286,
+      "quote": "you want to shoot some more in chinatown",
+      "locationEvidence": "SPOKEN. 3:14 'we all been waiting we're in chinatown for a while' (walk starts there; Alex shoots 'let me grab a picture of you wolf' at 2:55 and a stranger portrait at 4:09). 29:46 'so are we walking back to chinatown'. 32:17 'we're gonna walk back towards chinatown'. 38:06 'shoot some more in chinatown' implies they already shot there. Description only says 'center city Philadelphia'.",
+      "notes": "Attributed to Alex Wong (camera wearer); the whole group (Lou, Joe, Wolf, Mei, Tan) was present but the captions do not show any one of them individually shooting in Chinatown. No street or intersection is named."
+    },
+    {
+      "place": "Chinatown (Philadelphia)",
+      "kind": "neighborhood",
+      "speaker": "Alex Wong",
+      "basis": "haunt",
+      "confidence": "low",
+      "timestamp": 2295,
+      "quote": "changha is always fun",
+      "locationEvidence": "SPOKEN, garbled: 'changha is always fun / i love chanha' (38:15-38:18) = 'Chinatown is always fun, I love Chinatown'. Also 20:46 'it's a good spot it is kidding me i love chinatown'.",
+      "notes": "Affection plus 'always' suggests a regular spot, but he never literally says he shoots there regularly, and the speaker of each line is not certain (Alex most likely at 38:15). Same person+place as the shot-here entry above, so it adds no new count."
+    },
+    {
+      "place": "City Hall courtyard (center compass/marker spot)",
+      "kind": "pin-candidate",
+      "speaker": "Alex Wong",
+      "basis": "shot-here",
+      "confidence": "high",
+      "timestamp": 1667,
+      "quote": "this actually used to be the center of",
+      "locationEvidence": "SPOKEN. 27:47-28:11: 'this actually used to be the center of city hall it took the emblem away ... if you're standing right here you're actually standing in the center of the whole city'. Shooting there: 29:17-29:25 'oh here's the action coming in ... waiting for the spot to clear up yeah i'm gonna stand here', then 31:28 'got it thank you'. Also chats with Ukrainian visitors at 28:40.",
+      "notes": "The person explaining the center marker may be Lou or Joe rather than Alex (speaker not identifiable from captions). Shooting attributed to Alex with the group present; Wolf leaves for his bike right after (29:51)."
+    },
+    {
+      "place": "Dilworth Park (roller rink and fountain, west side of City Hall)",
+      "kind": "park",
+      "speaker": "Alex Wong",
+      "basis": "shot-here",
+      "confidence": "medium",
+      "timestamp": 733,
+      "quote": "very nice over there i took a great",
+      "locationEvidence": "SPOKEN but place name is INFERRED. 12:13 'very nice over there i took a great picture a few days ago everybody changing their skates' + 'no you can go in there' + 12:32 'we'll try to get a shot'; 13:42-13:55 chat about skating ('gotta be like 40 years ago'); 27:11 'i thought they were still out there by their own fountain' (= by the fountain) just before entering the City Hall courtyard. Dilworth Park had a summer roller rink and has the fountain next to City Hall. 'Dilworth' is never said.",
+      "notes": "Group lingers here ('here is where there are more people', 18:48). The 'i took a great picture a few days ago' speaker is unidentified (Alex or one of the group) - that also hints at a repeat spot for whoever said it. Confirm the rink in footage."
+    },
+    {
+      "place": "Near PA Convention Center / Marriott (about 12th & Market-Filbert), on the walk from City Hall back to Chinatown",
+      "kind": "pin-candidate",
+      "speaker": "Alex Wong",
+      "basis": "shot-here",
+      "confidence": "low",
+      "timestamp": 2048,
+      "quote": "this is the convention center marriott",
+      "locationEvidence": "SPOKEN by a recorded transit/bus stop announcement, not a person: 'this is the convention center marriott stuff [stop] ...' (34:08-34:14). Followed by 34:53 'thank you for the picture' and 35:26 'i tried to take a picture'.",
+      "notes": "Weak: the announcement only shows they passed that stop; the portrait at 34:53 is nearby in time, not provably at that spot."
+    }
+  ],
+  "excluded": [
+    {
+      "what": "Rittenhouse Square (captioned 'greenhouse square or chinatown')",
+      "timestamp": 1033,
+      "why": "Offered as an option for where to walk next; never carried out in this video (they stay, then go to City Hall and back to Chinatown)."
+    },
+    {
+      "what": "'a view of the towers looking up' about a block and a half away",
+      "timestamp": 1039,
+      "why": "Suggestion by a group member; no evidence they went or shot it. Also unnamed (see unresolved)."
+    },
+    {
+      "what": "Center City (title/description)",
+      "timestamp": null,
+      "why": "Too large; finer places are available (Chinatown, Dilworth Park, City Hall courtyard)."
+    },
+    {
+      "what": "Individual attributions to Lou, Joe, Wolf, Mei, Tan",
+      "timestamp": null,
+      "why": "Captions never show any of them clearly stating or demonstrating that THEY shot at a named place. Wolf talks film rolls/cameras (6:46-7:25) and expired film (27:22-27:42) but names no place. All places attributed to Alex with the group noted."
+    },
+    {
+      "what": "Rochester / Ukraine",
+      "timestamp": 1720,
+      "why": "Where visiting subjects are from."
+    },
+    {
+      "what": "Acquaintance (Andrew/Angel) met between City Hall and Chinatown: 'i actually was there like half an hour ago', 'you walk towards the city hall'",
+      "timestamp": 1922,
+      "why": "Passer-by photographer's movements, not one of the named group; no place he shot is stated."
+    }
+  ],
+  "unresolved": [
+    {
+      "timestamp": 48,
+      "what": "'i will go through the backyard / i will come back come out the rich man' - garbled route talk at the start; could be a street or alley name in Chinatown (Race? Ridge?). Not identifiable."
+    },
+    {
+      "timestamp": 175,
+      "what": "Exact Chinatown meeting/starting corner (0:00-4:15), where Alex shoots Wolf and a stranger - no street named."
+    },
+    {
+      "timestamp": 1039,
+      "what": "'if you're up there about a block and a half we get a view of the uh towers looking up' - which towers (Comcast towers? Liberty Place?) and from where."
+    },
+    {
+      "timestamp": 1240,
+      "what": "'people are always down here busy ... so it's a good spot' (20:40) - which spot 'down here' is; said just before 'i love chinatown', but the group appears to be near City Hall/Dilworth at this point."
+    },
+    {
+      "timestamp": 1970,
+      "what": "'i have to get a picture of this / that is so beautiful' (32:50-33:02), portrait of people 'on the way to a party' - somewhere between City Hall and the Convention Center."
+    },
+    {
+      "timestamp": 2181,
+      "what": "'what is this statue all about ... it's a little bit like agony or chaos' (36:21-36:43) - an unnamed sculpture near the end of the walk; a local could identify it from footage (a tangled-figures sculpture; possibly Lipchitz's 'Government of the People' at the Municipal Services Building, but the timing after the Convention Center stop makes that uncertain)."
+    },
+    {
+      "timestamp": 2235,
+      "what": "'it's hard to sing like that' (37:15) - a street performer location, unnamed."
+    }
+  ]
+}

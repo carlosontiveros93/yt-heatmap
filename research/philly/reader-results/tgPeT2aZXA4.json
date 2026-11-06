@@ -1,0 +1,61 @@
+{
+ "videoId": "tgPeT2aZXA4",
+ "title": "Ricoh GR IV Monochrome Street Photography at Philadelphia's Southeast Asian Market",
+ "people": ["Dante Sisofo"],
+ "isPhiladelphia": true,
+ "mentions": [
+  {
+   "place": "Southeast Asian Market, FDR Park (South Philadelphia)",
+   "kind": "pin-candidate",
+   "speaker": "Dante Sisofo",
+   "basis": "shot-here",
+   "confidence": "high",
+   "timestamp": 3,
+   "quote": "currently at the Southeast Asian Market here in FDR Park in Philadelphia photographing with the Ricoh GR III Monochrom today.",
+   "locationEvidence": "Named outright: 'the Southeast Asian Market here in FDR Park in Philadelphia' (0:03-0:07), 'this little journey here through the park' (0:12-0:13), 'let's hit the market' (0:15). FDR Park is at Broad Street & Pattison Avenue. The market's footprint inside the park is not described in the transcript and has moved between seasons, so the pin should be placed from the footage or the market's current published location.",
+   "notes": "Frames confirmed in the market: 'Little gesture. Look for the gestures. I don't know. Every time I see hands, I photograph them.' (1:11-1:15), and 'Lots of photography being done today.' (1:26). One visit only; nothing says he comes regularly, so no haunt row. The market is seasonal (weekends, roughly spring to fall). Title says GR IV, the captions say 'GR III'; camera detail only."
+  },
+  {
+   "place": "FDR Park lakeside (bench with a view of the lake)",
+   "kind": "park",
+   "speaker": "Dante Sisofo",
+   "basis": "shot-here",
+   "confidence": "medium",
+   "timestamp": 131,
+   "quote": "Yes, so as we're just sitting here by this uh beautiful bench in this view of the lake, a little butterfly landed on our hands and I've been photographing with the crop mode at 50 mm",
+   "locationEvidence": "Still inside FDR Park per the intro ('this little journey here through the park'). 'this view of the lake' is one of FDR Park's lakes (Meadow Lake or Edgewood Lake); which one, and which bench, is not said.",
+   "notes": "Photos were definitely made here, but they are macro pictures of a butterfly, not street photography; the reviewer may prefer to fold this into the FDR Park / market row rather than map it separately. Medium because the exact spot in a large park is unknown. Later frames of the sky and clouds with a red filter (4:41-5:02) and long-zoom Handycam video of people (3:20-4:29) are also somewhere in the park, location not stated."
+  }
+ ],
+ "excluded": [
+  {
+   "what": "Hanoi, Vietnam (street food around the lake)",
+   "timestamp": 35,
+   "why": "Travel anecdote about eating beef sticks; not Philadelphia and not shooting."
+  },
+  {
+   "what": "Food stall where he buys beef sticks",
+   "timestamp": 23,
+   "why": "A purchase inside the market, not a separate place; folded into the Southeast Asian Market row."
+  },
+  {
+   "what": "Handycam video of people (800x / 20x zoom)",
+   "timestamp": 200,
+   "why": "Video experimentation rather than photographs, and no location stated beyond being in the park."
+  }
+ ],
+ "unresolved": [
+  {
+   "what": "Which part of FDR Park the market occupied on the day of filming (the transcript gives no landmarks). Identify from footage 0:01-1:30.",
+   "timestamp": 3
+  },
+  {
+   "what": "Which FDR Park lake and bench he is sitting at for the butterfly pictures.",
+   "timestamp": 131
+  },
+  {
+   "what": "Where in the park the Handycam people-watching segment and the sky photographs were made (3:20-5:15).",
+   "timestamp": 200
+  }
+ ]
+}

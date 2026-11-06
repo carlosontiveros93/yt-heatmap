@@ -1,0 +1,70 @@
+{
+  "videoId": "f_tcJGpeLl4",
+  "title": "How I Take Pictures of Total Strangers on the Street, Philadelphia Center City & Chinatown, 2022",
+  "people": ["Alex Wong"],
+  "isPhiladelphia": true,
+  "mentions": [
+    {
+      "place": "Chinatown (Philadelphia)",
+      "kind": "neighborhood",
+      "speaker": "Alex Wong",
+      "basis": "shot-here",
+      "confidence": "medium",
+      "timestamp": 114,
+      "quote": "get this gate in the background so we'll",
+      "locationEvidence": "TITLE ONLY: 'Philadelphia Center City & Chinatown, 2022'. No place name is spoken anywhere in the transcript and the description has no chapters or locations. The quote is the only spoken location hint (a 'gate' used as a portrait background).",
+      "notes": "Whole video is Alex asking strangers for portraits, so shooting is certain; the WHERE rests on the title. Cannot tell which segments are Chinatown vs. the rest of Center City."
+    },
+    {
+      "place": "Chinatown Friendship Gate (10th & Arch St)",
+      "kind": "pin-candidate",
+      "speaker": "Alex Wong",
+      "basis": "shot-here",
+      "confidence": "low",
+      "timestamp": 114,
+      "quote": "get this gate in the background so we'll",
+      "locationEvidence": "Spoken: Alex poses a couple with 'this gate' behind them (1:51-1:59). Title says Chinatown. The Friendship Gate is the obvious gate in Chinatown, but the transcript never says which gate; it could be an iron gate or doorway anywhere.",
+      "notes": "Inference only. Needs a look at the footage around 1:46-2:12 to confirm before pinning."
+    }
+  ],
+  "excluded": [
+    {
+      "what": "Center City (title)",
+      "timestamp": null,
+      "why": "Title-only and too large a region. Flagged: apart from Chinatown, nothing finer is available for this video, so the non-Chinatown portion can only be placed at 'Center City'."
+    },
+    {
+      "what": "Richmond, Virginia",
+      "timestamp": 256,
+      "why": "Hometown of a stranger with a Kodak Signet 35; not a shooting place."
+    },
+    {
+      "what": "New York (captioned 'this is actually New York mirrorless')",
+      "timestamp": 249,
+      "why": "Caption garble in camera talk (probably a camera description), not a place."
+    },
+    {
+      "what": "Syria",
+      "timestamp": 516,
+      "why": "Subject's country of origin."
+    }
+  ],
+  "unresolved": [
+    {
+      "timestamp": 114,
+      "what": "'this gate' used as a portrait background (1:46-2:12). Friendship Gate at 10th & Arch? Check footage."
+    },
+    {
+      "timestamp": 468,
+      "what": "'looking so cool thank you officers' - portrait of police officers; location unnamed."
+    },
+    {
+      "timestamp": 516,
+      "what": "Portrait of a Syrian business owner/vendor ('good luck to your business') - a storefront or stand a local could identify from footage."
+    },
+    {
+      "timestamp": 194,
+      "what": "Conversation with film shooter from Richmond VA (3:14-4:47) - location unnamed."
+    }
+  ]
+}

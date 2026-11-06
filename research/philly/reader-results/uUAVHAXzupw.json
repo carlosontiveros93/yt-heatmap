@@ -1,0 +1,112 @@
+{
+  "videoId": "uUAVHAXzupw",
+  "title": "He Documents Philly, With His Baby on His Chest!",
+  "people": [
+    {
+      "name": "Jay Espinal",
+      "role": "host (Creative Talks)",
+      "phillyBased": "not stated in transcript; asks about the street photography community 'here in Philly' and Spencer says 'We're both in a gallery right now'",
+      "shootsInVideo": "no evidence in captions that the host made frames"
+    },
+    {
+      "name": "Spencer (@EyeChutePhilly, ishootfilly.com as captioned)",
+      "role": "guest",
+      "phillyBased": "yes, as stated: walked home in West Philly earlier, then 'I'd moved to South Philly'; 'my third year of doing street photos in Philly'; grew up mostly in North Carolina",
+      "shootsInVideo": "yes, makes frames during the walk with daughter Lyndon (captioned spelling) on his chest"
+    }
+  ],
+  "isPhiladelphia": true,
+  "mentions": [
+    {
+      "place": "Snyder Avenue, South Philadelphia (bikers riding along the avenue)",
+      "kind": "corridor",
+      "speaker": "Spencer (guest)",
+      "basis": "haunt",
+      "confidence": "medium",
+      "timestamp": 271,
+      "quote": "I was uh big into like photographing the bikers that were just kind of going along Snider Avenue.",
+      "locationEvidence": "Named street ('Snider Avenue' = Snyder Avenue) right after 'I'd moved to South Philly at this point' (4:28). No cross street given, so only the corridor is supported, not a block.",
+      "notes": "Stated as his own habit but in the past tense ('was big into'), so it may not be a current haunt. He also describes one specific frame from that period (4:46-4:52: 'this guy was trying to pop a wheelie. He ended up crashing and I kind of caught the moment right before he fell down'), which by context is on Snyder but is not explicitly re-located. Not shot in this video."
+    },
+    {
+      "place": "Clothespin sculpture, Centre Square plaza, 15th & Market St (across from City Hall)",
+      "kind": "pin-candidate",
+      "speaker": "Spencer (guest)",
+      "basis": "haunt",
+      "confidence": "low",
+      "timestamp": 276,
+      "quote": "It's a big clothes pin. She loves this clothes pin. It's a Yeah. iconic Philadelphia landmark that we pass by every time we go out for a walk.",
+      "locationEvidence": "Only one 'big clothes pin' that is an 'iconic Philadelphia landmark': Oldenburg's Clothespin at 15th & Market. 'this clothes pin' means they are standing next to it during today's walk.",
+      "notes": "Strict reading: he says they PASS BY it on every walk, not that he shoots it, and no frame is described here. It is included because it is the only named anchor for where today's walk (and his routine walk) runs: Center City around 15th & Market / City Hall. Treat as route evidence, not a confirmed shooting spot. The opening '>> Closer.' on this line is probably the child or Spencer talking to her; attribution of that one word is uncertain."
+    }
+  ],
+  "excluded": [
+    {
+      "what": "West Philly ('one day I was walking home in West Philly')",
+      "timestamp": 228,
+      "why": "Biography plus a huge region; one early photo (legs with inline skates) with no street named."
+    },
+    {
+      "what": "South Philly ('I'd moved to South Philly at this point')",
+      "timestamp": 268,
+      "why": "Biography / region. The specific place inside it (Snyder Avenue) is counted instead."
+    },
+    {
+      "what": "North Carolina suburbs",
+      "timestamp": 192,
+      "why": "Biography, not Philadelphia."
+    },
+    {
+      "what": "Chinatown ('was around you that one day in uh in Chinatown')",
+      "timestamp": 468,
+      "why": "Spencer recalling being near the host once; no statement that either of them shot there or shoots there regularly. Neighborhood-level only."
+    },
+    {
+      "what": "Festivals ('the festival that I've been to the last two years')",
+      "timestamp": 514,
+      "why": "Unnamed event, and he says he is now less interested in going."
+    },
+    {
+      "what": "Gallery show ('We're both in a gallery right now ... up until November 14th') and 'I got a photo at Unique right now'",
+      "timestamp": 791,
+      "why": "Exhibition venues / shop (likely Unique Photo), not shooting locations."
+    },
+    {
+      "what": "'the public ledger' ('a lot of those dudes')",
+      "timestamp": 813,
+      "why": "Refers to a group of photographers he met, not a place he shoots. Could be a collective name; not the Public Ledger Building as a location."
+    },
+    {
+      "what": "Subway ride ('the travel on the subway ends up being like hour and a half out out and back')",
+      "timestamp": 344,
+      "why": "Transit, not a shooting location. Useful context only: he commutes in to shoot for about 45 minutes."
+    }
+  ],
+  "unresolved": [
+    {
+      "timestamp": 73,
+      "quote": "Yeah, babe. I'm loving this this cop right here. I'm going to start right here.",
+      "note": "Spencer starts shooting at the walk's starting point; place never named. Footage should show it (likely Center City near City Hall given the Clothespin at 4:36)."
+    },
+    {
+      "timestamp": 417,
+      "quote": "Oh, it's mama's work clothes.",
+      "note": "They pass a storefront displaying medical scrubs that they pass 'every time'. A local could identify the scrubs/uniform shop from the footage; gives a second route anchor. No shooting stated."
+    },
+    {
+      "timestamp": 476,
+      "quote": "let me get this guy actually hold up",
+      "note": "Spencer makes a frame of a man (hand and cigarette), then at 8:02 'I love hands and cigarettes. That's a perfect photo.' and 8:10 'That's two.' Definitely shot today, location unnamed. Speaker of the 8:02 line is probably Spencer but could be the host reacting."
+    },
+    {
+      "timestamp": 702,
+      "quote": "This has been a spot that I've liked. I don't know. I guess with the slow shutter stuff, it's nice if you have a plain background.",
+      "note": "Strongest unnamed lead: Spencer names a personal favorite spot (a plain wall/background he uses for slow-shutter shots) while standing at it. Would be a haunt pin if the footage at ~11:42 can be located."
+    },
+    {
+      "timestamp": 766,
+      "quote": "Oh, they're making a Tik Tok.",
+      "note": "Street scene observed near the end; location unnamed."
+    }
+  ]
+}

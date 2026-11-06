@@ -1,0 +1,132 @@
+{
+ "videoId": "YoRaLIcCJCI",
+ "title": "Philly in Flux: Walking Every Street in Philadelphia with the Ricoh GR",
+ "people": [
+  "Dante Sisofo"
+ ],
+ "isPhiladelphia": true,
+ "mentions": [
+  {
+   "place": "Passyunk Avenue (extent not stated)",
+   "kind": "corridor",
+   "speaker": "Dante Sisofo",
+   "basis": "shot-here",
+   "confidence": "medium",
+   "timestamp": 30,
+   "quote": "most recently, I was walking Passyunk Avenue here. I just covered yesterday.",
+   "locationEvidence": "No cross streets spoken. Says 118 photographs, ~9 km, 2.5 hours (0:41-0:45); 'walking around like all these freaking junkyards' / 'abandoned kind of like junkyard area' (1:03-1:13), which suggests the walk included the industrial West Passyunk end, but that is inference. Second mention at 9:18-9:20: 'yesterday I actually walked with my mother in Peschan Gav' (garble of Passyunk Ave).",
+   "notes": "Recap video filmed at a desk: photos were made the day before, not on camera. Extent of walk NOT stated; a separate video PASSYUNK_AVE_IN_FLUX_06_06_2026 (wSBKZkSnqwI, no captions) and the project page flux.dantesisofo.com/geotag-catalog/passyunk-ave-in-flux/ would give the real line."
+  },
+  {
+   "place": "Frankford Avenue (extent not stated)",
+   "kind": "corridor",
+   "speaker": "Dante Sisofo",
+   "basis": "shot-here",
+   "confidence": "medium",
+   "timestamp": 197,
+   "quote": "You can see here Frankford Avenue I walked recently. You can go through the work.",
+   "locationEvidence": "No cross streets, direction or length spoken.",
+   "notes": "Retrospective; shows the project's photos on screen. Extent NOT stated."
+  },
+  {
+   "place": "Washington Avenue (extent not stated)",
+   "kind": "corridor",
+   "speaker": "Dante Sisofo",
+   "basis": "shot-here",
+   "confidence": "medium",
+   "timestamp": 272,
+   "quote": "For instance, walking along Washington Avenue here is full of warehouses, random junk cars.",
+   "locationEvidence": "Only description: warehouses, junk cars, 'abandoned streets where there isn't much going on' (4:34-4:49). No cross streets.",
+   "notes": "Retrospective, showing frames from that walk. Extent NOT stated."
+  },
+  {
+   "place": "Market Street (extent not stated)",
+   "kind": "corridor",
+   "speaker": "Dante Sisofo",
+   "basis": "shot-here",
+   "confidence": "medium",
+   "timestamp": 413,
+   "quote": "And so, here we have some photographs that I made on Market Street.",
+   "locationEvidence": "No cross streets. One frame described: man lighting a blunt with a gun-shaped lighter (7:03-7:08).",
+   "notes": "Retrospective. Same walk is dated in 9jzs0Lt4qi4 ('I did Market Street yesterday' = 2026-06-01). Extent NOT stated."
+  },
+  {
+   "place": "Ridge Avenue, incl. the Roxborough stretch (full extent not stated)",
+   "kind": "corridor",
+   "speaker": "Dante Sisofo",
+   "basis": "shot-here",
+   "confidence": "medium",
+   "timestamp": 513,
+   "quote": "I walked all the way down Ridge Avenue and as I was walking down Ridge Avenue, I actually stumbled across the owner of the oldest home on Ridge Avenue.",
+   "locationEvidence": "'all the way down Ridge Avenue' - no start/end cross streets. Roxborough named at 9:05 ('oldest living artifact that's within Roxborough') and 9:12 ('I was walking around the area that I grew up in here in these photographs').",
+   "notes": "Retrospective. Direction 'down' (toward the city) implied only. Roxborough is the one section actually tied to named frames."
+  },
+  {
+   "place": "Oldest home on Ridge Avenue, Roxborough (interior photographed)",
+   "kind": "pin-candidate",
+   "speaker": "Dante Sisofo",
+   "basis": "shot-here",
+   "confidence": "medium",
+   "timestamp": 527,
+   "quote": "You know, here I'm inside the home making a photograph of the oldest home on the street",
+   "locationEvidence": "On Ridge Avenue in Roxborough; house not named or numbered.",
+   "notes": "Frame clearly made (interior, family photos, details). Exact house needs a local / the Ridge Ave project page."
+  },
+  {
+   "place": "Germantown Avenue (Germantown down toward North Philly and the avenue's end)",
+   "kind": "corridor",
+   "speaker": "Dante Sisofo",
+   "basis": "shot-here",
+   "confidence": "high",
+   "timestamp": 614,
+   "quote": "Here we have photographs I made in Germantown, which is an incredibly historic area here in Germantown Avenue with these beautiful German buildings.",
+   "locationEvidence": "'as you move down Germantown Avenue into the city' (10:27); 'here along Germantown Avenue down towards uh North Philly' (11:12); 'towards the end of Germantown Avenue, the new architecture' (11:53). No cross streets in this video; 9jzs0Lt4qi4 gives Chestnut Hill -> 2nd Street. 206 pictures (11:39).",
+   "notes": "Same walk as 9jzs0Lt4qi4 (2026-06-02); count once."
+  },
+  {
+   "place": "Center City (broad district)",
+   "kind": "neighborhood",
+   "speaker": "Dante Sisofo",
+   "basis": "haunt",
+   "confidence": "low",
+   "timestamp": 574,
+   "quote": "who, you know, typically operates within Center City to now expand and survey the land",
+   "locationEvidence": "No street or block given.",
+   "notes": "Stated as his own usual working area, but it is a large district with no specific spot; caller may prefer to drop as too broad."
+  }
+ ],
+ "excluded": [
+  {
+   "what": "LIST: streets covered so far on his map ('seven different projects', 1,000+ photos, 51 miles, 27 hours, June). Named in this video: Passyunk Avenue, Frankford Avenue, Washington Avenue, Market Street, Ridge Avenue, Germantown Avenue. Seventh not named here (Lancaster Ave is the likely one, from P6FZS4Xn8iw).",
+   "timestamp": 16,
+   "why": "One-person list of walked streets; each named street is also logged individually above because he shows frames from it, but none has a stated extent except Germantown (other video)."
+  },
+  {
+   "what": "Roxborough as 'the neighborhood that I personally grew up in'",
+   "timestamp": 547,
+   "why": "Biography (the Ridge Ave shooting there is logged separately)."
+  },
+  {
+   "what": "Mother 'grew up playing around these areas' / 'my mom would play in these parks' near Passyunk",
+   "timestamp": 560,
+   "why": "Mother's biography; parks not named, no frame tied to them."
+  },
+  {
+   "what": "Kristoff photographing his neighborhood in France",
+   "timestamp": 473,
+   "why": "Other photographer, not Philadelphia."
+  },
+  {
+   "what": "'down towards North Philly'",
+   "timestamp": 675,
+   "why": "Huge-region direction word, used only as extent evidence for Germantown Ave."
+  }
+ ],
+ "unresolved": [
+  "0:30-1:13 Passyunk Ave walk: which stretch (9 km) and where the 'abandoned junkyard area' frame is - on-screen map would show it.",
+  "8:35-9:05 'oldest home on Ridge Avenue' in Roxborough - house not named.",
+  "9:20 'Peschan Gav' = Passyunk Ave (garble); 'these parks' his mother played in are unnamed.",
+  "0:16 seventh project on the map is not named in speech.",
+  "11:06 Cybertruck outside a church and 11:10 old signs on Germantown Ave 'down towards North Philly' - blocks not named."
+ ]
+}

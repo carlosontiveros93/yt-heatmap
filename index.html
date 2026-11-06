@@ -289,8 +289,11 @@
   });
 
   for (const g of spots) {
+    // Rows from Paulie B's own episodes say "Walkie Talkie"; rows from any other channel
+    // (same kind of evidence, e.g. Philly) name that channel instead.
+    const series = m => { const ch = sourceById.get(m.sourceId).channel; return !ch || ch === 'Paulie B' ? 'Walkie Talkie' : ch; };
     const label = m => m.type === 'favorite' ? 'personal favorite'
-                     : m.type === 'walkie-talkie' ? (m.basis === 'haunt' ? 'regular spot · Walkie Talkie' : 'shot here · Walkie Talkie')
+                     : m.type === 'walkie-talkie' ? (m.basis === 'haunt' ? 'regular spot · ' : 'shot here · ') + series(m)
                      : 'visitor pick';
     const html = `<div class="popup"><h3>${g.name}${g.kind === 'pin' ? ' <span class="pin-tag">exact spot</span>' : ''}</h3>` + g.mentions.map(m =>
       `<div class="m ${m.type === 'favorite' ? 'fav' : m.type === 'walkie-talkie' ? 'wt' : ''}">

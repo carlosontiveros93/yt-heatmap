@@ -1,0 +1,49 @@
+{
+  "videoId": "mi_zsrMIIYI",
+  "title": "South Street Sam breaks down the art of the perfect shot",
+  "people": [
+    {"name": "Sami Aziz", "alias": "South Street Sam", "role": "photographer (interviewee)"},
+    {"name": "Judayah Murray", "role": "interviewer, FOX 29 Philadelphia Live (captioned as 'Jada Murray')"}
+  ],
+  "isPhiladelphia": true,
+  "mentions": [
+    {
+      "place": "South Street",
+      "kind": "corridor",
+      "speaker": "Sam (Sami Aziz)",
+      "basis": "haunt",
+      "confidence": "high",
+      "timestamp": 76,
+      "quote": "uh portraits on South Street every single day for a year straight",
+      "locationEvidence": "Street named explicitly by Sam, several times. No cross streets, block range or landmarks given anywhere in the video, so it cannot be narrowed below the corridor from this transcript. The only South Street address clue is South Street Souvlaki (a delivery pickup, not a shooting spot; see excluded).",
+      "notes": "Supporting lines, all Sam: 303s 'I've taken over uh 100,000 portraits on South Street and 150,000 in general'; 289s 'um on South Street for sure' (Spider-Man kid moment, 'on the corner' at 235s, corner never named); 816s 'I'll be out there tonight' followed by 819s 'go shoot tonight' (answering the interviewer's question about catching him on South Street). Interviewer confirms at 135s 'space, but you still go back to South Street and also do street photography'. This is a studio/remote interview; no shooting happens in the video itself, so basis is haunt, not shot-here. The Visit Philadelphia video (Sitl10hzZxc) has the better quote (present-tense daily habit)."
+    },
+    {
+      "place": "South Philadelphia Sports Complex (the stadiums area)",
+      "kind": "neighborhood",
+      "speaker": "Sam (Sami Aziz)",
+      "basis": "shot-here",
+      "confidence": "low",
+      "timestamp": 85,
+      "quote": "of Philly. I've I've gone down towards the stadiums",
+      "locationEvidence": "'the stadiums' in Philadelphia = the sports complex around Broad St and Pattison Ave (Lincoln Financial Field, Citizens Bank Park, the arena). 'down towards' is vague: could mean the complex itself or just that direction in South Philly.",
+      "notes": "Borderline, flagged for the caller. Context is 82s 'since then I've expanded to other parts' (of Philly), right after describing his South Street portraits, so shooting there is implied but he never says 'shot' or 'portraits' about the stadiums, it is not shown in this video, and it is not stated as a regular habit. Strictly it meets neither 'shot in this video' nor 'regular haunt'; recommend not mapping it on this evidence alone."
+    }
+  ],
+  "excluded": [
+    {"what": "South Street (as his base)", "timestamp": 61, "why": "'I'm a photographer based here on South Street in Philadelphia' is biography/base statement; the haunt is counted from his shooting statements instead."},
+    {"what": "South Street Souvlaki (Greek restaurant on South Street)", "timestamp": 577, "why": "Biography: his mother worked there in college and he made a DoorDash-style delivery pickup from it, which inspired the handle. No shooting there."},
+    {"what": "Temple (University)", "timestamp": 579, "why": "Biography of his mother (college)."},
+    {"what": "Morocco", "timestamp": 90, "why": "Not Philadelphia; overseas trip, mother's home country."},
+    {"what": "Atlanta", "timestamp": 111, "why": "Interviewer's own background, not a shooting place."},
+    {"what": "Quaker schools", "timestamp": 155, "why": "Biography (where he went to school), no specific place."},
+    {"what": "Allen Iverson meeting 'here on South Street'", "timestamp": 374, "why": "Says he met Iverson there; does not say he photographed him there, and gives no cross street. Adds nothing beyond the South Street corridor entry."},
+    {"what": "Mother's Day outing", "timestamp": 479, "why": "'I went out and I just took pictures of people' with no place named."},
+    {"what": "City-level statements about Philly", "timestamp": 753, "why": "'tell a story of our street, of our city, of our neighborhood' and interviewer's 'Philly is fun / diverse': city-level, no place."}
+  ],
+  "unresolved": [
+    "Which part of South Street: no cross streets, blocks or landmarks are said. The Spider-Man kid was 'on the corner' (235s) but the corner is never named.",
+    "Whether 'gone down towards the stadiums' (85s) means he actually shot portraits at the sports complex, and how often.",
+    "'at Meatball' (125s) is a person (the streamer Meatball), not a place; listed by the interviewer among celebrities he photographed, no location given for any of them (Kevin Hart, Meek Mill)."
+  ]
+}

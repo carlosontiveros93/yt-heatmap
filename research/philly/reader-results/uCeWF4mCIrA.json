@@ -1,0 +1,30 @@
+{
+ "videoId": "uCeWF4mCIrA",
+ "title": "Philadelphia is Street Photography Paradise",
+ "people": ["Dante Sisofo"],
+ "isPhiladelphia": true,
+ "mentions": [],
+ "excluded": [
+  {
+   "what": "City Hall ('you're looking at the world at the country's largest municipal building')",
+   "timestamp": 133,
+   "why": "He is filming City Hall with a phone and praising it; the transcript shows no photo being made and no statement that he shoots here. His City Hall habit is documented in aimOhkdFXco and t2x6VZR4eyc instead."
+  },
+  {
+   "what": "Philadelphia city-level praise ('so many different neighborhoods', 'walk from River to River', 'the new Athens', 'I could do a whole lifetime body of worker')",
+   "timestamp": 57,
+   "why": "City-level statements with no specific place named."
+  },
+  {
+   "what": "New York / B&H camera store",
+   "timestamp": 87,
+   "why": "Comparison with another city; not Philadelphia and not shooting."
+  }
+ ],
+ "unresolved": [
+  {
+   "what": "Where he is standing while filming City Hall (2:13-2:29). Not spoken; a local could tell which side of City Hall (Dilworth Park, Broad Street, Market Street) from the footage. Even if identified it would not count, since nothing in the transcript shows shooting.",
+   "timestamp": 133
+  }
+ ]
+}

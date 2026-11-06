@@ -1,0 +1,57 @@
+{
+ "videoId": "aimOhkdFXco",
+ "title": "The BEST location for Street Photography in Philadelphia (2023)",
+ "people": ["Dante Sisofo"],
+ "isPhiladelphia": true,
+ "mentions": [
+  {
+   "place": "City Hall west tunnel (archway facing Dilworth Plaza / Dilworth Park)",
+   "kind": "pin-candidate",
+   "speaker": "Dante Sisofo",
+   "basis": "haunt",
+   "confidence": "high",
+   "timestamp": 43,
+   "quote": "I kind of like to do one sort of walk through in my walk each day where I do it just one time and I move on",
+   "locationEvidence": "'this is a city hall by the way City Hall Center City Philadelphia these tunnels are the perfect place to practice but this one in particular in front of Dilworth Plaza is definitely the best' (0:15-0:24). Dilworth Plaza (now officially Dilworth Park) is on the west side of City Hall, so this is the west portal. Reinforced at 3:10-3:17: 'there's one two three four tunnels but this one is the best this one is objectively the best'.",
+   "notes": "Best haunt quote for this person and place across the two City Hall videos: it states a daily walk-through and names the specific portal. Also 'the light is always nice in the tunnel' (1:37-1:39) and 'live music here all the time' (3:03-3:05), which are observations from repeated visits."
+  },
+  {
+   "place": "City Hall west tunnel (archway facing Dilworth Plaza / Dilworth Park)",
+   "kind": "pin-candidate",
+   "speaker": "Dante Sisofo",
+   "basis": "shot-here",
+   "confidence": "high",
+   "timestamp": 87,
+   "quote": "really touristy here so it's actually really easy to get away with getting close to people and making pictures as you can see",
+   "locationEvidence": "Same spot as the haunt row: the tunnel 'in front of Dilworth Plaza' (0:21-0:24). Later he steps into 'this gate' and 'this Arch right here' / 'this Archway' inside the same tunnel to shoot from the side (2:26-2:59).",
+   "notes": "Shooting today is explicit: 'but today I don't know it seems pretty active and there's lots of people coming through so I'm basically just exploring this' (0:51-0:55); 'you see that person walking they're in silhouette now' (2:18-2:20); 'yeah you can see the silhouette' (3:22). No single frame is described in detail, but he is making pictures on camera throughout."
+  }
+ ],
+ "excluded": [
+  {
+   "what": "Dilworth Plaza / Dilworth Park itself (front of City Hall: fountains, grassy areas, ice rink)",
+   "timestamp": 216,
+   "why": "He walks to 'the front of the building' and describes it as 'an amazing place for street photography' with 'lots of events here at Dilworth Plaza' (3:36-3:54), but the transcript shows no frame made there and no statement that he personally shoots the plaza regularly. Description/recommendation only. A reviewer could add it at low confidence if the footage 3:36-4:17 shows him shooting."
+  },
+  {
+   "what": "The other three City Hall tunnels ('there's one two three four tunnels')",
+   "timestamp": 190,
+   "why": "Mentioned for comparison ('they all work I guess but this one's the best'); no shooting in them in this video."
+  },
+  {
+   "what": "City Hall as a building ('the largest municipal building in the country')",
+   "timestamp": 237,
+   "why": "General description; folded into the tunnel rows, which are the smaller and more accurate place."
+  }
+ ],
+ "unresolved": [
+  {
+   "what": "'use the Taurus technique' (0:26) is a caption garble of 'tourist technique' (he explains it in the 2024 video), not a place.",
+   "timestamp": 26
+  },
+  {
+   "what": "'this gate' he stands in to shoot side profiles (2:28-2:30): an iron gate or doorway inside the west archway; exact position visible only in footage.",
+   "timestamp": 148
+  }
+ ]
+}

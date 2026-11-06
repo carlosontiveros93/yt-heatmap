@@ -1,0 +1,70 @@
+{
+  "videoId": "imQQZ-fB9Pc",
+  "title": "How to ASK STRANGERS for PHOTOS 分享我如何在美国街头拍摄陌生人的街拍人像  Rittenhouse Square & Chinatown Vlog # 16",
+  "people": ["Alex Wong"],
+  "isPhiladelphia": true,
+  "mentions": [
+    {
+      "place": "Rittenhouse Square (park and its perimeter, 18th & Walnut)",
+      "kind": "park",
+      "speaker": "Alex Wong",
+      "basis": "shot-here",
+      "confidence": "high",
+      "timestamp": 108,
+      "quote": "it can i have a picture please i love",
+      "locationEvidence": "TITLE + DESCRIPTION, not spoken. Description: 'my street photography walk near the finishing part of the Rittenhouse Square Fine Art Show on Sep 25th, 2021'. Title: 'Rittenhouse Square & Chinatown'. The transcript never says 'Rittenhouse'.",
+      "notes": "Shooting is certain (dozens of portrait requests throughout). Description says 'near' the art show, which is held on the sidewalks around the square, so the perimeter sidewalks are the best fit. Dog walkers, readers, and 'wait for the traffic to go' (9:06) are consistent. Cannot tell where the Rittenhouse part ends."
+    },
+    {
+      "place": "Chinatown (Philadelphia)",
+      "kind": "neighborhood",
+      "speaker": "Alex Wong",
+      "basis": "shot-here",
+      "confidence": "low",
+      "timestamp": null,
+      "quote": "",
+      "locationEvidence": "TITLE ONLY ('Rittenhouse Square & Chinatown'). Not in the description (which only mentions the Rittenhouse Square art show) and never spoken.",
+      "notes": "No transcript line can be tied to Chinatown, so no timestamp or quote. Count only if the footage confirms it."
+    }
+  ],
+  "excluded": [
+    {
+      "what": "Fishtown (captioned 'this is an um fish town')",
+      "timestamp": 332,
+      "why": "A 23-year-old stranger shows Alex his own photos on his phone; another photographer's past work, neighborhood-level, not shot in this video."
+    },
+    {
+      "what": "Kensington ('i have a whole series of pictures i took in kensington')",
+      "timestamp": 337,
+      "why": "Same unnamed stranger describing his own past series. He is on camera and it is his own work, but he is unnamed, it is a past project rather than a stated regular habit, and it is neighborhood-level. Flagged in case you want unnamed on-camera photographers counted."
+    },
+    {
+      "what": "Spruce Street ('they used to make this on spruce street')",
+      "timestamp": 763,
+      "why": "History of where Domke camera bags were made; not a shooting place."
+    },
+    {
+      "what": "New York ('are you local new york')",
+      "timestamp": 1046,
+      "why": "Hometown of visiting photographers shooting a music video."
+    }
+  ],
+  "unresolved": [
+    {
+      "timestamp": 293,
+      "what": "Portrait of a smoker lit by 'the sun ray' (4:47-5:01), then phone-photo chat with the 23-year-old photographer - location unnamed."
+    },
+    {
+      "timestamp": 546,
+      "what": "Couple portrait at a curb, 'i want to wait for the traffic to go' (8:59-9:16) - a street edge, likely around the square; which street unknown."
+    },
+    {
+      "timestamp": 1058,
+      "what": "Group shooting a music video (17:22-18:08) - location unnamed; could be either Rittenhouse or Chinatown."
+    },
+    {
+      "timestamp": null,
+      "what": "Where the video switches from Rittenhouse Square to Chinatown - not determinable from captions; needs the footage."
+    }
+  ]
+}

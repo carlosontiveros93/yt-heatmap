@@ -1,0 +1,76 @@
+{
+ "videoId": "ktLSt9TIUkc",
+ "title": "Ricoh GR IV Monochrome Geotagging POV | Philly in Flux",
+ "people": [
+  "Dante Sisofo"
+ ],
+ "isPhiladelphia": true,
+ "mentions": [
+  {
+   "place": "Lehigh Avenue, from 33rd St east to the end of the avenue",
+   "kind": "corridor",
+   "speaker": "Dante Sisofo",
+   "basis": "shot-here",
+   "confidence": "high",
+   "timestamp": 36,
+   "quote": "so I just hopped off the bus and arrived at 33rd and Lehi Avenue where we're going to start our walk.",
+   "locationEvidence": "START: 33rd & Lehigh (0:36). Intent: 'walk the entirety of this street until we reach the end of the street' (0:51); 'I'm going all the way from the top to the bottom' (6:16). END: 'basically just at the end of the street here, Lehi Avenue conquered barefoot' (21:19-21:25) - end cross street NOT spoken. Direction is eastbound by geography (33rd is the west end). Stats from his project page on screen: 114 photographs, 4.2 mi, 2 hours 17 minutes (24:31); ~3 hours and 824 frames by his own count (21:05-21:15). Date said: June 15, 2026 (13:40).",
+   "notes": "4.2 mi matches 33rd St to the avenue's east end at Richmond St (Port Richmond), but 'Richmond St' is my inference, not spoken. 'Lehi' is the caption spelling of Lehigh. Project page: flux.dantesisofo.com/geotag-catalog/lehigh-ave-in-flux/."
+  },
+  {
+   "place": "McDonald's sign on Lehigh Avenue (about 40 min east of 33rd; near a school and a Save A Lot)",
+   "kind": "pin-candidate",
+   "speaker": "Dante Sisofo",
+   "basis": "shot-here",
+   "confidence": "medium",
+   "timestamp": 755,
+   "quote": "look at this McDonald's sign. This is pretty epic. Let's get a good one of the McDonald's sign.",
+   "locationEvidence": "On Lehigh Ave; 'we've been walking for around 40 minutes' (12:31); nearby: 'you got a school, you got a McDonald's sign, you got to freaking save a lot. You got these flag poles' (13:20-13:26).",
+   "notes": "Frame clearly made (plays with sign and shadow). Cross street not spoken. Inference only: at his pace 40 min is ~1.2 mi from 33rd, i.e. around 22nd-20th & Lehigh, where Dobbins high school sits - needs checking on a map."
+  },
+  {
+   "place": "Church cross on Lehigh Avenue (block not stated)",
+   "kind": "pin-candidate",
+   "speaker": "Dante Sisofo",
+   "basis": "shot-here",
+   "confidence": "low",
+   "timestamp": 409,
+   "quote": "Oh wow, this cross looks insane. 50 mm crop mode with the red filter.",
+   "locationEvidence": "Somewhere on Lehigh Ave between 33rd and the McDonald's (6:49, i.e. before the 40-minute mark). 'Photographing with the sun behind the cross' (6:59).",
+   "notes": "Frame made, but the church/block is not named; position only bracketed by timing."
+  }
+ ],
+ "excluded": [
+  {
+   "what": "Conversation with a contractor about vacant homes",
+   "timestamp": 272,
+   "why": "Encounter; no place named beyond being on Lehigh."
+  },
+  {
+   "what": "'I'm going to buy this property. I'm going to make this into a photo studio.'",
+   "timestamp": 494,
+   "why": "Joke about a for-sale building; not a location statement."
+  },
+  {
+   "what": "Studio/home zine-making and website demo (22:33 onward)",
+   "timestamp": 1353,
+   "why": "Not a shooting location."
+  },
+  {
+   "what": "'the city of brotherly love, the birthplace of America'",
+   "timestamp": 62,
+   "why": "City-level."
+  }
+ ],
+ "unresolved": [
+  "21:19 end point of the walk: 'the end of the street here' - cross street not spoken (likely Lehigh & Richmond St; verify from footage/project map).",
+  "5:23 mural 'put up in 2006' on Lehigh Ave - which mural/block.",
+  "6:49 church with the cross photographed against the sun.",
+  "7:09 odd doorway 'positioned in a weird place. You'd fall right out'.",
+  "8:09 for-sale building he jokes about buying; 8:28 'fading signs'.",
+  "12:38 McDonald's + school + Save A Lot + flag poles cluster - exact cross street.",
+  "16:33 building with a fallout shelter sign.",
+  "18:12 exposed old trolley tracks ('the trolley line was here').",
+  "24:55 building with COVID-19 testing signs shown on Street View from the project map."
+ ]
+}
